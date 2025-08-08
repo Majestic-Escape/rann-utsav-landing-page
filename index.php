@@ -746,7 +746,7 @@ Unveil the White Desert and get your custom itinerary now!
                             <div class="col-md-12">
 
                                 <button class="form-control btn btn-warning btn-md px-5 w-100 send-itinerary-button"
-                                    type="submit">
+                                    type="submit" id="send-itinerary-button">
                                     SEND ME THE ITINERARY
                                 </button>
                             </div>
@@ -1322,6 +1322,7 @@ Unveil the White Desert and get your custom itinerary now!
 <script>
 document.getElementById('booking-form').addEventListener('submit', function (e) {
     e.preventDefault();
+    document.getElementById('send-itinerary-button').disabled = true;
     const formData = new FormData(this);
 
     fetch('send-email.php', {
@@ -1332,6 +1333,7 @@ document.getElementById('booking-form').addEventListener('submit', function (e) 
     .then(response => {
         if (response.trim() === 'success') {
             alert('Thank you! Your itinerary request has been sent.');
+            document.getElementById('booking-form').reset();
         } else {
             alert('There was an error: ' + response);
         }
