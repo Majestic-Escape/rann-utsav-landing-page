@@ -130,7 +130,6 @@
             background:
                 linear-gradient(to bottom, rgba(0, 0, 0, 0) 85%, #ffffff),
                 url('./banner.png') center center / cover no-repeat;
-            background-color: rgba(2, 78, 164, 255);
             border-radius: 40px 40px 0 0;
             background-repeat: no-repeat;
             background-size: cover;
@@ -147,7 +146,9 @@
         }
 
         .cta-text {
+            line-height: 1.4;
             color: #ea0776;
+            text-shadow: 3px 2px 3px #0000004f;
         }
 
         .light-text-stroke {
@@ -157,12 +158,11 @@
 
         #about {
             /* height: 600px; */
-            background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.2) 4%, rgba(255, 255, 255, 0) 15%), url('./about-bg.png');
+            background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 15%), url('./about-bg.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center 42%;
-            border-radius: 0 0 40px 40px;
-            margin-top: -2px;
+            border-radius: 40px 40px 0 0;
         }
 
         #about-title {
@@ -178,21 +178,26 @@
             color: #ea0776;
             font-weight: 700;
             margin-bottom: 20px;
-            text-shadow: 3px 2px 3px #0000004f;
+            text-shadow: 2px -1px 3px #0000004f;
+        }
+
+        .about-div {
+            padding-right: 3rem;
+            padding-left: 3rem;
         }
 
         #countdown-section {
             /* height: 450px; */
             /* background-color: #07243d; */
             background:
-                linear-gradient(to top, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0) 10%),
-                linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0) 10%),
+                linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.5) 18%),
                 url('./countdown-bg.png') top center / cover no-repeat;
             padding: 80px 0px;
+            border-radius: 0 0 40px 40px;
         }
 
         #countdown {
-            font-size: 3rem;
+            font-size: 2rem;
             font-weight: 700;
             color: #ffffff;
             font-family: 'Lexend Mega', sans-serif;
@@ -237,7 +242,9 @@
         }
 
         #booking {
-            background: linear-gradient(to top, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 50%), url('./background.png') top center / cover no-repeat;
+            background: linear-gradient(to top, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 50%), 
+                        linear-gradient(to bottom, rgba(0,0,0, 0.3) 10%, rgba(255, 255, 255, 0)),
+                        url('./background.png') top center / cover no-repeat;
             /* box-shadow: 0 0 5px #35621f; */
             border-radius: 40px;
             /* padding: 80px 40px; */
@@ -299,11 +306,12 @@
 
         #festival {
             padding: 0 0 20px 0px;
+            border-radius: 0 0 40px 40px;
         }
 
         #activities {
             height: 1600px;
-            margin-top: 2px;
+            margin-top: -1px;
             background: linear-gradient(rgba(255, 255, 255, 1) 2%, rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 0) 85%, rgba(255, 255, 255, 1) 95%), url('./activities-bg.png') center center / cover no-repeat;
         }
 
@@ -471,32 +479,44 @@
         #footer a {
             text-decoration: none;
         }
+
         @media screen and (max-width: 768px) {
 
             #banner {
-            background:
-                linear-gradient(to bottom, rgba(0, 0, 0, 0) 85%, #ffffff),
-                url('./banner-mob.png') center center / contain no-repeat;
-            background-color: rgba(2, 78, 164, 255);
-            background-repeat: no-repeat;
-            background-size: cover;
-            /* background-position: top center; */
-        }
+                background:
+                    linear-gradient(to bottom, rgba(0, 0, 0, 0) 85%, #ffffff),
+                    url('./banner-mob.png') 75% center / contain no-repeat;
+                background-color: rgba(2, 78, 164, 255);
+                background-repeat: no-repeat;
+                background-size: cover;
+                /* background-position: top center; */
+            }
 
             .section-title {
                 text-align: center;
+                font-size: 2rem;
+            }
+
+            .about-div {
+                padding-right: 2rem;
+                padding-left: 2rem;
             }
 
             #countdown-section {
                 height: auto;
+                margin-top: -2px;
             }
 
             #countdown {
                 font-size: 2rem;
             }
 
+            .fs-big {
+                font-size: 2rem;
+            }
+
             #about {
-                background: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0) 10%), url('./about-bg.png');
+                /* background: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0) 10%), url('./about-bg.png'); */
                 background-position: 60% center;
                 background-size: cover;
             }
@@ -509,11 +529,10 @@
                 padding: 40px 10px;
             }
 
-                    #activities {
-            height: auto;
-            margin-top: 2px;
-            background: none;
-        }
+            #activities {
+                height: auto;
+                background: #fff;
+            }
 
             .inclined-shadow {
                 font-size: 50px;
@@ -578,7 +597,7 @@
             <nav class="navbar navbar-sticky navbar-expand-lg navbar-light py-5">
                 <div class="container">
                     <a class="navbar-brand fw-bold text-primary" href="#" style="font-family: 'Poppins', sans-serif;">
-                        <img src="./logo-white.png" alt="Majestic Escape Logo" class="img-fluid">
+                        <img src="./logo.svg" alt="Majestic Escape Logo" class="img-fluid">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -603,28 +622,29 @@
                 </div>
             </nav>
             <!-- Navbar End -->
-             <span class="d-block d-md-none">
-                 <h1 class="inclined-shadow text-center mb-0">
-                     rann utsav
-                 </h1>
-                 <p class="text-center mt-0">From 23rd Oct 2025 to 04th Mar 2026<br><br>
-     <b>Experience the best with Majestic Escape!</b>
-                 </p>
-     
-                 <a href="#explore-now" class="btn btn-lg btn-warning d-block m-auto w-50">
-                     Explore Now!
-                     </a>
-             </span>
-            
+            <span class="d-block d-md-none">
+                <h1 class="inclined-shadow text-center mb-0">
+                    rann utsav
+                </h1>
+                <p class="text-center mt-0">From 23rd Oct 2025 to 04th Mar 2026<br><br>
+                    <b>Experience the best with Majestic Escape!</b>
+                </p>
+
+                <a href="#explore-now" class="btn btn-lg btn-warning d-block m-auto w-50">
+                    Explore Now!
+                </a>
+            </span>
+
         </section>
         <section id="countdown-section" class="align-items-center mt-6">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
-                    <div class="col-md-7 text-center text-md-start mb-4 mb-md-0">
-                        <h2 class="fw-bold mb-3 cta-text">Book before <span class="fs-big light-text-stroke">23rd
-                                October 2025</span> to get the best deals with Majestic Escape!🥳</h2>
+                    <div class="col-md-8 text-center text-md-start mb-4 mb-md-0">
+                        <h2 class="fw-bold mb-3 cta-text">Book before <span class="fs-big light-text-stroke"><br
+                                    class="d-block d-md-none">31st August 2025</span> <br class="d-block d-none-md">to
+                            get the best deals with Majestic Escape!🥳</h2>
                     </div>
-                    <div class="col-md-5 text-center m-auto">
+                    <div class="col-md-4 text-center m-auto">
                         <div id="countdown" class="d-flex flex-wrap gap-3 justify-content-center">
                             <div><span id="days">00</span><span class="countdown-subtext">d</span></div>
                             <div class="d-none d-md-block">:</div>
@@ -649,12 +669,96 @@
             </div>
             <span id="explore-now"></span>
         </section>
+        <br>
+        <section id="booking" class="section px-2 bg-fixed">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">
+                    <h1 class="section-title mb-4 text-shadow-lg">Ready For Kutch?<br> Let's Curate Your Journey!</h1>
+                    <p class="text-light fs-5 mb-4">
+                        Unveil the White Desert and get your custom itinerary now!
+                    </p>
+                </div>
+
+                <div class="col-md-8 offset-md-2">
+                    <form id="booking-form" method="POST" action="send-email.php">
+                        <div class="row form-row">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" name="name"
+                                    placeholder="Enter your name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="Enter  your email" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Phone</label>
+                                <input type="tel" class="form-control" id="phone" name="phone"
+                                    placeholder="Enter your phone number" required>
+                            </div>
+                            <!-- <div class="col-md-6">
+                                <label for="guest-count" class="form-label">Guest Count</label>
+                                <input type="number" class="form-control" id="guest-count" name="guest_count"
+                                    placeholder="Enter the guest count" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="start-date" class="form-label">Start Date</label>
+                                <input type="date" class="form-control" id="start-date" name="start_date" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="end-date" class="form-label">End Date</label>
+                                <input type="date" class="form-control" id="end-date" name="end_date" required>
+                            </div> -->
+
+                            <div class="col-md-6">
+                                <label for="traveller-type" class="form-label">Type of Traveller</label>
+                                <select class="form-select" id="traveller-type" name="traveller_type" required>
+                                    <option value="" disabled selected>Select type</option>
+                                    <option value="solo">Solo</option>
+                                    <option value="couple">Couple</option>
+                                    <option value="family">Family</option>
+                                    <option value="group">Group</option>
+                                    <option value="corporate">Corporate</option>
+                                </select>
+                            </div>
+                            <!-- <div class="col-md-6">
+                                <label for="source" class="form-label">How did you hear about us?</label>
+                                <select class="form-select" id="source" name="source" required>
+                                    <option value="" disabled selected>Select source</option>
+                                    <option value="google">Google Search</option>
+                                    <option value="instagram">Instagram</option>
+                                    <option value="facebook">Facebook</option>
+                                    <option value="friend">Friend/Family</option>
+                                    <option value="travel-agency">Travel Agency</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div> -->
+                        </div>
+                        <br>
+                        <div class="row form-row">
+                            <div class="col-md-12">
+
+                                <button class="form-control btn btn-warning btn-md px-5 w-100 send-itinerary-button"
+                                    type="submit" id="send-itinerary-button">
+                                    SEND ME THE ITINERARY
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <br>
         <section id="about" class="section">
             <div class="row">
                 <div id="about-img-section" class="col-md-6">
 
                 </div>
-                <div class="col-md-6 px-5">
+                <div class="col-md-6 about-div">
                     <h1 class="section-title mb-4" id="about-title">Rann Utsav 2025</h1>
                     <p class="text-muted fs-5 about-para">
                         The Rann of Kutch is a salt marsh located in the Thar Desert in the Kutch district of Gujarat,
@@ -672,97 +776,11 @@
                 </div>
             </div>
         </section>
-        <br>
-        <section id="booking" class="section px-2 bg-fixed">
-            <div class="row">
-                <div class="col-md-8 offset-md-2 text-center">
-                    <h1 class="section-title mb-4 text-shadow-lg">Ready For Kutch?<br> Let's Curate Your Journey!</h1>
-                    <p class="text-light fs-5 mb-4">
-Unveil the White Desert and get your custom itinerary now!
-                    </p>
-                </div>
-
-                <div class="col-md-8 offset-md-2">
-                    <form id="booking-form" method="POST" action="send-email.php">
-                        <div class="row form-row">
-                            <div class="col-md-6">
-                                <label for="name" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name"
-                                    required>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter  your email"
-                                    required>
-                            </div>
-
-                            <div class="col-md-6">
-                                <label for="phone" class="form-label">Phone</label>
-                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number"
-                                    required>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="guest-count" class="form-label">Guest Count</label>
-                                <input type="number" class="form-control" id="guest-count" name="guest_count"
-                                    placeholder="Enter the guest count" required>
-                            </div>
-
-                            <div class="col-md-6">
-                                <label for="start-date" class="form-label">Start Date</label>
-                                <input type="date" class="form-control" id="start-date" name="start_date" required>
-                            </div>
-
-                            <div class="col-md-6">
-                                <label for="end-date" class="form-label">End Date</label>
-                                <input type="date" class="form-control" id="end-date" name="end_date" required>
-                            </div>
-
-                            <div class="col-md-6">
-                                <label for="traveller-type" class="form-label">Type of Traveller</label>
-                                <select class="form-select" id="traveller-type" name="traveller_type" required>
-                                    <option value="" disabled selected>Select type</option>
-                                    <option value="solo">Solo</option>
-                                    <option value="couple">Couple</option>
-                                    <option value="family">Family</option>
-                                    <option value="group">Group</option>
-                                    <option value="corporate">Corporate</option>
-                                </select>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="source" class="form-label">How did you hear about us?</label>
-                                <select class="form-select" id="source" name="source" required>
-                                    <option value="" disabled selected>Select source</option>
-                                    <option value="google">Google Search</option>
-                                    <option value="instagram">Instagram</option>
-                                    <option value="facebook">Facebook</option>
-                                    <option value="friend">Friend/Family</option>
-                                    <option value="travel-agency">Travel Agency</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row form-row">
-                            <div class="col-md-12">
-
-                                <button class="form-control btn btn-warning btn-md px-5 w-100 send-itinerary-button"
-                                    type="submit" id="send-itinerary-button">
-                                    SEND ME THE ITINERARY
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <style>
-        </style>
 
         <section id="activities" class="section">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h1 class="section-title mb-4">Live The Colors Of Kutch<br> One Experience At A Time!</h1>
+                    <h1 class="section-title mb-4">Live The Colors Of Kutch<span class="d-none d-md-block"></span><span class="d-inline-block d-md-none">,</span> One Experience At A Time!</h1>
                     <p class="text-muted fs-5 mb-4">
                         Immerse yourself in the vibrant culture and traditions of the Rann of Kutch with our curated
                         activities.
@@ -1186,15 +1204,16 @@ Unveil the White Desert and get your custom itinerary now!
                         <img src="./dance.png" id="festival-dance-img" alt="Rann of Kutch Festival" class="img-fluid">
                     </div>
                     <div class="col-md-8 text-center text-md-start mb-4 mb-md-0">
-                        <h2 class="fw-bold mb-3 text-muted">Only <span id="festival-days"
-                                class="pink-text fs-huge"></span> days to go<br>
-                            until the magic of the Rann of Kutch Festival begins!</h2>
+                        <h2 class="fw-bold mb-3 text-muted"><span id="festival-days"
+                                class="pink-text fs-huge"></span> days to go 
+                            until <br class="d-none d-md-block">the magic of the Rann of Kutch Festival begins!</h2>
                         <p>
-                            Get ready for a celebration of culture, color, and endless white sands! Your Kutch journey starts here - plan with us today!
+                            Get ready for a celebration of culture, color, and endless white sands! Your Kutch journey
+                            starts here - plan with us today!
                         </p>
                         <a href="#booking" class="form-control btn btn-sm px-4 w-auto h-auto send-itinerary-button"
                             type="button">
-                            Craft My Kutch Escape 
+                            Craft My Kutch Escape
                         </a>
                     </div>
                 </div>
@@ -1207,7 +1226,7 @@ Unveil the White Desert and get your custom itinerary now!
 
         <section class="section-margin pt-5">
             <h4 class="text-muted text-center">Brought To You By</h4>
-            <img src="./logo.svg" alt="Majestic Escape Logo" class="img-fluid m-auto d-block" style="width: 90%">
+            <img src="./logo.svg" alt="Majestic Escape Logo" class="img-fluid m-auto d-block" style="width: 70%">
         </section>
     </div>
 
@@ -1216,6 +1235,12 @@ Unveil the White Desert and get your custom itinerary now!
             <div class="row align-items-end">
                 <div class="col-md-4 text-md-start mb-3 mb-md-0">
                     <!-- <p class="mb-0 text-light">Policy</p> -->
+                     <a href="#" class="mb-0 text-light" data-bs-toggle="modal" data-bs-target="#privacyPolicyModal">
+                        Privacy Policy
+                        </a><br>
+                        <a href="#" class="mb-0 text-light" data-bs-toggle="modal" data-bs-target="#termsModal">
+                        Terms of Use
+                        </a>
                 </div>
                 <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">
                     <p class="mb-0 text-light">
@@ -1232,17 +1257,142 @@ Unveil the White Desert and get your custom itinerary now!
                         class="text-light fs-4 pr-2">
                         <i class="bi bi-instagram"></i>
                     </a>
-                    <a href="https://www.facebook.com/profile.php?id=61567800352990" target="_blank" aria-label="Facebook"
-                        class="text-light fs-4 px-2">
+                    <a href="https://www.facebook.com/profile.php?id=61567800352990" target="_blank"
+                        aria-label="Facebook" class="text-light fs-4 px-2">
                         <i class="bi bi-facebook"></i>
                     </a>
-                    <a href="https://wa.me/+917219666822" target="_blank" aria-label="WhatsApp" class="text-light fs-4 pl-2">
+                    <a href="https://wa.me/+917219666822" target="_blank" aria-label="WhatsApp"
+                        class="text-light fs-4 pl-2">
                         <i class="bi bi-whatsapp"></i>
                     </a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <div class="modal fade" id="privacyPolicyModal" tabindex="-1" aria-labelledby="privacyPolicyModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="privacyPolicyModalLabel">Privacy Policy</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Last Updated:</strong> 09 August 2025</p>
+
+        <h6>1. Introduction</h6>
+        <p>Welcome to Majestic Escape. This Privacy Policy explains how we collect, use, and protect the information you provide when visiting this landing page and submitting our itinerary request form. This policy applies only to this promotional page and its related campaigns, not to the full Majestic Escape website or other services.</p>
+
+        <h6>2. Information We Collect</h6>
+        <p>When you use our landing page, we may collect:</p>
+        <p>- <strong>Personal Information:</strong> Your name, email address, phone number, and traveller type.</p>
+        <p>- <strong>Non-Personal Information:</strong> Browser type, device type, IP address, general location, pages visited, time spent on the site, and interactions with our forms or buttons. This data may be collected automatically through cookies, tracking pixels, and third-party analytics tools.</p>
+
+        <h6>3. Use of Google Analytics</h6>
+        <p>We use Google Analytics to:</p>
+        <p>- Understand how visitors interact with our landing page<br>
+           - Measure the effectiveness of our ads and campaigns<br>
+           - Improve user experience</p>
+        <p>Google may set cookies or read existing cookies in your browser.</p>
+        <p>Learn more: <a href="https://policies.google.com/technologies/partner-sites" target="_blank">Google Partner Sites Policy</a><br>
+           Opt-out: <a href="https://tools.google.com/dlpage/gaoptout" target="_blank">Google Analytics Opt-out</a></p>
+
+        <h6>4. Use of Meta Pixel</h6>
+        <p>We use Meta Pixel (formerly Facebook Pixel) to:</p>
+        <p>- Measure ad performance on Facebook and Instagram<br>
+           - Build audiences for remarketing<br>
+           - Deliver ads more relevant to your interests</p>
+        <p>Learn more: <a href="https://www.facebook.com/policy.php" target="_blank">Meta Privacy Policy</a><br>
+           Adjust ad preferences: <a href="https://www.facebook.com/ads/preferences" target="_blank">Meta Ad Preferences</a></p>
+
+        <h6>5. How We Use Your Information</h6>
+        <p>We use your information to:</p>
+        <p>- Respond to your itinerary request<br>
+           - Provide details and offers related to the Rann Utsav<br>
+           - Measure ad and campaign performance<br>
+           - Improve our landing page experience<br>
+           - Send follow-up communication related to your inquiry</p>
+
+        <h6>6. Sharing of Information</h6>
+        <p>We do not sell your personal information. We may share it only with internal travel consultants and trusted service providers.</p>
+
+        <h6>7. Cookies & Tracking</h6>
+        <p>Our landing page may use cookies, tracking pixels, and similar technologies to enable features, track ads, and measure visitor behavior.</p>
+
+        <h6>8. Data Security</h6>
+        <p>We take reasonable steps to protect your personal data. However, no internet transmission is 100% secure.</p>
+
+        <h6>9. Changes to This Policy</h6>
+        <p>We may update this policy, and changes will be posted here with a revised date.</p>
+
+        <h6>11. Contact Us</h6>
+        <p>For any questions or concerns, please contact us at:<br>
+        Email: <a href="mailto:support@majesticescape.in">support@majesticescape.in</a></p>
+      </div>
+      <div class="modal-footer bt-none">
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="termsModalLabel">Terms of Service</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <p><strong>Last Updated:</strong> 09 August 2025</p>
+
+        <h6>1. Introduction</h6>
+        <p>Welcome to Majestic Escape. These Terms of Service govern your use of this promotional landing page and participation in our Rann Utsav campaign. By using this page and submitting the itinerary request form, you agree to these terms.</p>
+
+        <h6>2. Scope of Services</h6>
+        <p>This landing page is designed for promotional purposes only. It allows you to request itineraries, pricing, and offers related to the Rann Utsav in Rann of Kutch. The information provided here is indicative and may change without notice.</p>
+
+        <h6>3. Accuracy of Information</h6>
+        <p>While we strive to provide accurate and updated information, Majestic Escape does not guarantee the completeness, accuracy, or availability of all details on this landing page. Prices, itineraries, and offers are subject to confirmation at the time of booking.</p>
+
+        <h6>4. User Responsibilities</h6>
+        <p>By using this page, you agree to:</p>
+        <p>- Provide accurate and complete details in the form.<br>
+           - Not use this page for unlawful purposes.<br>
+           - Not attempt to disrupt or interfere with the website's functionality.</p>
+
+        <h6>5. No Direct Booking via Landing Page</h6>
+        <p>This landing page does not process payments or confirm bookings directly. All bookings will be finalized through our official booking process after you submit your inquiry.</p>
+
+        <h6>6. Limitation of Liability</h6>
+        <p>Majestic Escape will not be liable for any loss, damage, or inconvenience caused by reliance on the information on this page, delays in response, or third-party services linked through our campaigns.</p>
+
+        <h6>7. External Links</h6>
+        <p>This landing page may contain links to external sites such as Google, Facebook, Instagram, or payment gateways. Majestic Escape is not responsible for the content, policies, or practices of these third-party sites.</p>
+
+        <h6>8. Changes to the Campaign</h6>
+        <p>We reserve the right to modify, suspend, or terminate this campaign or landing page at any time without prior notice.</p>
+
+        <h6>9. Privacy</h6>
+        <p>Your use of this page is also governed by our Privacy Policy, which explains how we collect and use your data. Please review it for more details.</p>
+
+        <h6>10. Governing Law</h6>
+        <p>These Terms shall be governed by and interpreted in accordance with the laws of India, without regard to conflict of law principles.</p>
+
+        <h6>11. Contact Us</h6>
+        <p>For questions about these Terms of Service, please contact us at:<br>
+        Email: <a href="mailto:support@majesticescape.in">support@majesticescape.in</a></p>
+
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -1253,7 +1403,7 @@ Unveil the White Desert and get your custom itinerary now!
 
 <script>
     // Set the date for the festival start
-    const bookingOfferEndDate = new Date("2025-10-23T00:00:00").getTime();
+    const bookingOfferEndDate = new Date("2025-08-31T00:00:00").getTime();
     const festivalDate = new Date("2025-10-23T00:00:00").getTime();
 
     function updateCountdown() {
@@ -1299,13 +1449,28 @@ Unveil the White Desert and get your custom itinerary now!
 <script>
     function initMap() {
         const locations = [
-            { lat: 23.8826191, lng: 70.2044392, title: "Dholavira" },
-            { lat: 23.9038887, lng: 70.3734904, title: "Gadhada" },
-            { lat: 23.8867243, lng: 70.3120987, title: "Saptshura Shila" }
+            { lat: 23.8391, lng: 69.6905, title: "Dhordo Tent City" },
+{ lat: 23.8998, lng: 69.6950, title: "White Desert View Point" },
+{ lat: 23.9315, lng: 69.5504, title: "Kala Dungar (Black Hill)" },
+{ lat: 23.9428, lng: 69.5337, title: "Kalo Dungar Magnetic Hill Point" },
+{ lat: 24.0075, lng: 69.5361, title: "India Bridge" },
+{ lat: 22.8328, lng: 69.3467, title: "Mandvi Beach" },
+{ lat: 22.8423, lng: 69.3356, title: "Vijay Vilas Palace, Mandvi" },
+{ lat: 23.2504, lng: 69.6668, title: "Bhuj (Aina Mahal)" },
+{ lat: 23.7458, lng: 69.6889, title: "Hodka Village" },
+{ lat: 23.7508, lng: 69.6993, title: "Ludiya Village" },
+{ lat: 23.5632, lng: 69.4130, title: "Nirona Village" },
+{ lat: 23.8192, lng: 69.5608, title: "Kutch Fossil Park" },
+{ lat: 23.5667, lng: 69.3000, title: "Chhari Dhandh Wetland Reserve" },
+{ lat: 23.2606, lng: 69.6824, title: "Smritivan Earthquake Memorial" },
+{ lat: 23.5902, lng: 68.8426, title: "Mata no Madh Temple" },
+{ lat: 23.8892, lng: 70.2066, title: "Dholavira" },
+{ lat: 23.9000, lng: 69.6833, title: "Kutch Desert Wildlife Sanctuary" }
+
         ];
 
         const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 12,
+            zoom: 9,
             center: locations[0]
         });
 
@@ -1320,25 +1485,25 @@ Unveil the White Desert and get your custom itinerary now!
 </script>
 
 <script>
-document.getElementById('booking-form').addEventListener('submit', function (e) {
-    e.preventDefault();
-    document.getElementById('send-itinerary-button').disabled = true;
-    const formData = new FormData(this);
+    document.getElementById('booking-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        document.getElementById('send-itinerary-button').disabled = true;
+        const formData = new FormData(this);
 
-    fetch('send-email.php', {
-        method: 'POST',
-        body: formData
-    })
-    .then(res => res.text())
-    .then(response => {
-        if (response.trim() === 'success') {
-            alert('Thank you! Your itinerary request has been sent.');
-            document.getElementById('booking-form').reset();
-        } else {
-            alert('There was an error: ' + response);
-        }
+        fetch('send-email.php', {
+            method: 'POST',
+            body: formData
+        })
+            .then(res => res.text())
+            .then(response => {
+                if (response.trim() === 'success') {
+                    alert('Thank you! Your itinerary request has been sent.');
+                    document.getElementById('booking-form').reset();
+                } else {
+                    alert('There was an error: ' + response);
+                }
+            });
     });
-});
 </script>
 
 </html>

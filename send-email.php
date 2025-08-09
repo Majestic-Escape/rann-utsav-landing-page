@@ -20,12 +20,12 @@ $mail = new PHPMailer(true);
 try {
     // Server settings
     $mail->isSMTP();
-    $mail->Host       = 'sandbox.smtp.mailtrap.io';         // SMTP server
+    $mail->Host       = 'smtp.gmail.com';         // SMTP server
     $mail->SMTPAuth   = true;
-    $mail->Username   = '3319f431d7b8fe';          // SMTP username
-    $mail->Password   = 'd36853f8bd296f';            // SMTP password
+    $mail->Username   = 'notify@majesticescape.in';          // SMTP username
+    $mail->Password   = 'lact scen qjfq zmxz';            // SMTP password
     $mail->SMTPSecure = 'tls';                      // encryption (ssl/tls)
-    $mail->Port       = 2525;
+    $mail->Port       = 587;
 
     // Sender & recipient
     $mail->setFrom('you@example.com', 'Majestic Escape');
