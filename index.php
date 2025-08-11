@@ -130,7 +130,7 @@
             height: 100vh;
             background:
                 linear-gradient(to bottom, rgba(0, 0, 0, 0) 85%, #ffffff),
-                url('./banner.png') center center / cover no-repeat;
+                url('./banner.jpg') center center / cover no-repeat;
             /* border-radius: 40px 40px 0 0; */
             background-repeat: no-repeat;
             background-size: cover;
@@ -163,7 +163,7 @@
 
         #about {
             /* height: 600px; */
-            background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 15%), url('./about-bg.png');
+            background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 15%), url('./about-bg.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center 42%;
@@ -196,7 +196,7 @@
             /* background-color: #07243d; */
             background:
                 linear-gradient(to bottom, rgba(0, 0, 0, 0.3)),
-                url('./countdown-bg.png') top center / cover no-repeat;
+                url('./countdown-bg.jpg') top center / cover no-repeat;
             padding: 80px 0px;
             /* border-radius: 0 0 40px 40px; */
         }
@@ -250,7 +250,7 @@
         #booking {
             background: linear-gradient(to top, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 50%),
                 linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 10%, rgba(255, 255, 255, 0)),
-                url('./background.png') top center / cover no-repeat;
+                url('./background.jpg') top center / cover no-repeat;
             /* box-shadow: 0 0 5px #35621f; */
             /* border-radius: 40px; */
             /* padding: 80px 40px; */
@@ -318,14 +318,14 @@
         #festival {
             /* padding: 0 0 20px 0px; */
             /* border-radius: 0 0 40px 40px; */
-            background: linear-gradient(to bottom right, rgb(180 180 180 / 70%) 65%, rgb(234 105 7 / 67%)), url(./festival-bg.png) center center / cover no-repeat;
+            background: linear-gradient(to bottom right, rgb(180 180 180 / 70%) 65%, rgb(234 105 7 / 67%)), url('./festival-bg.jpg') center center / cover no-repeat;
             background-attachment: fixed;
         }
 
         #activities {
             /* height: 1600px; */
             margin-top: -1px;
-            background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 30%), url('./activities-bg.png') center center / cover no-repeat;
+            background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 30%), url('./activities-bg.jpg') center center / cover no-repeat;
         }
 
         .activity-card {
@@ -357,7 +357,7 @@
         }
 
         .activity#folk-dance-card {
-            background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url(./activities/folk-dance.png) center 40% / cover no-repeat;
+            background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/folk-dance.png') center 40% / cover no-repeat;
         }
 
         #handicraft-exhibitions-card {
@@ -486,7 +486,7 @@
             height: 100vh;
             background:
                 linear-gradient(to bottom, rgba(255, 255, 255, 1) 5%, rgba(0, 0, 0, 0) 60%),
-                url('./footer.png') center center / cover no-repeat;
+                url('./footer.jpg') center center / cover no-repeat;
             /* border-radius: 0 0 40px 40px; */
         }
 
@@ -514,7 +514,7 @@
             #banner {
                 background:
                     linear-gradient(to bottom, rgba(0, 0, 0, 0) 85%, #ffffff),
-                    url('./banner-mob.png') 75% center / contain no-repeat;
+                    url('./banner-mob.jpg') 75% center / contain no-repeat;
                 background-color: rgba(2, 78, 164, 255);
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -1127,13 +1127,13 @@
                         <div class="carousel-item active">
                             <div class="row">
                                 <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery2.png" alt="Gallery Image 2" class="img-fluid">
+                                    <img src="./gallery/gallery2.jpg" alt="Gallery Image 2" class="img-fluid">
                                 </div>
                                 <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery11.png" alt="Gallery Image 8" class="img-fluid">
+                                    <img src="./gallery/gallery11.jpg" alt="Gallery Image 8" class="img-fluid">
                                 </div>
                                 <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery3.png" alt="Gallery Image 3" class="img-fluid">
+                                    <img src="./gallery/gallery3.jpg" alt="Gallery Image 3" class="img-fluid">
                                 </div>
                             </div>
                         </div>
@@ -1141,13 +1141,13 @@
                         <div class="carousel-item">
                             <div class="row">
                                 <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery5.png" alt="Gallery Image 5" class="img-fluid">
+                                    <img src="./gallery/gallery5.jpg" alt="Gallery Image 5" class="img-fluid">
                                 </div>
                                 <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery4.png" alt="Gallery Image 4" class="img-fluid">
+                                    <img src="./gallery/gallery4.jpg" alt="Gallery Image 4" class="img-fluid">
                                 </div>
                                 <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery10.png" alt="Gallery Image 6" class="img-fluid">
+                                    <img src="./gallery/gallery10.jpg" alt="Gallery Image 6" class="img-fluid">
                                 </div>
                             </div>
                         </div>
@@ -1156,13 +1156,13 @@
                             <div class="row">
 
                                 <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery7.png" alt="Gallery Image 7" class="img-fluid">
+                                    <img src="./gallery/gallery7.jpg" alt="Gallery Image 7" class="img-fluid">
                                 </div>
                                 <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery12.png" alt="Gallery Image 9" class="img-fluid">
+                                    <img src="./gallery/gallery12.jpg" alt="Gallery Image 9" class="img-fluid">
                                 </div>
                                 <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery1.png" alt="Gallery Image 1" class="img-fluid">
+                                    <img src="./gallery/gallery1.jpg" alt="Gallery Image 1" class="img-fluid">
                                 </div>
                             </div>
                         </div>
@@ -1189,52 +1189,52 @@
                         <div class="row">
                             <div class="carousel-item active">
                                 <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery1.png" alt="Gallery Image 1" class="img-fluid">
+                                    <img src="./gallery/gallery1.jpg" alt="Gallery Image 1" class="img-fluid">
                                 </div>
                             </div>
                             <div class="carousel-item">
 
                                 <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery2.png" alt="Gallery Image 2" class="img-fluid">
+                                    <img src="./gallery/gallery2.jpg" alt="Gallery Image 2" class="img-fluid">
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery3.png" alt="Gallery Image 3" class="img-fluid">
+                                    <img src="./gallery/gallery3.jpg" alt="Gallery Image 3" class="img-fluid">
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery5.png" alt="Gallery Image 5" class="img-fluid">
+                                    <img src="./gallery/gallery5.jpg" alt="Gallery Image 5" class="img-fluid">
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery4.png" alt="Gallery Image 4" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-
-                                <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery7.png" alt="Gallery Image 7" class="img-fluid">
+                                    <img src="./gallery/gallery4.jpg" alt="Gallery Image 4" class="img-fluid">
                                 </div>
                             </div>
                             <div class="carousel-item">
 
                                 <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery10.png" alt="Gallery Image 10" class="img-fluid">
+                                    <img src="./gallery/gallery7.jpg" alt="Gallery Image 7" class="img-fluid">
                                 </div>
                             </div>
                             <div class="carousel-item">
 
                                 <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery11.png" alt="Gallery Image 11" class="img-fluid">
+                                    <img src="./gallery/gallery10.jpg" alt="Gallery Image 10" class="img-fluid">
                                 </div>
                             </div>
                             <div class="carousel-item">
 
                                 <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery12.png" alt="Gallery Image 12" class="img-fluid">
+                                    <img src="./gallery/gallery11.jpg" alt="Gallery Image 11" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+
+                                <div class="col-md-4 m-0 p-0">
+                                    <img src="./gallery/gallery12.jpg" alt="Gallery Image 12" class="img-fluid">
                                 </div>
                             </div>
                         </div>
@@ -1536,7 +1536,7 @@
 <script>
     window.addEventListener('scroll', () => {
         const button = document.getElementById("book-now-button-div");
-        if (window.scrollY > window.innerHeight + 900) {
+        if (window.scrollY > window.innerHeight + 420) {
             button.classList.add('sticky-button');
         } else {
             button.classList.remove('sticky-button');
