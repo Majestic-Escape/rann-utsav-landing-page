@@ -50,7 +50,7 @@
         h1,
         h2,
         h3 {
-            font-family: 'Eagle Lake', sans-serif;
+            font-family: 'Poppins', sans-serif;
             color: #ea0776;
         }
 
@@ -64,7 +64,7 @@
 
         .pink-text {
             color: #ea0776;
-            text-shadow: 2px 2px black;
+            /* text-shadow: 2px 2px black; */
         }
 
         .fs-big {
@@ -130,7 +130,7 @@
             height: 100vh;
             background:
                 linear-gradient(to bottom, rgba(0, 0, 0, 0) 85%, #ffffff),
-                url('./banner.png') center center / cover no-repeat;
+                url('./banner.jpg') center center / cover no-repeat;
             /* border-radius: 40px 40px 0 0; */
             background-repeat: no-repeat;
             background-size: cover;
@@ -156,6 +156,10 @@
             -webkit-text-fill-color: #ffffff;
             -webkit-text-stroke: #ffffff 1px;
         }
+
+        /* .dark-text-stroke {
+            -webkit-text-stroke: #000 0.5px;
+        } */
 
         #about {
             /* height: 600px; */
@@ -191,7 +195,7 @@
             /* height: 450px; */
             /* background-color: #07243d; */
             background:
-                linear-gradient(to bottom, rgba(0, 0, 0, 0.5)),
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.3)),
                 url('./countdown-bg.png') top center / cover no-repeat;
             padding: 80px 0px;
             /* border-radius: 0 0 40px 40px; */
@@ -210,12 +214,13 @@
         }
 
         #book-now-button {
-            color: #fff;
+            color: #000000;
             letter-spacing: 3px;
             font-weight: 200;
             font-family: 'Poppins', sans-serif;
-            background-color: #ea0776;
-            border-radius: 40px;
+            background-color: #fad42c;
+            font-weight: 900;
+            border-radius: 20px;
             transition: transform 0.5s;
             animation: blur 1s infinite;
             -webkit-animation: blur 1s infinite;
@@ -226,11 +231,11 @@
 
             0%,
             100% {
-                box-shadow: 0 0 10px #ea0776;
+                box-shadow: 0 0 10px #fad42c;
             }
 
             50% {
-                box-shadow: 0 0 36px #ea0776;
+                box-shadow: 0 0 36px #fad42c;
             }
         }
 
@@ -257,7 +262,7 @@
             font-weight: 200;
             padding-left: 30px;
             height: 60px;
-            border-radius: 40px;
+            border-radius: 20px;
             border: 1px solid #ccc;
             margin-bottom: 20px;
         }
@@ -291,12 +296,17 @@
         } */
 
         .send-itinerary-button {
-            background-color: #fff;
+            margin: auto;
+            display: flex;
+            background-color: #fad42c;
             font-family: 'Poppins', sans-serif;
-            color: #ea0776;
+            color: #000;
             font-weight: 300;
-            border-radius: 40px;
-            border: 1px solid #ea0776;
+            border-radius: 20px;
+            border: 1px solid #fad42c;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
         }
 
         .send-itinerary-button:hover {
@@ -308,7 +318,7 @@
         #festival {
             /* padding: 0 0 20px 0px; */
             /* border-radius: 0 0 40px 40px; */
-            background: linear-gradient(to bottom right, rgb(164 164 164 / 70%) 65%, rgb(234 105 7 / 67%)), url(./festival-bg.png) center center / cover no-repeat;
+            background: linear-gradient(to bottom right, rgb(180 180 180 / 70%) 65%, rgb(234 105 7 / 67%)), url(./festival-bg.png) center center / cover no-repeat;
             background-attachment: fixed;
         }
 
@@ -463,12 +473,20 @@
             background-size: 1rem 1rem;
         }
 
+        #brought-by {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
         #footer {
             height: 100vh;
             background:
                 linear-gradient(to bottom, rgba(255, 255, 255, 1) 5%, rgba(0, 0, 0, 0) 60%),
-                url('./footer.png');
-            background-position: bottom center;
+                url('./footer.png') center center / cover no-repeat;
             /* border-radius: 0 0 40px 40px; */
         }
 
@@ -481,6 +499,10 @@
 
         #footer a {
             text-decoration: none;
+        }
+
+        #footer-logo {
+            width: 700px;
         }
 
         @media screen and (max-width: 768px) {
@@ -596,7 +618,7 @@
     <div class="main">
         <section id="banner" class="">
             <!-- Navbar Start -->
-            <!-- <img src="./banner.png" alt="Rann of Kutch Banner" class="img-fluid banner-image"> -->
+            <!-- <img src="./banner.jpg" alt="Rann of Kutch Banner" class="img-fluid banner-image"> -->
             <nav class="navbar navbar-sticky navbar-expand-lg navbar-light py-5">
                 <div class="container">
                     <a class="navbar-brand fw-bold text-primary" href="#" style="font-family: 'Poppins', sans-serif;">
@@ -679,7 +701,7 @@
         <section id="booking" class="section px-2 bg-fixed">
             <div class="row">
                 <div class="col-md-8 offset-md-2 text-center">
-                    <h1 class="section-title mb-4 text-shadow-lg">Ready For Kutch?<br> Let's Curate Your Journey!</h1>
+                    <h1 class="section-title mb-4 dark-text-stroke">Ready For Kutch?<br> Let's Curate Your Journey!</h1>
                     <p class="text-light fs-5 mb-4">
                         Unveil the White Desert and get your custom itinerary now!
                     </p>
@@ -1097,10 +1119,10 @@
                         <div class="carousel-item active">
                             <div class="row">
                                 <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery1.png" alt="Gallery Image 1" class="img-fluid">
+                                    <img src="./gallery/gallery2.png" alt="Gallery Image 2" class="img-fluid">
                                 </div>
                                 <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery2.png" alt="Gallery Image 2" class="img-fluid">
+                                    <img src="./gallery/gallery11.png" alt="Gallery Image 8" class="img-fluid">
                                 </div>
                                 <div class="col-md-4 m-0 p-0">
                                     <img src="./gallery/gallery3.png" alt="Gallery Image 3" class="img-fluid">
@@ -1117,21 +1139,27 @@
                                     <img src="./gallery/gallery4.png" alt="Gallery Image 4" class="img-fluid">
                                 </div>
                                 <div class="col-md-4 m-0 p-0">
+                                    <img src="./gallery/gallery10.png" alt="Gallery Image 6" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                
+                                <div class="col-md-4 m-0 p-0">
                                     <img src="./gallery/gallery7.png" alt="Gallery Image 7" class="img-fluid">
                                 </div>
-                                <!-- <div class="col-md-4 m-0 p-0">
-                        <img src="./gallery/gallery6.png" alt="Gallery Image 6" class="img-fluid">
-                    </div>
-                    <div class="col-md-4 m-0 p-0">
-                        <img src="./gallery/gallery8.png" alt="Gallery Image 8" class="img-fluid">
-                    </div>
-                    <div class="col-md-4 m-0 p-0">
-                        <img src="./gallery/gallery9.png" alt="Gallery Image 9" class="img-fluid">
-                    </div> -->
+                                <div class="col-md-4 m-0 p-0">
+                                    <img src="./gallery/gallery12.png" alt="Gallery Image 9" class="img-fluid">
+                                </div>
+                                <div class="col-md-4 m-0 p-0">
+                                    <img src="./gallery/gallery1.png" alt="Gallery Image 1" class="img-fluid">
+                                </div>
                             </div>
                         </div>
                     </div>
-
+                    
                     <div class="carousel-custom-controls">
                         <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel"
                             data-bs-slide="prev">
@@ -1183,6 +1211,24 @@
                                     <img src="./gallery/gallery7.png" alt="Gallery Image 7" class="img-fluid">
                                 </div>
                             </div>
+                            <div class="carousel-item">
+
+                                <div class="col-md-4 m-0 p-0">
+                                    <img src="./gallery/gallery10.png" alt="Gallery Image 10" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+
+                                <div class="col-md-4 m-0 p-0">
+                                    <img src="./gallery/gallery11.png" alt="Gallery Image 11" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+
+                                <div class="col-md-4 m-0 p-0">
+                                    <img src="./gallery/gallery12.png" alt="Gallery Image 12" class="img-fluid">
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -1210,7 +1256,8 @@
                         <img src="./dance.png" id="festival-dance-img" alt="Rann of Kutch Festival" class="img-fluid">
                     </div> -->
                     <div class="col-md-8 offset-md-2 text-center mb-4 mb-md-0">
-                        <h2 class="fw-bold mb-3 text-light lh-base"><span id="festival-days" class="fs-huge"></span>
+                        <h2 class="fw-bold mb-3 text-light lh-base"><span id="festival-days"
+                                class="fs-huge pink-text"></span>
                             days to go
                             until <br class="d-none d-md-block">the magic of <span class="">
                                 <img src="./rann-of-kutch.png" class="d-inline-block d-md-none w-50">
@@ -1220,9 +1267,14 @@
                             Get ready for a celebration of culture, color, and endless white sands! Your Kutch journey
                             starts here - plan with us today!
                         </p>
-                        <a href="#booking" class="form-control btn btn-sm px-4 w-auto h-auto send-itinerary-button"
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 offset-md-4">
+                        
+                        <a href="#booking" class="form-control btn btn-sm w-auto px-5 w-50 send-itinerary-button"
                             type="button">
-                            Craft My Kutch Escape
+                            CRAFT MY KUTCH ESCAPE
                         </a>
                     </div>
                 </div>
@@ -1233,9 +1285,9 @@
             <div id="map" style="height: 500px"></div>
         </section>
 
-        <section class="section-margin pt-5">
+        <section class="section-margin pt-5" id="brought-by">
             <h4 class="text-muted text-center">Brought To You By</h4>
-            <img src="./logo.svg" alt="Majestic Escape Logo" class="img-fluid m-auto d-block" style="width: 60%">
+            <img src="./logo.svg" alt="Majestic Escape Logo" class="img-fluid" id="footer-logo">
         </section>
     </div>
 
@@ -1491,20 +1543,15 @@
             { lat: 23.8998, lng: 69.6950, title: "White Desert View Point" },
             { lat: 23.9315, lng: 69.5504, title: "Kala Dungar (Black Hill)" },
             { lat: 23.9428, lng: 69.5337, title: "Kalo Dungar Magnetic Hill Point" },
-            { lat: 24.0075, lng: 69.5361, title: "India Bridge" },
             { lat: 22.8328, lng: 69.3467, title: "Mandvi Beach" },
-            { lat: 22.8423, lng: 69.3356, title: "Vijay Vilas Palace, Mandvi" },
             { lat: 23.2504, lng: 69.6668, title: "Bhuj (Aina Mahal)" },
             { lat: 23.7458, lng: 69.6889, title: "Hodka Village" },
             { lat: 23.7508, lng: 69.6993, title: "Ludiya Village" },
-            { lat: 23.5632, lng: 69.4130, title: "Nirona Village" },
-            { lat: 23.8192, lng: 69.5608, title: "Kutch Fossil Park" },
-            { lat: 23.5667, lng: 69.3000, title: "Chhari Dhandh Wetland Reserve" },
-            { lat: 23.2606, lng: 69.6824, title: "Smritivan Earthquake Memorial" },
-            { lat: 23.5902, lng: 68.8426, title: "Mata no Madh Temple" },
             { lat: 23.8892, lng: 70.2066, title: "Dholavira" },
-            { lat: 23.9000, lng: 69.6833, title: "Kutch Desert Wildlife Sanctuary" }
-
+            { lat: 23.9000, lng: 69.6833, title: "Kutch Desert Wildlife Sanctuary" },
+            { lat: 23.70000, lng: 69.40000, title: "Banni Grasslands" },
+            { lat: 23.676, lng: 68.5394, title: "Narayan Sarovar" },
+            { lat: 23.67, lng: 68.54, title: "Koteshwar Temple" }
         ];
 
         const map = new google.maps.Map(document.getElementById("map"), {
