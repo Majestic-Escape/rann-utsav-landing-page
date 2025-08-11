@@ -130,7 +130,7 @@
             height: 100vh;
             background:
                 linear-gradient(to bottom, rgba(0, 0, 0, 0) 85%, #ffffff),
-                url('./banner.jpg') center center / cover no-repeat;
+                url('./banner.png') center center / cover no-repeat;
             /* border-radius: 40px 40px 0 0; */
             background-repeat: no-repeat;
             background-size: cover;
@@ -502,7 +502,11 @@
         }
 
         #footer-logo {
-            width: 700px;
+            width: 100%;
+        }
+
+        #header-logo {
+            width: 60%;
         }
 
         @media screen and (max-width: 768px) {
@@ -515,6 +519,10 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 /* background-position: top center; */
+            }
+
+            #header-logo {
+                width: 100%;
             }
 
             .section-title {
@@ -622,7 +630,7 @@
             <nav class="navbar navbar-sticky navbar-expand-lg navbar-light py-5">
                 <div class="container">
                     <a class="navbar-brand fw-bold text-primary" href="#" style="font-family: 'Poppins', sans-serif;">
-                        <img src="./logo.svg" alt="Majestic Escape Logo" class="img-fluid">
+                        <img src="./logo.png" alt="Majestic Escape Logo" class="img-fluid" id="header-logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -1146,7 +1154,7 @@
                         <!-- Slide 3 -->
                         <div class="carousel-item">
                             <div class="row">
-                                
+
                                 <div class="col-md-4 m-0 p-0">
                                     <img src="./gallery/gallery7.png" alt="Gallery Image 7" class="img-fluid">
                                 </div>
@@ -1159,7 +1167,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="carousel-custom-controls">
                         <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel"
                             data-bs-slide="prev">
@@ -1271,7 +1279,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4 offset-md-4">
-                        
+
                         <a href="#booking" class="form-control btn btn-sm w-auto px-5 w-50 send-itinerary-button"
                             type="button">
                             CRAFT MY KUTCH ESCAPE
@@ -1287,7 +1295,7 @@
 
         <section class="section-margin pt-5" id="brought-by">
             <h4 class="text-muted text-center">Brought To You By</h4>
-            <img src="./logo.svg" alt="Majestic Escape Logo" class="img-fluid" id="footer-logo">
+            <img src="./logo.png" alt="Majestic Escape Logo" class="img-fluid" id="footer-logo">
         </section>
     </div>
 
@@ -1528,7 +1536,7 @@
 <script>
     window.addEventListener('scroll', () => {
         const button = document.getElementById("book-now-button-div");
-        if (window.scrollY > window.innerHeight + 220) {
+        if (window.scrollY > window.innerHeight + 900) {
             button.classList.add('sticky-button');
         } else {
             button.classList.remove('sticky-button');
