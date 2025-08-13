@@ -41,11 +41,7 @@ try {
         <p><strong>Name:</strong> {$name}</p>
         <p><strong>Email:</strong> {$email}</p>
         <p><strong>Phone:</strong> {$phone}</p>
-        <p><strong>Guest Count:</strong> {$guest_count}</p>
-        <p><strong>Start Date:</strong> {$start_date}</p>
-        <p><strong>End Date:</strong> {$end_date}</p>
-        <p><strong>Traveller Type:</strong> {$traveller_type}</p>
-        <p><strong>Heard From:</strong> {$source}</p>
+        <p><strong>Type of Traveller:</strong> {$traveller_type}</p>
     ";
 
     $mail->send();

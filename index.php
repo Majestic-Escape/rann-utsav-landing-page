@@ -25,6 +25,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" sizes="76x76">
     <title>Rann of Kutch Festival</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -41,6 +42,11 @@
         @import url('https://fonts.googleapis.com/css2?family=Meddon&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+        * {
+            outline: none;
+        }
 
         html,
         body {
@@ -49,23 +55,56 @@
 
         h1,
         h2,
-        h3 {
-            font-family: 'Poppins', sans-serif;
+        h3,
+        h4,
+        h5 {
+            font-family: 'Bricolage Grotesque', sans-serif;
             color: #ea0776;
         }
 
-        h4,
-        h5,
         h6,
         p,
         label {
             font-family: 'Poppins', sans-serif;
         }
 
+        .subtitle {
+            font-size: 25px;
+            color: #000000;
+        }
+
         .pink-text {
             color: #ea0776;
+            -webkit-text-fill-color: #ea3275;
+            -webkit-text-stroke: #fad42d 1px;
             /* text-shadow: 2px 2px black; */
         }
+
+        .menu-icon {
+            position: absolute;
+            right: -20px;
+            top: 35px;
+            padding: 5px;
+            width: auto;
+            background-color: #ffffff;
+            color: grey;
+            transform: rotate(90deg);
+            border-radius: 5px;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+
+        /* .subtitle::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: #ea0776;
+            margin: 10px auto;
+
+        } */
 
         .fs-big {
             font-size: 3rem;
@@ -109,8 +148,14 @@
         } */
 
         a.nav-link {
+            font-size: 25px;
+            font-weight: bold;
             color: #000000;
             margin: 0 10px;
+        }
+
+        a.nav-link:hover {
+            cursor: pointer;
         }
 
         footer a {
@@ -148,13 +193,13 @@
 
         .cta-text {
             line-height: 1.4;
-            color: #ea0776;
+            color: #ffffff;
             text-shadow: 3px 2px 3px #0000004f;
         }
 
         .light-text-stroke {
-            -webkit-text-fill-color: #ffffff;
-            -webkit-text-stroke: #ffffff 1px;
+            -webkit-text-fill-color: #ea3275;
+            -webkit-text-stroke: #fad42d 1px;
         }
 
         /* .dark-text-stroke {
@@ -163,7 +208,9 @@
 
         #about {
             /* height: 600px; */
-            background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 15%), url('./about-bg.jpg');
+            background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 10%),
+                linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 10%),
+                url('./about-bg.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center 42%;
@@ -180,7 +227,6 @@
 
         .section-title {
             font-size: 3rem;
-            color: #ea0776;
             font-weight: 700;
             margin-bottom: 20px;
             text-shadow: 2px -1px 3px #0000004f;
@@ -198,12 +244,13 @@
                 linear-gradient(to bottom, rgba(0, 0, 0, 0.3)),
                 url('./countdown-bg.jpg') top center / cover no-repeat;
             padding: 80px 0px;
+            background-attachment: fixed;
             /* border-radius: 0 0 40px 40px; */
         }
 
         #countdown {
-            font-size: 2rem;
-            font-weight: 700;
+            font-size: 2.6rem;
+            font-weight: 500;
             color: #ffffff;
             font-family: 'Lexend Mega', sans-serif;
         }
@@ -248,9 +295,8 @@
         }
 
         #booking {
-            background: linear-gradient(to top, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 50%),
-                linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 10%, rgba(255, 255, 255, 0)),
-                url('./background.jpg') top center / cover no-repeat;
+            background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 10%),
+                linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0.3) 10%), url(./background.jpg) top center / cover no-repeat;
             /* box-shadow: 0 0 5px #35621f; */
             /* border-radius: 40px; */
             /* padding: 80px 40px; */
@@ -258,13 +304,14 @@
 
         .form-control,
         .form-select {
-            font-size: 24px;
+            font-size: 18px;
             font-weight: 200;
             padding-left: 30px;
             height: 60px;
             border-radius: 20px;
             border: 1px solid #ccc;
             margin-bottom: 20px;
+            color: #585858;
         }
 
         .form-control:focus,
@@ -291,6 +338,11 @@
             border-radius: 40px;
         }
 
+        input::placeholder,
+        input::-webkit-input-placeholder {
+            color: #585858 !important;
+        }
+
         /* #booking-form .row {
             margin-bottom: 25px;
         } */
@@ -298,15 +350,17 @@
         .send-itinerary-button {
             margin: auto;
             display: flex;
-            background-color: #fad42c;
+            background-color: #fad42d;
             font-family: 'Poppins', sans-serif;
-            color: #000;
-            font-weight: 300;
+            color: #000000;
+            font-weight: 600;
             border-radius: 20px;
-            border: 1px solid #fad42c;
+            border: 1px solid #fad42d;
             align-items: center;
             justify-content: center;
             flex-direction: row;
+            font-size: 22px;
+            box-shadow: 0px 0px 4px #000;
         }
 
         .send-itinerary-button:hover {
@@ -318,14 +372,14 @@
         #festival {
             /* padding: 0 0 20px 0px; */
             /* border-radius: 0 0 40px 40px; */
-            background: linear-gradient(to bottom right, rgb(180 180 180 / 70%) 65%, rgb(234 105 7 / 67%)), url('./festival-bg.jpg') center center / cover no-repeat;
+            background: linear-gradient(to bottom right, rgb(35 35 35 / 70%) 65%, rgb(234 105 7 / 67%)), url(./festival-bg.jpg) center center / cover no-repeat;
             background-attachment: fixed;
         }
 
         #activities {
             /* height: 1600px; */
             margin-top: -1px;
-            background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 30%), url('./activities-bg.jpg') center center / cover no-repeat;
+            background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 40%), linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 10%), url('./activities-bg.jpg') center center / cover no-repeat;
         }
 
         .activity-card {
@@ -346,7 +400,7 @@
             justify-content: center;
             align-items: center;
             transition: all 0.3s ease;
-            border-radius: 40px;
+            border-radius: 0px;
             z-index: 0;
             background-size: cover;
             color: #fff;
@@ -485,7 +539,7 @@
         #footer {
             height: 100vh;
             background:
-                linear-gradient(to bottom, rgba(255, 255, 255, 1) 5%, rgba(0, 0, 0, 0) 60%),
+                linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0) 10%),
                 url('./footer.jpg') center center / cover no-repeat;
             /* border-radius: 0 0 40px 40px; */
         }
@@ -502,23 +556,73 @@
         }
 
         #footer-logo {
-            width: 100%;
+            width: 21%;
+            margin-top: 20px;
         }
 
         #header-logo {
-            width: 60%;
+            width: 120%;
         }
 
+        .banner-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 80vh;
+            margin-left: auto;
+            align-content: flex-end;
+            align-items: center;
+            flex-wrap: wrap;
+            /* pushes container to the right */
+        }
+
+        .banner-container {
+            padding: 0 6% 0 0;
+            /* height: 700px; */
+        }
+
+        .banner-container .rann-of-kutch-logo {
+            width: 30%;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .banner-container .date-card-img {
+            width: 25%;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .banner-container p {
+            font-size: 24px;
+        }
+
+        .tagline {
+            font-size: 22px;
+            line-height: 1;
+            text-transform: uppercase;
+            font-family: 'Bricolage Grotesque';
+        }
+
+
         @media screen and (max-width: 768px) {
+
+            .section {
+                padding: 50px 0;
+            }
 
             #banner {
                 background:
                     linear-gradient(to bottom, rgba(0, 0, 0, 0) 85%, #ffffff),
-                    url('./banner-mob.jpg') 75% center / contain no-repeat;
+                    url('./banner-mob.jpg') center center / contain no-repeat;
                 background-color: rgba(2, 78, 164, 255);
                 background-repeat: no-repeat;
                 background-size: cover;
                 /* background-position: top center; */
+            }
+
+            .subtitle {
+                font-size: 18px;
             }
 
             #header-logo {
@@ -564,7 +668,7 @@
 
             #activities {
                 height: auto;
-                background: #fff;
+                /* background: #fff; */
             }
 
             .inclined-shadow {
@@ -620,6 +724,44 @@
                 height: auto;
                 display: block;
             }
+
+            #footer-logo {
+                width: 72%;
+            }
+
+            #book-now-button {
+                font-size: 16px !important;
+            }
+
+            .banner-container {
+                padding: 0;
+                height: 100%;
+            }
+
+            .banner-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 720px;
+                margin-left: auto;
+                margin-top: 20px;
+                align-content: flex-end;
+                align-items: center;
+                flex-wrap: wrap;
+                /* pushes container to the right */
+            }
+
+            .banner-container .rann-of-kutch-logo {
+                width: 70%;
+            }
+
+            .banner-container .date-card-img {
+                width: 56%;
+            }
+
+            .tagline {
+                font-size: 18px;
+            }
         }
     </style>
 
@@ -627,22 +769,25 @@
         <section id="banner" class="">
             <!-- Navbar Start -->
             <!-- <img src="./banner.jpg" alt="Rann of Kutch Banner" class="img-fluid banner-image"> -->
-            <nav class="navbar navbar-sticky navbar-expand-lg navbar-light py-5">
-                <div class="container">
-                    <a class="navbar-brand fw-bold text-primary" href="#" style="font-family: 'Poppins', sans-serif;">
-                        <img src="./logo.png" alt="Majestic Escape Logo" class="img-fluid" id="header-logo">
+            <nav class="navbar navbar-sticky navbar-expand-lg navbar-light py-4">
+                <div class="container-fluid px-5">
+                    <a class="navbar-brand fw-bold text-primary" href="#">
+                        <img src="./logo-white.svg" alt="Majestic Escape Logo" id="header-logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <div class="menu-icon">
+                            <span>MENU</span>
+                        </div>
+                        <!-- <img src="./dropdown.svg" alt="Menu Icon" class="menu-icon"> -->
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto fs-5">
                             <li class="nav-item">
-                                <a class="nav-link" href="#about">About</a>
+                                <a class="nav-link" href="#booking">Book Now!</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#booking">Book Now!</a>
+                                <a class="nav-link" href="#about">About</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#activities">Activities</a>
@@ -655,10 +800,48 @@
                 </div>
             </nav>
             <!-- Navbar End -->
-            <span class="d-block d-md-none">
-                <!-- <h1 class="inclined-shadow text-center mb-0">
-                    rann utsav
-                </h1> -->
+            <div class="container-fluid banner-container">
+                <div class="d-none d-lg-flex banner-text">
+                    <img src="./rann-of-kutch.png" class="rann-of-kutch-logo">
+                    <p class="text-center mt-0">
+                        <!-- <span class="card-sm-text">From</span><br>23rd Oct 2025 <br><span class="card-sm-text">to</span><br>04th Mar 2026 -->
+                        <span class="tagline">Culture • Colors • Celebration</span>
+                    </p>
+
+                    <img src="./date.png" class="date-card-img">
+
+                    <a href="#booking" id="book-now-button" class="btn btn-sm fs-5 px-5 py-3 mt-4">
+                        CRAFT MY ESCAPE!
+                    </a>
+                    <br>
+                    <h4 class="text-center text-light">
+                        <b>Experience the best with Majestic Escape!</b>
+                    </h4>
+                </div>
+
+                <div class="d-flex d-lg-none banner-text">
+                    <span>
+                        <img src="./rann-of-kutch.png" class="rann-of-kutch-logo">
+                        <p class="text-center mt-0">
+                            <!-- <span class="card-sm-text">From</span><br>23rd Oct 2025 <br><span class="card-sm-text">to</span><br>04th Mar 2026 -->
+                            <span class="tagline text-light">Culture • Colors • Celebration</span>
+                        </p>
+                        <img src="./date.png" class="date-card-img">
+                    </span>
+
+                    <span>
+
+                        <a href="#booking" id="book-now-button" class="btn btn-sm fs-5 px-5 py-3 m-4 d-block">
+                            CRAFT MY ESCAPE!
+                        </a>
+                        <h4 class="text-center text-dark">
+                            <b>Experience the best with<br>Majestic Escape!</b>
+                        </h4>
+                    </span>
+                </div>
+            </div>
+
+            <!-- <span class="d-block d-md-none">
                 <div class="d-flex justify-content-center align-items-center h-100">
                     <img src="./rann-of-kutch.png" class="w-75">
                 </div>
@@ -669,7 +852,7 @@
                 <a href="#explore-now" class="btn btn-lg btn-warning d-block m-auto w-50">
                     Explore Now!
                 </a>
-            </span>
+            </span> -->
 
         </section>
         <section id="countdown-section" class="align-items-center mt-6">
@@ -678,10 +861,10 @@
                     <div class="col-md-8 text-center text-md-start mb-4 mb-md-0">
                         <h2 class="fw-bold mb-3 cta-text">Book before <span class="fs-big light-text-stroke"><br
                                     class="d-block d-md-none">31st August 2025</span> <br class="d-block d-none-md">to
-                            get the best deals with Majestic Escape!🥳</h2>
+                            get the best deals with Majestic Escape!</h2>
                     </div>
                     <div class="col-md-4 text-center m-auto">
-                        <div id="countdown" class="d-flex flex-wrap gap-3 justify-content-center">
+                        <div id="countdown" class="d-flex flex-wrap gap-2 justify-content-center">
                             <div><span id="days">00</span><span class="countdown-subtext">d</span></div>
                             <div class="d-none d-md-block">:</div>
                             <!-- <div class="w-100 d-block d-md-none"></div> -->
@@ -693,13 +876,13 @@
                             <!-- <div class="w-100 d-block d-md-none"></div> -->
                             <div><span id="seconds">00</span><span class="countdown-subtext">s</span></div>
                         </div>
-                        <div id="book-now-button-div">
+                        <!-- <div id="book-now-button-div">
                             <a href="#booking" id="book-now-button" class="btn btn-sm px-5 py-3  mt-4">
-                                INQUIRE NOW
+                                CRAFT MY ESCAPE!
                             </a>
-                        </div>
-                        <br>
-                        <p class="text-light">Limited festival slots available!</p>
+                        </div> -->
+                        <!-- <br>
+                        <p class="text-light">Limited festival slots available!</p> -->
                     </div>
                 </div>
             </div>
@@ -709,28 +892,27 @@
         <section id="booking" class="section px-2 bg-fixed">
             <div class="row">
                 <div class="col-md-8 offset-md-2 text-center">
-                    <h1 class="section-title mb-4 dark-text-stroke">Ready For Kutch?<br> Let's Curate Your Journey!</h1>
-                    <p class="text-light fs-5 mb-4">
-                        Unveil the White Desert and get your custom itinerary now!
-                    </p>
+                    <br class="d-block d-md-none">
+                    <h1 class="section-title text-light mb-4">Ready For <span class="pink-text">Kutch</span>?<br> Let's
+                        Curate Your Journey!</h1>
                 </div>
 
                 <div class="col-md-8 offset-md-2">
                     <form id="booking-form" method="POST" action="send-email.php">
+                        <p class="mb-4 subtitle text-center">
+                            Unveil the White Desert and get your custom itinerary now!
+                        </p>
                         <div class="row form-row">
                             <div class="col-md-6">
-                                <label for="name" class="form-label">Name</label>
                                 <input type="text" class="form-control" id="name" name="name"
                                     placeholder="Enter your name" required>
                             </div>
                             <div class="col-md-6">
-                                <label for="email" class="form-label">Email</label>
                                 <input type="email" class="form-control" id="email" name="email"
                                     placeholder="Enter  your email" required>
                             </div>
 
                             <div class="col-md-6">
-                                <label for="phone" class="form-label">Phone</label>
                                 <input type="tel" class="form-control" id="phone" name="phone"
                                     placeholder="Enter your phone number" required>
                             </div>
@@ -751,9 +933,8 @@
                             </div> -->
 
                             <div class="col-md-6">
-                                <label for="traveller-type" class="form-label">Type of Traveller</label>
                                 <select class="form-select" id="traveller-type" name="traveller_type" required>
-                                    <option value="" disabled selected>Select type</option>
+                                    <option value="" disabled selected>What type of traveller are you?</option>
                                     <option value="solo">Solo</option>
                                     <option value="couple">Couple</option>
                                     <option value="family">Family</option>
@@ -780,7 +961,7 @@
 
                                 <button class="form-control btn btn-warning btn-md px-5 w-100 send-itinerary-button"
                                     type="submit" id="send-itinerary-button">
-                                    SEND ME THE ITINERARY
+                                    CRAFT MY ESCAPE!
                                 </button>
                             </div>
                         </div>
@@ -794,8 +975,8 @@
 
                 </div>
                 <div class="col-md-6 about-div">
-                    <h1 class="section-title mb-4" id="about-title">Rann Utsav 2025</h1>
-                    <p class="text-muted fs-5 about-para">
+                    <h1 class="section-title mb-4 pink-text" id="about-title">Rann Utsav 2025-2026</h1>
+                    <p class="text-dark fs-5 about-para">
                         The Rann of Kutch is a salt marsh located in the Thar Desert in the Kutch district of Gujarat,
                         India.
                         It is known for its stunning white salt desert, vibrant culture, and unique wildlife. The region
@@ -806,18 +987,19 @@
                         village on the edge of the White Rann in Gujarat's Kutch district. The festival spans over 100
                         days,
                         thanks to Gujarat Tourism, and brings the salt marsh to life with cultural vibrancy and curated
-                        experiences
+                        experiences.
                     </p>
                 </div>
             </div>
         </section>
 
-        <section id="activities" class="section">
+        <section id="activities" class="section pb-4">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h1 class="section-title mb-4">Live The Colors Of Kutch<span class="d-none d-md-block"></span><span
-                            class="d-inline-block d-md-none">,</span> One Experience At A Time!</h1>
-                    <p class="text-muted fs-5 mb-4">
+                    <h1 class="section-title mb-4 pink-text">Live The Colors Of Kutch<span
+                            class="d-none d-md-block"></span><span class="d-inline-block d-md-none">,</span> One
+                        Experience At A Time!</h1>
+                    <p class="subtitle mb-4">
                         Immerse yourself in the vibrant culture and traditions of the Rann of Kutch with our curated
                         activities.
                     </p>
@@ -1118,9 +1300,39 @@
             </div>
         </section>
 
+        <section id="festival" class="align-items-center pb-5">
+            <div class="container-fluid">
+                <div class="row align-items-center justify-content-between">
+                    <!-- <div class="col-md-4 p-0">
+                                <img src="./dance.png" id="festival-dance-img" alt="Rann of Kutch Festival" class="img-fluid">
+                            </div> -->
+                    <div class="col-md-8 offset-md-2 text-center mb-4 mb-md-0">
+                        <h2 class="fw-bold mb-3 text-light lh-base"><span id="festival-days"
+                                class="fs-huge pink-text"></span>
+                            days to go
+                            until <br class="d-none d-md-block">the magic of <span class="">
+                                <img src="./rann-of-kutch.png" class="d-inline-block d-md-none w-50">
+                                <img src="./rann-of-kutch.png" class="d-none d-md-inline-block w-25">
+                            </span> begins!</h2>
+                        <p class="text-light">
+                            Get ready for a celebration of culture, color, and endless white sands! Your Kutch journey
+                            starts here - plan with us today!
+                        </p>
+                    </div>
+                    <div class="col-md-4 offset-md-4">
+
+                        <a href="#booking" class="form-control btn btn-sm w-auto px-5 w-50 send-itinerary-button"
+                            type="button">
+                            CRAFT MY KUTCH ESCAPE
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="gallery">
             <div class="container-fluid p-0">
-                <div id="galleryCarousel" class="carousel slide d-none d-md-block" data-bs-ride="carousel"
+                <div id="galleryCarousel" class="carousel slide d-none d-lg-block" data-bs-ride="carousel"
                     data-bs-interval="2000">
                     <div class="carousel-inner">
                         <!-- Slide 1 -->
@@ -1183,57 +1395,57 @@
                     </div>
                 </div>
 
-                <div id="mobGalleryCarousel" class="carousel slide d-block d-md-none" data-bs-ride="carousel"
+                <div id="mobGalleryCarousel" class="carousel slide d-block d-lg-none" data-bs-ride="carousel"
                     data-bs-interval="2000">
                     <div class="carousel-inner">
                         <div class="row">
                             <div class="carousel-item active">
-                                <div class="col-md-4 m-0 p-0">
+                                <div class="col-lg-4 m-0 p-0">
                                     <img src="./gallery/gallery1.jpg" alt="Gallery Image 1" class="img-fluid">
                                 </div>
                             </div>
                             <div class="carousel-item">
 
-                                <div class="col-md-4 m-0 p-0">
+                                <div class="col-lg-4 m-0 p-0">
                                     <img src="./gallery/gallery2.jpg" alt="Gallery Image 2" class="img-fluid">
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="col-md-4 m-0 p-0">
+                                <div class="col-lg-4 m-0 p-0">
                                     <img src="./gallery/gallery3.jpg" alt="Gallery Image 3" class="img-fluid">
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="col-md-4 m-0 p-0">
+                                <div class="col-lg-4 m-0 p-0">
                                     <img src="./gallery/gallery5.jpg" alt="Gallery Image 5" class="img-fluid">
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="col-md-4 m-0 p-0">
+                                <div class="col-lg-4 m-0 p-0">
                                     <img src="./gallery/gallery4.jpg" alt="Gallery Image 4" class="img-fluid">
                                 </div>
                             </div>
                             <div class="carousel-item">
 
-                                <div class="col-md-4 m-0 p-0">
+                                <div class="col-lg-4 m-0 p-0">
                                     <img src="./gallery/gallery7.jpg" alt="Gallery Image 7" class="img-fluid">
                                 </div>
                             </div>
                             <div class="carousel-item">
 
-                                <div class="col-md-4 m-0 p-0">
+                                <div class="col-lg-4 m-0 p-0">
                                     <img src="./gallery/gallery10.jpg" alt="Gallery Image 10" class="img-fluid">
                                 </div>
                             </div>
                             <div class="carousel-item">
 
-                                <div class="col-md-4 m-0 p-0">
+                                <div class="col-lg-4 m-0 p-0">
                                     <img src="./gallery/gallery11.jpg" alt="Gallery Image 11" class="img-fluid">
                                 </div>
                             </div>
                             <div class="carousel-item">
 
-                                <div class="col-md-4 m-0 p-0">
+                                <div class="col-lg-4 m-0 p-0">
                                     <img src="./gallery/gallery12.jpg" alt="Gallery Image 12" class="img-fluid">
                                 </div>
                             </div>
@@ -1257,44 +1469,12 @@
             </div>
         </section>
 
-        <section id="festival" class="align-items-center py-5">
-            <div class="container-fluid">
-                <div class="row align-items-center justify-content-between">
-                    <!-- <div class="col-md-4 p-0">
-                        <img src="./dance.png" id="festival-dance-img" alt="Rann of Kutch Festival" class="img-fluid">
-                    </div> -->
-                    <div class="col-md-8 offset-md-2 text-center mb-4 mb-md-0">
-                        <h2 class="fw-bold mb-3 text-light lh-base"><span id="festival-days"
-                                class="fs-huge pink-text"></span>
-                            days to go
-                            until <br class="d-none d-md-block">the magic of <span class="">
-                                <img src="./rann-of-kutch.png" class="d-inline-block d-md-none w-50">
-                                <img src="./rann-of-kutch.png" class="d-none d-md-inline-block w-25">
-                            </span> begins!</h2>
-                        <p class="text-light">
-                            Get ready for a celebration of culture, color, and endless white sands! Your Kutch journey
-                            starts here - plan with us today!
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 offset-md-4">
-
-                        <a href="#booking" class="form-control btn btn-sm w-auto px-5 w-50 send-itinerary-button"
-                            type="button">
-                            CRAFT MY KUTCH ESCAPE
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section class="">
             <div id="map" style="height: 500px"></div>
         </section>
 
-        <section class="section-margin pt-5" id="brought-by">
-            <h4 class="text-muted text-center">Brought To You By</h4>
+        <section class="section-margin pt-5 w-100" id="brought-by">
+            <!-- <h4 class="text-muted text-center">Brought To You By</h4> -->
             <img src="./logo.png" alt="Majestic Escape Logo" class="img-fluid" id="footer-logo">
         </section>
     </div>
@@ -1490,6 +1670,23 @@
         </div>
     </div>
 
+    <!-- Success Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title w-100" id="successModalLabel">🎉 Thank You!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Thank you for requesting your itinerary! Our travel experts are crafting the perfect Rann Utsav
+                        experience for you. Magic is on its way!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 </body>
 
@@ -1578,6 +1775,7 @@
 </script>
 
 <script>
+
     document.getElementById('booking-form').addEventListener('submit', function (e) {
         e.preventDefault();
         document.getElementById('send-itinerary-button').disabled = true;
@@ -1590,7 +1788,10 @@
             .then(res => res.text())
             .then(response => {
                 if (response.trim() === 'success') {
-                    alert('Thank you! Your itinerary request has been sent.');
+                    // alert('Thank you! Your itinerary request has been sent.');
+                    var successModal = new bootstrap.Modal(document.getElementById('successModal'));
+                    successModal.show();
+
                     document.getElementById('booking-form').reset();
                 } else {
                     alert('There was an error: ' + response);
