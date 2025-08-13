@@ -114,7 +114,6 @@ transform: scaleY(1.2);
 
 a.nav-link {
     font-size: 25px;
-    font-weight: bold;
     color: #000000;
     margin: 0 10px;
 }
@@ -380,51 +379,51 @@ input::-webkit-input-placeholder {
 }
 
 .activity#folk-dance-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/folk-dance.png') center 40% / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/folk-dance.jpg') center 40% / cover no-repeat;
 }
 
 #handicraft-exhibitions-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/handicraft-exhibitions.png') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/handicraft-exhibitions.jpg') center center / cover no-repeat;
 }
 
 #kutchi-cuisine-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/kutchi-cuisine.png') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/kutchi-cuisine.jpg') center center / cover no-repeat;
 }
 
 #desert-safari-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/desert-safari.png') center 58% / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/desert-safari.jpg') center 58% / cover no-repeat;
 }
 
 #hot-air-balloon-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/hot-air-balloon.png') center 8% / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/hot-air-balloon.jpg') center 8% / cover no-repeat;
 }
 
 #paragliding-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/paragliding.png') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/paragliding.jpg') center center / cover no-repeat;
 }
 
 #atv-rides-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/atv-rides.png') center 64% / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/atv-rides.jpg') center 64% / cover no-repeat;
 }
 
 #village-visits-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/village-visits.png') center 70% / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/village-visits.jpg') center 70% / cover no-repeat;
 }
 
 #night-bazaar-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/night-bazaar.png') center 75% / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/night-bazaar.jpg') center 75% / cover no-repeat;
 }
 
 #full-moon-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/full-moon.png') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/full-moon.jpg') center center / cover no-repeat;
 }
 
 #bhunga-stay-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/bhunga-stay.png') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/bhunga-stay.jpg') center center / cover no-repeat;
 }
 
 #yoga-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/yoga.png') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/yoga.jpg') center center / cover no-repeat;
 }
 
 .activity-carousel {
@@ -711,7 +710,7 @@ input::-webkit-input-placeholder {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 720px;
+        height: 75vh;
         margin-left: auto;
         margin-top: 20px;
         align-content: flex-end;

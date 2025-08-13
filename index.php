@@ -48,7 +48,7 @@
     <div class="main">
         <section id="banner" class="">
             <!-- Navbar Start -->
-            <!-- <img src="./banner.jpg" alt="Rann of Kutch Banner" class="img-fluid banner-image"> -->
+            <!-- <img src="./banner.jpg?v=0.1" alt="Rann of Kutch Banner" class="img-fluid banner-image"> -->
             <nav class="navbar navbar-sticky navbar-expand-lg navbar-light py-4">
                 <div class="container-fluid px-5">
                     <a class="navbar-brand fw-bold text-primary" href="#">
@@ -82,13 +82,13 @@
             <!-- Navbar End -->
             <div class="container-fluid banner-container">
                 <div class="d-none d-lg-flex banner-text">
-                    <img src="./rann-of-kutch.png" class="rann-of-kutch-logo">
+                    <img src="./rann-of-kutch.png?v=0.1" class="rann-of-kutch-logo">
                     <p class="text-center mt-0">
                         <!-- <span class="card-sm-text">From</span><br>23rd Oct 2025 <br><span class="card-sm-text">to</span><br>04th Mar 2026 -->
                         <span class="tagline">Culture • Colors • Celebration</span>
                     </p>
 
-                    <img src="./date.png" class="date-card-img">
+                    <img src="./date.png?v=0.1" class="date-card-img">
 
                     <a href="#booking" id="book-now-button" class="btn btn-sm fs-5 px-5 py-3 mt-4">
                         CRAFT MY ESCAPE!
@@ -101,12 +101,12 @@
 
                 <div class="d-flex d-lg-none banner-text">
                     <span>
-                        <img src="./rann-of-kutch.png" class="rann-of-kutch-logo">
+                        <img src="./rann-of-kutch.png?v=0.1" class="rann-of-kutch-logo">
                         <p class="text-center mt-0">
                             <!-- <span class="card-sm-text">From</span><br>23rd Oct 2025 <br><span class="card-sm-text">to</span><br>04th Mar 2026 -->
                             <span class="tagline text-light">Culture • Colors • Celebration</span>
                         </p>
-                        <img src="./date.png" class="date-card-img">
+                        <img src="./date.png?v=0.1" class="date-card-img">
                     </span>
 
                     <span>
@@ -123,7 +123,7 @@
 
             <!-- <span class="d-block d-md-none">
                 <div class="d-flex justify-content-center align-items-center h-100">
-                    <img src="./rann-of-kutch.png" class="w-75">
+                    <img src="./rann-of-kutch.png?v=0.1" class="w-75">
                 </div>
                 <p class="text-center mt-0">From 23rd Oct 2025 to 04th Mar 2026<br><br>
                     <b>Experience the best with Majestic Escape!</b>
@@ -290,7 +290,6 @@
                 <div class="activity-track">
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="folk-dance-card">
                                 <h5 class="card-title">Folk Dance <br>& Music</h5>
                             </div>
@@ -298,7 +297,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="handicraft-exhibitions-card">
                                 <h5 class="card-title">Local Handicraft Exhibitions</h5>
                             </div>
@@ -306,7 +304,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="kutchi-cuisine-card">
                                 <h5 class="card-title">Traditional Kutchi Cuisine</h5>
                             </div>
@@ -314,7 +311,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="desert-safari-card">
                                 <h5 class="card-title">White Desert <br>Safari</h5>
                             </div>
@@ -322,7 +318,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="hot-air-balloon-card">
                                 <h5 class="card-title">Hot Air Balloon <br>Ride</h5>
                             </div>
@@ -330,7 +325,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="paragliding-card">
                                 <h5 class="card-title">Tethered <br>Paramotoring & <br>Paragliding</h5>
                             </div>
@@ -338,7 +332,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="atv-rides-card">
                                 <h5 class="card-title">ATV & Camel <br>Rides</h5>
                             </div>
@@ -346,7 +339,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="village-visits-card">
                                 <h5 class="card-title">Craft Village <br>Visits</h5>
                             </div>
@@ -354,7 +346,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="night-bazaar-card">
                                 <h5 class="card-title">Night <br>Bazaar</h5>
                             </div>
@@ -362,7 +353,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="full-moon-card">
                                 <h5 class="card-title">Full Moon <br>in the Rann</h5>
                             </div>
@@ -370,7 +360,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="bhunga-stay-card">
                                 <h5 class="card-title">Traditional Bhunga Stay</h5>
                             </div>
@@ -378,7 +367,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="yoga-card">
                                 <h5 class="card-title">Yoga & Meditation Sessions</h5>
                             </div>
@@ -386,7 +374,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="folk-dance-card">
                                 <h5 class="card-title">Folk Dance <br>& Music</h5>
                             </div>
@@ -394,7 +381,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="handicraft-exhibitions-card">
                                 <h5 class="card-title">Local Handicraft Exhibitions</h5>
                             </div>
@@ -402,7 +388,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="kutchi-cuisine-card">
                                 <h5 class="card-title">Traditional Kutchi Cuisine</h5>
                             </div>
@@ -410,7 +395,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="desert-safari-card">
                                 <h5 class="card-title">White Desert <br>Safari</h5>
                             </div>
@@ -418,7 +402,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="hot-air-balloon-card">
                                 <h5 class="card-title">Hot Air Balloon <br>Ride</h5>
                             </div>
@@ -426,7 +409,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="paragliding-card">
                                 <h5 class="card-title">Tethered <br>Paramotoring & <br>Paragliding</h5>
                             </div>
@@ -434,7 +416,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="atv-rides-card">
                                 <h5 class="card-title">ATV & Camel <br>Rides</h5>
                             </div>
@@ -442,7 +423,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="village-visits-card">
                                 <h5 class="card-title">Craft Village <br>Visits</h5>
                             </div>
@@ -450,7 +430,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="night-bazaar-card">
                                 <h5 class="card-title">Night <br>Bazaar</h5>
                             </div>
@@ -458,7 +437,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="full-moon-card">
                                 <h5 class="card-title">Full Moon <br>in the Rann</h5>
                             </div>
@@ -466,7 +444,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="bhunga-stay-card">
                                 <h5 class="card-title">Traditional Bhunga Stay</h5>
                             </div>
@@ -474,7 +451,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="yoga-card">
                                 <h5 class="card-title">Yoga & Meditation Sessions</h5>
                             </div>
@@ -482,7 +458,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="folk-dance-card">
                                 <h5 class="card-title">Folk Dance <br>& Music</h5>
                             </div>
@@ -490,7 +465,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="handicraft-exhibitions-card">
                                 <h5 class="card-title">Local Handicraft Exhibitions</h5>
                             </div>
@@ -498,7 +472,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="kutchi-cuisine-card">
                                 <h5 class="card-title">Traditional Kutchi Cuisine</h5>
                             </div>
@@ -506,7 +479,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="desert-safari-card">
                                 <h5 class="card-title">White Desert <br>Safari</h5>
                             </div>
@@ -514,7 +486,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="hot-air-balloon-card">
                                 <h5 class="card-title">Hot Air Balloon <br>Ride</h5>
                             </div>
@@ -522,7 +493,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="paragliding-card">
                                 <h5 class="card-title">Tethered <br>Paramotoring & <br>Paragliding</h5>
                             </div>
@@ -530,7 +500,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="atv-rides-card">
                                 <h5 class="card-title">ATV & Camel <br>Rides</h5>
                             </div>
@@ -538,7 +507,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="village-visits-card">
                                 <h5 class="card-title">Craft Village <br>Visits</h5>
                             </div>
@@ -546,7 +514,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="night-bazaar-card">
                                 <h5 class="card-title">Night <br>Bazaar</h5>
                             </div>
@@ -554,7 +521,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="full-moon-card">
                                 <h5 class="card-title">Full Moon <br>in the Rann</h5>
                             </div>
@@ -562,7 +528,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="bhunga-stay-card">
                                 <h5 class="card-title">Traditional Bhunga Stay</h5>
                             </div>
@@ -570,7 +535,6 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <!-- <img src="./activities/folk-dance.png" class="card-img-top" alt="Folk Dance"> -->
                             <div class="card-body activity" id="yoga-card">
                                 <h5 class="card-title">Yoga & Meditation Sessions</h5>
                             </div>
@@ -584,15 +548,15 @@
             <div class="container-fluid">
                 <div class="row align-items-center justify-content-between">
                     <!-- <div class="col-md-4 p-0">
-                                <img src="./dance.png" id="festival-dance-img" alt="Rann of Kutch Festival" class="img-fluid">
+                                <img src="./dance.png?v=0.1" id="festival-dance-img" alt="Rann of Kutch Festival" class="img-fluid">
                             </div> -->
                     <div class="col-md-8 offset-md-2 text-center mb-4 mb-md-0">
                         <h2 class="fw-bold mb-3 text-light lh-base"><span id="festival-days"
                                 class="fs-huge pink-text"></span>
                             days to go
                             until <br class="d-none d-md-block">the magic of <span class="">
-                                <img src="./rann-of-kutch.png" class="d-inline-block d-md-none w-50">
-                                <img src="./rann-of-kutch.png" class="d-none d-md-inline-block w-25">
+                                <img src="./rann-of-kutch.png?v=0.1" class="d-inline-block d-md-none w-50">
+                                <img src="./rann-of-kutch.png?v=0.1" class="d-none d-md-inline-block w-25">
                             </span> begins!</h2>
                         <p class="text-light">
                             Get ready for a celebration of culture, color, and endless white sands! Your Kutch journey
@@ -619,13 +583,13 @@
                         <div class="carousel-item active">
                             <div class="row">
                                 <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery2.jpg" alt="Gallery Image 2" class="img-fluid">
+                                    <img src="./gallery/gallery2.jpg?v=0.1" alt="Gallery Image 2" class="img-fluid">
                                 </div>
                                 <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery11.jpg" alt="Gallery Image 8" class="img-fluid">
+                                    <img src="./gallery/gallery11.jpg?v=0.1" alt="Gallery Image 8" class="img-fluid">
                                 </div>
                                 <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery3.jpg" alt="Gallery Image 3" class="img-fluid">
+                                    <img src="./gallery/gallery3.jpg?v=0.1" alt="Gallery Image 3" class="img-fluid">
                                 </div>
                             </div>
                         </div>
@@ -633,13 +597,13 @@
                         <div class="carousel-item">
                             <div class="row">
                                 <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery5.jpg" alt="Gallery Image 5" class="img-fluid">
+                                    <img src="./gallery/gallery5.jpg?v=0.1" alt="Gallery Image 5" class="img-fluid">
                                 </div>
                                 <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery4.jpg" alt="Gallery Image 4" class="img-fluid">
+                                    <img src="./gallery/gallery4.jpg?v=0.1" alt="Gallery Image 4" class="img-fluid">
                                 </div>
                                 <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery10.jpg" alt="Gallery Image 6" class="img-fluid">
+                                    <img src="./gallery/gallery10.jpg?v=0.1" alt="Gallery Image 6" class="img-fluid">
                                 </div>
                             </div>
                         </div>
@@ -648,13 +612,13 @@
                             <div class="row">
 
                                 <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery7.jpg" alt="Gallery Image 7" class="img-fluid">
+                                    <img src="./gallery/gallery7.jpg?v=0.1" alt="Gallery Image 7" class="img-fluid">
                                 </div>
                                 <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery12.jpg" alt="Gallery Image 9" class="img-fluid">
+                                    <img src="./gallery/gallery12.jpg?v=0.1" alt="Gallery Image 9" class="img-fluid">
                                 </div>
                                 <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery1.jpg" alt="Gallery Image 1" class="img-fluid">
+                                    <img src="./gallery/gallery1.jpg?v=0.1" alt="Gallery Image 1" class="img-fluid">
                                 </div>
                             </div>
                         </div>
@@ -681,52 +645,52 @@
                         <div class="row">
                             <div class="carousel-item active">
                                 <div class="col-lg-4 m-0 p-0">
-                                    <img src="./gallery/gallery1.jpg" alt="Gallery Image 1" class="img-fluid">
+                                    <img src="./gallery/gallery1.jpg?v=0.1" alt="Gallery Image 1" class="img-fluid">
                                 </div>
                             </div>
                             <div class="carousel-item">
 
                                 <div class="col-lg-4 m-0 p-0">
-                                    <img src="./gallery/gallery2.jpg" alt="Gallery Image 2" class="img-fluid">
+                                    <img src="./gallery/gallery2.jpg?v=0.1" alt="Gallery Image 2" class="img-fluid">
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="col-lg-4 m-0 p-0">
-                                    <img src="./gallery/gallery3.jpg" alt="Gallery Image 3" class="img-fluid">
+                                    <img src="./gallery/gallery3.jpg?v=0.1" alt="Gallery Image 3" class="img-fluid">
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="col-lg-4 m-0 p-0">
-                                    <img src="./gallery/gallery5.jpg" alt="Gallery Image 5" class="img-fluid">
+                                    <img src="./gallery/gallery5.jpg?v=0.1" alt="Gallery Image 5" class="img-fluid">
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="col-lg-4 m-0 p-0">
-                                    <img src="./gallery/gallery4.jpg" alt="Gallery Image 4" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-
-                                <div class="col-lg-4 m-0 p-0">
-                                    <img src="./gallery/gallery7.jpg" alt="Gallery Image 7" class="img-fluid">
+                                    <img src="./gallery/gallery4.jpg?v=0.1" alt="Gallery Image 4" class="img-fluid">
                                 </div>
                             </div>
                             <div class="carousel-item">
 
                                 <div class="col-lg-4 m-0 p-0">
-                                    <img src="./gallery/gallery10.jpg" alt="Gallery Image 10" class="img-fluid">
+                                    <img src="./gallery/gallery7.jpg?v=0.1" alt="Gallery Image 7" class="img-fluid">
                                 </div>
                             </div>
                             <div class="carousel-item">
 
                                 <div class="col-lg-4 m-0 p-0">
-                                    <img src="./gallery/gallery11.jpg" alt="Gallery Image 11" class="img-fluid">
+                                    <img src="./gallery/gallery10.jpg?v=0.1" alt="Gallery Image 10" class="img-fluid">
                                 </div>
                             </div>
                             <div class="carousel-item">
 
                                 <div class="col-lg-4 m-0 p-0">
-                                    <img src="./gallery/gallery12.jpg" alt="Gallery Image 12" class="img-fluid">
+                                    <img src="./gallery/gallery11.jpg?v=0.1" alt="Gallery Image 11" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+
+                                <div class="col-lg-4 m-0 p-0">
+                                    <img src="./gallery/gallery12.jpg?v=0.1" alt="Gallery Image 12" class="img-fluid">
                                 </div>
                             </div>
                         </div>
@@ -755,7 +719,7 @@
 
         <section class="section-margin pt-5 w-100" id="brought-by">
             <!-- <h4 class="text-muted text-center">Brought To You By</h4> -->
-            <img src="./logo.png" alt="Majestic Escape Logo" class="img-fluid" id="footer-logo">
+            <img src="./logo.png?v=0.1" alt="Majestic Escape Logo" class="img-fluid" id="footer-logo">
         </section>
     </div>
 
