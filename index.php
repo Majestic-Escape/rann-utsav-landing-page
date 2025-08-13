@@ -939,11 +939,11 @@
                             <div class="col-md-6">
                                 <select class="form-select" id="traveller-type" name="traveller_type" required>
                                     <option value="" disabled selected>What type of traveller are you?</option>
-                                    <option value="solo">Solo</option>
-                                    <option value="couple">Couple</option>
-                                    <option value="family">Family</option>
-                                    <option value="group">Group</option>
-                                    <option value="corporate">Corporate</option>
+                                    <option value="Solo">Solo</option>
+                                    <option value="Couple">Couple</option>
+                                    <option value="Family">Family</option>
+                                    <option value="Group">Group</option>
+                                    <option value="Corporate">Corporate</option>
                                 </select>
                             </div>
                             <!-- <div class="col-md-6">
