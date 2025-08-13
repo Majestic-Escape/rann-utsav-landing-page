@@ -4,14 +4,21 @@
 <head>
     <!-- Meta Pixel Code -->
     <script>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return; n = f.fbq = function () {
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
                 n.callMethod ?
                     n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
-            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-            n.queue = []; t = b.createElement(e); t.async = !0;
-            t.src = v; s = b.getElementsByTagName(e)[0];
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t, s)
         }(window, document, 'script',
             'https://connect.facebook.net/en_US/fbevents.js');
@@ -43,6 +50,11 @@
         @import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+        :root {
+            color-scheme: light;
+            /* tells browsers to use light mode form controls, scrollbars, etc. */
+        }
 
         * {
             outline: none;
@@ -1728,7 +1740,7 @@
 </script>
 
 <script>
-    document.getElementById("booking-form").addEventListener("submit", function () {
+    document.getElementById("booking-form").addEventListener("submit", function() {
         console.log("Form submitted");
         fbq('track', 'Lead');
     });
@@ -1747,20 +1759,71 @@
 
 <script>
     function initMap() {
-        const locations = [
-            { lat: 23.8391, lng: 69.6905, title: "Dhordo Tent City" },
-            { lat: 23.8998, lng: 69.6950, title: "White Desert View Point" },
-            { lat: 23.9315, lng: 69.5504, title: "Kala Dungar (Black Hill)" },
-            { lat: 23.9428, lng: 69.5337, title: "Kalo Dungar Magnetic Hill Point" },
-            { lat: 22.8328, lng: 69.3467, title: "Mandvi Beach" },
-            { lat: 23.2504, lng: 69.6668, title: "Bhuj (Aina Mahal)" },
-            { lat: 23.7458, lng: 69.6889, title: "Hodka Village" },
-            { lat: 23.7508, lng: 69.6993, title: "Ludiya Village" },
-            { lat: 23.8892, lng: 70.2066, title: "Dholavira" },
-            { lat: 23.9000, lng: 69.6833, title: "Kutch Desert Wildlife Sanctuary" },
-            { lat: 23.70000, lng: 69.40000, title: "Banni Grasslands" },
-            { lat: 23.676, lng: 68.5394, title: "Narayan Sarovar" },
-            { lat: 23.67, lng: 68.54, title: "Koteshwar Temple" }
+        const locations = [{
+                lat: 23.8391,
+                lng: 69.6905,
+                title: "Dhordo Tent City"
+            },
+            {
+                lat: 23.8998,
+                lng: 69.6950,
+                title: "White Desert View Point"
+            },
+            {
+                lat: 23.9315,
+                lng: 69.5504,
+                title: "Kala Dungar (Black Hill)"
+            },
+            {
+                lat: 23.9428,
+                lng: 69.5337,
+                title: "Kalo Dungar Magnetic Hill Point"
+            },
+            {
+                lat: 22.8328,
+                lng: 69.3467,
+                title: "Mandvi Beach"
+            },
+            {
+                lat: 23.2504,
+                lng: 69.6668,
+                title: "Bhuj (Aina Mahal)"
+            },
+            {
+                lat: 23.7458,
+                lng: 69.6889,
+                title: "Hodka Village"
+            },
+            {
+                lat: 23.7508,
+                lng: 69.6993,
+                title: "Ludiya Village"
+            },
+            {
+                lat: 23.8892,
+                lng: 70.2066,
+                title: "Dholavira"
+            },
+            {
+                lat: 23.9000,
+                lng: 69.6833,
+                title: "Kutch Desert Wildlife Sanctuary"
+            },
+            {
+                lat: 23.70000,
+                lng: 69.40000,
+                title: "Banni Grasslands"
+            },
+            {
+                lat: 23.676,
+                lng: 68.5394,
+                title: "Narayan Sarovar"
+            },
+            {
+                lat: 23.67,
+                lng: 68.54,
+                title: "Koteshwar Temple"
+            }
         ];
 
         const map = new google.maps.Map(document.getElementById("map"), {
@@ -1770,7 +1833,10 @@
 
         locations.forEach(loc => {
             new google.maps.Marker({
-                position: { lat: loc.lat, lng: loc.lng },
+                position: {
+                    lat: loc.lat,
+                    lng: loc.lng
+                },
                 map,
                 title: loc.title
             });
@@ -1779,8 +1845,7 @@
 </script>
 
 <script>
-
-    document.getElementById('booking-form').addEventListener('submit', function (e) {
+    document.getElementById('booking-form').addEventListener('submit', function(e) {
         e.preventDefault();
         var sendItineraryBtn = document.getElementById('send-itinerary-button');
         sendItineraryBtn.disabled = true;
@@ -1789,9 +1854,9 @@
         const formData = new FormData(this);
 
         fetch('send-email.php', {
-            method: 'POST',
-            body: formData
-        })
+                method: 'POST',
+                body: formData
+            })
             .then(res => res.text())
             .then(response => {
                 if (response.trim() === 'success') {
