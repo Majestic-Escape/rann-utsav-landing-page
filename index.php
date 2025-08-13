@@ -158,6 +158,10 @@
             cursor: pointer;
         }
 
+        .navbar-toggler {
+            border: none;
+        }
+
         footer a {
             color: #fff;
             text-decoration: underline;
