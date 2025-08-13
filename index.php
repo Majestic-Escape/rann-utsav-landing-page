@@ -1782,7 +1782,10 @@
 
     document.getElementById('booking-form').addEventListener('submit', function (e) {
         e.preventDefault();
-        document.getElementById('send-itinerary-button').disabled = true;
+        var sendItineraryBtn = document.getElementById('send-itinerary-button');
+        sendItineraryBtn.disabled = true;
+        sendItineraryBtn.innerHTML = 'Loading...';
+
         const formData = new FormData(this);
 
         fetch('send-email.php', {
@@ -1795,8 +1798,9 @@
                     // alert('Thank you! Your itinerary request has been sent.');
                     var successModal = new bootstrap.Modal(document.getElementById('successModal'));
                     successModal.show();
-
                     document.getElementById('booking-form').reset();
+                    sendItineraryBtn.disabled = false;
+                    sendItineraryBtn.innerHTML = 'CRAFT MY ESCAPE!';
                 } else {
                     alert('There was an error: ' + response);
                 }
