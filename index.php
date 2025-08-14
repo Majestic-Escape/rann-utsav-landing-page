@@ -114,7 +114,7 @@
                         <a href="#booking" id="book-now-button" class="btn btn-sm fs-5 px-5 py-3 m-4 d-block">
                             CRAFT MY ESCAPE!
                         </a>
-                        <h4 class="text-center text-dark">
+                        <h4 class="text-center text-dark experience-text">
                             <b>Experience the best with<br>Majestic Escape!</b>
                         </h4>
                     </span>

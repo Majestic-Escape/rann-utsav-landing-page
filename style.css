@@ -731,3 +731,40 @@ input::-webkit-input-placeholder {
         font-size: 18px;
     }
 }
+
+@media screen and (max-width: 375px) {
+
+    .menu-icon {
+        font-size: 14px;
+        right: -16px;
+    }
+        .banner-text {
+        height: 80vh;
+        margin-top: -10px;
+    }
+
+    .banner-container .rann-of-kutch-logo {
+        width: 60%;
+    }
+
+    .banner-container .date-card-img {
+        width: 46%;
+        margin-top: 0;
+    }
+
+    .tagline {
+        font-size: 14px;
+    }
+
+    .banner-text p {
+        margin-bottom: 0;
+    }
+
+    #book-now-button {
+        font-size: 14px !important;
+    }
+
+    .experience-text {
+        font-size: 16px;
+    }
+}
