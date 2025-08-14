@@ -29,7 +29,7 @@ try {
 
     // Sender & recipient
     $mail->setFrom('you@example.com', 'Majestic Escape');
-    $mail->addAddress('info@majesticescape.in', 'Rann Utsav | Majestic Escape Landing Page | Inquiry');  // Your email to receive form data
+    $mail->addAddress('marketing@majesticescape.in', 'Rann Utsav | Majestic Escape Landing Page | Inquiry');  // Your email to receive form data
     $mail->addReplyTo($email, $name);
 
     // Email content

@@ -255,7 +255,7 @@
 
                 </div>
                 <div class="col-md-6 about-div">
-                    <h1 class="section-title mb-4 pink-text" id="about-title">Rann Utsav 2025-2026</h1>
+                    <h1 class="section-title mb-4 pink-text" id="about-title">Rann Utsav <br class="d-block d-lg-none">2025-2026</h1>
                     <p class="text-dark fs-5 about-para">
                         The Rann of Kutch is a salt marsh located in the Thar Desert in the Kutch district of Gujarat,
                         India.
