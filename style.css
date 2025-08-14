@@ -583,7 +583,6 @@ input::-webkit-input-placeholder {
         background:
             linear-gradient(to bottom, rgba(0, 0, 0, 0) 85%, #ffffff),
             url('./banner-mob.jpg') center center / contain no-repeat;
-        background-color: rgba(2, 78, 164, 255);
         background-repeat: no-repeat;
         background-size: cover;
         /* background-position: top center; */
