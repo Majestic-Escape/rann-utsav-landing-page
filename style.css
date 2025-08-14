@@ -143,7 +143,7 @@ footer a {
     height: 100vh;
     background:
         linear-gradient(to bottom, rgba(0, 0, 0, 0) 85%, #ffffff),
-        url('./banner.jpg?v=0.1') center center / cover no-repeat;
+        url('./banner.jpg?v=0.2') center center / cover no-repeat;
     /* border-radius: 40px 40px 0 0; */
     background-repeat: no-repeat;
     background-size: cover;
@@ -178,7 +178,7 @@ footer a {
     /* height: 600px; */
     background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 10%),
         linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 10%),
-        url('./about-bg.jpg?v=0.1');
+        url('./about-bg.jpg?v=0.2');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 42%;
@@ -210,7 +210,7 @@ footer a {
     /* background-color: #07243d; */
     background:
         linear-gradient(to bottom, rgba(0, 0, 0, 0.3)),
-        url('./countdown-bg.jpg?v=0.1') top center / cover no-repeat;
+        url('./countdown-bg.jpg?v=0.2') top center / cover no-repeat;
     padding: 80px 0px;
     /* border-radius: 0 0 40px 40px; */
 }
@@ -263,7 +263,7 @@ footer a {
 
 #booking {
     background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 10%),
-        linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0.3) 10%), url('./background.jpg?v=0.1') top center / cover no-repeat;
+        linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0.3) 10%), url('./background.jpg?v=0.2') top center / cover no-repeat;
     /* box-shadow: 0 0 5px #35621f; */
     /* border-radius: 40px; */
     /* padding: 80px 40px; */
@@ -339,14 +339,14 @@ input::-webkit-input-placeholder {
 #festival {
     /* padding: 0 0 20px 0px; */
     /* border-radius: 0 0 40px 40px; */
-    background: linear-gradient(to bottom right, rgb(35 35 35 / 70%) 65%, rgb(234 105 7 / 67%)), url('./festival-bg.jpg?v=0.1') center center / cover no-repeat;
+    background: linear-gradient(to bottom right, rgb(35 35 35 / 70%) 65%, rgb(234 105 7 / 67%)), url('./festival-bg.jpg?v=0.2') center center / cover no-repeat;
     background-attachment: fixed;
 }
 
 #activities {
     /* height: 1600px; */
     margin-top: -1px;
-    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 40%), linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 10%), url('./activities-bg.jpg?v=0.1') center center / cover no-repeat;
+    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 40%), linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 10%), url('./activities-bg.jpg?v=0.2') center center / cover no-repeat;
 }
 
 .activity-card {
@@ -378,51 +378,51 @@ input::-webkit-input-placeholder {
 }
 
 .activity#folk-dance-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/folk-dance.jpg?v=0.1') center 40% / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/folk-dance.jpg?v=0.2') center 40% / cover no-repeat;
 }
 
 #handicraft-exhibitions-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/handicraft-exhibitions.jpg?v=0.1') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/handicraft-exhibitions.jpg?v=0.2') center center / cover no-repeat;
 }
 
 #kutchi-cuisine-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/kutchi-cuisine.jpg?v=0.1') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/kutchi-cuisine.jpg?v=0.2') center center / cover no-repeat;
 }
 
 #desert-safari-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/desert-safari.jpg?v=0.1') center 58% / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/desert-safari.jpg?v=0.2') center 58% / cover no-repeat;
 }
 
 #hot-air-balloon-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/hot-air-balloon.jpg?v=0.1') center 8% / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/hot-air-balloon.jpg?v=0.2') center 8% / cover no-repeat;
 }
 
 #paragliding-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/paragliding.jpg?v=0.1') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/paragliding.jpg?v=0.2') center center / cover no-repeat;
 }
 
 #atv-rides-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/atv-rides.jpg?v=0.1') center 64% / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/atv-rides.jpg?v=0.2') center 64% / cover no-repeat;
 }
 
 #village-visits-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/village-visits.jpg?v=0.1') center 70% / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/village-visits.jpg?v=0.2') center 70% / cover no-repeat;
 }
 
 #night-bazaar-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/night-bazaar.jpg?v=0.1') center 75% / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/night-bazaar.jpg?v=0.2') center 75% / cover no-repeat;
 }
 
 #full-moon-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/full-moon.jpg?v=0.1') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/full-moon.jpg?v=0.2') center center / cover no-repeat;
 }
 
 #bhunga-stay-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/bhunga-stay.jpg?v=0.1') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/bhunga-stay.jpg?v=0.2') center center / cover no-repeat;
 }
 
 #yoga-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/yoga.jpg?v=0.1') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/yoga.jpg?v=0.2') center center / cover no-repeat;
 }
 
 .activity-carousel {
@@ -507,7 +507,7 @@ input::-webkit-input-placeholder {
     height: 100vh;
     background:
         linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0) 10%),
-        url('./footer.jpg?v=0.1') center center / cover no-repeat;
+        url('./footer.jpg?v=0.2') center center / cover no-repeat;
     /* border-radius: 0 0 40px 40px; */
 }
 
@@ -581,7 +581,7 @@ input::-webkit-input-placeholder {
     #banner {
         background:
             linear-gradient(to bottom, rgba(0, 0, 0, 0) 85%, #ffffff),
-            url('./banner-mob.jpg?v=0.1') center center / contain no-repeat;
+            url('./banner-mob.jpg?v=0.2') center center / contain no-repeat;
         background-repeat: no-repeat;
         background-size: cover;
         /* background-position: top center; */
