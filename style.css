@@ -709,37 +709,13 @@ input::-webkit-input-placeholder {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 75vh;
         margin-left: auto;
-        margin-top: 20px;
+        height: 80vh;
+        margin-top: 10px;
         align-content: flex-end;
         align-items: center;
         flex-wrap: wrap;
         /* pushes container to the right */
-    }
-
-    .banner-container .rann-of-kutch-logo {
-        width: 70%;
-    }
-
-    .banner-container .date-card-img {
-        width: 56%;
-    }
-
-    .tagline {
-        font-size: 18px;
-    }
-}
-
-@media screen and (max-width: 375px) {
-
-    .menu-icon {
-        font-size: 14px;
-        right: -16px;
-    }
-        .banner-text {
-        height: 80vh;
-        margin-top: -10px;
     }
 
     .banner-container .rann-of-kutch-logo {
@@ -748,22 +724,13 @@ input::-webkit-input-placeholder {
 
     .banner-container .date-card-img {
         width: 46%;
-        margin-top: 0;
     }
 
     .tagline {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .banner-text p {
         margin-bottom: 0;
-    }
-
-    #book-now-button {
-        font-size: 14px !important;
-    }
-
-    .experience-text {
-        font-size: 16px;
     }
 }
