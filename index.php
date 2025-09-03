@@ -184,7 +184,7 @@
 
                             <div class="col-md-6">
                                 <input type="tel" class="form-control" id="phone" name="phone"
-                                    placeholder="Enter your phone number" required>
+                                    placeholder="Enter your WhatsApp number" required>
                             </div>
                             <!-- <div class="col-md-6">
                                 <label for="guest-count" class="form-label">Guest Count</label>
