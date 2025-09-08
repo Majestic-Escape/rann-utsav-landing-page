@@ -4,20 +4,29 @@
 <head>
     <!-- Meta Pixel Code -->
     <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1097797528726098');
-    fbq('track', 'PageView');
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1097797528726098');
+        fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1097797528726098&ev=PageView&noscript=1"
-    /></noscript>
+            src="https://www.facebook.com/tr?id=1097797528726098&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
 
     <meta charset="UTF-8">
@@ -916,38 +925,38 @@
                 </div>
                 <div class="modal-body">
 
-    <p><strong>Last Updated:</strong> 08 September 2025</p>
+                    <p><strong>Last Updated:</strong> 08 September 2025</p>
 
-    <h6>1. Cancellation 30 Days or More</h6>
-    <p>90% refund will be provided if cancelled more than or equal to 30 days prior to the scheduled arrival date.</p>
+                    <h6>1. Cancellation 30 Days or More</h6>
+                    <p>90% refund will be provided if cancelled more than or equal to 30 days prior to the scheduled arrival date.</p>
 
-    <h6>2. Cancellation Between 15-29 Days</h6>
-    <p>60% refund will be provided if cancelled more than or equal to 15 days prior to the scheduled arrival date but less than 30 days prior to the scheduled arrival date.</p>
+                    <h6>2. Cancellation Between 15-29 Days</h6>
+                    <p>60% refund will be provided if cancelled more than or equal to 15 days prior to the scheduled arrival date but less than 30 days prior to the scheduled arrival date.</p>
 
-    <h6>3. Cancellation Less Than 15 Days</h6>
-    <p>No refund will be provided if cancelled less than 15 days prior to the scheduled arrival date.</p>
+                    <h6>3. Cancellation Less Than 15 Days</h6>
+                    <p>No refund will be provided if cancelled less than 15 days prior to the scheduled arrival date.</p>
 
-    <h6>4. Change in Check-in Date</h6>
-    <p>In case of any change in check-in date, 15% of the total booking amount will be charged.</p>
+                    <h6>4. Change in Check-in Date</h6>
+                    <p>In case of any change in check-in date, 15% of the total booking amount will be charged.</p>
 
-    <h6>5. Change of Primary Guest Name</h6>
-    <p>In case of a change in the Primary Guest Name, 5% of the total booking amount will be charged.</p>
+                    <h6>5. Change of Primary Guest Name</h6>
+                    <p>In case of a change in the Primary Guest Name, 5% of the total booking amount will be charged.</p>
 
-    <h6>6. Downgrade of Room Category</h6>
-    <p>In case the existing room category is downgraded, 5% of the total booking amount will be charged.</p>
+                    <h6>6. Downgrade of Room Category</h6>
+                    <p>In case the existing room category is downgraded, 5% of the total booking amount will be charged.</p>
 
-    <h6>7. Taxes</h6>
-    <p>Rates are exclusive of applicable taxes.</p>
+                    <h6>7. Taxes</h6>
+                    <p>Rates are exclusive of applicable taxes.</p>
 
-    <h6>8. GST</h6>
-    <p>GST shall be charged as applicable.</p>
+                    <h6>8. GST</h6>
+                    <p>GST shall be charged as applicable.</p>
 
-    <h6>9. Triple Occupancy</h6>
-    <p>In case of triple occupancy, any person above 6 years of age will be charged as an extra person (with mattress).</p>
+                    <h6>9. Triple Occupancy</h6>
+                    <p>In case of triple occupancy, any person above 6 years of age will be charged as an extra person (with mattress).</p>
 
-    <p><strong>Note:</strong> The organiser reserves all rights to make any changes without prior notice.</p>
+                    <p><strong>Note:</strong> The organiser reserves all rights to make any changes without prior notice.</p>
 
-</div>
+                </div>
                 <div class="modal-footer">
                     <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
                 </div>
