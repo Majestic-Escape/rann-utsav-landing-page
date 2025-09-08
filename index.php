@@ -731,7 +731,7 @@
                         Privacy Policy
                     </a><br>
                     <a href="#" class="mb-0 text-light" data-bs-toggle="modal" data-bs-target="#termsModal">
-                        Terms of Use
+                        Terms of Service
                     </a><br>
                     <a href="#" class="mb-0 text-light" data-bs-toggle="modal" data-bs-target="#cancellationPolicyModal">
                         Cancellation & Refund Policy
