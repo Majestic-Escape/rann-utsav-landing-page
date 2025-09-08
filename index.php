@@ -723,6 +723,9 @@
                     </a><br>
                     <a href="#" class="mb-0 text-light" data-bs-toggle="modal" data-bs-target="#termsModal">
                         Terms of Use
+                    </a><br>
+                    <a href="#" class="mb-0 text-light" data-bs-toggle="modal" data-bs-target="#cancellationPolicyModal">
+                        Cancellation & Refund Policy
                     </a>
                 </div>
                 <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">
@@ -897,6 +900,54 @@
                         Email: <a href="mailto:support@majesticescape.in">support@majesticescape.in</a></p>
 
                 </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="cancellationPolicyModal" tabindex="-1" aria-labelledby="cancellationPolicyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cancellationPolicyModalLabel">Cancellation & Refund Policy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+    <p><strong>Last Updated:</strong> 08 September 2025</p>
+
+    <h6>1. Cancellation 30 Days or More</h6>
+    <p>90% refund will be provided if cancelled more than or equal to 30 days prior to the scheduled arrival date.</p>
+
+    <h6>2. Cancellation Between 15-29 Days</h6>
+    <p>60% refund will be provided if cancelled more than or equal to 15 days prior to the scheduled arrival date but less than 30 days prior to the scheduled arrival date.</p>
+
+    <h6>3. Cancellation Less Than 15 Days</h6>
+    <p>No refund will be provided if cancelled less than 15 days prior to the scheduled arrival date.</p>
+
+    <h6>4. Change in Check-in Date</h6>
+    <p>In case of any change in check-in date, 15% of the total booking amount will be charged.</p>
+
+    <h6>5. Change of Primary Guest Name</h6>
+    <p>In case of a change in the Primary Guest Name, 5% of the total booking amount will be charged.</p>
+
+    <h6>6. Downgrade of Room Category</h6>
+    <p>In case the existing room category is downgraded, 5% of the total booking amount will be charged.</p>
+
+    <h6>7. Taxes</h6>
+    <p>Rates are exclusive of applicable taxes.</p>
+
+    <h6>8. GST</h6>
+    <p>GST shall be charged as applicable.</p>
+
+    <h6>9. Triple Occupancy</h6>
+    <p>In case of triple occupancy, any person above 6 years of age will be charged as an extra person (with mattress).</p>
+
+    <p><strong>Note:</strong> The organiser reserves all rights to make any changes without prior notice.</p>
+
+</div>
                 <div class="modal-footer">
                     <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
                 </div>
