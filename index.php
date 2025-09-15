@@ -1148,8 +1148,6 @@
                     var successModal = new bootstrap.Modal(document.getElementById('successModal'));
                     successModal.show();
                     document.getElementById('booking-form').reset();
-                    sendItineraryBtn.disabled = false;
-                    sendItineraryBtn.innerHTML = 'CRAFT MY ESCAPE!';
                 } else if(response.trim() === 'error') {
                     var errorDiv = document.getElementById('form-error-div');
                     errorDiv.classList.remove('d-none');
@@ -1157,6 +1155,8 @@
                     var failedDiv = document.getElementById('form-failed-div');
                     failedDiv.classList.remove('d-none');
                 }
+                sendItineraryBtn.disabled = false;
+                sendItineraryBtn.innerHTML = 'CRAFT MY ESCAPE!';
             });
     });
 </script>
