@@ -305,6 +305,12 @@ footer a {
     border-radius: 40px;
 }
 
+#form-error, #form-failed {
+    color: #fff;
+    background-color: #eb3275;
+    border-radius: 20px;
+}
+
 input::placeholder,
 input::-webkit-input-placeholder {
     color: #585858 !important;

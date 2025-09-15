@@ -182,6 +182,12 @@
                             Unveil the White Desert and get your custom itinerary now!
                         </p>
                         <div class="row form-row">
+                            <div class="col-md-12 d-none" id="form-error-div">
+                                <div id="form-error" class="alert p-3 text-center">Please share all the required details so we can send you the perfect Rann Utsav itinerary.</div>
+                            </div>
+                            <div class="col-md-12 d-none" id="form-failed-div">
+                                <div id="form-failed" class="alert p-3 text-center">Oops! Something went wrong while submitting your form. Please try again.</div>
+                            </div>
                             <div class="col-md-6">
                                 <input type="text" class="form-control" id="name" name="name"
                                     placeholder="Enter your name" required>
@@ -1144,8 +1150,12 @@
                     document.getElementById('booking-form').reset();
                     sendItineraryBtn.disabled = false;
                     sendItineraryBtn.innerHTML = 'CRAFT MY ESCAPE!';
+                } else if(response.trim() === 'error') {
+                    var errorDiv = document.getElementById('form-error-div');
+                    errorDiv.classList.remove('d-none');
                 } else {
-                    alert('There was an error: ' + response);
+                    var failedDiv = document.getElementById('form-failed-div');
+                    failedDiv.classList.remove('d-none');
                 }
             });
     });
