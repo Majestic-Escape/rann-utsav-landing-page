@@ -139,7 +139,7 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-md-8 text-center text-md-start mb-4 mb-md-0">
                         <h2 class="fw-bold mb-3 cta-text">Book before <span class="fs-big light-text-stroke"><br
-                                    class="d-block d-md-none">15th September 2025</span> <br class="d-block d-none-md">to
+                                    class="d-block d-md-none">22nd September 2025</span> <br class="d-block d-none-md">to
                             get the best deals with Majestic Escape!</h2>
                     </div>
                     <div class="col-md-4 text-center m-auto">
@@ -998,7 +998,7 @@
 
 <script>
     // Set the date for the festival start
-    const bookingOfferEndDate = new Date("2025-09-15T00:00:00").getTime();
+    const bookingOfferEndDate = new Date("2025-09-22T00:00:00").getTime();
     const festivalDate = new Date("2025-10-23T00:00:00").getTime();
 
     function updateCountdown() {
