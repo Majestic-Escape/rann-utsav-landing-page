@@ -44,7 +44,7 @@
 
 <body>
 <?php $eventDate = new DateTime('2025-10-23'); 
-      $now = new DateTime('2025-09-30');
+      $now = new DateTime();
       $interval = $now->diff($eventDate);
       $days = $interval->days;
 
