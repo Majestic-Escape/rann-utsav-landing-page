@@ -2,6 +2,19 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SW4W868BCN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-SW4W868BCN');
+    </script>
+
     <!-- Meta Pixel Code -->
     <script>
         ! function(f, b, e, v, n, t, s) {
@@ -43,22 +56,22 @@
 </head>
 
 <body>
-<?php $eventDate = new DateTime('2025-10-23'); 
-      $now = new DateTime();
-      $interval = $now->diff($eventDate);
-      $days = $interval->days;
+    <?php $eventDate = new DateTime('2025-10-23');
+    $now = new DateTime();
+    $interval = $now->diff($eventDate);
+    $days = $interval->days;
 
-      if($days > 23) {
+    if ($days > 23) {
         $bookingEndDate = new DateTime('2025-09-30');
-      } else if($days > 13) {
+    } else if ($days > 13) {
         $bookingEndDate = new DateTime('2025-10-10');
-      } else if($days > 3) {
+    } else if ($days > 3) {
         $bookingEndDate = new DateTime('2025-10-20');
-      } else {
+    } else {
         $bookingEndDate = new DateTime('2025-10-23');
-      }
+    }
 
-?>
+    ?>
     <div class="main">
         <section id="banner" class="">
             <!-- Navbar Start -->
@@ -1163,7 +1176,7 @@
                     var successModal = new bootstrap.Modal(document.getElementById('successModal'));
                     successModal.show();
                     document.getElementById('booking-form').reset();
-                } else if(response.trim() === 'error') {
+                } else if (response.trim() === 'error') {
                     var errorDiv = document.getElementById('form-error-div');
                     errorDiv.classList.remove('d-none');
                 } else {
