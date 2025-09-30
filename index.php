@@ -205,11 +205,14 @@
                 </div>
 
                 <div class="col-md-8 offset-md-2">
-                    <form id="booking-form" method="POST" action="send-email.php">
+                    <form id="booking-form" method="POST" action="">
                         <p class="mb-4 subtitle text-center">
                             Unveil the White Desert and get your custom itinerary now!
                         </p>
                         <div class="row form-row">
+                            <div class="col-md-12 d-none" id="form-duplicate-div">
+                                <div id="form-error" class="alert p-3 text-center">You have already filled the form. Our team will reach out to you shortly!</div>
+                            </div>
                             <div class="col-md-12 d-none" id="form-error-div">
                                 <div id="form-error" class="alert p-3 text-center">Please share all the required details so we can send you the perfect Rann Utsav itinerary.</div>
                             </div>
@@ -217,6 +220,8 @@
                                 <div id="form-failed" class="alert p-3 text-center">Oops! Something went wrong while submitting your form. Please try again.</div>
                             </div>
                             <div class="col-md-6">
+                                <input type="hidden" class="form-control" id="source" name="source"
+                                    value="<?php echo isset($_GET['utm_source']) ? htmlspecialchars($_GET['utm_source']) : 'direct'; ?>">    
                                 <input type="text" class="form-control" id="name" name="name"
                                     placeholder="Enter your name" required>
                             </div>
@@ -1051,12 +1056,6 @@
     setInterval(updateCountdown, 1000);
 </script>
 
-<script>
-    document.getElementById("booking-form").addEventListener("submit", function() {
-        console.log("Form submitted");
-        fbq('track', 'Lead');
-    });
-</script>
 
 <script>
     window.addEventListener('scroll', () => {
@@ -1157,35 +1156,53 @@
 </script>
 
 <script>
-    document.getElementById('booking-form').addEventListener('submit', function(e) {
+    document.getElementById("booking-form").addEventListener("submit", async (e) => {
         e.preventDefault();
-        var sendItineraryBtn = document.getElementById('send-itinerary-button');
-        sendItineraryBtn.disabled = true;
-        sendItineraryBtn.innerHTML = 'Loading...';
 
-        const formData = new FormData(this);
+        fbq('track', 'Lead');
 
-        fetch('send-email.php', {
-                method: 'POST',
-                body: formData
-            })
-            .then(res => res.text())
-            .then(response => {
-                if (response.trim() === 'success') {
-                    // alert('Thank you! Your itinerary request has been sent.');
-                    var successModal = new bootstrap.Modal(document.getElementById('successModal'));
-                    successModal.show();
-                    document.getElementById('booking-form').reset();
-                } else if (response.trim() === 'error') {
-                    var errorDiv = document.getElementById('form-error-div');
-                    errorDiv.classList.remove('d-none');
-                } else {
-                    var failedDiv = document.getElementById('form-failed-div');
-                    failedDiv.classList.remove('d-none');
-                }
-                sendItineraryBtn.disabled = false;
-                sendItineraryBtn.innerHTML = 'CRAFT MY ESCAPE!';
+        const form = e.target;
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+
+        document.getElementById("send-itinerary-button").disabled = true;
+        document.querySelectorAll(
+            "#form-duplicate-div, #form-error-div, #form-failed-div"
+        ).forEach(el => el.classList.add("d-none"));
+
+        try {
+            const res = await fetch("https://live-am.coderelix.com/webhook/rann-inquiry", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
             });
+
+            const json = await res.json();
+
+            console.log(json);
+
+            if (json.status === "success") {
+                var successModal = new bootstrap.Modal(document.getElementById('successModal'));
+                successModal.show();
+                document.getElementById('booking-form').reset();
+            } else if (json.status === "duplicate") {
+                var errorDiv = document.getElementById('form-duplicate-div');
+                errorDiv.classList.remove('d-none');
+                document.getElementById('booking-form').reset();
+            } else if (json.status === "error") {
+                var errorDiv = document.getElementById('form-error-div');
+                errorDiv.classList.remove('d-none');
+            } else {
+                var errorDiv = document.getElementById('form-failed-div');
+                errorDiv.classList.remove('d-none');
+            }
+        } catch (err) {
+            var errorDiv = document.getElementById('form-failed-div');
+            errorDiv.classList.remove('d-none');
+        }
+        document.getElementById("send-itinerary-button").disabled = false;
     });
 </script>
 
