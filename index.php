@@ -1046,14 +1046,14 @@
 <script>
     // Set the date for the festival start
     const bookingOfferEndDate = new Date("<?= $bookingEndDate->format('Y-m-d') ?>T00:00:00").getTime();
-    const festivalDate = new Date("2025-10-23T00:00:00").getTime();
+    const festivalDate = new Date("2025-10-24T00:00:00").getTime();
 
     function updateCountdown() {
         const now = new Date().getTime();
         const distance = bookingOfferEndDate - now;
         const festivalDistance = festivalDate - now;
 
-        const days = Math.max(0, Math.floor(distance / (1000 * 60 * 60 * 24)));
+        const days = Math.max(0, Math.floor(distance / (1000 * 60 * 60 * 24))) + 1;
         const hours = Math.max(0, Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
         const minutes = Math.max(0, Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
         const seconds = Math.max(0, Math.floor((distance % (1000 * 60)) / 1000));
