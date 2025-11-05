@@ -72,18 +72,39 @@
 
     <?php $eventDate = new DateTime('2025-10-23');
     $now = new DateTime();
-    $interval = $now->diff($eventDate);
-    $days = $interval->days;
+    // $interval = $now->diff($eventDate);
+    // $days = $interval->days;
 
-    if ($days > 23) {
-        $bookingEndDate = new DateTime('2025-09-30');
-    } else if ($days > 13) {
-        $bookingEndDate = new DateTime('2025-10-10');
-    } else if ($days > 3) {
-        $bookingEndDate = new DateTime('2025-10-20');
-    } else {
-        $bookingEndDate = new DateTime('2025-10-23');
+    // if ($days > 23) {
+    //     $bookingEndDate = new DateTime('2025-09-30');
+    // } else if ($days > 13) {
+    //     $bookingEndDate = new DateTime('2025-10-10');
+    // } else if ($days > 3) {
+    //     $bookingEndDate = new DateTime('2025-10-20');
+    // } else {
+    //     $bookingEndDate = new DateTime('2025-10-23');
+    // }
+
+
+    $fullMoonDates = [
+        new DateTime('2025-11-06'),
+        new DateTime('2025-12-05'),
+        new DateTime('2026-01-04'),
+        new DateTime('2026-01-31'),
+        new DateTime('2026-02-02'),
+        new DateTime('2026-03-04'),
+    ];
+
+    foreach ($fullMoonDates as $fullMoonDate) {
+        $daysUntilNextFullMoon = $now->diff($fullMoonDate)->days;
+        if($now < $fullMoonDate && $daysUntilNextFullMoon >= 0) {
+            $nextFullMoonDate = $fullMoonDate;
+            break;
+        } else {
+            $nextFullMoonDate = new DateTime('2026-05-04');
+        }
     }
+    $bookingEndDate = $nextFullMoonDate;
 
     ?>
     <div class="main">
@@ -180,8 +201,8 @@
             <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-md-8 text-center text-md-start mb-4 mb-md-0">
-                        <h2 class="fw-bold mb-3 cta-text">Book before <span class="fs-big light-text-stroke"><br
-                                    class="d-block d-md-none"><?php echo $bookingEndDate->format('jS F Y'); ?></span> <br class="d-block d-none-md">to
+                        <h2 class="fw-bold mb-3 cta-text">Book before the <span class="fs-big light-text-stroke"><br
+                                    class="d-block d-md-none">next full moon </span> <br class="d-block d-none-md">to
                             get the best deals with Majestic Escape!</h2>
                     </div>
                     <div class="col-md-4 text-center m-auto">
@@ -1053,7 +1074,7 @@
         const distance = bookingOfferEndDate - now;
         const festivalDistance = festivalDate - now;
 
-        const days = Math.max(0, Math.floor(distance / (1000 * 60 * 60 * 24))) + 1;
+        const days = Math.max(0, Math.floor(distance / (1000 * 60 * 60 * 24)));
         const hours = Math.max(0, Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
         const minutes = Math.max(0, Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
         const seconds = Math.max(0, Math.floor((distance % (1000 * 60)) / 1000));
