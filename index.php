@@ -624,13 +624,12 @@
                                 <img src="./dance.png?v=0.2" id="festival-dance-img" alt="Rann of Kutch Festival" class="img-fluid">
                             </div> -->
                     <div class="col-md-8 offset-md-2 text-center mb-4 mb-md-0">
-                        <h2 class="fw-bold mb-3 text-light lh-base"><span id="festival-days"
-                                class="fs-huge pink-text"></span>
-                            days to go
-                            until <br class="d-none d-md-block">the magic of <span class="">
+                        <h2 class="fw-bold mb-3 text-light lh-base">
+                            <!-- <span id="festival-days" class="fs-huge pink-text"></span> -->
+                             <br class="d-none d-md-block">The magic of <span class="">
                                 <img src="./rann-of-kutch.png?v=0.2" class="d-inline-block d-md-none w-50">
                                 <img src="./rann-of-kutch.png?v=0.2" class="d-none d-md-inline-block w-25">
-                            </span> begins!</h2>
+                            </span> has begun!</h2>
                         <p class="text-light">
                             Get ready for a celebration of culture, color, and endless white sands! Your Kutch journey
                             starts here - plan with us today!
