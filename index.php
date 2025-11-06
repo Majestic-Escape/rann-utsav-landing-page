@@ -223,8 +223,9 @@
                                 CRAFT MY ESCAPE!
                             </a>
                         </div> -->
-                        <!-- <br>
-                        <p class="text-light">Limited festival slots available!</p> -->
+                        <!-- <p class="text-light"> -->
+                            <!--?php echo 'Full moon ends ' . $bookingEndDate->format('d M Y'); ?-->
+                        <!-- </p> -->
                     </div>
                 </div>
             </div>
@@ -1077,13 +1078,13 @@
         const hours = Math.max(0, Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
         const minutes = Math.max(0, Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
         const seconds = Math.max(0, Math.floor((distance % (1000 * 60)) / 1000));
-        const festivalDays = Math.max(0, Math.floor(festivalDistance / (1000 * 60 * 60 * 24)));
+        // const festivalDays = Math.max(0, Math.floor(festivalDistance / (1000 * 60 * 60 * 24)));
 
         document.getElementById("days").textContent = String(days).padStart(2, '0');
         document.getElementById("hours").textContent = String(hours).padStart(2, '0');
         document.getElementById("minutes").textContent = String(minutes).padStart(2, '0');
         document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
-        document.getElementById("festival-days").textContent = String(festivalDays).padStart(2, '0');
+        // document.getElementById("festival-days").textContent = String(festivalDays).padStart(2, '0');
     }
 
     updateCountdown();
