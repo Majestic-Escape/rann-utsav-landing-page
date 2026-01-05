@@ -1028,34 +1028,37 @@
 
                 <div class="modal-body">
 
-                    <h6>Refer & Earn with Majestic Escape – Rann Utsav Booking</h6>
+                    <h6>🎉 Refer & Earn with Majestic Escape – Rann Utsav Booking</h6>
 
                     <p>
+                        
                         Planning a trip to the magical <strong>Rann Utsav</strong>?<br>
                         Make it even more rewarding by referring your friends and family to
                         book with <strong>Majestic Escape</strong>.
                     </p>
 
-                    <h6>Referral Reward</h6>
+                    <h6>💰 Referral Reward</h6>
                     <p>
                         Get a <strong>₹500 Amazon Voucher*</strong> for every successful
                         referral booking.
                     </p>
 
-                    <h6>How It Works</h6>
+                    <h6>✅ How It Works</h6>
                     <p>
                         1. Refer your friends or family to book their Rann Utsav trip via Majestic Escape<br>
                         2. They complete the booking successfully<br>
                         3. After their successful check-out, you receive a ₹500 Amazon voucher
                     </p>
 
-                    <h6>Terms & Conditions*</h6>
+                    <h6>📍 Terms & Conditions*</h6>
                     <p>
                         1. Referral is valid only for friends and family<br>
                         2. The referred person must successfully complete the booking<br>
                         3. The Amazon voucher will be issued only after the referred customer checks out successfully<br>
                         4. Voucher will not be issued for cancelled, no-show, or incomplete bookings<br>
-                        5. Majestic Escape reserves the right to modify or withdraw the offer without prior notice
+                        5. Majestic Escape reserves the right to modify or withdraw the offer without prior notice<br>
+                        6. The referral offer is applicable only to individuals who have completed a confirmed booking with
+                           Majestic Escape.
                     </p>
 
                 </div>
