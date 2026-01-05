@@ -16,11 +16,22 @@
     </script>
 
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-W73276NQ');</script>
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-W73276NQ');
+    </script>
     <!-- End Google Tag Manager -->
 
     <!-- Meta Pixel Code -->
@@ -67,7 +78,7 @@
 
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W73276NQ"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <?php $eventDate = new DateTime('2025-10-23');
@@ -97,7 +108,7 @@
 
     foreach ($fullMoonDates as $fullMoonDate) {
         $daysUntilNextFullMoon = $now->diff($fullMoonDate)->days;
-        if($now < $fullMoonDate && $daysUntilNextFullMoon >= 0) {
+        if ($now < $fullMoonDate && $daysUntilNextFullMoon >= 0) {
             $nextFullMoonDate = $fullMoonDate;
             break;
         } else {
@@ -136,6 +147,14 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#gallery">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="#"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#referralModal">
+                                    Referral
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -224,7 +243,7 @@
                             </a>
                         </div> -->
                         <!-- <p class="text-light"> -->
-                            <!--?php echo 'Full moon ends ' . $bookingEndDate->format('d M Y'); ?-->
+                        <!--?php echo 'Full moon ends ' . $bookingEndDate->format('d M Y'); ?-->
                         <!-- </p> -->
                     </div>
                 </div>
@@ -257,7 +276,7 @@
                             </div>
                             <div class="col-md-6">
                                 <input type="hidden" class="form-control" id="source" name="source"
-                                    value="<?php echo isset($_GET['utm_source']) ? htmlspecialchars($_GET['utm_source']) : 'direct'; ?>">    
+                                    value="<?php echo isset($_GET['utm_source']) ? htmlspecialchars($_GET['utm_source']) : 'direct'; ?>">
                                 <input type="text" class="form-control" id="name" name="name"
                                     placeholder="Enter your name" required>
                             </div>
@@ -627,10 +646,11 @@
                     <div class="col-md-8 offset-md-2 text-center mb-4 mb-md-0">
                         <h2 class="fw-bold mb-3 text-light lh-base">
                             <!-- <span id="festival-days" class="fs-huge pink-text"></span> -->
-                             <br class="d-none d-md-block">The magic of <span class="">
+                            <br class="d-none d-md-block">The magic of <span class="">
                                 <img src="./rann-of-kutch.png?v=0.2" class="d-inline-block d-md-none w-50">
                                 <img src="./rann-of-kutch.png?v=0.2" class="d-none d-md-inline-block w-25">
-                            </span> has begun!</h2>
+                            </span> has begun!
+                        </h2>
                         <p class="text-light">
                             Get ready for a celebration of culture, color, and endless white sands! Your Kutch journey
                             starts here - plan with us today!
@@ -989,6 +1009,68 @@
             </div>
         </div>
     </div>
+
+
+
+    <div class="modal fade" id="referralModal" tabindex="-1"
+        aria-labelledby="referralModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="referralModalLabel">
+                        Referral
+                    </h5>
+                    <button type="button" class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <h6>🎉 Refer & Earn with Majestic Escape – Rann Utsav Booking</h6>
+
+                    <p>
+                        
+                        Planning a trip to the magical <strong>Rann Utsav</strong>?<br>
+                        Make it even more rewarding by referring your friends and family to
+                        book with <strong>Majestic Escape</strong>.
+                    </p>
+
+                    <h6>💰 Referral Reward</h6>
+                    <p>
+                        Get a <strong>₹500 Amazon Voucher*</strong> for every successful
+                        referral booking.
+                    </p>
+
+                    <h6>✅ How It Works</h6>
+                    <p>
+                        1. Refer your friends or family to book their Rann Utsav trip via Majestic Escape<br>
+                        2. They complete the booking successfully<br>
+                        3. After their successful check-out, you receive a ₹500 Amazon voucher
+                    </p>
+
+                    <h6>📍 Terms & Conditions*</h6>
+                    <p>
+                        1. Referral is valid only for friends and family<br>
+                        2. The referred person must successfully complete the booking<br>
+                        3. The Amazon voucher will be issued only after the referred customer checks out successfully<br>
+                        4. Voucher will not be issued for cancelled, no-show, or incomplete bookings<br>
+                        5. Majestic Escape reserves the right to modify or withdraw the offer without prior notice<br>
+                        6. The referral offer is applicable only to individuals who have completed a confirmed booking with
+                           Majestic Escape.
+                    </p>
+
+                </div>
+
+
+                <div class="modal-footer">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 
     <div class="modal fade" id="cancellationPolicyModal" tabindex="-1" aria-labelledby="cancellationPolicyModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-scrollable">
