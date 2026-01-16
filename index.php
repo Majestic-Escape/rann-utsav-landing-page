@@ -1142,7 +1142,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhfs0hlPrtAjX1wXb2ay9Mlw23yl2D-Og&callback=initMap" async
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeDA5M303_4Z7bPCG9NGoy85JxUbFWsnU&callback=initMap" async
     defer></script>
 
 
