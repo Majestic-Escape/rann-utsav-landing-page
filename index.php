@@ -17,7 +17,7 @@
 
     <!-- Google Tag Manager -->
     <script>
-        (function(w, d, s, l, i) {
+        (function (w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
                 'gtm.start': new Date().getTime(),
@@ -36,9 +36,9 @@
 
     <!-- Meta Pixel Code -->
     <script>
-        ! function(f, b, e, v, n, t, s) {
+        ! function (f, b, e, v, n, t, s) {
             if (f.fbq) return;
-            n = f.fbq = function() {
+            n = f.fbq = function () {
                 n.callMethod ?
                     n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
@@ -77,26 +77,12 @@
 <body>
 
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W73276NQ"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W73276NQ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <?php $eventDate = new DateTime('2025-10-23');
     $now = new DateTime();
-    // $interval = $now->diff($eventDate);
-    // $days = $interval->days;
-
-    // if ($days > 23) {
-    //     $bookingEndDate = new DateTime('2025-09-30');
-    // } else if ($days > 13) {
-    //     $bookingEndDate = new DateTime('2025-10-10');
-    // } else if ($days > 3) {
-    //     $bookingEndDate = new DateTime('2025-10-20');
-    // } else {
-    //     $bookingEndDate = new DateTime('2025-10-23');
-    // }
-
-
     $fullMoonDates = [
         new DateTime('2025-11-06'),
         new DateTime('2025-12-05'),
@@ -116,23 +102,24 @@
         }
     }
     $bookingEndDate = $nextFullMoonDate;
-
     ?>
+    <script>
+        const serverBookingEndDate = "<?= $bookingEndDate->format('Y-m-d') ?>";
+    </script>
+
     <div class="main">
         <section id="banner" class="">
             <!-- Navbar Start -->
-            <!-- <img src="./banner.jpg?v=0.2" alt="Rann of Kutch Banner" class="img-fluid banner-image"> -->
             <nav class="navbar navbar-sticky navbar-expand-lg navbar-light py-4">
                 <div class="container-fluid px-5">
                     <a class="navbar-brand fw-bold text-primary" href="#">
-                        <img src="./logo-white.svg" alt="Majestic Escape Logo" id="header-logo">
+                        <img src="./assets/logo-white.svg" alt="Majestic Escape Logo" id="header-logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <div class="menu-icon">
                             <span>MENU</span>
                         </div>
-                        <!-- <img src="./dropdown.svg" alt="Menu Icon" class="menu-icon"> -->
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto fs-5">
@@ -149,10 +136,7 @@
                                 <a class="nav-link" href="#gallery">Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link"
-                                    href="#"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#referralModal">
+                                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#referralModal">
                                     Referral
                                 </a>
                             </li>
@@ -163,35 +147,33 @@
             <!-- Navbar End -->
             <div class="container-fluid banner-container">
                 <div class="d-none d-lg-flex banner-text">
-                    <img src="./rann-of-kutch.png?v=0.2" class="rann-of-kutch-logo">
+                    <img src="./assets/rann-of-kutch.png?v=0.2" class="rann-of-kutch-logo">
                     <p class="text-center mt-0">
-                        <!-- <span class="card-sm-text">From</span><br>23rd Oct 2025 <br><span class="card-sm-text">to</span><br>04th Mar 2026 -->
                         <span class="tagline">Culture • Colors • Celebration</span>
                     </p>
 
-                    <img src="./date.png?v=0.2" class="date-card-img">
+                    <img src="./assets/date.png?v=0.2" class="date-card-img">
 
                     <a href="#booking" id="book-now-button" class="btn btn-sm fs-5 px-5 py-3 mt-4">
                         CRAFT MY ESCAPE!
                     </a>
                     <br>
                     <h4 class="text-center text-light">
-                        <b>Experience the best with Majestic Escape!</b>
+                        <b style="color: black ;text-shadow: 1px 1px black;">Experience the best with Majestic
+                            Escape!</b>
                     </h4>
                 </div>
 
                 <div class="d-flex d-lg-none banner-text">
                     <span>
-                        <img src="./rann-of-kutch.png?v=0.2" class="rann-of-kutch-logo">
+                        <img src="./assets/rann-of-kutch.png?v=0.2" class="rann-of-kutch-logo">
                         <p class="text-center mt-0">
-                            <!-- <span class="card-sm-text">From</span><br>23rd Oct 2025 <br><span class="card-sm-text">to</span><br>04th Mar 2026 -->
                             <span class="tagline text-light">Culture • Colors • Celebration</span>
                         </p>
-                        <img src="./date.png?v=0.2" class="date-card-img">
+                        <img src="./assets/date.png?v=0.2" class="date-card-img">
                     </span>
 
                     <span>
-
                         <a href="#booking" id="book-now-button" class="btn btn-sm fs-5 px-5 py-3 m-4 d-block">
                             CRAFT MY ESCAPE!
                         </a>
@@ -201,21 +183,8 @@
                     </span>
                 </div>
             </div>
-
-            <!-- <span class="d-block d-md-none">
-                <div class="d-flex justify-content-center align-items-center h-100">
-                    <img src="./rann-of-kutch.png?v=0.2" class="w-75">
-                </div>
-                <p class="text-center mt-0">From 23rd Oct 2025 to 04th Mar 2026<br><br>
-                    <b>Experience the best with Majestic Escape!</b>
-                </p>
-
-                <a href="#explore-now" class="btn btn-lg btn-warning d-block m-auto w-50">
-                    Explore Now!
-                </a>
-            </span> -->
-
         </section>
+
         <section id="countdown-section" class="align-items-center mt-6">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
@@ -228,23 +197,12 @@
                         <div id="countdown" class="d-flex flex-wrap gap-2 justify-content-center">
                             <div><span id="days">00</span><span class="countdown-subtext">d</span></div>
                             <div class="d-none d-md-block">:</div>
-                            <!-- <div class="w-100 d-block d-md-none"></div> -->
                             <div><span id="hours">00</span><span class="countdown-subtext">h</span></div>
                             <div class="d-none d-md-block">:</div>
-                            <!-- <div class="w-100 d-block d-md-none"></div> -->
                             <div><span id="minutes">00</span><span class="countdown-subtext">m</span></div>
                             <div class="d-none d-md-block">:</div>
-                            <!-- <div class="w-100 d-block d-md-none"></div> -->
                             <div><span id="seconds">00</span><span class="countdown-subtext">s</span></div>
                         </div>
-                        <!-- <div id="book-now-button-div">
-                            <a href="#booking" id="book-now-button" class="btn btn-sm px-5 py-3  mt-4">
-                                CRAFT MY ESCAPE!
-                            </a>
-                        </div> -->
-                        <!-- <p class="text-light"> -->
-                        <!--?php echo 'Full moon ends ' . $bookingEndDate->format('d M Y'); ?-->
-                        <!-- </p> -->
                     </div>
                 </div>
             </div>
@@ -266,17 +224,19 @@
                         </p>
                         <div class="row form-row">
                             <div class="col-md-12 d-none" id="form-duplicate-div">
-                                <div id="form-error" class="alert p-3 text-center">You have already filled the form. Our team will reach out to you shortly!</div>
+                                <div id="form-error" class="alert p-3 text-center">You have already filled the form. Our
+                                    team will reach out to you shortly!</div>
                             </div>
                             <div class="col-md-12 d-none" id="form-error-div">
-                                <div id="form-error" class="alert p-3 text-center">Please share all the required details so we can send you the perfect Rann Utsav itinerary.</div>
+                                <div id="form-error" class="alert p-3 text-center">Please share all the required details
+                                    so we can send you the perfect Rann Utsav itinerary.</div>
                             </div>
                             <div class="col-md-12 d-none" id="form-failed-div">
-                                <div id="form-failed" class="alert p-3 text-center">Oops! Something went wrong while submitting your form. Please try again.</div>
+                                <div id="form-failed" class="alert p-3 text-center">Oops! Something went wrong while
+                                    submitting your form. Please try again.</div>
                             </div>
                             <div class="col-md-6">
-                                <input type="hidden" class="form-control" id="source" name="source"
-                                    value="<?php echo isset($_GET['utm_source']) ? htmlspecialchars($_GET['utm_source']) : 'direct'; ?>">
+                                <input type="hidden" class="form-control" id="source" name="source" value="<?php echo isset($_GET['utm_source']) ? htmlspecialchars($_GET['utm_source']) : 'direct'; ?>">
                                 <input type="text" class="form-control" id="name" name="name"
                                     placeholder="Enter your name" required>
                             </div>
@@ -289,21 +249,6 @@
                                 <input type="tel" class="form-control" id="phone" name="phone"
                                     placeholder="Enter your WhatsApp number" required>
                             </div>
-                            <!-- <div class="col-md-6">
-                                <label for="guest-count" class="form-label">Guest Count</label>
-                                <input type="number" class="form-control" id="guest-count" name="guest_count"
-                                    placeholder="Enter the guest count" required>
-                            </div>
-
-                            <div class="col-md-6">
-                                <label for="start-date" class="form-label">Start Date</label>
-                                <input type="date" class="form-control" id="start-date" name="start_date" required>
-                            </div>
-
-                            <div class="col-md-6">
-                                <label for="end-date" class="form-label">End Date</label>
-                                <input type="date" class="form-control" id="end-date" name="end_date" required>
-                            </div> -->
 
                             <div class="col-md-6">
                                 <select class="form-select" id="traveller-type" name="traveller_type" required>
@@ -315,23 +260,10 @@
                                     <option value="Corporate">Corporate</option>
                                 </select>
                             </div>
-                            <!-- <div class="col-md-6">
-                                <label for="source" class="form-label">How did you hear about us?</label>
-                                <select class="form-select" id="source" name="source" required>
-                                    <option value="" disabled selected>Select source</option>
-                                    <option value="google">Google Search</option>
-                                    <option value="instagram">Instagram</option>
-                                    <option value="facebook">Facebook</option>
-                                    <option value="friend">Friend/Family</option>
-                                    <option value="travel-agency">Travel Agency</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div> -->
                         </div>
                         <br>
                         <div class="row form-row">
                             <div class="col-md-12">
-
                                 <button class="form-control btn btn-warning btn-md px-5 w-100 send-itinerary-button"
                                     type="submit" id="send-itinerary-button">
                                     CRAFT MY ESCAPE!
@@ -342,13 +274,15 @@
                 </div>
             </div>
         </section>
+
         <section id="about" class="section">
             <div class="row">
                 <div id="about-img-section" class="col-md-6">
 
                 </div>
                 <div class="col-md-6 about-div">
-                    <h1 class="section-title mb-4 pink-text" id="about-title">Rann Utsav <br class="d-block d-lg-none">2025-2026</h1>
+                    <h1 class="section-title mb-4 pink-text" id="about-title">Rann Utsav <br
+                            class="d-block d-lg-none">2025-2026</h1>
                     <p class="text-dark fs-5 about-para">
                         The Rann of Kutch is a salt marsh located in the Thar Desert in the Kutch district of Gujarat,
                         India.
@@ -397,6 +331,13 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
+                            <div class="card-body activity" id="dolls-card">
+                                <h5 class="card-title">Kutchi Dolls & <br>Puppetry</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 activity-carousel-item">
+                        <div class="card activity-card mb-4">
                             <div class="card-body activity" id="kutchi-cuisine-card">
                                 <h5 class="card-title">Traditional Kutchi Cuisine</h5>
                             </div>
@@ -425,6 +366,13 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
+                            <div class="card-body activity" id="paramotor-flight-card">
+                                <h5 class="card-title">Paramotor <br>Flights</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 activity-carousel-item">
+                        <div class="card activity-card mb-4">
                             <div class="card-body activity" id="atv-rides-card">
                                 <h5 class="card-title">ATV & Camel <br>Rides</h5>
                             </div>
@@ -434,6 +382,27 @@
                         <div class="card activity-card mb-4">
                             <div class="card-body activity" id="village-visits-card">
                                 <h5 class="card-title">Craft Village <br>Visits</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 activity-carousel-item">
+                        <div class="card activity-card mb-4">
+                            <div class="card-body activity" id="local-market-card">
+                                <h5 class="card-title">Local Bazaars <br>Shopping</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 activity-carousel-item">
+                        <div class="card activity-card mb-4">
+                            <div class="card-body activity" id="craft-market-card">
+                                <h5 class="card-title">Traditional Craft <br>Markets</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 activity-carousel-item">
+                        <div class="card activity-card mb-4">
+                            <div class="card-body activity" id="cultural-market-card">
+                                <h5 class="card-title">Kutchi Cultural <br>Market</h5>
                             </div>
                         </div>
                     </div>
@@ -465,6 +434,28 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-3 activity-carousel-item">
+                        <div class="card activity-card mb-4">
+                            <div class="card-body activity" id="paintball-card">
+                                <h5 class="card-title">Paintball <br>Adventure</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 activity-carousel-item">
+                        <div class="card activity-card mb-4">
+                            <div class="card-body activity" id="rodeo-card">
+                                <h5 class="card-title">Desert Camel <br>Rodeo</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 activity-carousel-item">
+                        <div class="card activity-card mb-4">
+                            <div class="card-body activity" id="kaha-card">
+                                <h5 class="card-title">Kutch Heritage <br>Tour</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Duplicate items for infinite marquee loop -->
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
                             <div class="card-body activity" id="folk-dance-card">
@@ -481,85 +472,8 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
-                            <div class="card-body activity" id="kutchi-cuisine-card">
-                                <h5 class="card-title">Traditional Kutchi Cuisine</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 activity-carousel-item">
-                        <div class="card activity-card mb-4">
-                            <div class="card-body activity" id="desert-safari-card">
-                                <h5 class="card-title">White Desert <br>Safari</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 activity-carousel-item">
-                        <div class="card activity-card mb-4">
-                            <div class="card-body activity" id="hot-air-balloon-card">
-                                <h5 class="card-title">Hot Air Balloon <br>Ride</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 activity-carousel-item">
-                        <div class="card activity-card mb-4">
-                            <div class="card-body activity" id="paragliding-card">
-                                <h5 class="card-title">Tethered <br>Paramotoring & <br>Paragliding</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 activity-carousel-item">
-                        <div class="card activity-card mb-4">
-                            <div class="card-body activity" id="atv-rides-card">
-                                <h5 class="card-title">ATV & Camel <br>Rides</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 activity-carousel-item">
-                        <div class="card activity-card mb-4">
-                            <div class="card-body activity" id="village-visits-card">
-                                <h5 class="card-title">Craft Village <br>Visits</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 activity-carousel-item">
-                        <div class="card activity-card mb-4">
-                            <div class="card-body activity" id="night-bazaar-card">
-                                <h5 class="card-title">Night <br>Bazaar</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 activity-carousel-item">
-                        <div class="card activity-card mb-4">
-                            <div class="card-body activity" id="full-moon-card">
-                                <h5 class="card-title">Full Moon <br>in the Rann</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 activity-carousel-item">
-                        <div class="card activity-card mb-4">
-                            <div class="card-body activity" id="bhunga-stay-card">
-                                <h5 class="card-title">Traditional Bhunga Stay</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 activity-carousel-item">
-                        <div class="card activity-card mb-4">
-                            <div class="card-body activity" id="yoga-card">
-                                <h5 class="card-title">Yoga & Meditation Sessions</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 activity-carousel-item">
-                        <div class="card activity-card mb-4">
-                            <div class="card-body activity" id="folk-dance-card">
-                                <h5 class="card-title">Folk Dance <br>& Music</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 activity-carousel-item">
-                        <div class="card activity-card mb-4">
-                            <div class="card-body activity" id="handicraft-exhibitions-card">
-                                <h5 class="card-title">Local Handicraft Exhibitions</h5>
+                            <div class="card-body activity" id="dolls-card">
+                                <h5 class="card-title">Kutchi Dolls & <br>Puppetry</h5>
                             </div>
                         </div>
                     </div>
@@ -593,6 +507,13 @@
                     </div>
                     <div class="col-md-3 activity-carousel-item">
                         <div class="card activity-card mb-4">
+                            <div class="card-body activity" id="paramotor-flight-card">
+                                <h5 class="card-title">Paramotor <br>Flights</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 activity-carousel-item">
+                        <div class="card activity-card mb-4">
                             <div class="card-body activity" id="atv-rides-card">
                                 <h5 class="card-title">ATV & Camel <br>Rides</h5>
                             </div>
@@ -602,6 +523,27 @@
                         <div class="card activity-card mb-4">
                             <div class="card-body activity" id="village-visits-card">
                                 <h5 class="card-title">Craft Village <br>Visits</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 activity-carousel-item">
+                        <div class="card activity-card mb-4">
+                            <div class="card-body activity" id="local-market-card">
+                                <h5 class="card-title">Local Bazaars <br>Shopping</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 activity-carousel-item">
+                        <div class="card activity-card mb-4">
+                            <div class="card-body activity" id="craft-market-card">
+                                <h5 class="card-title">Traditional Craft <br>Markets</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 activity-carousel-item">
+                        <div class="card activity-card mb-4">
+                            <div class="card-body activity" id="cultural-market-card">
+                                <h5 class="card-title">Kutchi Cultural <br>Market</h5>
                             </div>
                         </div>
                     </div>
@@ -630,6 +572,27 @@
                         <div class="card activity-card mb-4">
                             <div class="card-body activity" id="yoga-card">
                                 <h5 class="card-title">Yoga & Meditation Sessions</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 activity-carousel-item">
+                        <div class="card activity-card mb-4">
+                            <div class="card-body activity" id="paintball-card">
+                                <h5 class="card-title">Paintball <br>Adventure</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 activity-carousel-item">
+                        <div class="card activity-card mb-4">
+                            <div class="card-body activity" id="rodeo-card">
+                                <h5 class="card-title">Desert Camel <br>Rodeo</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 activity-carousel-item">
+                        <div class="card activity-card mb-4">
+                            <div class="card-body activity" id="kaha-card">
+                                <h5 class="card-title">Kutch Heritage <br>Tour</h5>
                             </div>
                         </div>
                     </div>
@@ -637,18 +600,81 @@
             </div>
         </section>
 
+        <section id="stars-await" class="section">
+            <div class="container-fluid px-4 px-md-5">
+                <div class="row">
+                    <div class="col-md-12 text-center mb-5">
+                        <h1 class="section-title text-dark mb-3">Hands That <span class="pink-text">Shape Kutch</span>
+                        </h1>
+                        <p class="subtitle mb-0 stars-subtitle text-muted">
+                            Every creation tells a story of tradition, passion, and generations of exceptional
+                            craftsmanship. </p>
+                    </div>
+                </div>
+
+                <div class="stars-carousel-container">
+                    <div class="stars-carousel-track-wrapper">
+                        <div class="stars-carousel-track" id="stars-carousel-track">
+                            <!-- Image Cards -->
+                            <div class="stars-carousel-card" data-index="0">
+                                <div class="artist-img-wrapper">
+                                    <img src="./assets/art.jpg" alt="Artist performance under the stars">
+                                </div>
+                            </div>
+                            <div class="stars-carousel-card" data-index="1">
+                                <div class="artist-img-wrapper">
+                                    <img src="./assets/art2.jpg" alt="Traditional Kutch musicians under the stars">
+                                </div>
+                            </div>
+                            <div class="stars-carousel-card" data-index="2">
+                                <div class="artist-img-wrapper">
+                                    <img src="./assets/art3.jpg" alt="Cultural performance under the stars">
+                                </div>
+                            </div>
+                            <div class="stars-carousel-card" data-index="3">
+                                <div class="artist-img-wrapper">
+                                    <img src="./assets/art4.jpg" alt="Artist performing under the stars">
+                                </div>
+                            </div>
+                            <div class="stars-carousel-card" data-index="4">
+                                <div class="artist-img-wrapper">
+                                    <img src="./assets/art5.jpg" alt="Folk singers under the stars">
+                                </div>
+                            </div>
+                            <div class="stars-carousel-card" data-index="5">
+                                <div class="artist-img-wrapper">
+                                    <img src="./assets/art6.jpg" alt="Starlit desert dance performance">
+                                </div>
+                            </div>
+                            <div class="stars-carousel-card" data-index="6">
+                                <div class="artist-img-wrapper">
+                                    <img src="./assets/art7.jpg" alt="Musicians in the White Rann under the stars">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Navigation Controls -->
+                    <button class="stars-carousel-btn stars-carousel-btn-prev" id="stars-carousel-prev"
+                        aria-label="Previous Slide">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button class="stars-carousel-btn stars-carousel-btn-next" id="stars-carousel-next"
+                        aria-label="Next Slide">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
         <section id="festival" class="align-items-center pb-5">
             <div class="container-fluid">
                 <div class="row align-items-center justify-content-between">
-                    <!-- <div class="col-md-4 p-0">
-                                <img src="./dance.png?v=0.2" id="festival-dance-img" alt="Rann of Kutch Festival" class="img-fluid">
-                            </div> -->
                     <div class="col-md-8 offset-md-2 text-center mb-4 mb-md-0">
                         <h2 class="fw-bold mb-3 text-light lh-base">
-                            <!-- <span id="festival-days" class="fs-huge pink-text"></span> -->
                             <br class="d-none d-md-block">The magic of <span class="">
-                                <img src="./rann-of-kutch.png?v=0.2" class="d-inline-block d-md-none w-50">
-                                <img src="./rann-of-kutch.png?v=0.2" class="d-none d-md-inline-block w-25">
+                                <img src="./assets/rann-of-kutch.png?v=0.2" class="d-inline-block d-md-none w-50">
+                                <img src="./assets/rann-of-kutch.png?v=0.2" class="d-none d-md-inline-block w-25">
                             </span> has begun!
                         </h2>
                         <p class="text-light">
@@ -657,7 +683,6 @@
                         </p>
                     </div>
                     <div class="col-md-4 offset-md-4">
-
                         <a href="#booking" class="form-control btn btn-sm w-auto px-5 w-50 send-itinerary-button"
                             type="button">
                             CRAFT MY KUTCH ESCAPE
@@ -667,141 +692,93 @@
             </div>
         </section>
 
-        <section id="gallery">
-            <div class="container-fluid p-0">
-                <div id="galleryCarousel" class="carousel slide d-none d-lg-block" data-bs-ride="carousel"
-                    data-bs-interval="2000">
-                    <div class="carousel-inner">
-                        <!-- Slide 1 -->
-                        <div class="carousel-item active">
-                            <div class="row">
-                                <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery2.jpg?v=0.2" alt="Gallery Image 2" class="img-fluid">
-                                </div>
-                                <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery11.jpg?v=0.2" alt="Gallery Image 8" class="img-fluid">
-                                </div>
-                                <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery3.jpg?v=0.2" alt="Gallery Image 3" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Slide 2 -->
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery5.jpg?v=0.2" alt="Gallery Image 5" class="img-fluid">
-                                </div>
-                                <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery4.jpg?v=0.2" alt="Gallery Image 4" class="img-fluid">
-                                </div>
-                                <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery10.jpg?v=0.2" alt="Gallery Image 6" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Slide 3 -->
-                        <div class="carousel-item">
-                            <div class="row">
-
-                                <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery7.jpg?v=0.2" alt="Gallery Image 7" class="img-fluid">
-                                </div>
-                                <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery12.jpg?v=0.2" alt="Gallery Image 9" class="img-fluid">
-                                </div>
-                                <div class="col-md-4 m-0 p-0">
-                                    <img src="./gallery/gallery1.jpg?v=0.2" alt="Gallery Image 1" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-custom-controls">
-                        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-
-                        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+        <section id="gallery" class="section">
+            <div class="container-fluid px-4 px-md-5">
+                <div class="row">
+                    <div class="col-md-12 text-center mb-5">
+                        <h1 class="section-title text-dark mb-3">Glimpses of <span class="pink-text">White Desert</span></h1>
+                        <p class="subtitle mb-0 gallery-subtitle text-muted">
+                            Explore the breathtaking landscapes, vibrant cultural celebrations, and unforgettable memories of Rann Utsav.
+                        </p>
                     </div>
                 </div>
 
-                <div id="mobGalleryCarousel" class="carousel slide d-block d-lg-none" data-bs-ride="carousel"
-                    data-bs-interval="2000">
-                    <div class="carousel-inner">
-                        <div class="row">
-                            <div class="carousel-item active">
-                                <div class="col-lg-4 m-0 p-0">
-                                    <img src="./gallery/gallery1.jpg?v=0.2" alt="Gallery Image 1" class="img-fluid">
+                <div class="gallery-carousel-container">
+                    <div class="gallery-carousel-track-wrapper">
+                        <div class="gallery-carousel-track" id="gallery-carousel-track">
+                            <!-- Image Cards -->
+                            <div class="gallery-carousel-card" data-index="0">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery1.jpg?v=0.2" alt="Kutch Desert Gallery 1">
                                 </div>
                             </div>
-                            <div class="carousel-item">
-
-                                <div class="col-lg-4 m-0 p-0">
-                                    <img src="./gallery/gallery2.jpg?v=0.2" alt="Gallery Image 2" class="img-fluid">
+                            <div class="gallery-carousel-card" data-index="1">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery2.jpg?v=0.2" alt="Kutch Desert Gallery 2">
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="col-lg-4 m-0 p-0">
-                                    <img src="./gallery/gallery3.jpg?v=0.2" alt="Gallery Image 3" class="img-fluid">
+                            <div class="gallery-carousel-card" data-index="2">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery3.jpg?v=0.2" alt="Kutch Desert Gallery 3">
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="col-lg-4 m-0 p-0">
-                                    <img src="./gallery/gallery5.jpg?v=0.2" alt="Gallery Image 5" class="img-fluid">
+                            <div class="gallery-carousel-card" data-index="3">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery4.jpg?v=0.2" alt="Kutch Desert Gallery 4">
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="col-lg-4 m-0 p-0">
-                                    <img src="./gallery/gallery4.jpg?v=0.2" alt="Gallery Image 4" class="img-fluid">
+                            <div class="gallery-carousel-card" data-index="4">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery5.jpg?v=0.2" alt="Kutch Desert Gallery 5">
                                 </div>
                             </div>
-                            <div class="carousel-item">
-
-                                <div class="col-lg-4 m-0 p-0">
-                                    <img src="./gallery/gallery7.jpg?v=0.2" alt="Gallery Image 7" class="img-fluid">
+                            <div class="gallery-carousel-card" data-index="5">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery7.jpg?v=0.2" alt="Kutch Desert Gallery 7">
                                 </div>
                             </div>
-                            <div class="carousel-item">
-
-                                <div class="col-lg-4 m-0 p-0">
-                                    <img src="./gallery/gallery10.jpg?v=0.2" alt="Gallery Image 10" class="img-fluid">
+                            <div class="gallery-carousel-card" data-index="6">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery10.jpg?v=0.2" alt="Kutch Desert Gallery 10">
                                 </div>
                             </div>
-                            <div class="carousel-item">
-
-                                <div class="col-lg-4 m-0 p-0">
-                                    <img src="./gallery/gallery11.jpg?v=0.2" alt="Gallery Image 11" class="img-fluid">
+                            <div class="gallery-carousel-card" data-index="7">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery11.jpg?v=0.2" alt="Kutch Desert Gallery 11">
                                 </div>
                             </div>
-                            <div class="carousel-item">
-
-                                <div class="col-lg-4 m-0 p-0">
-                                    <img src="./gallery/gallery12.jpg?v=0.2" alt="Gallery Image 12" class="img-fluid">
+                            <div class="gallery-carousel-card" data-index="8">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery12.jpg?v=0.2" alt="Kutch Desert Gallery 12">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="9">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery6.jpg?v=0.2" alt="Kutch Desert Gallery 6">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="10">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery8.jpg?v=0.2" alt="Kutch Desert Gallery 8">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="11">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery9.jpg?v=0.2" alt="Kutch Desert Gallery 9">
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="carousel-custom-controls">
-                        <button class="carousel-control-prev" type="button" data-bs-target="#mobGalleryCarousel"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-
-                        <button class="carousel-control-next" type="button" data-bs-target="#mobGalleryCarousel"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
+                    <!-- Floating Navigation Controls -->
+                    <button class="gallery-carousel-btn gallery-carousel-btn-prev" id="gallery-carousel-prev"
+                        aria-label="Previous Slide">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button class="gallery-carousel-btn gallery-carousel-btn-next" id="gallery-carousel-next"
+                        aria-label="Next Slide">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
                 </div>
             </div>
         </section>
@@ -811,8 +788,7 @@
         </section>
 
         <section class="section-margin pt-5 w-100" id="brought-by">
-            <!-- <h4 class="text-muted text-center">Brought To You By</h4> -->
-            <img src="./logo.png?v=0.2" alt="Majestic Escape Logo" class="img-fluid" id="footer-logo">
+            <img src="./assets/logo.png?v=0.2" alt="Majestic Escape Logo" class="img-fluid" id="footer-logo">
         </section>
     </div>
 
@@ -820,14 +796,14 @@
         <div class="container h-100">
             <div class="row align-items-end">
                 <div class="col-md-4 text-md-start mb-3 mb-md-0">
-                    <!-- <p class="mb-0 text-light">Policy</p> -->
                     <a href="#" class="mb-0 text-light" data-bs-toggle="modal" data-bs-target="#privacyPolicyModal">
                         Privacy Policy
                     </a><br>
                     <a href="#" class="mb-0 text-light" data-bs-toggle="modal" data-bs-target="#termsModal">
                         Terms of Service
                     </a><br>
-                    <a href="#" class="mb-0 text-light" data-bs-toggle="modal" data-bs-target="#cancellationPolicyModal">
+                    <a href="#" class="mb-0 text-light" data-bs-toggle="modal"
+                        data-bs-target="#cancellationPolicyModal">
                         Cancellation & Refund Policy
                     </a>
                 </div>
@@ -859,6 +835,7 @@
         </div>
     </footer>
 
+    <!-- Privacy Policy Modal -->
     <div class="modal fade" id="privacyPolicyModal" tabindex="-1" aria-labelledby="privacyPolicyModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-scrollable">
@@ -934,12 +911,12 @@
                         Email: <a href="mailto:support@majesticescape.in">support@majesticescape.in</a></p>
                 </div>
                 <div class="modal-footer bt-none">
-                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Terms Modal -->
     <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-scrollable">
             <div class="modal-content">
@@ -948,7 +925,6 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-
                     <p><strong>Last Updated:</strong> 09 August 2025</p>
 
                     <h6>1. Introduction</h6>
@@ -1001,37 +977,26 @@
                     <h6>11. Contact Us</h6>
                     <p>For questions about these Terms of Service, please contact us at:<br>
                         Email: <a href="mailto:support@majesticescape.in">support@majesticescape.in</a></p>
-
                 </div>
                 <div class="modal-footer">
-                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
                 </div>
             </div>
         </div>
     </div>
 
-
-
-    <div class="modal fade" id="referralModal" tabindex="-1"
-        aria-labelledby="referralModalLabel" aria-hidden="true">
+    <!-- Referral Modal -->
+    <div class="modal fade" id="referralModal" tabindex="-1" aria-labelledby="referralModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-scrollable">
             <div class="modal-content">
-
                 <div class="modal-header">
                     <h5 class="modal-title" id="referralModalLabel">
                         Referral
                     </h5>
-                    <button type="button" class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-
                 <div class="modal-body">
-
                     <h6>🎉 Refer & Earn with Majestic Escape – Rann Utsav Booking</h6>
-
                     <p>
-                        
                         Planning a trip to the magical <strong>Rann Utsav</strong>?<br>
                         Make it even more rewarding by referring your friends and family to
                         book with <strong>Majestic Escape</strong>.
@@ -1054,25 +1019,24 @@
                     <p>
                         1. Referral is valid only for friends and family<br>
                         2. The referred person must successfully complete the booking<br>
-                        3. The Amazon voucher will be issued only after the referred customer checks out successfully<br>
+                        3. The Amazon voucher will be issued only after the referred customer checks out
+                        successfully<br>
                         4. Voucher will not be issued for cancelled, no-show, or incomplete bookings<br>
                         5. Majestic Escape reserves the right to modify or withdraw the offer without prior notice<br>
-                        6. The referral offer is applicable only to individuals who have completed a confirmed booking with
-                           Majestic Escape.
+                        6. The referral offer is applicable only to individuals who have completed a confirmed booking
+                        with
+                        Majestic Escape.
                     </p>
-
                 </div>
-
-
                 <div class="modal-footer">
                 </div>
-
             </div>
         </div>
     </div>
 
-
-    <div class="modal fade" id="cancellationPolicyModal" tabindex="-1" aria-labelledby="cancellationPolicyModalLabel" aria-hidden="true">
+    <!-- Cancellation Policy Modal -->
+    <div class="modal fade" id="cancellationPolicyModal" tabindex="-1" aria-labelledby="cancellationPolicyModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
@@ -1080,26 +1044,30 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-
                     <p><strong>Last Updated:</strong> 08 September 2025</p>
 
                     <h6>1. Cancellation 30 Days or More</h6>
-                    <p>90% refund will be provided if cancelled more than or equal to 30 days prior to the scheduled arrival date.</p>
+                    <p>90% refund will be provided if cancelled more than or equal to 30 days prior to the scheduled
+                        arrival date.</p>
 
                     <h6>2. Cancellation Between 15-29 Days</h6>
-                    <p>60% refund will be provided if cancelled more than or equal to 15 days prior to the scheduled arrival date but less than 30 days prior to the scheduled arrival date.</p>
+                    <p>60% refund will be provided if cancelled more than or equal to 15 days prior to the scheduled
+                        arrival date but less than 30 days prior to the scheduled arrival date.</p>
 
                     <h6>3. Cancellation Less Than 15 Days</h6>
-                    <p>No refund will be provided if cancelled less than 15 days prior to the scheduled arrival date.</p>
+                    <p>No refund will be provided if cancelled less than 15 days prior to the scheduled arrival date.
+                    </p>
 
                     <h6>4. Change in Check-in Date</h6>
                     <p>In case of any change in check-in date, 15% of the total booking amount will be charged.</p>
 
                     <h6>5. Change of Primary Guest Name</h6>
-                    <p>In case of a change in the Primary Guest Name, 5% of the total booking amount will be charged.</p>
+                    <p>In case of a change in the Primary Guest Name, 5% of the total booking amount will be charged.
+                    </p>
 
                     <h6>6. Downgrade of Room Category</h6>
-                    <p>In case the existing room category is downgraded, 5% of the total booking amount will be charged.</p>
+                    <p>In case the existing room category is downgraded, 5% of the total booking amount will be charged.
+                    </p>
 
                     <h6>7. Taxes</h6>
                     <p>Rates are exclusive of applicable taxes.</p>
@@ -1108,13 +1076,13 @@
                     <p>GST shall be charged as applicable.</p>
 
                     <h6>9. Triple Occupancy</h6>
-                    <p>In case of triple occupancy, any person above 6 years of age will be charged as an extra person (with mattress).</p>
+                    <p>In case of triple occupancy, any person above 6 years of age will be charged as an extra person
+                        (with mattress).</p>
 
-                    <p><strong>Note:</strong> The organiser reserves all rights to make any changes without prior notice.</p>
-
+                    <p><strong>Note:</strong> The organiser reserves all rights to make any changes without prior
+                        notice.</p>
                 </div>
                 <div class="modal-footer">
-                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
                 </div>
             </div>
         </div>
@@ -1136,191 +1104,15 @@
         </div>
     </div>
 
-
-
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhfs0hlPrtAjX1wXb2ay9Mlw23yl2D-Og&callback=initMap"
+        async defer></script>
+    <!-- Custom JS -->
+    <script src="./script.js"></script>
 </body>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhfs0hlPrtAjX1wXb2ay9Mlw23yl2D-Og&callback=initMap" async
-    defer></script>
-
-
-<script>
-    // Set the date for the festival start
-    const bookingOfferEndDate = new Date("<?= $bookingEndDate->format('Y-m-d') ?>T00:00:00").getTime();
-    const festivalDate = new Date("2025-10-24T00:00:00").getTime();
-
-    function updateCountdown() {
-        const now = new Date().getTime();
-        const distance = bookingOfferEndDate - now;
-        const festivalDistance = festivalDate - now;
-
-        const days = Math.max(0, Math.floor(distance / (1000 * 60 * 60 * 24)));
-        const hours = Math.max(0, Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
-        const minutes = Math.max(0, Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
-        const seconds = Math.max(0, Math.floor((distance % (1000 * 60)) / 1000));
-        // const festivalDays = Math.max(0, Math.floor(festivalDistance / (1000 * 60 * 60 * 24)));
-
-        document.getElementById("days").textContent = String(days).padStart(2, '0');
-        document.getElementById("hours").textContent = String(hours).padStart(2, '0');
-        document.getElementById("minutes").textContent = String(minutes).padStart(2, '0');
-        document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
-        // document.getElementById("festival-days").textContent = String(festivalDays).padStart(2, '0');
-    }
-
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
-</script>
-
-
-<script>
-    window.addEventListener('scroll', () => {
-        const button = document.getElementById("book-now-button-div");
-        if (window.scrollY > window.innerHeight + 420) {
-            button.classList.add('sticky-button');
-        } else {
-            button.classList.remove('sticky-button');
-        }
-    });
-</script>
-
-<script>
-    function initMap() {
-        const locations = [{
-                lat: 23.8391,
-                lng: 69.6905,
-                title: "Dhordo Tent City"
-            },
-            {
-                lat: 23.8998,
-                lng: 69.6950,
-                title: "White Desert View Point"
-            },
-            {
-                lat: 23.9315,
-                lng: 69.5504,
-                title: "Kala Dungar (Black Hill)"
-            },
-            {
-                lat: 23.9428,
-                lng: 69.5337,
-                title: "Kalo Dungar Magnetic Hill Point"
-            },
-            {
-                lat: 22.8328,
-                lng: 69.3467,
-                title: "Mandvi Beach"
-            },
-            {
-                lat: 23.2504,
-                lng: 69.6668,
-                title: "Bhuj (Aina Mahal)"
-            },
-            {
-                lat: 23.7458,
-                lng: 69.6889,
-                title: "Hodka Village"
-            },
-            {
-                lat: 23.7508,
-                lng: 69.6993,
-                title: "Ludiya Village"
-            },
-            {
-                lat: 23.8892,
-                lng: 70.2066,
-                title: "Dholavira"
-            },
-            {
-                lat: 23.9000,
-                lng: 69.6833,
-                title: "Kutch Desert Wildlife Sanctuary"
-            },
-            {
-                lat: 23.70000,
-                lng: 69.40000,
-                title: "Banni Grasslands"
-            },
-            {
-                lat: 23.676,
-                lng: 68.5394,
-                title: "Narayan Sarovar"
-            },
-            {
-                lat: 23.67,
-                lng: 68.54,
-                title: "Koteshwar Temple"
-            }
-        ];
-
-        const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 9,
-            center: locations[0]
-        });
-
-        locations.forEach(loc => {
-            new google.maps.Marker({
-                position: {
-                    lat: loc.lat,
-                    lng: loc.lng
-                },
-                map,
-                title: loc.title
-            });
-        });
-    }
-</script>
-
-<script>
-    document.getElementById("booking-form").addEventListener("submit", async (e) => {
-        e.preventDefault();
-
-        fbq('track', 'Lead');
-
-        const form = e.target;
-        const formData = new FormData(form);
-        const data = Object.fromEntries(formData.entries());
-
-        document.getElementById("send-itinerary-button").disabled = true;
-        document.querySelectorAll(
-            "#form-duplicate-div, #form-error-div, #form-failed-div"
-        ).forEach(el => el.classList.add("d-none"));
-
-        try {
-            const res = await fetch("https://live-am.coderelix.com/webhook/rann-inquiry", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(data)
-            });
-
-            const json = await res.json();
-
-            console.log(json);
-
-            if (json.status === "success") {
-                var successModal = new bootstrap.Modal(document.getElementById('successModal'));
-                successModal.show();
-                document.getElementById('booking-form').reset();
-            } else if (json.status === "duplicate") {
-                var errorDiv = document.getElementById('form-duplicate-div');
-                errorDiv.classList.remove('d-none');
-                document.getElementById('booking-form').reset();
-            } else if (json.status === "error") {
-                var errorDiv = document.getElementById('form-error-div');
-                errorDiv.classList.remove('d-none');
-            } else {
-                var errorDiv = document.getElementById('form-failed-div');
-                errorDiv.classList.remove('d-none');
-            }
-        } catch (err) {
-            var errorDiv = document.getElementById('form-failed-div');
-            errorDiv.classList.remove('d-none');
-        }
-        document.getElementById("send-itinerary-button").disabled = false;
-    });
-</script>
 
 </html>

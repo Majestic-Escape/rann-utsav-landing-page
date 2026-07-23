@@ -133,6 +133,7 @@ footer a {
 
 .section {
     padding: 100px 0;
+    background-color: floralwhite;
 }
 
 /* .section-margin {
@@ -143,11 +144,10 @@ footer a {
     height: 100vh;
     background:
         linear-gradient(to bottom, rgba(0, 0, 0, 0) 85%, #ffffff),
-        url('./banner.jpg?v=0.2') center center / cover no-repeat;
-    /* border-radius: 40px 40px 0 0; */
+        url('./assets/banner.jpg?v=0.2');
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: top center; */
+    background-position: 70%;
 }
 
 .banner-image {
@@ -178,7 +178,7 @@ footer a {
     /* height: 600px; */
     background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 10%),
         linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 10%),
-        url('./about-bg.jpg?v=0.2');
+        url('./assets/about-bg.jpg?v=0.2');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 42%;
@@ -210,7 +210,7 @@ footer a {
     /* background-color: #07243d; */
     background:
         linear-gradient(to bottom, rgba(0, 0, 0, 0.3)),
-        url('./countdown-bg.jpg?v=0.2') top center / cover no-repeat;
+        url('./assets/countdown-bg.jpg?v=0.2') top center / cover no-repeat;
     padding: 80px 0px;
     /* border-radius: 0 0 40px 40px; */
 }
@@ -263,7 +263,7 @@ footer a {
 
 #booking {
     background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 10%),
-        linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0.3) 10%), url('./background.jpg?v=0.2') top center / cover no-repeat;
+        linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0.3) 10%), url('./assets/background.jpg?v=0.2') top center / cover no-repeat;
     /* box-shadow: 0 0 5px #35621f; */
     /* border-radius: 40px; */
     /* padding: 80px 40px; */
@@ -305,7 +305,8 @@ footer a {
     border-radius: 40px;
 }
 
-#form-error, #form-failed {
+#form-error,
+#form-failed {
     color: #fff;
     background-color: #eb3275;
     border-radius: 20px;
@@ -345,14 +346,14 @@ input::-webkit-input-placeholder {
 #festival {
     /* padding: 0 0 20px 0px; */
     /* border-radius: 0 0 40px 40px; */
-    background: linear-gradient(to bottom right, rgb(35 35 35 / 70%) 65%, rgb(234 105 7 / 67%)), url('./festival-bg.jpg?v=0.2') center center / cover no-repeat;
+    background: linear-gradient(to bottom right, rgb(35 35 35 / 70%) 65%, rgb(234 105 7 / 67%)), url('./assets/festival-bg.jpg?v=0.2') center center / cover no-repeat;
     background-attachment: fixed;
 }
 
 #activities {
     /* height: 1600px; */
     margin-top: -1px;
-    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 40%), linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 10%), url('./activities-bg.jpg?v=0.2') center center / cover no-repeat;
+    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 40%), linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 10%), url('./assets/activities-bg.jpg?v=0.2') center center / cover no-repeat;
 }
 
 .activity-card {
@@ -384,51 +385,83 @@ input::-webkit-input-placeholder {
 }
 
 .activity#folk-dance-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/folk-dance.jpg?v=0.2') center 40% / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/folk_music.jpg?v=0.2') center 40% / contain no-repeat;
 }
 
 #handicraft-exhibitions-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/handicraft-exhibitions.jpg?v=0.2') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/doll group.jpg?v=0.2') center center / cover no-repeat;
+}
+
+#dolls-card {
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/dolls.jpg?v=0.2') center center / cover no-repeat;
 }
 
 #kutchi-cuisine-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/kutchi-cuisine.jpg?v=0.2') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/kutchi-cuisine.jpg?v=0.2') center center / cover no-repeat;
 }
 
 #desert-safari-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/desert-safari.jpg?v=0.2') center 58% / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/desert-safari.jpg?v=0.2') center 58% / cover no-repeat;
 }
 
 #hot-air-balloon-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/hot-air-balloon.jpg?v=0.2') center 8% / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/hot-air-balloon.jpg?v=0.2') center 8% / cover no-repeat;
 }
 
 #paragliding-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/paragliding.jpg?v=0.2') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/paramotor.jpg?v=0.2') center center / cover no-repeat;
+}
+
+#paramotor-flight-card {
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/paramotor1.jpg?v=0.2') center right / cover no-repeat;
 }
 
 #atv-rides-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/atv-rides.jpg?v=0.2') center 64% / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/atv-rides.jpg?v=0.2') center 64% / cover no-repeat;
 }
 
 #village-visits-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/village-visits.jpg?v=0.2') center 70% / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/village-visits.jpg?v=0.2') center 70% / cover no-repeat;
+}
+
+#local-market-card {
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/market2.jpg?v=0.2') center center / cover no-repeat;
+}
+
+#craft-market-card {
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/market3.jpg?v=0.2') center center / cover no-repeat;
+}
+
+#cultural-market-card {
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/market4.jpg?v=0.2') center center / cover no-repeat;
 }
 
 #night-bazaar-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/night-bazaar.jpg?v=0.2') center 75% / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/market.jpg?v=0.2') center 75% / cover no-repeat;
 }
 
 #full-moon-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/full-moon.jpg?v=0.2') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/full-moon.jpg?v=0.2') center center / cover no-repeat;
 }
 
 #bhunga-stay-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/bhunga-stay.jpg?v=0.2') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/bhunga-stay.jpg?v=0.2') center center / cover no-repeat;
 }
 
 #yoga-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./activities/yoga.jpg?v=0.2') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/yoga.jpg?v=0.2') center center / cover no-repeat;
+}
+
+#paintball-card {
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/paintball.jpg?v=0.2') center center / cover no-repeat;
+}
+
+#rodeo-card {
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/rodio.jpg?v=0.2') center center / cover no-repeat;
+}
+
+#kaha-card {
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/kaha.JPG?v=0.2') center center / cover no-repeat;
 }
 
 .activity-carousel {
@@ -469,36 +502,7 @@ input::-webkit-input-placeholder {
     /* border-radius: 0 0 0 40px; */
 }
 
-#gallery {
-    /* border-radius: 40px 40px 0 0; */
-    overflow: hidden;
-}
 
-.carousel-custom-controls {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 10;
-    display: flex;
-    gap: 0.5rem;
-}
-
-.carousel-custom-controls .carousel-control-prev,
-.carousel-custom-controls .carousel-control-next {
-    position: static;
-    /* Remove absolute positioning */
-    width: auto;
-    height: auto;
-    background: #000;
-    opacity: 1;
-    border-radius: 0.25rem;
-    padding: 0.5rem;
-}
-
-.carousel-custom-controls .carousel-control-prev-icon,
-.carousel-custom-controls .carousel-control-next-icon {
-    background-size: 1rem 1rem;
-}
 
 #brought-by {
     display: flex;
@@ -513,7 +517,7 @@ input::-webkit-input-placeholder {
     height: 100vh;
     background:
         linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0) 10%),
-        url('./footer.jpg?v=0.2') center center / cover no-repeat;
+        url('./assets/footer.jpg?v=0.2') center center / cover no-repeat;
     /* border-radius: 0 0 40px 40px; */
 }
 
@@ -587,10 +591,10 @@ input::-webkit-input-placeholder {
     #banner {
         background:
             linear-gradient(to bottom, rgba(0, 0, 0, 0) 85%, #ffffff),
-            url('./banner-mob.jpg?v=0.2') center center / contain no-repeat;
+            url('./assets/banner-mob.jpg?v=0.2') center center / contain no-repeat;
         background-repeat: no-repeat;
         background-size: cover;
-        /* background-position: top center; */
+        background-position: top center;
     }
 
     .subtitle {
@@ -738,5 +742,330 @@ input::-webkit-input-placeholder {
 
     .banner-text p {
         margin-bottom: 0;
+    }
+}
+
+/* ==========================================================================
+   The Stars Await Section & Carousel
+   ========================================================================== */
+#stars-await,
+#gallery {
+    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 40%), linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 10%), url('./assets/activities-bg.jpg?v=0.2') center center / cover no-repeat;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: top;
+}
+
+#stars-await::after,
+#gallery::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(to top, #ffffff 20%, transparent 50%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.stars-subtitle,
+.gallery-subtitle {
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.stars-carousel-container,
+.gallery-carousel-container {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+
+    .stars-carousel-container::before,
+    .stars-carousel-container::after,
+    .gallery-carousel-container::before,
+    .gallery-carousel-container::after {
+        width: 30px;
+    }
+
+    #stars-await,
+    #gallery {
+        padding: 60px 0;
+    }
+
+    .stars-subtitle,
+    .gallery-subtitle {
+        font-size: 16px;
+    }
+}
+
+.stars-carousel-track-wrapper,
+.gallery-carousel-track-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.stars-carousel-track,
+.gallery-carousel-track {
+    display: flex;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    width: 100%;
+    will-change: transform;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.stars-carousel-card,
+.gallery-carousel-card {
+    flex: 0 0 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    will-change: transform;
+}
+
+@media (min-width: 768px) {
+
+    .stars-carousel-card,
+    .gallery-carousel-card {
+        flex: 0 0 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .stars-carousel-card,
+    .gallery-carousel-card {
+        flex: 0 0 25%;
+    }
+}
+
+.artist-img-wrapper,
+.gallery-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    background-color: #121824;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.artist-img-wrapper img,
+.gallery-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+/* Hover effects for desktop */
+@media (min-width: 1024px) {
+
+    .artist-img-wrapper:hover,
+    .gallery-img-wrapper:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(234, 7, 118, 0.3);
+    }
+
+    .artist-img-wrapper:hover img,
+    .gallery-img-wrapper:hover img {
+        transform: scale(1.08);
+    }
+}
+
+/* Navigation Buttons */
+.stars-carousel-btn,
+.gallery-carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 54px;
+    height: 54px;
+    background: rgba(10, 14, 23, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.stars-carousel-btn i,
+.gallery-carousel-btn i {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stars-carousel-btn:hover,
+.gallery-carousel-btn:hover {
+    background: #ea0776;
+    border-color: #ea0776;
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(234, 7, 118, 0.5);
+    transform: translateY(-50%) scale(1.08);
+}
+
+.stars-carousel-btn-prev,
+.gallery-carousel-btn-prev {
+    left: 20px;
+}
+
+.stars-carousel-btn-next,
+.gallery-carousel-btn-next {
+    right: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .stars-carousel-btn,
+    .gallery-carousel-btn {
+        width: 42px;
+        height: 42px;
+        background: rgba(10, 14, 23, 0.9);
+    }
+
+    .stars-carousel-btn-prev,
+    .gallery-carousel-btn-prev {
+        left: 10px;
+    }
+
+    .stars-carousel-btn-next,
+    .gallery-carousel-btn-next {
+        right: 10px;
+    }
+}
+
+/* Lightbox Clickable Triggers */
+.stars-carousel-card,
+.gallery-carousel-card,
+.activity {
+    cursor: pointer;
+}
+
+/* Custom Lightbox Modal */
+.custom-lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(6, 9, 15, 0.92);
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.custom-lightbox.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 90vw;
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(0.92) translate3d(0, 0, 0);
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform;
+}
+
+.custom-lightbox.active .lightbox-content {
+    transform: scale(1) translate3d(0, 0, 0);
+}
+
+.lightbox-content img {
+    max-width: 100%;
+    max-height: 75vh;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lightbox-caption {
+    color: #ffffff;
+    font-size: 1.25rem;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 500;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.25s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 100000;
+}
+
+.lightbox-close i {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.lightbox-close:hover {
+    background: rgba(234, 7, 118, 0.9);
+    border-color: #ea0776;
+    transform: scale(1.08) rotate(90deg);
+    box-shadow: 0 0 15px rgba(234, 7, 118, 0.4);
+}
+
+@media (max-width: 768px) {
+    .lightbox-close {
+        top: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        font-size: 1.8rem;
+    }
+    
+    .lightbox-caption {
+        font-size: 1.05rem;
+        margin-top: 15px;
     }
 }
