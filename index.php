@@ -64,14 +64,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="./favicon.ico" type="image/x-icon" sizes="76x76">
-    <title>Rann of Kutch Festival</title>
+    <title>Rann of Kutch Festival | Majestic Escape</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Fonts: Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
+    <!-- Google Fonts: Poppins, Outfit, Meddon -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Meddon&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./style.css?v=0.2">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css?v=1.4">
 </head>
 
 <body>
@@ -80,6 +80,18 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W73276NQ" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Hidden SVG for gradient definitions -->
+    <svg width="0" height="0" class="position-absolute" style="visibility: hidden;">
+        <linearGradient id="purple-pink-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#744FB9" />
+            <stop offset="100%" stop-color="#FF4D8D" />
+        </linearGradient>
+        <linearGradient id="form-underline-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#FF4D6A" />
+            <stop offset="100%" stop-color="#1F58FF" />
+        </linearGradient>
+    </svg>
 
     <?php $eventDate = new DateTime('2025-10-23');
     $now = new DateTime();
@@ -108,9 +120,10 @@
     </script>
 
     <div class="main">
-        <section id="banner" class="">
+        <!-- 1. Hero Banner Section -->
+        <section id="banner" class="d-flex flex-column position-relative">
             <!-- Navbar Start -->
-            <nav class="navbar navbar-sticky navbar-expand-lg navbar-light py-4">
+            <nav class="navbar navbar-sticky navbar-expand-lg navbar-dark py-4">
                 <div class="container-fluid px-5">
                     <a class="navbar-brand fw-bold text-primary" href="#">
                         <img src="./assets/logo-white.svg" alt="Majestic Escape Logo" id="header-logo">
@@ -122,22 +135,28 @@
                         </div>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto fs-5">
+                        <ul class="navbar-nav ms-auto fs-5 align-items-center">
                             <li class="nav-item">
-                                <a class="nav-link" href="#booking">Book Now!</a>
+                                <a class="nav-link text-white" href="#banner">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#about">About</a>
+                                <a class="nav-link text-white" href="#about">About Rann Utsav</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#activities">Activities</a>
+                                <a class="nav-link text-white" href="#activities">Experiences</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#gallery">Gallery</a>
+                                <a class="nav-link text-white" href="#gallery">Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#referralModal">
-                                    Referral
+                                <a class="nav-link text-white" href="#map">Map</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#footer">Contact</a>
+                            </li>
+                            <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                                <a href="#booking" class="btn btn-primary rounded-pill px-4 py-2 fw-bold header-cta-btn">
+                                    CRAFT MY ESCAPE!
                                 </a>
                             </li>
                         </ul>
@@ -145,173 +164,302 @@
                 </div>
             </nav>
             <!-- Navbar End -->
-            <div class="container-fluid banner-container">
-                <div class="d-none d-lg-flex banner-text">
-                    <img src="./assets/rann-of-kutch.png?v=0.2" class="rann-of-kutch-logo">
-                    <p class="text-center mt-0">
-                        <span class="tagline">Culture • Colors • Celebration</span>
-                    </p>
-
-                    <img src="./assets/date.png?v=0.2" class="date-card-img">
-
-                    <a href="#booking" id="book-now-button" class="btn btn-sm fs-5 px-5 py-3 mt-4">
-                        CRAFT MY ESCAPE!
-                    </a>
-                    <br>
-                    <h4 class="text-center text-light">
-                        <b style="color: black ;text-shadow: 1px 1px black;">Experience the best with Majestic
-                            Escape!</b>
-                    </h4>
-                </div>
-
-                <div class="d-flex d-lg-none banner-text">
-                    <span>
-                        <img src="./assets/rann-of-kutch.png?v=0.2" class="rann-of-kutch-logo">
-                        <p class="text-center mt-0">
-                            <span class="tagline text-light">Culture • Colors • Celebration</span>
-                        </p>
-                        <img src="./assets/date.png?v=0.2" class="date-card-img">
-                    </span>
-
-                    <span>
-                        <a href="#booking" id="book-now-button" class="btn btn-sm fs-5 px-5 py-3 m-4 d-block">
-                            CRAFT MY ESCAPE!
-                        </a>
-                        <h4 class="text-center text-dark experience-text">
-                            <b>Experience the best with<br>Majestic Escape!</b>
-                        </h4>
-                    </span>
-                </div>
-            </div>
         </section>
 
-        <section id="countdown-section" class="align-items-center mt-6">
+        <!-- 2. Countdown Section -->
+        <section id="countdown-section" class="align-items-center py-5">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
-                    <div class="col-md-8 text-center text-md-start mb-4 mb-md-0">
-                        <h2 class="fw-bold mb-3 cta-text">Book before the <span class="fs-big light-text-stroke"><br
-                                    class="d-block d-md-none">next full moon </span> <br class="d-block d-none-md">to
-                            get the best deals with Majestic Escape!</h2>
+                    <div class="col-lg-5 text-center text-lg-start mb-4 mb-lg-0">
+                        <h2 class="fw-bold mb-3 cta-text text-white countdown-cta-heading">
+                            Book before the <br class="d-none d-lg-block">
+                            <span class="next-full-moon-highlight">next full moon</span> <br class="d-none d-lg-block">
+                            to get the best deals with <br class="d-none d-lg-block">
+                            Majestic Escape!
+                        </h2>
+                        <div class="countdown-heading-underline"></div>
                     </div>
-                    <div class="col-md-4 text-center m-auto">
-                        <div id="countdown" class="d-flex flex-wrap gap-2 justify-content-center">
-                            <div><span id="days">00</span><span class="countdown-subtext">d</span></div>
-                            <div class="d-none d-md-block">:</div>
-                            <div><span id="hours">00</span><span class="countdown-subtext">h</span></div>
-                            <div class="d-none d-md-block">:</div>
-                            <div><span id="minutes">00</span><span class="countdown-subtext">m</span></div>
-                            <div class="d-none d-md-block">:</div>
-                            <div><span id="seconds">00</span><span class="countdown-subtext">s</span></div>
+                    <div class="col-lg-7">
+                        <div class="row g-3 justify-content-center" id="countdown-cards">
+                            <div class="col-6 col-sm-3">
+                                <div class="countdown-card text-center p-4">
+                                    <div class="countdown-icon-wrapper mb-3 text-warning">
+                                        <i class="bi bi-moon-stars fs-3"></i>
+                                    </div>
+                                    <div class="countdown-number" id="days">00</div>
+                                    <div class="countdown-label">Days</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3">
+                                <div class="countdown-card text-center p-4">
+                                    <div class="countdown-icon-wrapper mb-3 text-danger">
+                                        <i class="bi bi-clock fs-3"></i>
+                                    </div>
+                                    <div class="countdown-number" id="hours">00</div>
+                                    <div class="countdown-label">Hours</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3">
+                                <div class="countdown-card text-center p-4">
+                                    <div class="countdown-icon-wrapper mb-3 text-info">
+                                        <i class="bi bi-calendar4-event fs-3"></i>
+                                    </div>
+                                    <div class="countdown-number" id="minutes">00</div>
+                                    <div class="countdown-label">Minutes</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3">
+                                <div class="countdown-card text-center p-4">
+                                    <div class="countdown-icon-wrapper mb-3 text-warning">
+                                        <i class="bi bi-hourglass-split fs-3"></i>
+                                    </div>
+                                    <div class="countdown-number" id="seconds">00</div>
+                                    <div class="countdown-label">Seconds</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <span id="explore-now"></span>
         </section>
 
-        <section id="booking" class="section px-2 bg-fixed">
-            <div class="row">
-                <div class="col-md-8 offset-md-2 text-center">
-                    <br class="d-block d-md-none">
-                    <h1 class="section-title text-light mb-4">Ready For <span class="pink-text">Kutch</span>?<br> Let's
-                        Curate Your Journey!</h1>
-                </div>
-
-                <div class="col-md-8 offset-md-2">
-                    <form id="booking-form" method="POST" action="">
-                        <p class="mb-4 subtitle text-center">
-                            Unveil the White Desert and get your custom itinerary now!
+        <!-- 3. About Rann Utsav Section -->
+        <section id="about" class="section py-5">
+            <div class="container py-4 about-marg">
+                <div class="row align-items-center justify-content-end">
+                    <div class="col-lg-8 about-div ps-lg-5 text-black">
+                        <div class="d-inline-block text-center mb-4">
+                            <h2 class="section-title mb-0" id="about-title" style="line-height: 1.3;">
+                                <span class="blue-purple-gradient-text d-inline-block">Rann Utsav</span>
+                                <span class="d-block"></span>
+                                <span class="blue-purple-gradient-text d-inline-block">2025-2026</span>
+                            </h2>
+                            <div class="elegant-separator mt-2 justify-content-center" style="margin-bottom: 0;">
+                                <span class="sep-line"></span>
+                                <span class="sep-dot"></span>
+                                <span class="sep-dot-small"></span>
+                            </div>
+                        </div>
+                        <p class="fs-5 about-para" style="line-height: 2; text-align: justify;">
+                            The Rann of Kutch is a salt marsh located in the Thar Desert in the Kutch district of Gujarat, India. It is known for its stunning white salt desert, vibrant culture, and unique wildlife. The region comes alive during the Rann Utsav, a festival celebrating local art, crafts, music, and dance.<br><br>
+                            Rann Utsav 2025 begins on 23 October 2025 and runs till 4 March 2026, hosted in Dhordo, a small village on the edge of the White Rann in Gujarat's Kutch district. The festival spans over 100 days, thanks to Gujarat Tourism, and brings this salt marsh to life with cultural vibrancy and curated experiences.
                         </p>
-                        <div class="row form-row">
-                            <div class="col-md-12 d-none" id="form-duplicate-div">
-                                <div id="form-error" class="alert p-3 text-center">You have already filled the form. Our
-                                    team will reach out to you shortly!</div>
-                            </div>
-                            <div class="col-md-12 d-none" id="form-error-div">
-                                <div id="form-error" class="alert p-3 text-center">Please share all the required details
-                                    so we can send you the perfect Rann Utsav itinerary.</div>
-                            </div>
-                            <div class="col-md-12 d-none" id="form-failed-div">
-                                <div id="form-failed" class="alert p-3 text-center">Oops! Something went wrong while
-                                    submitting your form. Please try again.</div>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="hidden" class="form-control" id="source" name="source" value="<?php echo isset($_GET['utm_source']) ? htmlspecialchars($_GET['utm_source']) : 'direct'; ?>">
-                                <input type="text" class="form-control" id="name" name="name"
-                                    placeholder="Enter your name" required>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="email" class="form-control" id="email" name="email"
-                                    placeholder="Enter  your email" required>
-                            </div>
-
-                            <div class="col-md-6">
-                                <input type="tel" class="form-control" id="phone" name="phone"
-                                    placeholder="Enter your WhatsApp number" required>
-                            </div>
-
-                            <div class="col-md-6">
-                                <select class="form-select" id="traveller-type" name="traveller_type" required>
-                                    <option value="" disabled selected>What type of traveller are you?</option>
-                                    <option value="Solo">Solo</option>
-                                    <option value="Couple">Couple</option>
-                                    <option value="Family">Family</option>
-                                    <option value="Group">Group</option>
-                                    <option value="Corporate">Corporate</option>
-                                </select>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row form-row">
-                            <div class="col-md-12">
-                                <button class="form-control btn btn-warning btn-md px-5 w-100 send-itinerary-button"
-                                    type="submit" id="send-itinerary-button">
-                                    CRAFT MY ESCAPE!
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="section">
-            <div class="row">
-                <div id="about-img-section" class="col-md-6">
-
+        <!-- 4. Gallery Section ("Glimpses of White Desert") -->
+        <section id="gallery" class="section">
+            <div class="container-fluid px-4 px-md-5">
+                <div class="row">
+                    <div class="col-md-12 text-center mb-5">
+                        <h1 class="section-title text-dark mb-3">Glimpses of <span class="purple-gradient-text">White Desert</span></h1>
+                        <p class="subtitle mb-0 gallery-subtitle">
+                            Explore the breathtaking landscapes, vibrant cultural celebrations, and unforgettable memories of Rann Utsav.
+                        </p>
+                    </div>
                 </div>
-                <div class="col-md-6 about-div">
-                    <h1 class="section-title mb-4 pink-text" id="about-title">Rann Utsav <br
-                            class="d-block d-lg-none">2025-2026</h1>
-                    <p class="text-dark fs-5 about-para">
-                        The Rann of Kutch is a salt marsh located in the Thar Desert in the Kutch district of Gujarat,
-                        India.
-                        It is known for its stunning white salt desert, vibrant culture, and unique wildlife. The region
-                        comes alive during the Rann Utsav, a festival celebrating local art, crafts, music, and
-                        dance.<br><br>
 
-                        Rann Utsav 2025 begins on 23 October 2025 and runs till 4 March 2026, hosted in Dhordo, a small
-                        village on the edge of the White Rann in Gujarat's Kutch district. The festival spans over 100
-                        days,
-                        thanks to Gujarat Tourism, and brings the salt marsh to life with cultural vibrancy and curated
-                        experiences.
-                    </p>
+                <div class="gallery-carousel-container">
+                    <div class="gallery-carousel-track-wrapper">
+                        <div class="gallery-carousel-track" id="gallery-carousel-track">
+                            <!-- Image Cards -->
+                            <div class="gallery-carousel-card" data-index="0">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery1.jpg?v=0.2" alt="Kutch Desert Gallery 1">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="1">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery2.jpg?v=0.2" alt="Kutch Desert Gallery 2">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="2">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery3.jpg?v=0.2" alt="Kutch Desert Gallery 3">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="3">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery4.jpg?v=0.2" alt="Kutch Desert Gallery 4">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="4">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery5.jpg?v=0.2" alt="Kutch Desert Gallery 5">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="5">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery7.jpg?v=0.2" alt="Kutch Desert Gallery 7">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="6">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery10.jpg?v=0.2" alt="Kutch Desert Gallery 10">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="8">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery12.jpg?v=0.2" alt="Kutch Desert Gallery 12">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="9">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery6.jpg?v=0.2" alt="Kutch Desert Gallery 6">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="10">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery8.jpg?v=0.2" alt="Kutch Desert Gallery 8">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="11">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery9.jpg?v=0.2" alt="Kutch Desert Gallery 9">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="12">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery13.jpg?v=0.2" alt="Kutch Desert Gallery 13">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="13">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery14.jpg?v=0.2" alt="Kutch Desert Gallery 14">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="14">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery15.jpg?v=0.2" alt="Kutch Desert Gallery 15">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="15">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery16.jpg?v=0.2" alt="Kutch Desert Gallery 16">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Navigation Controls on active cards -->
+                    <button class="gallery-carousel-btn gallery-carousel-btn-prev" id="gallery-carousel-prev"
+                        aria-label="Previous Slide">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button class="gallery-carousel-btn gallery-carousel-btn-next" id="gallery-carousel-next"
+                        aria-label="Next Slide">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
                 </div>
             </div>
         </section>
 
+        <!-- 5. Lead Form Banner ("The magic of Rann Utsav has begun!") -->
+        <section id="booking" class="align-items-center py-5">
+            <div class="container-fluid px-4 px-md-5">
+                <div class="row align-items-center justify-content-between">
+                    <!-- Left Side: Promo Content (35%) -->
+                    <div class="col-lg-5 booking-text-col text-white text-lg-start text-center mb-5 mb-lg-0">
+                        <h2 class="fw-bold mb-3 form-banner-heading">
+                            The magic of <span class="gradient-text-pink-blue">Rann Utsav</span> has begun!
+                        </h2>
+                        <p class="fs-5 opacity-90 form-banner-para">
+                            Get ready for a celebration of culture, color, and endless white sands! Your Kutch journey starts here - plan with us today!
+                        </p>
+                        <div class="form-banner-underline-wrapper mt-3 text-start d-none d-lg-block">
+                            <svg class="form-banner-underline" viewBox="0 0 120 10" preserveAspectRatio="none" style="width: 140px; height: 8px;">
+                                <path d="M0,5 Q60,10 120,5" stroke="url(#form-underline-gradient)" stroke-width="3" stroke-linecap="round" fill="transparent"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Booking Form Card (65%) -->
+                    <div class="col-lg-7 booking-form-col">
+                        <div class="booking-card-wrapper p-4 p-md-5 rounded-4 shadow-lg bg-white w-100">
+                            <form id="booking-form" class="booking-form" method="POST" action="">
+                                <div class="row g-3">
+                                    <div class="col-md-12 d-none form-duplicate-div">
+                                        <div class="alert alert-danger p-3 text-center">You have already filled the form. Our team will reach out to you shortly!</div>
+                                    </div>
+                                    <div class="col-md-12 d-none form-error-div">
+                                        <div class="alert alert-danger p-3 text-center">Please share all the required details so we can send you the perfect Rann Utsav itinerary.</div>
+                                    </div>
+                                    <div class="col-md-12 d-none form-failed-div">
+                                        <div class="alert alert-danger p-3 text-center">Oops! Something went wrong while submitting your form. Please try again.</div>
+                                    </div>
+                                    
+                                    <!-- 2x2 Form Layout -->
+                                    <div class="col-md-6">
+                                        <div class="input-group form-input-group">
+                                            <span class="input-group-text"><i class="bi bi-person text-muted"></i></span>
+                                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group form-input-group">
+                                            <span class="input-group-text"><i class="bi bi-envelope text-muted"></i></span>
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                                        </div>
+                                    </div>
+ 
+                                    <div class="col-md-6">
+                                        <div class="input-group form-input-group">
+                                            <span class="input-group-text"><i class="bi bi-whatsapp text-muted"></i></span>
+                                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter Whatsapp no." required>
+                                        </div>
+                                    </div>
+ 
+                                    <div class="col-md-6">
+                                        <div class="input-group form-input-group">
+                                            <span class="input-group-text"><i class="bi bi-compass text-muted"></i></span>
+                                            <select class="form-select" id="traveller-type" name="traveller_type" required>
+                                                <option value="" disabled selected>What type of traveller?</option>
+                                                <option value="Solo">Solo</option>
+                                                <option value="Couple">Couple</option>
+                                                <option value="Family">Family</option>
+                                                <option value="Group">Group</option>
+                                                <option value="Corporate">Corporate</option>
+                                            </select>
+                                        </div>
+                                    </div>
+ 
+                                    <div class="col-md-12 mt-4">
+                                        <input type="hidden" class="form-control" id="source" name="source" value="<?php echo isset($_GET['utm_source']) ? htmlspecialchars($_GET['utm_source']) : 'direct'; ?>">
+                                        <button class="btn w-100 fw-bold py-3 text-white rounded-pill form-submit-btn" type="submit" id="send-itinerary-button">
+                                            CRAFT MY KUTCH ESCAPE
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Experiences Section ("Live The Colors Of Kutch...") -->
         <section id="activities" class="section pb-4">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h1 class="section-title mb-4 pink-text">Live The Colors Of Kutch<span
-                            class="d-none d-md-block"></span><span class="d-inline-block d-md-none">,</span> One
-                        Experience At A Time!</h1>
+                    <h1 class="section-title mb-3 text-center" style="line-height: 1.4;">
+                        <span class="blue-pink-gradient-text d-inline-block">Live The Colors Of Kutch</span>
+                        <span class="d-block mt-1"></span>
+                        <span class="blue-pink-gradient-text d-inline-block">One Experience At A Time!</span>
+                    </h1>
+                    <div class="activities-separator mb-3">
+                        <span class="activities-sep-line"></span>
+                        <span class="activities-sep-dot"></span>
+                        <span class="activities-sep-line"></span>
+                    </div>
                     <p class="subtitle mb-4">
                         Immerse yourself in the vibrant culture and traditions of the Rann of Kutch with our curated
                         activities.
                     </p>
                 </div>
             </div>
+
 
             <div class="activity-carousel pt-4">
                 <div class="activity-track">
@@ -598,17 +746,447 @@
                     </div>
                 </div>
             </div>
+
+            <div class="container py-4">
+                <div class="features-bar py-4 px-2 my-4 rounded-4" style="background-color: #FAF5F0; border: 1px solid rgba(116, 79, 185, 0.1);">
+                    <div class="row g-4 text-center justify-content-center">
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="feature-item">
+                                <i class="bi bi-compass fs-2 mb-2 d-block"></i>
+                                <span class="fw-bold text-dark" style="font-size: 14px;">Curated<br>Experiences</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="feature-item">
+                                <i class="bi bi-person-badge fs-2 mb-2 d-block"></i>
+                                <span class="fw-bold text-dark" style="font-size: 14px;">Local Expert<br>Guides</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="feature-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="url(#purple-pink-gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bi fs-2 mb-2 d-block mx-auto" style="transform: translateY(8px);">
+                                    <path d="M3.5 21 14 3" />
+                                    <path d="M20.5 21 10 3" />
+                                    <path d="M15.5 21 12 15l-3.5 6" />
+                                    <path d="M2 21h20" />
+                                </svg>
+                                <span class="fw-bold text-dark d-block" style="font-size: 14px; transform: translateY(18px);">Premium<br>Desert Camps</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="feature-item">
+                                <i class="bi bi-shield-check fs-2 mb-2 d-block"></i>
+                                <span class="fw-bold text-dark" style="font-size: 14px;">Secure<br>Booking</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="feature-item">
+                                <i class="bi bi-headset fs-2 mb-2 d-block"></i>
+                                <span class="fw-bold text-dark" style="font-size: 14px;">24/7<br>Support</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="feature-item">
+                                <i class="bi bi-map fs-2 mb-2 d-block"></i>
+                                <span class="fw-bold text-dark" style="font-size: 14px;">Custom<br>Itineraries</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="stars-await" class="section">
+        <!-- 6.5 Stay Under The Stars (Accommodation Showcase) -->
+        <section id="tents-showcase" class="section py-5" style="background-color: #FAF5F0; border-top: 1px solid rgba(116, 79, 185, 0.05); border-bottom: 1px solid rgba(116, 79, 185, 0.05);">
+            <div class="container py-4">
+                <!-- Section Header -->
+                <div class="row text-center mb-5">
+                    <div class="col-md-12">
+                        <span class="text-uppercase fw-bold" style="color: #744FB9; letter-spacing: 2px; font-size: 13px;">Accommodations</span>
+                        <h1 class="section-title text-dark mt-2 mb-3" style="font-family: 'Outfit', sans-serif; font-weight: 700;">Stay Under The <span class="pink-text">Stars</span></h1>
+                        <p class="subtitle text-muted mx-auto" style="max-width: 600px; font-size: 16px;">Luxury Tents Crafted For Every Traveller</p>
+                    </div>
+                </div>
+
+                <!-- Main Carousel -->
+                <div id="tentsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+                    <div class="carousel-inner">
+                        
+                        <!-- Slide 1: Darbari Maharaja Suite -->
+                        <div class="carousel-item active">
+                            <div class="row g-4 align-items-center justify-content-center">
+                                <!-- Left Column: Image & Thumbnails -->
+                                <div class="col-lg-6 order-lg-2 offset-xl-1">
+                                    <div class="tent-gallery-card p-3 bg-white rounded-4 shadow-sm">
+                                        <div class="tent-main-img-wrapper position-relative overflow-hidden rounded-3 mb-3" style="aspect-ratio: 16/10;">
+                                            <img id="darbari-main-img" src="./assets/tents/darbari-tent-exterior.JPG" alt="Darbari Maharaja Suite" class="w-100 h-100 object-fit-cover">
+                                            <span class="position-absolute top-3 start-3 badge bg-danger fs-6 py-2 px-3 rounded-pill shadow-sm" style="background: linear-gradient(135deg, #EA0776 0%, #744FB9 100%) !important;">🔥 Best Seller</span>
+                                        </div>
+                                        <div class="row g-2 tent-thumbnails">
+                                            <div class="col-3">
+                                                <img src="./assets/tents/darbari-tent-exterior.JPG" class="img-fluid rounded cursor-pointer active-thumb" onclick="changeTentImage('darbari', './assets/tents/darbari-tent-exterior.JPG', this)" alt="Darbari Suite Exterior">
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="./assets/tents/darbari-tent-bed.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('darbari', './assets/tents/darbari-tent-bed.JPG', this)" alt="Darbari Suite Interior">
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="./assets/tents/darbari-tent-sitting-area.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('darbari', './assets/tents/darbari-tent-sitting-area.JPG', this)" alt="Darbari Suite Lounge">
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="./assets/tents/darbari-tent-wc.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('darbari', './assets/tents/darbari-tent-wc.JPG', this)" alt="Darbari Suite Washroom">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Right Column: Information Panel -->
+                                <div class="col-lg-6 col-xl-5 order-lg-1">
+                                    <div class="tent-info-panel p-4 p-md-5 bg-white rounded-4 shadow-sm border border-opacity-10" style="border-color: rgba(116, 79, 185, 0.1);">
+                                        <div class="d-flex align-items-center justify-content-between mb-3">
+                                            <h2 class="tent-title mb-0" style="font-family: 'Outfit', sans-serif; font-weight: 700; color: #10182D;">Darbari Suite</h2>
+                                            <div class="tent-rating text-end">
+                                                <span class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                                                <span class="fw-bold text-dark ms-1">5.0</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <p class="tent-description text-muted mb-4" style="line-height: 1.6;">Experience the ultimate royal stay in our grand Darbari Suite, featuring rich traditional Kutch decor, lavish furnishings, and modern comforts.</p>
+                                        
+                                        <div class="row mb-4 g-3">
+                                            <div class="col-sm-6">
+                                                <h6 class="fw-bold text-dark mb-2" style="font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; color: #744FB9 !important;">Amenities</h6>
+                                                <ul class="list-unstyled amenities-list mb-0">
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> King Size Bed</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Air Conditioning</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Attached Washroom</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Private Lounge</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Meals Included</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="mb-3">
+                                                    <h6 class="fw-bold text-dark mb-2" style="font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; color: #744FB9 !important;">Capacity</h6>
+                                                    <p class="text-muted mb-0"><i class="bi bi-people-fill me-2" style="color: #744FB9;"></i> 2 Adults + 2 Kids</p>
+                                                </div>
+                                                <div>
+                                                    <h6 class="fw-bold text-dark mb-2" style="font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; color: #744FB9 !important;">Ideal For</h6>
+                                                    <p class="text-muted mb-0"><i class="bi bi-suit-heart-fill me-2" style="color: #EA0776;"></i> Families & Royal Luxury</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <a href="#booking" class="btn btn-primary w-100 rounded-pill py-3 fw-bold btn-book-tent" style="background: linear-gradient(135deg, #744FB9 0%, #EA0776 100%); border: none;">
+                                            Book This Tent <i class="bi bi-arrow-right-short ms-1 fs-5 align-middle"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2: Rajwadi Luxury Tent -->
+                        <div class="carousel-item">
+                            <div class="row g-4 align-items-center justify-content-center">
+                                <!-- Left Column: Image & Thumbnails -->
+                                <div class="col-lg-6 order-lg-2 offset-xl-1">
+                                    <div class="tent-gallery-card p-3 bg-white rounded-4 shadow-sm">
+                                        <div class="tent-main-img-wrapper position-relative overflow-hidden rounded-3 mb-3" style="aspect-ratio: 16/10;">
+                                            <img id="rajwadi-main-img" src="./assets/tents/rajwadi-tent.JPG" alt="Rajwadi Luxury Tent" class="w-100 h-100 object-fit-cover">
+                                            <span class="position-absolute top-3 start-3 badge bg-primary fs-6 py-2 px-3 rounded-pill shadow-sm" style="background: #744FB9 !important;">Most Popular</span>
+                                        </div>
+                                        <div class="row g-2 tent-thumbnails">
+                                            <div class="col-3">
+                                                <img src="./assets/tents/rajwadi-tent.JPG" class="img-fluid rounded cursor-pointer active-thumb" onclick="changeTentImage('rajwadi', './assets/tents/rajwadi-tent.JPG', this)" alt="Rajwadi Tent Exterior">
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="./assets/tents/rajwadi-tent-bed.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('rajwadi', './assets/tents/rajwadi-tent-bed.JPG', this)" alt="Rajwadi Tent Bed">
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="./assets/tents/rajwadi-tent-sitting-area.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('rajwadi', './assets/tents/rajwadi-tent-sitting-area.JPG', this)" alt="Rajwadi Tent Lounge">
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="./assets/tents/rajwadi-tent-wc.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('rajwadi', './assets/tents/rajwadi-tent-wc.JPG', this)" alt="Rajwadi Tent Washroom">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Right Column: Information Panel -->
+                                <div class="col-lg-6 col-xl-5 order-lg-1">
+                                    <div class="tent-info-panel p-4 p-md-5 bg-white rounded-4 shadow-sm border border-opacity-10" style="border-color: rgba(116, 79, 185, 0.1);">
+                                        <div class="d-flex align-items-center justify-content-between mb-3">
+                                            <h2 class="tent-title mb-0" style="font-family: 'Outfit', sans-serif; font-weight: 700; color: #10182D;">Rajwadi Tent</h2>
+                                            <div class="tent-rating text-end">
+                                                <span class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                                                <span class="fw-bold text-dark ms-1">4.9</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <p class="tent-description text-muted mb-4" style="line-height: 1.6;">Inspired by royal heritage, the Rajwadi tent blends traditional luxury with modern comfort, offering a premium stay under the starlit sky.</p>
+                                        
+                                        <div class="row mb-4 g-3">
+                                            <div class="col-sm-6">
+                                                <h6 class="fw-bold text-dark mb-2" style="font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; color: #744FB9 !important;">Amenities</h6>
+                                                <ul class="list-unstyled amenities-list mb-0">
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> King Size Bed</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Air Conditioning</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Attached Washroom</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Private Lounge</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Breakfast & Dinner</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="mb-3">
+                                                    <h6 class="fw-bold text-dark mb-2" style="font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; color: #744FB9 !important;">Capacity</h6>
+                                                    <p class="text-muted mb-0"><i class="bi bi-people-fill me-2" style="color: #744FB9;"></i> 2 Adults + 1 Kid</p>
+                                                </div>
+                                                <div>
+                                                    <h6 class="fw-bold text-dark mb-2" style="font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; color: #744FB9 !important;">Ideal For</h6>
+                                                    <p class="text-muted mb-0"><i class="bi bi-suit-heart-fill me-2" style="color: #EA0776;"></i> Couples & Families</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <a href="#booking" class="btn btn-primary w-100 rounded-pill py-3 fw-bold btn-book-tent" style="background: linear-gradient(135deg, #744FB9 0%, #EA0776 100%); border: none;">
+                                            Book This Tent <i class="bi bi-arrow-right-short ms-1 fs-5 align-middle"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3: Premium AC Tent -->
+                        <div class="carousel-item">
+                            <div class="row g-4 align-items-center justify-content-center">
+                                <!-- Left Column: Image & Thumbnails -->
+                                <div class="col-lg-6 order-lg-2 offset-xl-1">
+                                    <div class="tent-gallery-card p-3 bg-white rounded-4 shadow-sm">
+                                        <div class="tent-main-img-wrapper position-relative overflow-hidden rounded-3 mb-3" style="aspect-ratio: 16/10;">
+                                            <img id="premium-main-img" src="./assets/tents/premium-tent-exterior.JPG" alt="Premium AC Tent" class="w-100 h-100 object-fit-cover">
+                                            <span class="position-absolute top-3 start-3 badge bg-success fs-6 py-2 px-3 rounded-pill shadow-sm" style="background: #28a745 !important;">🔥 Best Value</span>
+                                        </div>
+                                        <div class="row g-2 tent-thumbnails">
+                                            <div class="col-3">
+                                                <img src="./assets/tents/premium-tent-exterior.JPG" class="img-fluid rounded cursor-pointer active-thumb" onclick="changeTentImage('premium', './assets/tents/premium-tent-exterior.JPG', this)" alt="Premium Tent Exterior">
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="./assets/tents/premium-tent-bed.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('premium', './assets/tents/premium-tent-bed.JPG', this)" alt="Premium Tent Bed">
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="./assets/tents/premium-tent-sitting-area1.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('premium', './assets/tents/premium-tent-sitting-area1.JPG', this)" alt="Premium Tent Lounge">
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="./assets/tents/premium-tent-wc.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('premium', './assets/tents/premium-tent-wc.JPG', this)" alt="Premium Tent Washroom">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Right Column: Information Panel -->
+                                <div class="col-lg-6 col-xl-5 order-lg-1">
+                                    <div class="tent-info-panel p-4 p-md-5 bg-white rounded-4 shadow-sm border border-opacity-10" style="border-color: rgba(116, 79, 185, 0.1);">
+                                        <div class="d-flex align-items-center justify-content-between mb-3">
+                                            <h2 class="tent-title mb-0" style="font-family: 'Outfit', sans-serif; font-weight: 700; color: #10182D;">Premium AC Tent</h2>
+                                            <div class="tent-rating text-end">
+                                                <span class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                                                <span class="fw-bold text-dark ms-1">4.8</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <p class="tent-description text-muted mb-4" style="line-height: 1.6;">A high-end comfortable tent with complete air conditioning, premium bedding, and a separate sitting area to relax after exploring the Rann.</p>
+                                        
+                                        <div class="row mb-4 g-3">
+                                            <div class="col-sm-6">
+                                                <h6 class="fw-bold text-dark mb-2" style="font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; color: #744FB9 !important;">Amenities</h6>
+                                                <ul class="list-unstyled amenities-list mb-0">
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> King Size Bed</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Air Conditioning</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Attached Washroom</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Cozy Sitting Area</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Breakfast Included</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="mb-3">
+                                                    <h6 class="fw-bold text-dark mb-2" style="font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; color: #744FB9 !important;">Capacity</h6>
+                                                    <p class="text-muted mb-0"><i class="bi bi-people-fill me-2" style="color: #744FB9;"></i> 2 Adults + 1 Kid</p>
+                                                </div>
+                                                <div>
+                                                    <h6 class="fw-bold text-dark mb-2" style="font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; color: #744FB9 !important;">Ideal For</h6>
+                                                    <p class="text-muted mb-0"><i class="bi bi-suit-heart-fill me-2" style="color: #EA0776;"></i> Couples & Honeymooners</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <a href="#booking" class="btn btn-primary w-100 rounded-pill py-3 fw-bold btn-book-tent" style="background: linear-gradient(135deg, #744FB9 0%, #EA0776 100%); border: none;">
+                                            Book This Tent <i class="bi bi-arrow-right-short ms-1 fs-5 align-middle"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4: Deluxe AC Tent -->
+                        <div class="carousel-item">
+                            <div class="row g-4 align-items-center justify-content-center">
+                                <!-- Left Column: Image & Thumbnails -->
+                                <div class="col-lg-6 order-lg-2 offset-xl-1">
+                                    <div class="tent-gallery-card p-3 bg-white rounded-4 shadow-sm">
+                                        <div class="tent-main-img-wrapper position-relative overflow-hidden rounded-3 mb-3" style="aspect-ratio: 16/10;">
+                                            <img id="deluxe-main-img" src="./assets/tents/delux-tent.JPG" alt="Deluxe AC Tent" class="w-100 h-100 object-fit-cover">
+                                            <span class="position-absolute top-3 start-3 badge bg-info fs-6 py-2 px-3 rounded-pill text-white shadow-sm" style="background: #17a2b8 !important;">Classic Comfort</span>
+                                        </div>
+                                        <div class="row g-2 tent-thumbnails">
+                                            <div class="col-3">
+                                                <img src="./assets/tents/delux-tent.JPG" class="img-fluid rounded cursor-pointer active-thumb" onclick="changeTentImage('deluxe', './assets/tents/delux-tent.JPG', this)" alt="Deluxe Tent Exterior">
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="./assets/tents/delux-tent-bed.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('deluxe', './assets/tents/delux-tent-bed.JPG', this)" alt="Deluxe Tent Bed">
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="./assets/tents/delux-tent-sitting-area.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('deluxe', './assets/tents/delux-tent-sitting-area.JPG', this)" alt="Deluxe Tent Lounge">
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="./assets/tents/delux-tent-wc.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('deluxe', './assets/tents/delux-tent-wc.JPG', this)" alt="Deluxe Tent Washroom">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Right Column: Information Panel -->
+                                <div class="col-lg-6 col-xl-5 order-lg-1">
+                                    <div class="tent-info-panel p-4 p-md-5 bg-white rounded-4 shadow-sm border border-opacity-10" style="border-color: rgba(116, 79, 185, 0.1);">
+                                        <div class="d-flex align-items-center justify-content-between mb-3">
+                                            <h2 class="tent-title mb-0" style="font-family: 'Outfit', sans-serif; font-weight: 700; color: #10182D;">Deluxe AC Tent</h2>
+                                            <div class="tent-rating text-end">
+                                                <span class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>
+                                                <span class="fw-bold text-dark ms-1">4.6</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <p class="tent-description text-muted mb-4" style="line-height: 1.6;">A perfectly balanced deluxe tent offering cozy interiors, air conditioning, and top-tier hospitality for a relaxing stay.</p>
+                                        
+                                        <div class="row mb-4 g-3">
+                                            <div class="col-sm-6">
+                                                <h6 class="fw-bold text-dark mb-2" style="font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; color: #744FB9 !important;">Amenities</h6>
+                                                <ul class="list-unstyled amenities-list mb-0">
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> King Size Bed</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Air Conditioning</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Attached Washroom</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Wi-Fi Support</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Breakfast Included</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="mb-3">
+                                                    <h6 class="fw-bold text-dark mb-2" style="font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; color: #744FB9 !important;">Capacity</h6>
+                                                    <p class="text-muted mb-0"><i class="bi bi-people-fill me-2" style="color: #744FB9;"></i> 2 Adults + 1 Kid</p>
+                                                </div>
+                                                <div>
+                                                    <h6 class="fw-bold text-dark mb-2" style="font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; color: #744FB9 !important;">Ideal For</h6>
+                                                    <p class="text-muted mb-0"><i class="bi bi-suit-heart-fill me-2" style="color: #EA0776;"></i> Comfort & Value Seekers</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <a href="#booking" class="btn btn-primary w-100 rounded-pill py-3 fw-bold btn-book-tent" style="background: linear-gradient(135deg, #744FB9 0%, #EA0776 100%); border: none;">
+                                            Book This Tent <i class="bi bi-arrow-right-short ms-1 fs-5 align-middle"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 5: Non-AC Traditional Tent -->
+                        <div class="carousel-item">
+                            <div class="row g-4 align-items-center justify-content-center">
+                                <!-- Left Column: Image & Thumbnails -->
+                                <div class="col-lg-6 order-lg-2 offset-xl-1">
+                                    <div class="tent-gallery-card p-3 bg-white rounded-4 shadow-sm">
+                                        <div class="tent-main-img-wrapper position-relative overflow-hidden rounded-3 mb-3" style="aspect-ratio: 16/10;">
+                                            <img id="nonac-main-img" src="./assets/tents/non-ac-tent-exterior.JPG" alt="Non-AC Traditional Tent" class="w-100 h-100 object-fit-cover">
+                                            <span class="position-absolute top-3 start-3 badge bg-secondary fs-6 py-2 px-3 rounded-pill shadow-sm" style="background: #6c757d !important;">Traditional Stay</span>
+                                        </div>
+                                        <div class="row g-2 tent-thumbnails">
+                                            <div class="col-3">
+                                                <img src="./assets/tents/non-ac-tent-exterior.JPG" class="img-fluid rounded cursor-pointer active-thumb" onclick="changeTentImage('nonac', './assets/tents/non-ac-tent-exterior.JPG', this)" alt="Non-AC Tent Exterior">
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="./assets/tents/non-ac-tent-bed.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('nonac', './assets/tents/non-ac-tent-bed.JPG', this)" alt="Non-AC Tent Bed">
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="./assets/tents/non-ac-tent-sitting-area.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('nonac', './assets/tents/non-ac-tent-sitting-area.JPG', this)" alt="Non-AC Tent Lounge">
+                                            </div>
+                                            <div class="col-3">
+                                                <img src="./assets/tents/non-ac-tent-wc.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('nonac', './assets/tents/non-ac-tent-wc.JPG', this)" alt="Non-AC Tent Washroom">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Right Column: Information Panel -->
+                                <div class="col-lg-6 col-xl-5 order-lg-1">
+                                    <div class="tent-info-panel p-4 p-md-5 bg-white rounded-4 shadow-sm border border-opacity-10" style="border-color: rgba(116, 79, 185, 0.1);">
+                                        <div class="d-flex align-items-center justify-content-between mb-3">
+                                            <h2 class="tent-title mb-0" style="font-family: 'Outfit', sans-serif; font-weight: 700; color: #10182D;">Traditional Non-AC Tent</h2>
+                                            <div class="tent-rating text-end">
+                                                <span class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>
+                                                <span class="fw-bold text-dark ms-1">4.5</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <p class="tent-description text-muted mb-4" style="line-height: 1.6;">Experience the authentic, traditional desert camping feel in our eco-friendly non-AC tents, keeping you close to Kutch culture.</p>
+                                        
+                                        <div class="row mb-4 g-3">
+                                            <div class="col-sm-6">
+                                                <h6 class="fw-bold text-dark mb-2" style="font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; color: #744FB9 !important;">Amenities</h6>
+                                                <ul class="list-unstyled amenities-list mb-0">
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Double Bed</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Natural Ventilation</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Attached Washroom</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Cultural Ambience</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Breakfast Included</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="mb-3">
+                                                    <h6 class="fw-bold text-dark mb-2" style="font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; color: #744FB9 !important;">Capacity</h6>
+                                                    <p class="text-muted mb-0"><i class="bi bi-people-fill me-2" style="color: #744FB9;"></i> 2 Adults</p>
+                                                </div>
+                                                <div>
+                                                    <h6 class="fw-bold text-dark mb-2" style="font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; color: #744FB9 !important;">Ideal For</h6>
+                                                    <p class="text-muted mb-0"><i class="bi bi-suit-heart-fill me-2" style="color: #EA0776;"></i> Solo & Budget Explorers</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <a href="#booking" class="btn btn-primary w-100 rounded-pill py-3 fw-bold btn-book-tent" style="background: linear-gradient(135deg, #744FB9 0%, #EA0776 100%); border: none;">
+                                            Book This Tent <i class="bi bi-arrow-right-short ms-1 fs-5 align-middle"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Custom Navigation: ◀ 1 / 5 ▶ -->
+                    <div class="d-flex justify-content-center align-items-center mt-5">
+                        <button class="btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center tents-carousel-prev" type="button" data-bs-target="#tentsCarousel" data-bs-slide="prev" style="width: 48px; height: 48px; border-color: rgba(116, 79, 185, 0.3); color: #744FB9; transition: all 0.3s; background: transparent;">
+                            <i class="bi bi-chevron-left fs-5"></i>
+                        </button>
+                        <span class="fw-bold fs-5 text-dark mx-4" id="tents-carousel-counter" style="min-width: 70px; text-align: center; letter-spacing: 1px;">1 / 5</span>
+                        <button class="btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center tents-carousel-next" type="button" data-bs-target="#tentsCarousel" data-bs-slide="next" style="width: 48px; height: 48px; border-color: rgba(116, 79, 185, 0.3); color: #744FB9; transition: all 0.3s; background: transparent;">
+                            <i class="bi bi-chevron-right fs-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Artisans Section ("Hands That Shape Kutch") -->
+        <section id="stars-await" class="section py-5">
             <div class="container-fluid px-4 px-md-5">
                 <div class="row">
                     <div class="col-md-12 text-center mb-5">
-                        <h1 class="section-title text-dark mb-3">Hands That <span class="pink-text">Shape Kutch</span>
-                        </h1>
-                        <p class="subtitle mb-0 stars-subtitle text-muted">
-                            Every creation tells a story of tradition, passion, and generations of exceptional
-                            craftsmanship. </p>
+                        <h1 class="section-title text-dark mb-3">Hands That <span class="purple-gradient-text">Shape Kutch</span></h1>
+                        <p class="subtitle mb-0 stars-subtitle">
+                            Every creation tells a story of tradition, passion, and generations of exceptional craftsmanship.
+                        </p>
                     </div>
                 </div>
 
@@ -617,219 +1195,182 @@
                         <div class="stars-carousel-track" id="stars-carousel-track">
                             <!-- Image Cards -->
                             <div class="stars-carousel-card" data-index="0">
-                                <div class="artist-img-wrapper">
-                                    <img src="./assets/art.jpg" alt="Artist performance under the stars">
+                                <div class="artist-frame">
+                                    <div class="artist-pin"></div>
+                                    <div class="artist-img-wrapper">
+                                        <img src="./assets/art.jpg" alt="Artisan Weaving">
+                                    </div>
+                                    <div class="artist-details">
+                                        <h5 class="artist-title">Kutchi Weaving</h5>
+                                        <p class="artist-subtitle">Heritage Handloom</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="stars-carousel-card" data-index="1">
-                                <div class="artist-img-wrapper">
-                                    <img src="./assets/art2.jpg" alt="Traditional Kutch musicians under the stars">
+                                <div class="artist-frame">
+                                    <div class="artist-pin"></div>
+                                    <div class="artist-img-wrapper">
+                                        <img src="./assets/art2.jpg" alt="Terracotta Pottery">
+                                    </div>
+                                    <div class="artist-details">
+                                        <h5 class="artist-title">Terracotta Pottery</h5>
+                                        <p class="artist-subtitle">Molded Clay Art</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="stars-carousel-card" data-index="2">
-                                <div class="artist-img-wrapper">
-                                    <img src="./assets/art3.jpg" alt="Cultural performance under the stars">
+                                <div class="artist-frame">
+                                    <div class="artist-pin"></div>
+                                    <div class="artist-img-wrapper">
+                                        <img src="./assets/art3.jpg" alt="Rogan Painting">
+                                    </div>
+                                    <div class="artist-details">
+                                        <h5 class="artist-title">Rogan Painting</h5>
+                                        <p class="artist-subtitle">Castor Oil Paint</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="stars-carousel-card" data-index="3">
-                                <div class="artist-img-wrapper">
-                                    <img src="./assets/art4.jpg" alt="Artist performing under the stars">
+                                <div class="artist-frame">
+                                    <div class="artist-pin"></div>
+                                    <div class="artist-img-wrapper">
+                                        <img src="./assets/art4.jpg" alt="Suf Embroidery">
+                                    </div>
+                                    <div class="artist-details">
+                                        <h5 class="artist-title">Suf Embroidery</h5>
+                                        <p class="artist-subtitle">Intricate Needlework</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="stars-carousel-card" data-index="4">
-                                <div class="artist-img-wrapper">
-                                    <img src="./assets/art5.jpg" alt="Folk singers under the stars">
+                                <div class="artist-frame">
+                                    <div class="artist-pin"></div>
+                                    <div class="artist-img-wrapper">
+                                        <img src="./assets/art5.jpg" alt="Ajrakh Printing">
+                                    </div>
+                                    <div class="artist-details">
+                                        <h5 class="artist-title">Ajrakh Printing</h5>
+                                        <p class="artist-subtitle">Natural Block Print</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="stars-carousel-card" data-index="5">
-                                <div class="artist-img-wrapper">
-                                    <img src="./assets/art6.jpg" alt="Starlit desert dance performance">
+                                <div class="artist-frame">
+                                    <div class="artist-pin"></div>
+                                    <div class="artist-img-wrapper">
+                                        <img src="./assets/art6.jpg" alt="Leather Craft">
+                                    </div>
+                                    <div class="artist-details">
+                                        <h5 class="artist-title">Leather Craft</h5>
+                                        <p class="artist-subtitle">Traditional Stitching</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="stars-carousel-card" data-index="6">
-                                <div class="artist-img-wrapper">
-                                    <img src="./assets/art7.jpg" alt="Musicians in the White Rann under the stars">
+                                <div class="artist-frame">
+                                    <div class="artist-pin"></div>
+                                    <div class="artist-img-wrapper">
+                                        <img src="./assets/art7.jpg" alt="Copper Bell Art">
+                                    </div>
+                                    <div class="artist-details">
+                                        <h5 class="artist-title">Copper Bell Art</h5>
+                                        <p class="artist-subtitle">Chimed Metalwork</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Floating Navigation Controls -->
-                    <button class="stars-carousel-btn stars-carousel-btn-prev" id="stars-carousel-prev"
-                        aria-label="Previous Slide">
+                    <button class="stars-carousel-btn stars-carousel-btn-prev" id="stars-carousel-prev" aria-label="Previous Slide">
                         <i class="bi bi-chevron-left"></i>
                     </button>
-                    <button class="stars-carousel-btn stars-carousel-btn-next" id="stars-carousel-next"
-                        aria-label="Next Slide">
+                    <button class="stars-carousel-btn stars-carousel-btn-next" id="stars-carousel-next" aria-label="Next Slide">
                         <i class="bi bi-chevron-right"></i>
                     </button>
                 </div>
             </div>
         </section>
 
-        <section id="festival" class="align-items-center pb-5">
-            <div class="container-fluid">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-md-8 offset-md-2 text-center mb-4 mb-md-0">
-                        <h2 class="fw-bold mb-3 text-light lh-base">
-                            <br class="d-none d-md-block">The magic of <span class="">
-                                <img src="./assets/rann-of-kutch.png?v=0.2" class="d-inline-block d-md-none w-50">
-                                <img src="./assets/rann-of-kutch.png?v=0.2" class="d-none d-md-inline-block w-25">
-                            </span> has begun!
-                        </h2>
-                        <p class="text-light">
-                            Get ready for a celebration of culture, color, and endless white sands! Your Kutch journey
-                            starts here - plan with us today!
-                        </p>
-                    </div>
-                    <div class="col-md-4 offset-md-4">
-                        <a href="#booking" class="form-control btn btn-sm w-auto px-5 w-50 send-itinerary-button"
-                            type="button">
-                            CRAFT MY KUTCH ESCAPE
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="gallery" class="section">
-            <div class="container-fluid px-4 px-md-5">
-                <div class="row">
-                    <div class="col-md-12 text-center mb-5">
-                        <h1 class="section-title text-dark mb-3">Glimpses of <span class="pink-text">White Desert</span></h1>
-                        <p class="subtitle mb-0 gallery-subtitle text-muted">
-                            Explore the breathtaking landscapes, vibrant cultural celebrations, and unforgettable memories of Rann Utsav.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="gallery-carousel-container">
-                    <div class="gallery-carousel-track-wrapper">
-                        <div class="gallery-carousel-track" id="gallery-carousel-track">
-                            <!-- Image Cards -->
-                            <div class="gallery-carousel-card" data-index="0">
-                                <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery1.jpg?v=0.2" alt="Kutch Desert Gallery 1">
-                                </div>
-                            </div>
-                            <div class="gallery-carousel-card" data-index="1">
-                                <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery2.jpg?v=0.2" alt="Kutch Desert Gallery 2">
-                                </div>
-                            </div>
-                            <div class="gallery-carousel-card" data-index="2">
-                                <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery3.jpg?v=0.2" alt="Kutch Desert Gallery 3">
-                                </div>
-                            </div>
-                            <div class="gallery-carousel-card" data-index="3">
-                                <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery4.jpg?v=0.2" alt="Kutch Desert Gallery 4">
-                                </div>
-                            </div>
-                            <div class="gallery-carousel-card" data-index="4">
-                                <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery5.jpg?v=0.2" alt="Kutch Desert Gallery 5">
-                                </div>
-                            </div>
-                            <div class="gallery-carousel-card" data-index="5">
-                                <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery7.jpg?v=0.2" alt="Kutch Desert Gallery 7">
-                                </div>
-                            </div>
-                            <div class="gallery-carousel-card" data-index="6">
-                                <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery10.jpg?v=0.2" alt="Kutch Desert Gallery 10">
-                                </div>
-                            </div>
-                            <div class="gallery-carousel-card" data-index="7">
-                                <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery11.jpg?v=0.2" alt="Kutch Desert Gallery 11">
-                                </div>
-                            </div>
-                            <div class="gallery-carousel-card" data-index="8">
-                                <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery12.jpg?v=0.2" alt="Kutch Desert Gallery 12">
-                                </div>
-                            </div>
-                            <div class="gallery-carousel-card" data-index="9">
-                                <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery6.jpg?v=0.2" alt="Kutch Desert Gallery 6">
-                                </div>
-                            </div>
-                            <div class="gallery-carousel-card" data-index="10">
-                                <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery8.jpg?v=0.2" alt="Kutch Desert Gallery 8">
-                                </div>
-                            </div>
-                            <div class="gallery-carousel-card" data-index="11">
-                                <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery9.jpg?v=0.2" alt="Kutch Desert Gallery 9">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Floating Navigation Controls -->
-                    <button class="gallery-carousel-btn gallery-carousel-btn-prev" id="gallery-carousel-prev"
-                        aria-label="Previous Slide">
-                        <i class="bi bi-chevron-left"></i>
-                    </button>
-                    <button class="gallery-carousel-btn gallery-carousel-btn-next" id="gallery-carousel-next"
-                        aria-label="Next Slide">
-                        <i class="bi bi-chevron-right"></i>
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <section class="">
+        <!-- 8. Map Section -->
+        <section class="position-relative" id="map-section">
             <div id="map" style="height: 500px"></div>
+            <div class="map-card-overlay bg-white p-4 rounded-4 shadow-lg text-center text-md-start">
+                <h4 class="fw-bold mb-2 blue-purple-gradient-text d-flex align-items-center justify-content-center justify-content-md-start">
+                    <i class="bi bi-geo-alt-fill me-2"></i> Explore Rann Utsav
+                </h4>
+                <p class="mb-3" style="font-size: 14px;">
+                    Discover the magic across the White Desert.
+                </p>
+                <a href="https://maps.google.com/?q=23.8391,69.6905" target="_blank" class="btn fw-bold text-white rounded-pill px-4 py-2 border-0 map-cta-btn">
+                    VIEW ON MAP
+                </a>
+            </div>
         </section>
 
-        <section class="section-margin pt-5 w-100" id="brought-by">
-            <img src="./assets/logo.png?v=0.2" alt="Majestic Escape Logo" class="img-fluid" id="footer-logo">
-        </section>
     </div>
 
-    <footer id="footer" class="section-margin text-center py-5">
-        <div class="container h-100">
-            <div class="row align-items-end">
-                <div class="col-md-4 text-md-start mb-3 mb-md-0">
-                    <a href="#" class="mb-0 text-light" data-bs-toggle="modal" data-bs-target="#privacyPolicyModal">
-                        Privacy Policy
-                    </a><br>
-                    <a href="#" class="mb-0 text-light" data-bs-toggle="modal" data-bs-target="#termsModal">
-                        Terms of Service
-                    </a><br>
-                    <a href="#" class="mb-0 text-light" data-bs-toggle="modal"
-                        data-bs-target="#cancellationPolicyModal">
-                        Cancellation & Refund Policy
-                    </a>
-                </div>
-                <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">
-                    <p class="mb-0 text-light">
-                        &copy; 2025 Majestic Escape. All rights reserved.
+    <!-- 9. Footer Section -->
+    <footer id="footer" class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-md-start">
+            <div class="row g-4 justify-content-between">
+                <!-- Column 1: Logo & Tagline -->
+                <div class="col-lg-3 col-md-6">
+                    <img src="./assets/logo-white.svg" alt="Majestic Escape Logo" class="img-fluid mb-3" style="max-height: 45px;">
+                    <p class="text-white-50" style="font-size: 14px; line-height: 1.6;">
+                        Crafting journeys that become <br><span class="cursive-text" style="font-family: 'Meddon', cursive; font-size: 18px; color: #FAD42C;">your favorite</span> memories.
                     </p>
-                    <p class="mb-0 text-light">
-                        Designed by <a href="https://coderelix.com" target="_blank"
-                            class="text-decoration-none">CodeRelix</a>
-                    </p>
+                    <div class="mt-3">
+                        <a href="https://www.instagram.com/themajesticescape" target="_blank" aria-label="Instagram" class="text-white me-3 fs-5 hover-warning"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61567800352990" target="_blank" aria-label="Facebook" class="text-white me-3 fs-5 hover-warning"><i class="bi bi-facebook"></i></a>
+                        <a href="https://wa.me/+917219666822" target="_blank" aria-label="WhatsApp" class="text-white fs-5 hover-warning"><i class="bi bi-whatsapp"></i></a>
+                    </div>
                 </div>
-                <div class="col-md-4 text-md-end mt-2">
-                    <p class="mb-0 text-light">Social Links</p>
-                    <a href="https://www.instagram.com/themajesticescape" target="_blank" aria-label="Instagram"
-                        class="text-light fs-4 pr-2">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                    <a href="https://www.facebook.com/profile.php?id=61567800352990" target="_blank"
-                        aria-label="Facebook" class="text-light fs-4 px-2">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                    <a href="https://wa.me/+917219666822" target="_blank" aria-label="WhatsApp"
-                        class="text-light fs-4 pl-2">
-                        <i class="bi bi-whatsapp"></i>
-                    </a>
+
+                <!-- Column 2: Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white fw-bold mb-3" style="font-size: 16px; letter-spacing: 1px;">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="#about" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;">About Rann Utsav</a></li>
+                        <li class="mb-2"><a href="#activities" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;">Experiences</a></li>
+                        <li class="mb-2"><a href="#booking" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;">Itinerary</a></li>
+                        <li class="mb-2"><a href="#gallery" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;">Gallery</a></li>
+                        <li class="mb-2"><a href="#footer" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Helpful Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white fw-bold mb-3" style="font-size: 16px; letter-spacing: 1px;">Helpful Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="#booking" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;">Plan Your Trip</a></li>
+                        <li class="mb-2"><a href="#booking" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;">FAQs</a></li>
+                        <li class="mb-2"><a href="#booking" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;">Travel Guide</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;" data-bs-toggle="modal" data-bs-target="#termsModal">Terms & Conditions</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;" data-bs-toggle="modal" data-bs-target="#privacyPolicyModal">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact Us -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white fw-bold mb-3" style="font-size: 16px; letter-spacing: 1px;">Contact Us</h5>
+                    <ul class="list-unstyled text-white-50 contact-info" style="font-size: 14px;">
+                        <li class="mb-2 d-flex align-items-center"><i class="bi bi-telephone text-white me-2"></i> +91 72196 66822</li>
+                        <li class="mb-2 d-flex align-items-center"><i class="bi bi-envelope text-white me-2"></i> support@majesticescape.in</li>
+                        <li class="mb-2 d-flex align-items-start"><i class="bi bi-geo-alt text-white me-2 mt-1"></i> Dhordo, Kutch, Gujarat, India</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="my-4 border-secondary opacity-25">
+
+            <!-- Footer Bottom -->
+            <div class="row align-items-center text-center text-md-start">
+                <div class="col-md-6 text-white-50" style="font-size: 13px;">
+                    &copy; 2025 Majestic Escape. All rights reserved.
+                </div>
+                <div class="col-md-6 text-md-end text-white-50 mt-2 mt-md-0" style="font-size: 13px;">
+                    Designed by <a href="https://coderelix.com" target="_blank" class="text-warning text-decoration-none fw-bold hover-underline">CodeRelix</a>
                 </div>
             </div>
         </div>

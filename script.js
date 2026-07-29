@@ -105,10 +105,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 4. AJAX Form Submission
-    const bookingForm = document.getElementById("booking-form");
-    if (bookingForm) {
-        bookingForm.addEventListener("submit", async (e) => {
+    // 4. AJAX Form Submission for all booking forms
+    const bookingForms = document.querySelectorAll(".booking-form");
+    bookingForms.forEach((form) => {
+        form.addEventListener("submit", async (e) => {
             e.preventDefault();
 
             // Track Lead event if Meta Pixel is loaded
@@ -116,15 +116,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 fbq('track', 'Lead');
             }
 
-            const form = e.target;
-            const formData = new FormData(form);
+            const currentForm = e.target;
+            const formData = new FormData(currentForm);
             const data = Object.fromEntries(formData.entries());
 
-            const sendBtn = document.getElementById("send-itinerary-button");
+            const sendBtn = currentForm.querySelector('button[type="submit"]');
             if (sendBtn) sendBtn.disabled = true;
 
-            document.querySelectorAll(
-                "#form-duplicate-div, #form-error-div, #form-failed-div"
+            currentForm.querySelectorAll(
+                ".form-duplicate-div, .form-error-div, .form-failed-div"
             ).forEach(el => el.classList.add("d-none"));
 
             try {
@@ -145,27 +145,27 @@ document.addEventListener('DOMContentLoaded', () => {
                         const successModal = new bootstrap.Modal(successModalEl);
                         successModal.show();
                     }
-                    form.reset();
+                    currentForm.reset();
                 } else if (json.status === "duplicate") {
-                    const errorDiv = document.getElementById('form-duplicate-div');
+                    const errorDiv = currentForm.querySelector('.form-duplicate-div');
                     if (errorDiv) errorDiv.classList.remove('d-none');
-                    form.reset();
+                    currentForm.reset();
                 } else if (json.status === "error") {
-                    const errorDiv = document.getElementById('form-error-div');
+                    const errorDiv = currentForm.querySelector('.form-error-div');
                     if (errorDiv) errorDiv.classList.remove('d-none');
                 } else {
-                    const errorDiv = document.getElementById('form-failed-div');
+                    const errorDiv = currentForm.querySelector('.form-failed-div');
                     if (errorDiv) errorDiv.classList.remove('d-none');
                 }
             } catch (err) {
                 console.error(err);
-                const errorDiv = document.getElementById('form-failed-div');
+                const errorDiv = currentForm.querySelector('.form-failed-div');
                 if (errorDiv) errorDiv.classList.remove('d-none');
             }
 
             if (sendBtn) sendBtn.disabled = false;
         });
-    }
+    });
 
     // 5. Stars Await Infinite Carousel Logic
     const initStarsCarousel = () => {
@@ -181,9 +181,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Number of visible cards based on responsive breakpoints
         const getVisibleCardsCount = () => {
             const width = window.innerWidth;
-            if (width >= 1024) return 4;
-            if (width >= 768) return 2;
-            return 1;
+            if (width >= 992) return 3; // Show 3 cards on desktop for centered-focus layout
+            return 1; // Show 1 card on tablet/mobile
         };
 
         let visibleCards = getVisibleCardsCount();
@@ -217,7 +216,17 @@ document.addEventListener('DOMContentLoaded', () => {
             cards.forEach(card => {
                 card.style.flex = `0 0 ${cardWidth}px`;
                 card.style.width = `${cardWidth}px`;
+                card.classList.remove("focused");
             });
+
+            // Set the focused class on the center item (or the current item on single view)
+            let focusedIndex = currentIndex;
+            if (visibleCards === 3) {
+                focusedIndex = currentIndex + 1;
+            }
+            if (cards[focusedIndex]) {
+                cards[focusedIndex].classList.add("focused");
+            }
 
             if (!animate) {
                 track.style.transition = "none";
@@ -741,7 +750,7 @@ document.addEventListener('DOMContentLoaded', () => {
             isTouchMovement = false;
         };
 
-        // 1. Stars Await Carousel
+        // 1. Stars Await Carousel or static grid
         const starsTrack = document.getElementById("stars-carousel-track");
         if (starsTrack) {
             starsTrack.addEventListener("touchstart", markTouchStart, { passive: true });
@@ -757,6 +766,19 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 }
             });
+        } else {
+            const artisanGrid = document.querySelector(".artisan-grid");
+            if (artisanGrid) {
+                artisanGrid.addEventListener("click", (e) => {
+                    const card = e.target.closest(".artisan-card-wrapper");
+                    if (card) {
+                        const img = card.querySelector("img");
+                        if (img) {
+                            openLightbox(img.src);
+                        }
+                    }
+                });
+            }
         }
 
         // 2. Gallery Carousel
@@ -777,7 +799,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // 3. Activities Carousel (marquee track)
+        // 3. Activities Carousel (marquee track) or static grid
         const activitiesTrack = document.querySelector(".activity-track");
         if (activitiesTrack) {
             activitiesTrack.addEventListener("touchstart", markTouchStart, { passive: true });
@@ -796,10 +818,58 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 }
             });
+        } else {
+            const activitiesGrid = document.querySelector(".activities-grid");
+            if (activitiesGrid) {
+                activitiesGrid.addEventListener("click", (e) => {
+                    const card = e.target.closest(".activity-card-new");
+                    if (card) {
+                        const bgStyle = window.getComputedStyle(card).backgroundImage;
+                        if (bgStyle && bgStyle !== "none") {
+                            const urlMatch = bgStyle.match(/url\(["']?([^"']+)["']?\)/);
+                            if (urlMatch && urlMatch[1]) {
+                                let cleanUrl = urlMatch[1].replace(/^['"]|['"]$/g, '');
+                                openLightbox(cleanUrl);
+                            }
+                        }
+                    }
+                });
+            }
         }
+
     };
+
+    // 4. Tents Showcase Carousel
+    function initTentsCarousel() {
+        const tentsCarousel = document.getElementById("tentsCarousel");
+        if (tentsCarousel) {
+            tentsCarousel.addEventListener("slide.bs.carousel", function (event) {
+                const activeIndex = event.to + 1;
+                const totalSlides = event.target.querySelectorAll(".carousel-item").length;
+                const counter = document.getElementById("tents-carousel-counter");
+                if (counter) {
+                    counter.textContent = `${activeIndex} / ${totalSlides}`;
+                }
+            });
+        }
+    }
 
     initStarsCarousel();
     initGalleryCarousel();
     initLightbox();
+    initTentsCarousel();
 });
+
+// Global function to change tent details image from thumbnail
+window.changeTentImage = function(tentId, imgSrc, thumbElement) {
+    const mainImg = document.getElementById(tentId + "-main-img");
+    if (mainImg) {
+        mainImg.src = imgSrc;
+    }
+    const parentRow = thumbElement.closest(".tent-thumbnails");
+    if (parentRow) {
+        const thumbs = parentRow.querySelectorAll("img");
+        thumbs.forEach(t => t.classList.remove("active-thumb"));
+    }
+    thumbElement.classList.add("active-thumb");
+};
