@@ -71,7 +71,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Meddon&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./style.css?v=1.4">
+    <link rel="stylesheet" href="./style.css?v=1.5">
 </head>
 
 <body>
@@ -102,6 +102,8 @@
         new DateTime('2026-01-31'),
         new DateTime('2026-02-02'),
         new DateTime('2026-03-04'),
+        new DateTime('2026-08-03'),
+        new DateTime('2026-09-01'),
     ];
 
     foreach ($fullMoonDates as $fullMoonDate) {
@@ -137,19 +139,13 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto fs-5 align-items-center">
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#banner">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#about">About Rann Utsav</a>
+                                <a class="nav-link text-white" href="#about">About</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="#activities">Experiences</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#gallery">Gallery</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#map">Map</a>
+                                <a class="nav-link text-white" href="#tents-showcase">Accommodation</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="#footer">Contact</a>
@@ -164,10 +160,15 @@
                 </div>
             </nav>
             <!-- Navbar End -->
+
+            <!-- Hero Date Board -->
+            <div class="hero-date-board">
+                <img src="./Date Board.png" alt="Rann Utsav Dates" class="img-fluid">
+            </div>
         </section>
 
         <!-- 2. Countdown Section -->
-        <section id="countdown-section" class="align-items-center py-5">
+        <section id="countdown-section" class="align-items-center">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-lg-5 text-center text-lg-start mb-4 mb-lg-0">
@@ -177,7 +178,9 @@
                             to get the best deals with <br class="d-none d-lg-block">
                             Majestic Escape!
                         </h2>
-                        <div class="countdown-heading-underline"></div>
+                            <svg class="form-banner-underline" viewBox="0 0 120 10" preserveAspectRatio="none" style="width: 140px; height: 8px;">
+                                <path d="M0,5 Q60,10 120,5" stroke="url(#form-underline-gradient)" stroke-width="3" stroke-linecap="round" fill="transparent"/>
+                            </svg>
                     </div>
                     <div class="col-lg-7">
                         <div class="row g-3 justify-content-center" id="countdown-cards">
@@ -224,25 +227,23 @@
         </section>
 
         <!-- 3. About Rann Utsav Section -->
-        <section id="about" class="section py-5">
-            <div class="container py-4 about-marg">
+        <section id="about" class="section">
+            <div class="container about-marg">
                 <div class="row align-items-center justify-content-end">
                     <div class="col-lg-8 about-div ps-lg-5 text-black">
-                        <div class="d-inline-block text-center mb-4">
-                            <h2 class="section-title mb-0" id="about-title" style="line-height: 1.3;">
-                                <span class="blue-purple-gradient-text d-inline-block">Rann Utsav</span>
-                                <span class="d-block"></span>
-                                <span class="blue-purple-gradient-text d-inline-block">2025-2026</span>
+                        <div class="about-header-wrapper text-start mb-4">
+                            <h2 class="about-main-title mb-2" id="about-title">
+                                <span class="blue-purple-gradient-text d-block">Rann Utsav</span>
+                                <span class="black-gradient-text d-block mt-1">2026–2027</span>
                             </h2>
-                            <div class="elegant-separator mt-2 justify-content-center" style="margin-bottom: 0;">
-                                <span class="sep-line"></span>
-                                <span class="sep-dot"></span>
-                                <span class="sep-dot-small"></span>
+                            <div class="activities-separator about-sep mb-3">
+                                <span class="activities-sep-line"></span>
+                                <span class="activities-sep-dot"></span>
                             </div>
                         </div>
-                        <p class="fs-5 about-para" style="line-height: 2; text-align: justify;">
+                        <p class="about-para">
                             The Rann of Kutch is a salt marsh located in the Thar Desert in the Kutch district of Gujarat, India. It is known for its stunning white salt desert, vibrant culture, and unique wildlife. The region comes alive during the Rann Utsav, a festival celebrating local art, crafts, music, and dance.<br><br>
-                            Rann Utsav 2025 begins on 23 October 2025 and runs till 4 March 2026, hosted in Dhordo, a small village on the edge of the White Rann in Gujarat's Kutch district. The festival spans over 100 days, thanks to Gujarat Tourism, and brings this salt marsh to life with cultural vibrancy and curated experiences.
+                            Rann Utsav 2026 begins on 1 november 2026 and runs till 4 March 2027, hosted in Dhordo, a small village on the edge of the White Rann in Gujarat's Kutch district. The festival spans over 100 days, thanks to Gujarat Tourism, and brings this salt marsh to life with cultural vibrancy and curated experiences.
                         </p>
                     </div>
                 </div>
@@ -254,7 +255,12 @@
             <div class="container-fluid px-4 px-md-5">
                 <div class="row">
                     <div class="col-md-12 text-center mb-5">
-                        <h1 class="section-title text-dark mb-3">Glimpses of <span class="purple-gradient-text">White Desert</span></h1>
+                        <h2 class="section-title text-dark mb-3">Glimpses of <span class="purple-gradient-text">White Desert</span></h2>
+                        <div class="activities-separator mb-3">
+                            <span class="activities-sep-line"></span>
+                            <span class="activities-sep-dot"></span>
+                            <span class="activities-sep-line"></span>
+                        </div>
                         <p class="subtitle mb-0 gallery-subtitle">
                             Explore the breathtaking landscapes, vibrant cultural celebrations, and unforgettable memories of Rann Utsav.
                         </p>
@@ -357,7 +363,7 @@
         </section>
 
         <!-- 5. Lead Form Banner ("The magic of Rann Utsav has begun!") -->
-        <section id="booking" class="align-items-center py-5">
+        <section id="booking" class="align-items-center">
             <div class="container-fluid px-4 px-md-5">
                 <div class="row align-items-center justify-content-between">
                     <!-- Left Side: Promo Content (35%) -->
@@ -365,7 +371,7 @@
                         <h2 class="fw-bold mb-3 form-banner-heading">
                             The magic of <span class="gradient-text-pink-blue">Rann Utsav</span> has begun!
                         </h2>
-                        <p class="fs-5 opacity-90 form-banner-para">
+                        <p class="opacity-90 form-banner-para">
                             Get ready for a celebration of culture, color, and endless white sands! Your Kutch journey starts here - plan with us today!
                         </p>
                         <div class="form-banner-underline-wrapper mt-3 text-start d-none d-lg-block">
@@ -377,7 +383,7 @@
 
                     <!-- Right Side: Booking Form Card (65%) -->
                     <div class="col-lg-7 booking-form-col">
-                        <div class="booking-card-wrapper p-4 p-md-5 rounded-4 shadow-lg bg-white w-100">
+                        <div class="booking-card-wrapper rounded-4 shadow-lg bg-white w-100">
                             <form id="booking-form" class="booking-form" method="POST" action="">
                                 <div class="row g-3">
                                     <div class="col-md-12 d-none form-duplicate-div">
@@ -440,23 +446,28 @@
         </section>
 
         <!-- 6. Experiences Section ("Live The Colors Of Kutch...") -->
-        <section id="activities" class="section pb-4">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h1 class="section-title mb-3 text-center" style="line-height: 1.4;">
-                        <span class="blue-pink-gradient-text d-inline-block">Live The Colors Of Kutch</span>
-                        <span class="d-block mt-1"></span>
-                        <span class="blue-pink-gradient-text d-inline-block">One Experience At A Time!</span>
-                    </h1>
-                    <div class="activities-separator mb-3">
-                        <span class="activities-sep-line"></span>
-                        <span class="activities-sep-dot"></span>
-                        <span class="activities-sep-line"></span>
+        <section id="activities" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="section-title mb-3 text-center">
+                            <span class="dark-text d-inline-block">Live The </span>
+                            <span class="blue-pink-gradient-text d-inline-block">Colors Of Kutch</span>
+                            <span class="d-block mt-1"></span>
+                            <span class="blue-pink-gradient-text d-inline-block">One</span>
+                            <span class="dark-text d-inline-block"> Experience </span>
+                            <span class="blue-pink-gradient-text d-inline-block">At A Time!</span>
+                        </h2>
+                        <div class="activities-separator mb-3">
+                            <span class="activities-sep-line"></span>
+                            <span class="activities-sep-dot"></span>
+                            <span class="activities-sep-line"></span>
+                        </div>
+                        <p class="subtitle mb-4">
+                            Immerse yourself in the vibrant culture and traditions of the Rann of Kutch with our curated
+                            activities.
+                        </p>
                     </div>
-                    <p class="subtitle mb-4">
-                        Immerse yourself in the vibrant culture and traditions of the Rann of Kutch with our curated
-                        activities.
-                    </p>
                 </div>
             </div>
 
@@ -746,65 +757,21 @@
                     </div>
                 </div>
             </div>
-
-            <div class="container py-4">
-                <div class="features-bar py-4 px-2 my-4 rounded-4" style="background-color: #FAF5F0; border: 1px solid rgba(116, 79, 185, 0.1);">
-                    <div class="row g-4 text-center justify-content-center">
-                        <div class="col-6 col-md-4 col-lg-2">
-                            <div class="feature-item">
-                                <i class="bi bi-compass fs-2 mb-2 d-block"></i>
-                                <span class="fw-bold text-dark" style="font-size: 14px;">Curated<br>Experiences</span>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-2">
-                            <div class="feature-item">
-                                <i class="bi bi-person-badge fs-2 mb-2 d-block"></i>
-                                <span class="fw-bold text-dark" style="font-size: 14px;">Local Expert<br>Guides</span>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-2">
-                            <div class="feature-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="url(#purple-pink-gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bi fs-2 mb-2 d-block mx-auto" style="transform: translateY(8px);">
-                                    <path d="M3.5 21 14 3" />
-                                    <path d="M20.5 21 10 3" />
-                                    <path d="M15.5 21 12 15l-3.5 6" />
-                                    <path d="M2 21h20" />
-                                </svg>
-                                <span class="fw-bold text-dark d-block" style="font-size: 14px; transform: translateY(18px);">Premium<br>Desert Camps</span>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-2">
-                            <div class="feature-item">
-                                <i class="bi bi-shield-check fs-2 mb-2 d-block"></i>
-                                <span class="fw-bold text-dark" style="font-size: 14px;">Secure<br>Booking</span>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-2">
-                            <div class="feature-item">
-                                <i class="bi bi-headset fs-2 mb-2 d-block"></i>
-                                <span class="fw-bold text-dark" style="font-size: 14px;">24/7<br>Support</span>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-2">
-                            <div class="feature-item">
-                                <i class="bi bi-map fs-2 mb-2 d-block"></i>
-                                <span class="fw-bold text-dark" style="font-size: 14px;">Custom<br>Itineraries</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
 
         <!-- 6.5 Stay Under The Stars (Accommodation Showcase) -->
-        <section id="tents-showcase" class="section py-5" style="background-color: #FAF5F0; border-top: 1px solid rgba(116, 79, 185, 0.05); border-bottom: 1px solid rgba(116, 79, 185, 0.05);">
-            <div class="container py-4">
+        <section id="tents-showcase" class="section" style="border-top: 1px solid rgba(116, 79, 185, 0.05); border-bottom: 1px solid rgba(116, 79, 185, 0.05);">
+            <div class="container">
                 <!-- Section Header -->
                 <div class="row text-center mb-5">
                     <div class="col-md-12">
-                        <span class="text-uppercase fw-bold" style="color: #744FB9; letter-spacing: 2px; font-size: 13px;">Accommodations</span>
-                        <h1 class="section-title text-dark mt-2 mb-3" style="font-family: 'Outfit', sans-serif; font-weight: 700;">Stay Under The <span class="pink-text">Stars</span></h1>
-                        <p class="subtitle text-muted mx-auto" style="max-width: 600px; font-size: 16px;">Luxury Tents Crafted For Every Traveller</p>
+                        <h2 class="section-title text-white mt-2 mb-3">Stay Under The <span class="pink-text">Stars</span></h2>
+                        <div class="activities-separator mb-3">
+                            <span class="activities-sep-line"></span>
+                            <span class="activities-sep-dot"></span>
+                            <span class="activities-sep-line"></span>
+                        </div>
+                        <p class="subtitle-accomadation text-muted mx-auto" style="max-width: 600px;">Luxury Tents Crafted For Every Traveller</p>
                     </div>
                 </div>
 
@@ -842,14 +809,14 @@
                                 <div class="col-lg-6 col-xl-5 order-lg-1">
                                     <div class="tent-info-panel p-4 p-md-5 bg-white rounded-4 shadow-sm border border-opacity-10" style="border-color: rgba(116, 79, 185, 0.1);">
                                         <div class="d-flex align-items-center justify-content-between mb-3">
-                                            <h2 class="tent-title mb-0" style="font-family: 'Outfit', sans-serif; font-weight: 700; color: #10182D;">Darbari Suite</h2>
+                                            <h2 class="tent-title mb-0" style="color: #10182D;">Darbari Suite</h2>
                                             <div class="tent-rating text-end">
                                                 <span class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
                                                 <span class="fw-bold text-dark ms-1">5.0</span>
                                             </div>
                                         </div>
                                         
-                                        <p class="tent-description text-muted mb-4" style="line-height: 1.6;">Experience the ultimate royal stay in our grand Darbari Suite, featuring rich traditional Kutch decor, lavish furnishings, and modern comforts.</p>
+                                        <p class="tent-description text-muted mb-4">Experience the ultimate royal stay in our grand Darbari Suite, featuring rich traditional Kutch decor, lavish furnishings, and modern comforts.</p>
                                         
                                         <div class="row mb-4 g-3">
                                             <div class="col-sm-6">
@@ -912,14 +879,14 @@
                                 <div class="col-lg-6 col-xl-5 order-lg-1">
                                     <div class="tent-info-panel p-4 p-md-5 bg-white rounded-4 shadow-sm border border-opacity-10" style="border-color: rgba(116, 79, 185, 0.1);">
                                         <div class="d-flex align-items-center justify-content-between mb-3">
-                                            <h2 class="tent-title mb-0" style="font-family: 'Outfit', sans-serif; font-weight: 700; color: #10182D;">Rajwadi Tent</h2>
+                                            <h2 class="tent-title mb-0" style="color: #10182D;">Rajwadi Tent</h2>
                                             <div class="tent-rating text-end">
                                                 <span class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
                                                 <span class="fw-bold text-dark ms-1">4.9</span>
                                             </div>
                                         </div>
                                         
-                                        <p class="tent-description text-muted mb-4" style="line-height: 1.6;">Inspired by royal heritage, the Rajwadi tent blends traditional luxury with modern comfort, offering a premium stay under the starlit sky.</p>
+                                        <p class="tent-description text-muted mb-4">Inspired by royal heritage, the Rajwadi tent blends traditional luxury with modern comfort, offering a premium stay under the starlit sky.</p>
                                         
                                         <div class="row mb-4 g-3">
                                             <div class="col-sm-6">
@@ -982,14 +949,14 @@
                                 <div class="col-lg-6 col-xl-5 order-lg-1">
                                     <div class="tent-info-panel p-4 p-md-5 bg-white rounded-4 shadow-sm border border-opacity-10" style="border-color: rgba(116, 79, 185, 0.1);">
                                         <div class="d-flex align-items-center justify-content-between mb-3">
-                                            <h2 class="tent-title mb-0" style="font-family: 'Outfit', sans-serif; font-weight: 700; color: #10182D;">Premium AC Tent</h2>
+                                            <h2 class="tent-title mb-0" style="color: #10182D;">Premium AC Tent</h2>
                                             <div class="tent-rating text-end">
                                                 <span class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
                                                 <span class="fw-bold text-dark ms-1">4.8</span>
                                             </div>
                                         </div>
                                         
-                                        <p class="tent-description text-muted mb-4" style="line-height: 1.6;">A high-end comfortable tent with complete air conditioning, premium bedding, and a separate sitting area to relax after exploring the Rann.</p>
+                                        <p class="tent-description text-muted mb-4">A high-end comfortable tent with complete air conditioning, premium bedding, and a separate sitting area to relax after exploring the Rann.</p>
                                         
                                         <div class="row mb-4 g-3">
                                             <div class="col-sm-6">
@@ -1052,14 +1019,14 @@
                                 <div class="col-lg-6 col-xl-5 order-lg-1">
                                     <div class="tent-info-panel p-4 p-md-5 bg-white rounded-4 shadow-sm border border-opacity-10" style="border-color: rgba(116, 79, 185, 0.1);">
                                         <div class="d-flex align-items-center justify-content-between mb-3">
-                                            <h2 class="tent-title mb-0" style="font-family: 'Outfit', sans-serif; font-weight: 700; color: #10182D;">Deluxe AC Tent</h2>
+                                            <h2 class="tent-title mb-0" style="color: #10182D;">Deluxe AC Tent</h2>
                                             <div class="tent-rating text-end">
                                                 <span class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>
                                                 <span class="fw-bold text-dark ms-1">4.6</span>
                                             </div>
                                         </div>
                                         
-                                        <p class="tent-description text-muted mb-4" style="line-height: 1.6;">A perfectly balanced deluxe tent offering cozy interiors, air conditioning, and top-tier hospitality for a relaxing stay.</p>
+                                        <p class="tent-description text-muted mb-4">A perfectly balanced deluxe tent offering cozy interiors, air conditioning, and top-tier hospitality for a relaxing stay.</p>
                                         
                                         <div class="row mb-4 g-3">
                                             <div class="col-sm-6">
@@ -1122,14 +1089,14 @@
                                 <div class="col-lg-6 col-xl-5 order-lg-1">
                                     <div class="tent-info-panel p-4 p-md-5 bg-white rounded-4 shadow-sm border border-opacity-10" style="border-color: rgba(116, 79, 185, 0.1);">
                                         <div class="d-flex align-items-center justify-content-between mb-3">
-                                            <h2 class="tent-title mb-0" style="font-family: 'Outfit', sans-serif; font-weight: 700; color: #10182D;">Traditional Non-AC Tent</h2>
+                                            <h2 class="tent-title mb-0" style="color: #10182D;">Traditional Non-AC Tent</h2>
                                             <div class="tent-rating text-end">
                                                 <span class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>
                                                 <span class="fw-bold text-dark ms-1">4.5</span>
                                             </div>
                                         </div>
                                         
-                                        <p class="tent-description text-muted mb-4" style="line-height: 1.6;">Experience the authentic, traditional desert camping feel in our eco-friendly non-AC tents, keeping you close to Kutch culture.</p>
+                                        <p class="tent-description text-muted mb-4">Experience the authentic, traditional desert camping feel in our eco-friendly non-AC tents, keeping you close to Kutch culture.</p>
                                         
                                         <div class="row mb-4 g-3">
                                             <div class="col-sm-6">
@@ -1166,11 +1133,11 @@
 
                     <!-- Custom Navigation: ◀ 1 / 5 ▶ -->
                     <div class="d-flex justify-content-center align-items-center mt-5">
-                        <button class="btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center tents-carousel-prev" type="button" data-bs-target="#tentsCarousel" data-bs-slide="prev" style="width: 48px; height: 48px; border-color: rgba(116, 79, 185, 0.3); color: #744FB9; transition: all 0.3s; background: transparent;">
+                        <button class="btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center tents-carousel-prev" type="button" data-bs-target="#tentsCarousel" data-bs-slide="prev" style="width: 48px; height: 48px; border-color: rgba(255, 255, 255, 0.61); color: #744FB9; transition: all 0.3s; background: transparent;">
                             <i class="bi bi-chevron-left fs-5"></i>
                         </button>
-                        <span class="fw-bold fs-5 text-dark mx-4" id="tents-carousel-counter" style="min-width: 70px; text-align: center; letter-spacing: 1px;">1 / 5</span>
-                        <button class="btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center tents-carousel-next" type="button" data-bs-target="#tentsCarousel" data-bs-slide="next" style="width: 48px; height: 48px; border-color: rgba(116, 79, 185, 0.3); color: #744FB9; transition: all 0.3s; background: transparent;">
+                        <span class="fw-bold fs-5 text-white mx-4" id="tents-carousel-counter" style="min-width: 70px; text-align: center; letter-spacing: 1px;">1 / 5</span>
+                        <button class="btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center tents-carousel-next" type="button" data-bs-target="#tentsCarousel" data-bs-slide="next" style="width: 48px; height: 48px; border-color: rgba(255, 255, 255, 0.61); color: #744FB9; transition: all 0.3s; background: transparent;">
                             <i class="bi bi-chevron-right fs-5"></i>
                         </button>
                     </div>
@@ -1179,11 +1146,16 @@
         </section>
 
         <!-- 7. Artisans Section ("Hands That Shape Kutch") -->
-        <section id="stars-await" class="section py-5">
+        <section id="stars-await" class="section">
             <div class="container-fluid px-4 px-md-5">
                 <div class="row">
                     <div class="col-md-12 text-center mb-5">
-                        <h1 class="section-title text-dark mb-3">Hands That <span class="purple-gradient-text">Shape Kutch</span></h1>
+                        <h2 class="section-title text-dark mb-3">Hands That <span class="purple-gradient-text">Shape Kutch</span></h2>
+                        <div class="activities-separator mb-3">
+                            <span class="activities-sep-line"></span>
+                            <span class="activities-sep-dot"></span>
+                            <span class="activities-sep-line"></span>
+                        </div>
                         <p class="subtitle mb-0 stars-subtitle">
                             Every creation tells a story of tradition, passion, and generations of exceptional craftsmanship.
                         </p>
@@ -1299,7 +1271,7 @@
                 <h4 class="fw-bold mb-2 blue-purple-gradient-text d-flex align-items-center justify-content-center justify-content-md-start">
                     <i class="bi bi-geo-alt-fill me-2"></i> Explore Rann Utsav
                 </h4>
-                <p class="mb-3" style="font-size: 14px;">
+                <p class="mb-3">
                     Discover the magic across the White Desert.
                 </p>
                 <a href="https://maps.google.com/?q=23.8391,69.6905" target="_blank" class="btn fw-bold text-white rounded-pill px-4 py-2 border-0 map-cta-btn">
@@ -1317,7 +1289,7 @@
                 <!-- Column 1: Logo & Tagline -->
                 <div class="col-lg-3 col-md-6">
                     <img src="./assets/logo-white.svg" alt="Majestic Escape Logo" class="img-fluid mb-3" style="max-height: 45px;">
-                    <p class="text-white-50" style="font-size: 14px; line-height: 1.6;">
+                    <p class="text-white-50">
                         Crafting journeys that become <br><span class="cursive-text" style="font-family: 'Meddon', cursive; font-size: 18px; color: #FAD42C;">your favorite</span> memories.
                     </p>
                     <div class="mt-3">
@@ -1334,7 +1306,7 @@
                         <li class="mb-2"><a href="#about" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;">About Rann Utsav</a></li>
                         <li class="mb-2"><a href="#activities" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;">Experiences</a></li>
                         <li class="mb-2"><a href="#booking" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;">Itinerary</a></li>
-                        <li class="mb-2"><a href="#gallery" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;">Gallery</a></li>
+                        <li class="mb-2"><a href="#tents-showcase" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;">Accommodation</a></li>
                         <li class="mb-2"><a href="#footer" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;">Contact</a></li>
                     </ul>
                 </div>

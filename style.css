@@ -1,12 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Meddon&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
 
 :root {
     color-scheme: light;
     /* tells browsers to use light mode form controls, scrollbars, etc. */
+
+    /* Font Families */
+    --font-heading: 'Bricolage Grotesque', sans-serif;
+    --font-sans: 'Poppins', sans-serif;
+    --font-alt-heading: 'Outfit', sans-serif;
+    --font-accent: 'Meddon', cursive;
+
+    /* H1 (Main Titles) */
+    --h1-font-family: var(--font-heading);
+    --h1-font-size: 3rem;
+    --h1-font-weight: 700;
+    --h1-line-height: 1.25;
+    --h1-letter-spacing: -0.01em;
+
+    /* H2/H3 (Section Headings) */
+    --h2-font-family: var(--font-heading);
+    --h2-font-size: 2.2rem;
+    --h2-font-weight: 700;
+    --h2-line-height: 1.3;
+    --h2-letter-spacing: normal;
+
+    /* Subtitles */
+    --subtitle-font-family: var(--font-sans);
+    --subtitle-font-size: 1.125rem;
+    /* 18px */
+    --subtitle-font-weight: 400;
+    --subtitle-line-height: 1.5;
+    --subtitle-letter-spacing: normal;
+    --subtitle-color: #555555;
+
+    /* Body Text */
+    --body-font-family: var(--font-sans);
+    --body-font-size: 1rem;
+    /* 16px */
+    --body-font-weight: 400;
+    --body-line-height: 1.65;
+    --body-letter-spacing: normal;
+    --body-color: #4A4A4A;
+}
+
+@media (max-width: 768px) {
+    :root {
+        --h1-font-size: 2.0rem;
+        --h2-font-size: 1.7rem;
+        --subtitle-font-size: 0.9375rem;
+        /* 15px */
+        --body-font-size: 0.9rem;
+        /* 14.5px */
+    }
 }
 
 * {
@@ -19,23 +66,59 @@ body {
 }
 
 h1,
+.section-title {
+    font-family: var(--h1-font-family) !important;
+    font-size: var(--h1-font-size) !important;
+    font-weight: var(--h1-font-weight) !important;
+    letter-spacing: var(--h1-letter-spacing) !important;
+    line-height: var(--h1-line-height) !important;
+}
+
 h2,
 h3,
+h2.section-title,
+.countdown-cta-heading,
+.form-banner-heading,
+.tent-title {
+    font-family: var(--h2-font-family) !important;
+    font-size: var(--h2-font-size) !important;
+    font-weight: var(--h2-font-weight) !important;
+    letter-spacing: var(--h2-letter-spacing) !important;
+    line-height: var(--h2-line-height) !important;
+}
+
 h4,
 h5 {
-    font-family: 'Bricolage Grotesque', sans-serif;
-    color: #4561E2;
+    font-family: var(--font-heading);
 }
 
 h6,
-p,
 label {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-sans);
 }
 
-.subtitle {
-    font-size: 25px;
-    color: #000000;
+p,
+.about-para,
+.form-banner-para,
+.tent-description,
+.map-card-overlay p {
+    font-family: var(--body-font-family) !important;
+    font-size: var(--body-font-size) !important;
+    font-weight: var(--body-font-weight) !important;
+    line-height: var(--body-line-height) !important;
+    letter-spacing: var(--body-letter-spacing) !important;
+    color: var(--body-color) !important;
+}
+
+.subtitle,
+.stars-subtitle,
+.gallery-subtitle {
+    font-family: var(--subtitle-font-family) !important;
+    font-size: var(--subtitle-font-size) !important;
+    font-weight: var(--subtitle-font-weight) !important;
+    line-height: var(--subtitle-line-height) !important;
+    letter-spacing: var(--subtitle-letter-spacing) !important;
+    color: #6a6a6a;
 }
 
 .pink-text {
@@ -60,6 +143,10 @@ label {
 
 .navbar-toggler:focus {
     box-shadow: none;
+}
+
+.subtitle-accomadation {
+    color: #ffffff !important;
 }
 
 /* .subtitle::after {
@@ -146,8 +233,33 @@ footer a {
 }
 
 .section {
-    padding: 100px 0;
     background-color: floralwhite;
+}
+
+/* Unified Section Padding for Content Sections */
+.section,
+#countdown-section,
+#about,
+#gallery,
+#booking,
+#activities,
+#tents-showcase,
+#stars-await {
+    padding: 100px 0 !important;
+}
+
+@media (max-width: 768px) {
+
+    .section,
+    #countdown-section,
+    #about,
+    #gallery,
+    #booking,
+    #activities,
+    #tents-showcase,
+    #stars-await {
+        padding: 60px 0 !important;
+    }
 }
 
 /* .section-margin {
@@ -157,7 +269,45 @@ footer a {
 #banner {
     height: 100vh;
     background:
-        url('./banner.jpg') no-repeat center center / contain;
+        url('./banner.png') no-repeat center center / contain;
+}
+
+/* Hero Date Board Floating Element */
+.hero-date-board {
+    position: absolute;
+    right: 0.1%;
+    top: 55%;
+    transform: translateY(-50%);
+    max-width: 320px;
+    z-index: 10;
+    animation: floatBoard 4s ease-in-out infinite;
+}
+
+.hero-date-board img {
+    width: 75%;
+    height: auto;
+    filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.25));
+}
+
+
+@media (max-width: 991px) {
+    .hero-date-board {
+        right: 4%;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-date-board {
+        position: relative;
+        right: auto;
+        top: auto;
+        transform: none;
+        margin: 40px auto 20px auto;
+        max-width: 220px;
+        text-align: center;
+        animation: none;
+    }
 }
 
 .banner-image {
@@ -189,7 +339,6 @@ footer a {
     background-repeat: no-repeat !important;
     background-position: center center !important;
     background-size: cover !important;
-    padding: 100px 0 !important;
 }
 
 #about-title {
@@ -202,8 +351,6 @@ footer a {
 }
 
 .section-title {
-    font-size: 3rem;
-    font-weight: 700;
     margin-bottom: 20px;
     text-shadow: none !important;
     filter: drop-shadow(2px 4px 6px rgba(106, 63, 216, 0.15));
@@ -218,7 +365,6 @@ footer a {
     /* background-color: #07243d; */
     background:
         url('./timer-bg.png') top center / cover no-repeat;
-    padding: 80px 0px;
     /* border-radius: 0 0 40px 40px; */
 }
 
@@ -524,6 +670,7 @@ input::-webkit-input-placeholder {
 
 #footer {
     background-color: #10182D;
+    padding: 80px 0 60px 0 !important;
 }
 
 #footer a {
@@ -590,21 +737,17 @@ input::-webkit-input-placeholder {
 
 @media screen and (max-width: 768px) {
 
-    .section {
-        padding: 50px 0;
-    }
+    /* Covered by unified section padding */
 
     #banner {
         background:
-            url('./assets/newbanner.jpg');
+            url('./banner.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top center;
     }
 
-    .subtitle {
-        font-size: 18px;
-    }
+    .subtitle {}
 
     #header-logo {
         width: 100%;
@@ -612,7 +755,6 @@ input::-webkit-input-placeholder {
 
     .section-title {
         text-align: center;
-        font-size: 1.9rem;
         padding: 0 20px;
     }
 
@@ -713,6 +855,10 @@ input::-webkit-input-placeholder {
         width: 72%;
     }
 
+    #footer {
+        padding: 60px 0 40px 0 !important;
+    }
+
     #book-now-button {
         font-size: 16px !important;
     }
@@ -752,13 +898,20 @@ input::-webkit-input-placeholder {
     }
 }
 
+/* Standard Tablet Query */
+@media (min-width: 768px) and (max-width: 1023px) {
+    #banner {
+        min-height: 75vh !important;
+        background: url('./banner.png') no-repeat center center / contain !important;
+    }
+}
+
 /* ==========================================================================
    The Stars Await Section & Carousel
    ========================================================================== */
 #stars-await,
 #gallery {
     background-color: #ffffff;
-    padding: 100px 0;
     position: relative;
     overflow: hidden;
     background-size: cover;
@@ -784,9 +937,7 @@ input::-webkit-input-placeholder {
 
 .stars-subtitle,
 .gallery-subtitle {
-    font-size: 20px;
     opacity: 0.8;
-    color: #777777 !important;
 }
 
 .stars-carousel-container,
@@ -805,15 +956,8 @@ input::-webkit-input-placeholder {
         width: 30px;
     }
 
-    #stars-await,
-    #gallery {
-        padding: 60px 0;
-    }
+    /* Covered by unified section padding */
 
-    .stars-subtitle,
-    .gallery-subtitle {
-        font-size: 16px;
-    }
 }
 
 .stars-carousel-track-wrapper,
@@ -1324,7 +1468,7 @@ input::-webkit-input-placeholder {
     min-height: 100vh;
     height: auto;
     background:
-        url('./assets/beanner.jpg') no-repeat center center / cover !important;
+        url('./banner.png') no-repeat center center / cover !important;
 }
 
 .hero-content-container {
@@ -1463,13 +1607,6 @@ input::-webkit-input-placeholder {
     color: #3771F5;
 }
 
-.countdown-heading-underline {
-    width: 65px;
-    height: 4px;
-    background: linear-gradient(90deg, #3771F5 0%, #7F3FEF 45%, #E83981 75%, #F63E63 100%);
-    margin-top: 15px;
-    border-radius: 2px;
-}
 
 .countdown-card {
     background: rgba(255, 255, 255, 0.04) !important;
@@ -1524,7 +1661,7 @@ input::-webkit-input-placeholder {
 
 .elegant-separator .sep-line {
     flex: none !important;
-    width: 45px;
+    width: 15px;
     height: 2.5px;
     background: linear-gradient(90deg, #4561E2 0%, #6A3FD8 50%, #D13A7E 100%);
     border-radius: 2px;
@@ -1567,14 +1704,10 @@ input::-webkit-input-placeholder {
     background:
         linear-gradient(135deg, rgba(16, 24, 45, 0.95) 0%, rgba(30, 20, 50, 0.95) 100%),
         url('./assets/festival-bg.JPG') no-repeat center center / cover !important;
-    padding: 100px 0 !important;
     background-attachment: scroll !important;
 }
 
 .form-banner-heading {
-    font-size: 3.5rem;
-    font-weight: 800;
-    line-height: 1.2;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -1770,7 +1903,6 @@ input::-webkit-input-placeholder {
     }
 
     .form-banner-heading {
-        font-size: 2.5rem;
         text-align: center;
     }
 
@@ -1779,9 +1911,7 @@ input::-webkit-input-placeholder {
         margin-bottom: 30px;
     }
 
-    #booking {
-        padding: 60px 0 !important;
-    }
+    /* Covered by unified section padding */
 
     .activities-grid .col-md-4 {
         margin-bottom: 10px;
@@ -1827,8 +1957,6 @@ input::-webkit-input-placeholder {
 #stars-await .stars-carousel-card {
     transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1) !important;
     transform: scale(0.85) rotate(-2deg);
-    opacity: 0.5;
-    filter: grayscale(40%) blur(0.5px);
 }
 
 /* Alternate rotation for organic hanging feel */
@@ -1918,17 +2046,27 @@ input::-webkit-input-placeholder {
 }
 
 .artist-subtitle {
-    font-family: 'Meddon', cursive;
+    font-family: var(--body-font-family);
+    font-style: italic;
     font-size: 13px;
-    color: #EA0776;
-    /* Accent color matching target brand (pink/magenta) */
+    background: linear-gradient(90deg, #1A5CF3 0%, #763DE8 50%, #E52E58 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: #1A5CF3;
+    display: inline-block;
     margin: 0;
     opacity: 0.9;
 }
 
+
 /* ==========================================================================
    Tents Showcase Section Styling
    ========================================================================== */
+#tents-showcase {
+    background: url('./assets/understars.jpg') no-repeat center center / cover !important;
+}
+
 .tent-gallery-card,
 .tent-info-panel {
     transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -2023,7 +2161,7 @@ input::-webkit-input-placeholder {
 }
 
 .blue-purple-gradient-text {
-    background: linear-gradient(90deg, #1A5CF3 0%, #763DE8 50%, #E52E58 100%);
+    background: linear-gradient(90deg, #1A5CF3 0%, #763DE8 20%, #E52E58 50%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -2038,6 +2176,14 @@ input::-webkit-input-placeholder {
     color: #4D53E8;
 }
 
+.black-gradient-text {
+    background: linear-gradient(90deg, #10182D 0%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: #10182D;
+}
+
 /* Activities Separator and Subtitle */
 .activities-separator {
     display: flex;
@@ -2048,7 +2194,7 @@ input::-webkit-input-placeholder {
 }
 
 .activities-sep-line {
-    flex: 1;
+    width: 30px;
     height: 3px;
     background: linear-gradient(90deg, #FF4D8D 0%, #744FB9 100%);
     border-radius: 2px;
@@ -2060,6 +2206,61 @@ input::-webkit-input-placeholder {
     background-color: #FF4D8D;
     border-radius: 50%;
     margin: 0 10px;
+}
+
+/* About Section Premium Header Design */
+.about-super-title {
+    letter-spacing: 2.5px;
+    font-size: 11px;
+    color: #888888;
+    text-transform: uppercase;
+    font-family: var(--font-sans);
+}
+
+.about-main-title {
+    line-height: 1.15;
+}
+
+.about-main-title .blue-purple-gradient-text {
+    font-size: 3.2rem;
+    font-weight: 800;
+}
+
+.about-main-title .black-gradient-text {
+    font-size: 2.4rem;
+    font-weight: 300;
+}
+
+.activities-separator.about-sep {
+    justify-content: flex-start;
+    margin: 15px 0;
+    width: auto;
+}
+
+.activities-separator.about-sep .activities-sep-line {
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #FF4D8D 0%, #744FB9 100%);
+}
+
+.activities-separator.about-sep .activities-sep-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #FF4D8D;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(255, 77, 141, 0.6);
+    margin-left: 12px;
+    margin-right: 0;
+}
+
+@media (max-width: 768px) {
+    .about-main-title .blue-purple-gradient-text {
+        font-size: 2.4rem;
+    }
+
+    .about-main-title .black-gradient-text {
+        font-size: 1.8rem;
+    }
 }
 
 #activities .subtitle {
