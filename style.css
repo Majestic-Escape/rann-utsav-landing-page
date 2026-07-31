@@ -2468,9 +2468,9 @@ input::-webkit-input-placeholder {
     width: 52px;
     height: 52px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    color: #ffffff;
+    background: rgba(255, 255, 255, 0.347);
+    border: 1px solid rgb(0, 0, 0);
+    color: #010101;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2724,9 +2724,11 @@ input::-webkit-input-placeholder {
     .lightbox-nav-prev {
         left: 10px;
     }
+
     .lightbox-nav-next {
         right: 10px;
     }
+
     .guest-photo-wrapper {
         width: 72px;
         height: 72px;
