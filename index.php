@@ -274,47 +274,7 @@
                     <div class="gallery-carousel-track-wrapper">
                         <div class="gallery-carousel-track" id="gallery-carousel-track">
                             <!-- Image Cards -->
-                            <div class="gallery-carousel-card" data-index="0">
-                                <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery1.jpg?v=0.2" alt="Kutch Desert Gallery 1">
-                                </div>
-                            </div>
-                            <div class="gallery-carousel-card" data-index="1">
-                                <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery2.jpg?v=0.2" alt="Kutch Desert Gallery 2">
-                                </div>
-                            </div>
-                            <div class="gallery-carousel-card" data-index="2">
-                                <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery3.jpg?v=0.2" alt="Kutch Desert Gallery 3">
-                                </div>
-                            </div>
-                            <div class="gallery-carousel-card" data-index="3">
-                                <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery4.jpg?v=0.2" alt="Kutch Desert Gallery 4">
-                                </div>
-                            </div>
-                            <div class="gallery-carousel-card" data-index="4">
-                                <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery5.jpg?v=0.2" alt="Kutch Desert Gallery 5">
-                                </div>
-                            </div>
-                            <div class="gallery-carousel-card" data-index="5">
-                                <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery7.jpg?v=0.2" alt="Kutch Desert Gallery 7">
-                                </div>
-                            </div>
-                            <div class="gallery-carousel-card" data-index="6">
-                                <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery10.jpg?v=0.2" alt="Kutch Desert Gallery 10">
-                                </div>
-                            </div>
-                            <div class="gallery-carousel-card" data-index="8">
-                                <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery12.jpg?v=0.2" alt="Kutch Desert Gallery 12">
-                                </div>
-                            </div>
-                            <div class="gallery-carousel-card" data-index="9">
+                              <div class="gallery-carousel-card" data-index="9">
                                 <div class="gallery-img-wrapper">
                                     <img src="./assets/gallery/gallery6.jpg?v=0.2" alt="Kutch Desert Gallery 6">
                                 </div>
@@ -322,11 +282,6 @@
                             <div class="gallery-carousel-card" data-index="10">
                                 <div class="gallery-img-wrapper">
                                     <img src="./assets/gallery/gallery8.jpg?v=0.2" alt="Kutch Desert Gallery 8">
-                                </div>
-                            </div>
-                            <div class="gallery-carousel-card" data-index="11">
-                                <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery9.jpg?v=0.2" alt="Kutch Desert Gallery 9">
                                 </div>
                             </div>
                             <div class="gallery-carousel-card" data-index="12">
@@ -349,6 +304,32 @@
                                     <img src="./assets/gallery/gallery16.jpg?v=0.2" alt="Kutch Desert Gallery 16">
                                 </div>
                             </div>
+                            <div class="gallery-carousel-card" data-index="0">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery1.jpg?v=0.2" alt="Kutch Desert Gallery 1">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="2">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery3.jpg?v=0.2" alt="Kutch Desert Gallery 3">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="3">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery4.jpg?v=0.2" alt="Kutch Desert Gallery 4">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="6">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery10.jpg?v=0.2" alt="Kutch Desert Gallery 10">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="8">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery12.jpg?v=0.2" alt="Kutch Desert Gallery 12">
+                                </div>
+                            </div>
+                           
                         </div>
                     </div>
 
