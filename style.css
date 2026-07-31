@@ -269,7 +269,7 @@ footer a {
 #banner {
     height: 100vh;
     background:
-        url('./banner.png') no-repeat center center / contain;
+        url('./assets/banner.jpg') no-repeat center center / contain;
 }
 
 /* Hero Date Board Floating Element */
@@ -415,8 +415,7 @@ footer a {
 }
 
 #booking {
-    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 10%),
-        linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0.3) 10%), url('./assets/background.jpg?v=0.2') top center / cover no-repeat;
+    background: #141433;
     /* box-shadow: 0 0 5px #35621f; */
     /* border-radius: 40px; */
     /* padding: 80px 40px; */
@@ -741,7 +740,7 @@ input::-webkit-input-placeholder {
 
     #banner {
         background:
-            url('./banner.png');
+            url('./assets/banner.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top center;
@@ -902,7 +901,7 @@ input::-webkit-input-placeholder {
 @media (min-width: 768px) and (max-width: 1023px) {
     #banner {
         min-height: 75vh !important;
-        background: url('./banner.png') no-repeat center center / contain !important;
+        background: url('./assets/banner.jpg') no-repeat center center / contain !important;
     }
 }
 
@@ -1468,7 +1467,7 @@ input::-webkit-input-placeholder {
     min-height: 100vh;
     height: auto;
     background:
-        url('./banner.png') no-repeat center center / cover !important;
+        url('./assets/banner.jpg') no-repeat center center / cover !important;
 }
 
 .hero-content-container {
@@ -1701,9 +1700,7 @@ input::-webkit-input-placeholder {
 
 /* Combined Lead Form Section */
 #booking {
-    background:
-        linear-gradient(135deg, rgba(16, 24, 45, 0.95) 0%, rgba(30, 20, 50, 0.95) 100%),
-        url('./assets/festival-bg.JPG') no-repeat center center / cover !important;
+    background: #141433;
     background-attachment: scroll !important;
 }
 
@@ -2218,6 +2215,10 @@ input::-webkit-input-placeholder {
 }
 
 .about-main-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem 1rem;
     line-height: 1.15;
 }
 
@@ -2231,9 +2232,15 @@ input::-webkit-input-placeholder {
     font-weight: 300;
 }
 
+.about-title-year-group {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .activities-separator.about-sep {
     justify-content: flex-start;
-    margin: 15px 0 15px 230px;
+    margin: 12px 0 0 -4rem;
     width: auto;
 }
 
@@ -2260,6 +2267,10 @@ input::-webkit-input-placeholder {
 
     .about-main-title .black-gradient-text {
         font-size: 1.8rem;
+    }
+
+    .activities-separator.about-sep {
+        margin-left: 0;
     }
 }
 
@@ -2301,7 +2312,7 @@ input::-webkit-input-placeholder {
 #guest-testimonials {
     border-top: 1px solid rgba(116, 79, 185, 0.1);
     border-bottom: 1px solid rgba(116, 79, 185, 0.1);
-    background: transparent;
+    background: #141433;
 }
 
 .testimonial-carousel-wrapper {
