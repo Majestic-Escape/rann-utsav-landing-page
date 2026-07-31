@@ -2233,24 +2233,24 @@ input::-webkit-input-placeholder {
 
 .activities-separator.about-sep {
     justify-content: flex-start;
-    margin: 15px 0;
+    margin: 15px 0 15px 230px;
     width: auto;
 }
 
 .activities-separator.about-sep .activities-sep-line {
-    width: 60px;
-    height: 4px;
+    width: 30px;
+    height: 3px;
     background: linear-gradient(90deg, #FF4D8D 0%, #744FB9 100%);
 }
 
 .activities-separator.about-sep .activities-sep-dot {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     background-color: #FF4D8D;
     border-radius: 50%;
     box-shadow: 0 0 8px rgba(255, 77, 141, 0.6);
     margin-left: 12px;
-    margin-right: 0;
+    margin-right: 12px;
 }
 
 @media (max-width: 768px) {
@@ -2293,4 +2293,442 @@ input::-webkit-input-placeholder {
     background-clip: text;
     color: transparent;
     display: inline-block;
+}
+
+/* ==========================================================================
+   Guest Testimonials Carousel & Lightbox Styles
+   ========================================================================== */
+#guest-testimonials {
+    border-top: 1px solid rgba(116, 79, 185, 0.1);
+    border-bottom: 1px solid rgba(116, 79, 185, 0.1);
+    background: transparent;
+}
+
+.testimonial-carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.testimonial-card-outer {
+    width: 100%;
+    max-width: 880px;
+}
+
+.testimonial-card {
+    border-radius: 22px !important;
+    padding: 36px 40px !important;
+    background: #ffffff !important;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25) !important;
+    transition: transform 0.35s ease, opacity 0.35s ease;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.testimonial-card.animating-out {
+    opacity: 0;
+    transform: translateY(-12px);
+}
+
+.testimonial-card.animating-in {
+    animation: testimonialFadeUp 0.38s ease forwards;
+}
+
+@keyframes testimonialFadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.testimonial-stars {
+    color: #F4C542;
+    font-size: 1.25rem;
+    letter-spacing: 3px;
+}
+
+.testimonial-title {
+    font-size: 1.45rem !important;
+    line-height: 1.35 !important;
+    color: #10182D !important;
+    font-weight: 700 !important;
+}
+
+.testimonial-text {
+    font-size: 1.025rem !important;
+    line-height: 1.7 !important;
+    color: #3D4452 !important;
+    max-width: 760px;
+    font-weight: 400;
+    white-space: pre-line;
+}
+
+/* Special Author & Booking Badge Section */
+.testimonial-author-wrapper {
+    border-top: 1px solid rgba(116, 79, 185, 0.12) !important;
+}
+
+.testimonial-author-name {
+    color: #10182D !important;
+    font-size: 1rem !important;
+    letter-spacing: 0.2px;
+}
+
+.testimonial-author-dot {
+    color: #744FB9;
+    font-weight: bold;
+}
+
+.testimonial-booking-badge {
+    font-size: 0.825rem !important;
+    background: rgba(116, 79, 185, 0.08) !important;
+    color: #744FB9 !important;
+    border: 1px solid rgba(116, 79, 185, 0.2) !important;
+    letter-spacing: 0.3px;
+    transition: all 0.3s ease;
+}
+
+.testimonial-booking-badge:hover {
+    background: rgba(234, 7, 118, 0.1) !important;
+    color: #EA0776 !important;
+    border-color: rgba(234, 7, 118, 0.3) !important;
+}
+
+/* Guest Photo Gallery */
+.testimonial-photos-gallery {
+    padding-top: 8px;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 14px !important;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.guest-photo-wrapper {
+    position: relative;
+    width: 78px;
+    height: 78px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid rgba(116, 79, 185, 0.15);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f5f5f7;
+}
+
+.guest-photo-wrapper:hover {
+    transform: scale(1.08);
+    border-color: #EA0776;
+    box-shadow: 0 6px 16px rgba(234, 7, 118, 0.3);
+}
+
+.guest-photo-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.guest-photo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(16, 24, 45, 0.72);
+    backdrop-filter: blur(2px);
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    pointer-events: none;
+}
+
+/* Carousel Navigation Arrows */
+.testimonial-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+}
+
+.testimonial-arrow-prev {
+    left: -28px;
+}
+
+.testimonial-arrow-next {
+    right: -28px;
+}
+
+.testimonial-arrow:hover {
+    background: linear-gradient(135deg, #744FB9 0%, #EA0776 100%);
+    border-color: transparent;
+    color: #ffffff;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 8px 20px rgba(234, 7, 118, 0.4);
+}
+
+/* Carousel Pagination Dots */
+.testimonial-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgb(133, 132, 132);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+.testimonial-dot.active {
+    width: 28px;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #744FB9 0%, #FF4D8D 100%);
+    box-shadow: 0 0 10px rgba(255, 77, 141, 0.5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .testimonial-arrow-prev {
+        left: -15px;
+    }
+
+    .testimonial-arrow-next {
+        right: -15px;
+    }
+
+    .testimonial-card {
+        padding: 30px 24px !important;
+    }
+
+    .guest-photo-item {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+@media (max-width: 767px) {
+    .testimonial-arrow {
+        position: static;
+        transform: none;
+        width: 44px;
+        height: 44px;
+        font-size: 1.1rem;
+    }
+
+    .testimonial-arrow:hover {
+        transform: scale(1.05);
+    }
+
+    .testimonial-carousel-wrapper {
+        flex-direction: column;
+    }
+
+    .testimonial-card {
+        padding: 24px 18px !important;
+        border-radius: 18px !important;
+    }
+
+    .testimonial-title {
+        font-size: 1.25rem !important;
+    }
+
+    .testimonial-text {
+        font-size: 0.95rem !important;
+    }
+
+    .guest-photo-item {
+        width: 70px;
+        height: 70px;
+    }
+
+    .testimonial-photos-gallery {
+        overflow-x: auto;
+        flex-wrap: nowrap !important;
+        padding-bottom: 8px;
+        justify-content: flex-start !important;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* Lightbox Modal */
+.testimonial-lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10050;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-lightbox.active {
+    display: flex;
+    animation: lightboxFadeIn 0.3s ease forwards;
+}
+
+@keyframes lightboxFadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.lightbox-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 12, 24, 0.88);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.lightbox-dialog {
+    position: relative;
+    z-index: 2;
+    max-width: 90vw;
+    max-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-img {
+    max-width: 100%;
+    max-height: 85vh;
+    border-radius: 16px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    object-fit: contain;
+}
+
+.lightbox-close {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    z-index: 10060;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+    font-size: 1.25rem;
+    line-height: 1;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.lightbox-close i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.lightbox-close:hover {
+    background: #EA0776;
+    border-color: #EA0776;
+    transform: scale(1.1);
+}
+
+/* Lightbox Modal Navigation Controls */
+.lightbox-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+    transition: all 0.25s ease;
+}
+
+.lightbox-nav-prev {
+    left: -65px;
+}
+
+.lightbox-nav-next {
+    right: -65px;
+}
+
+.lightbox-nav-btn:hover {
+    background: #EA0776;
+    border-color: #EA0776;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.lightbox-photo-counter {
+    position: absolute;
+    bottom: -36px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    opacity: 0.85;
+}
+
+@media (max-width: 767px) {
+    .lightbox-nav-prev {
+        left: 10px;
+    }
+    .lightbox-nav-next {
+        right: 10px;
+    }
+    .guest-photo-wrapper {
+        width: 72px;
+        height: 72px;
+    }
 }

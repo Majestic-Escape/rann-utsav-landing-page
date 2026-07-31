@@ -233,12 +233,14 @@
                     <div class="col-lg-8 about-div ps-lg-5 text-black">
                         <div class="about-header-wrapper text-start mb-4">
                             <h2 class="about-main-title mb-2" id="about-title">
-                                <span class="blue-purple-gradient-text d-block">Rann Utsav</span>
-                                <span class="black-gradient-text d-block mt-1">2026–2027</span>
+                                <span class="blue-purple-gradient-text ">Rann Utsav</span>
+                                <span class="black-gradient-text fw-bold">2026–2027</span>                            
                             </h2>
                             <div class="activities-separator about-sep mb-3">
                                 <span class="activities-sep-line"></span>
                                 <span class="activities-sep-dot"></span>
+                                <span class="activities-sep-line"></span>
+                                
                             </div>
                         </div>
                         <p class="about-para">
@@ -1144,6 +1146,116 @@
                 </div>
             </div>
         </section>
+
+        <!-- 6.6 Guest Testimonials Carousel Section -->
+        <section id="guest-testimonials" class="section position-relative py-5">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="row text-center mb-4 mb-md-5">
+                    <div class="col-12">
+                        <span class="testimonials-badge d-inline-block px-3 py-1 mb-3 rounded-pill fw-semibold text-uppercase" style="letter-spacing: 2px; font-size: 0.75rem; background: rgba(116, 79, 185, 0.15); color: #FF4D8D; border: 1px solid rgba(255, 77, 141, 0.3);">
+                            GUEST TESTIMONIALS
+                        </span>
+                        <h2 class="section-title text-dark mb-2">What Our <span class="pink-text">Guests Say</span></h2>
+                        <div class="activities-separator mb-3">
+                            <span class="activities-sep-line"></span>
+                            <span class="activities-sep-dot"></span>
+                            <span class="activities-sep-line"></span>
+                        </div>
+                        <p class="subtitle text-muted mx-auto mb-0" style="max-width: 650px; color: rgba(255, 255, 255, 0.7) !important;">
+                            Real experiences from visitors who explored the White Rann.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Carousel Area -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-11 col-xl-10 position-relative">
+                        <div class="testimonial-carousel-wrapper">
+                            
+                            <!-- Prev Arrow Button -->
+                            <button class="testimonial-arrow testimonial-arrow-prev" id="testimonial-prev-btn" aria-label="Previous Testimonial">
+                                <i class="bi bi-chevron-left"></i>
+                            </button>
+
+                            <!-- Testimonial Card Container -->
+                            <div class="testimonial-card-outer mx-auto" id="testimonial-card-outer">
+                                <div class="testimonial-card bg-white p-4 p-md-5 text-center rounded-4 shadow-lg position-relative" id="testimonial-card">
+                                    
+                                    <!-- 5 Gold Stars -->
+                                    <div class="testimonial-stars mb-3">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+
+                                    <!-- Review Title -->
+                                    <h3 class="testimonial-title fw-bold text-dark mb-3" id="testimonial-title">
+                                        <!-- Populated via JS -->
+                                    </h3>
+
+                                    <!-- Review Text -->
+                                    <p class="testimonial-text mb-3 mx-auto" id="testimonial-text">
+                                        <!-- Populated via JS -->
+                                    </p>
+
+                                    <!-- Special Author & Booking Badge Section -->
+                                    <div class="testimonial-author-wrapper my-3 pt-3 border-top border-opacity-10 d-flex flex-column flex-sm-row align-items-center justify-content-center gap-2" id="testimonial-author-wrapper">
+                                        <span class="testimonial-author-name fw-bold text-dark fs-6" id="testimonial-author">
+                                            <!-- Author Name Populated via JS -->
+                                        </span>
+                                        <span class="testimonial-author-dot d-none d-sm-inline-block opacity-40" id="testimonial-author-dot">•</span>
+                                        <span class="testimonial-booking-badge px-3 py-1 rounded-pill fw-medium" id="testimonial-badge">
+                                            <!-- Booking Badge Populated via JS -->
+                                        </span>
+                                    </div>
+
+                                    <!-- Guest Photos Gallery -->
+                                    <div class="testimonial-photos-wrapper mt-4">
+                                        <div class="testimonial-photos-gallery d-flex flex-wrap justify-content-center gap-2 gap-sm-3" id="testimonial-photos">
+                                            <!-- Populated via JS -->
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Next Arrow Button -->
+                            <button class="testimonial-arrow testimonial-arrow-next" id="testimonial-next-btn" aria-label="Next Testimonial">
+                                <i class="bi bi-chevron-right"></i>
+                            </button>
+
+                        </div>
+
+                        <!-- Pagination Dots -->
+                        <div class="testimonial-dots-wrapper d-flex justify-content-center align-items-center gap-2 mt-4" id="testimonial-dots">
+                            <!-- Populated via JS -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Photo Lightbox Modal -->
+        <div class="testimonial-lightbox" id="testimonial-lightbox">
+            <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+            <div class="lightbox-dialog">
+                <button class="lightbox-close" id="lightbox-close-btn" aria-label="Close Lightbox">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+                <button class="lightbox-nav-btn lightbox-nav-prev" id="testimonial-lightbox-prev" aria-label="Previous Photo">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+                <img id="testimonial-lightbox-img" src="" alt="Guest Photo View" class="lightbox-img">
+                <button class="lightbox-nav-btn lightbox-nav-next" id="testimonial-lightbox-next" aria-label="Next Photo">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+                <div class="lightbox-photo-counter text-white" id="testimonial-lightbox-counter"></div>
+            </div>
+        </div>
 
         <!-- 7. Artisans Section ("Hands That Shape Kutch") -->
         <section id="stars-await" class="section">

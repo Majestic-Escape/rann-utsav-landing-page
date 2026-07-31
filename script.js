@@ -858,6 +858,384 @@ document.addEventListener('DOMContentLoaded', () => {
     initGalleryCarousel();
     initLightbox();
     initTentsCarousel();
+    initGuestTestimonialsCarousel();
+
+    // 5. Guest Testimonials Carousel & Lightbox Logic
+    function initGuestTestimonialsCarousel() {
+        const testimonialsData = [
+            {
+                title: "Rann Utsav Dhordo — Wonderful Experience",
+                text: "“Had a wonderful experience at Rann Utsav and Tent City!\nThe travel arrangements were perfectly managed — smooth transfers, comfortable stay, and excellent coordination throughout the trip.\n\nEverything was well-organized, allowing us to truly enjoy the beauty of the White Rann without any stress.\n\nHighly recommend their services for a hassle-free and memorable trip!”",
+                author: "Siddhesh Kesarkar & Family",
+                badge: "Booked via Majestic Escape 🤍",
+                photos: [
+                    "./assets/testimonials/testimonial1-1.jpg"
+                ]
+            },
+            {
+                title: "Luxury in the Middle of the Desert — Tent City",
+                text: "“From cultural vibes to peaceful sunsets, every moment at Tent City was picture-perfect.\n\nSimple moments, unforgettable experience. Luxury in the middle of the desert — Tent City at Rann of Kutch exceeded all expectations.\n\nGreat experience from start to finish. Super simple process and excellent service.”",
+                author: "Manvi & Family",
+                badge: "Booked via Majestic Escape 💛",
+                photos: [
+                    "./assets/testimonials/testimonial2-1.jpg",
+                    "./assets/testimonials/testimonial2-2.jpg",
+                    "./assets/testimonials/testimonial2-3.jpg",
+                    "./assets/testimonials/testimonial2-4.jpg",
+                    "./assets/testimonials/testimonial2-5.jpg",
+                    "./assets/testimonials/testimonial2-6.jpg",
+                    "./assets/testimonials/testimonial2-7.jpg"
+                ]
+            },
+            {
+                title: "Amazing Experience & Outstanding Hospitality",
+                text: "“Just an amazing experience at Rann Utsav, Dhordo.\n\nThe hospitality and management were outstanding — everything went exactly the way we planned.\n\nFood was amazing and the tents were very well equipped.”",
+                author: "Maitri Kalola & Family",
+                badge: "Booked via Majestic Escape 🤍",
+                photos: [
+                    "./assets/testimonials/testimonial3-1.jpg",
+                    "./assets/testimonials/testimonial3-2.jpg",
+                    "./assets/testimonials/testimonial3-3.jpg",
+                    "./assets/testimonials/testimonial3-4.jpg",
+                    "./assets/testimonials/testimonial3-5.jpg"
+                ]
+            },
+            {
+                title: "Ancient Feel with Ultimate Modern Comfort",
+                text: "“It was amazing 🤩 Enjoyed a lot — totally worth it!\n\nThe tents gave an ancient feel, as if we were taken back in time… yet they were extremely comfortable.”",
+                author: "Ujala Sahu & Family",
+                badge: "Booked via Majestic Escape",
+                photos: [
+                    "./assets/testimonials/testimonial4-1.jpg",
+                    "./assets/testimonials/testimonial4-2.jpg",
+                    "./assets/testimonials/testimonial4-3.jpg",
+                    "./assets/testimonials/testimonial4-4.jpg",
+                    "./assets/testimonials/testimonial4-5.jpg",
+                    "./assets/testimonials/testimonial4-6.jpg"
+                ]
+            },
+            {
+                title: "Seamless & Delightful New Year Trip",
+                text: "“Majestic Escape planned our New Year trip to Rann, and it was a truly seamless and delightful experience. Their team was prompt, extremely well-organized, and transparent, which made the entire process completely hassle-free.\n\nFrom planning to execution, they provided constant assistance and hand-holding, ensuring everything flowed smoothly without any stress for us.”",
+                author: "Jagpreet Kaur & Family",
+                badge: "Booked via Majestic Escape ✨",
+                photos: [
+                    "./assets/testimonials/testimonial5-1.jpg",
+                    "./assets/testimonials/testimonial5-2.jpg"
+                ]
+            },
+            {
+                title: "Exquisite Dining & Peaceful Retreat",
+                text: "“Dhordo Tent City was beautifully managed from the moment we stepped inside — the dining experience and food quality were truly exquisite.\n\nDholavira offered a peaceful and memorable retreat where our family bonded effortlessly. Both kids and my Family loved the entire experience booked through Majestic Escape.”",
+                author: "Rahul Ranade & Family",
+                badge: "Booked via Majestic Escape 🤍",
+                photos: [
+                    "./assets/testimonials/testimonial6-1.jpg",
+                    "./assets/testimonials/testimonial6-2.jpg"
+                ]
+            },
+            {
+                title: "Dholavira Tent City — Perfect Blend of Comfort & History",
+                text: "“Dholavira Tent City was a perfect blend of comfort and history. Staying so close to the Harappan site made the experience truly special. Peaceful stay at Tent City, great hospitality, clean tents and warm service – a memorable stay for our family!”",
+                author: "Deepa & Family",
+                badge: "Booked via Majestic Escape 🤍",
+                photos: [
+                    "./assets/testimonials/testimonial7-1.jpg",
+                    "./assets/testimonials/testimonial7-2.jpg",
+                    "./assets/testimonials/testimonial7-3.jpg",
+                    "./assets/testimonials/testimonial7-4.jpg",
+                    "./assets/testimonials/testimonial7-5.jpg",
+                    "./assets/testimonials/testimonial7-6.jpg",
+                    "./assets/testimonials/testimonial7-7.jpg",
+                    "./assets/testimonials/testimonial7-8.jpg",
+                    "./assets/testimonials/testimonial7-9.jpg"
+                ]
+            },
+            {
+                title: "Mesmerizing Experience & Scrumptious Meals",
+                text: "“The experience with Majestic Escape and Gujarat Tourism was truly mesmerizing. Everything was very smooth — right from arriving at Bhuj station, check-in at both properties, to sightseeing tours.\n\nSpecial mention to the smooth booking process, the right guidance, the warm hospitality, and the wide & scrumptious meals. Everything was just perfect! We will definitely recommend others. Cannot thank you enough!”",
+                author: "Vanshika Garg & Family",
+                badge: "Booked via Majestic Escape 🤍",
+                photos: [
+                    "./assets/testimonials/testimonial8-1.jpg",
+                    "./assets/testimonials/testimonial8-2.jpg",
+                    "./assets/testimonials/testimonial8-3.jpg"
+                ]
+            }
+        ];
+
+        let currentIndex = 0;
+        let autoplayInterval = null;
+        let isAnimating = false;
+
+        const card = document.getElementById("testimonial-card");
+        const titleEl = document.getElementById("testimonial-title");
+        const textEl = document.getElementById("testimonial-text");
+        const photosEl = document.getElementById("testimonial-photos");
+        const prevBtn = document.getElementById("testimonial-prev-btn");
+        const nextBtn = document.getElementById("testimonial-next-btn");
+        const dotsContainer = document.getElementById("testimonial-dots");
+        const cardOuter = document.getElementById("testimonial-card-outer");
+
+        const lightbox = document.getElementById("testimonial-lightbox");
+        const lightboxImg = document.getElementById("testimonial-lightbox-img");
+        const lightboxCloseBtn = document.getElementById("lightbox-close-btn");
+        const lightboxBackdrop = document.getElementById("lightbox-backdrop");
+
+        if (!card || !titleEl || !textEl || !photosEl) return;
+
+        // Render Pagination Dots
+        function renderDots() {
+            if (!dotsContainer) return;
+            dotsContainer.innerHTML = "";
+            testimonialsData.forEach((_, idx) => {
+                const dot = document.createElement("button");
+                dot.className = `testimonial-dot ${idx === currentIndex ? 'active' : ''}`;
+                dot.setAttribute("aria-label", `Go to slide ${idx + 1}`);
+                dot.addEventListener("click", () => {
+                    if (idx !== currentIndex) {
+                        goToSlide(idx);
+                        resetAutoplay();
+                    }
+                });
+                dotsContainer.appendChild(dot);
+            });
+        }
+
+        // Render Testimonial Card Content
+        function renderCard(index) {
+            const data = testimonialsData[index];
+            titleEl.textContent = data.title;
+            textEl.textContent = data.text;
+
+            // Populate Special Author & Badge Section
+            const authorEl = document.getElementById("testimonial-author");
+            const badgeEl = document.getElementById("testimonial-badge");
+            const dotEl = document.getElementById("testimonial-author-dot");
+            const wrapperEl = document.getElementById("testimonial-author-wrapper");
+
+            if (authorEl) authorEl.textContent = data.author ? `— ${data.author}` : "";
+            if (badgeEl) {
+                if (data.badge) {
+                    badgeEl.textContent = data.badge;
+                    badgeEl.style.display = "inline-block";
+                } else {
+                    badgeEl.style.display = "none";
+                }
+            }
+            if (dotEl) {
+                dotEl.style.display = (data.author && data.badge) ? "inline-block" : "none";
+            }
+            if (wrapperEl) {
+                wrapperEl.style.display = (data.author || data.badge) ? "flex" : "none";
+            }
+
+            // Render Photos (Max 4 visible, 4th has "+N Photos" overlay if total > 4)
+            photosEl.innerHTML = "";
+            const photosList = data.photos || [];
+            const totalPhotos = photosList.length;
+
+            if (totalPhotos > 0) {
+                const maxVisible = 4;
+                const showOverlay = totalPhotos > maxVisible;
+                const visibleCount = showOverlay ? maxVisible : totalPhotos;
+
+                for (let i = 0; i < visibleCount; i++) {
+                    const wrapper = document.createElement("div");
+                    wrapper.className = "guest-photo-wrapper";
+
+                    const img = document.createElement("img");
+                    img.src = photosList[i];
+                    img.alt = `${data.title} Photo ${i + 1}`;
+                    img.className = "guest-photo-item";
+                    wrapper.appendChild(img);
+
+                    // Check if 4th item needs +N overlay
+                    if (showOverlay && i === maxVisible - 1) {
+                        const remainingCount = totalPhotos - 3;
+                        const overlay = document.createElement("div");
+                        overlay.className = "guest-photo-overlay";
+                        overlay.innerHTML = `+${remainingCount}<br><span style="font-size:0.7rem;font-weight:600;opacity:0.9;">Photos</span>`;
+                        wrapper.appendChild(overlay);
+                    }
+
+                    wrapper.addEventListener("click", (e) => {
+                        e.stopPropagation();
+                        openTestimonialLightbox(photosList, i);
+                    });
+
+                    photosEl.appendChild(wrapper);
+                }
+            }
+
+            // Update active dot
+            if (dotsContainer) {
+                const dots = dotsContainer.querySelectorAll(".testimonial-dot");
+                dots.forEach((dot, idx) => {
+                    if (idx === index) {
+                        dot.classList.add("active");
+                    } else {
+                        dot.classList.remove("active");
+                    }
+                });
+            }
+        }
+
+        // Transition to specific slide
+        function goToSlide(newIndex, direction = "next") {
+            if (isAnimating) return;
+            isAnimating = true;
+
+            card.classList.remove("animating-in");
+            card.classList.add("animating-out");
+
+            setTimeout(() => {
+                currentIndex = newIndex;
+                renderCard(currentIndex);
+
+                card.classList.remove("animating-out");
+                card.classList.add("animating-in");
+
+                setTimeout(() => {
+                    card.classList.remove("animating-in");
+                    isAnimating = false;
+                }, 380);
+            }, 300);
+        }
+
+        function nextSlide() {
+            const nextIdx = (currentIndex + 1) % testimonialsData.length;
+            goToSlide(nextIdx, "next");
+        }
+
+        function prevSlide() {
+            const prevIdx = (currentIndex - 1 + testimonialsData.length) % testimonialsData.length;
+            goToSlide(prevIdx, "prev");
+        }
+
+        // Event Listeners for Navigation
+        if (prevBtn) prevBtn.addEventListener("click", () => { prevSlide(); resetAutoplay(); });
+        if (nextBtn) nextBtn.addEventListener("click", () => { nextSlide(); resetAutoplay(); });
+
+        // Autoplay logic (every 7 seconds)
+        function startAutoplay() {
+            stopAutoplay();
+            autoplayInterval = setInterval(nextSlide, 7000);
+        }
+
+        function stopAutoplay() {
+            if (autoplayInterval) {
+                clearInterval(autoplayInterval);
+                autoplayInterval = null;
+            }
+        }
+
+        function resetAutoplay() {
+            startAutoplay();
+        }
+
+        // Pause autoplay on hover over card
+        if (cardOuter) {
+            cardOuter.addEventListener("mouseenter", stopAutoplay);
+            cardOuter.addEventListener("mouseleave", startAutoplay);
+        }
+
+        // Mobile Touch Swipe Logic
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        if (cardOuter) {
+            cardOuter.addEventListener("touchstart", (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+
+            cardOuter.addEventListener("touchend", (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+            }, { passive: true });
+        }
+
+        function handleSwipe() {
+            const swipeThreshold = 40;
+            if (touchEndX < touchStartX - swipeThreshold) {
+                nextSlide();
+                resetAutoplay();
+            } else if (touchEndX > touchStartX + swipeThreshold) {
+                prevSlide();
+                resetAutoplay();
+            }
+        }
+
+        // Lightbox Functions & Photo Carousel Navigation
+        let activePhotoIndex = 0;
+        let activePhotosList = [];
+
+        const lightboxPrevBtn = document.getElementById("testimonial-lightbox-prev");
+        const lightboxNextBtn = document.getElementById("testimonial-lightbox-next");
+        const lightboxCounter = document.getElementById("testimonial-lightbox-counter");
+
+        function updateLightboxPhoto(index) {
+            if (!activePhotosList || activePhotosList.length === 0) return;
+            activePhotoIndex = (index + activePhotosList.length) % activePhotosList.length;
+            lightboxImg.src = activePhotosList[activePhotoIndex];
+            if (lightboxCounter) {
+                lightboxCounter.textContent = `${activePhotoIndex + 1} / ${activePhotosList.length}`;
+            }
+            if (lightboxPrevBtn) {
+                lightboxPrevBtn.style.display = activePhotosList.length > 1 ? "flex" : "none";
+            }
+            if (lightboxNextBtn) {
+                lightboxNextBtn.style.display = activePhotosList.length > 1 ? "flex" : "none";
+            }
+        }
+
+        function openTestimonialLightbox(photosArray, startIndex = 0) {
+            if (!lightbox || !lightboxImg) return;
+            activePhotosList = Array.isArray(photosArray) ? photosArray : [photosArray];
+            updateLightboxPhoto(startIndex);
+            lightbox.classList.add("active");
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeTestimonialLightbox() {
+            if (!lightbox) return;
+            lightbox.classList.remove("active");
+            document.body.style.overflow = "";
+        }
+
+        if (lightboxPrevBtn) {
+            lightboxPrevBtn.addEventListener("click", (e) => {
+                e.stopPropagation();
+                updateLightboxPhoto(activePhotoIndex - 1);
+            });
+        }
+        if (lightboxNextBtn) {
+            lightboxNextBtn.addEventListener("click", (e) => {
+                e.stopPropagation();
+                updateLightboxPhoto(activePhotoIndex + 1);
+            });
+        }
+
+        if (lightboxCloseBtn) lightboxCloseBtn.addEventListener("click", closeTestimonialLightbox);
+        if (lightboxBackdrop) lightboxBackdrop.addEventListener("click", closeTestimonialLightbox);
+
+        document.addEventListener("keydown", (e) => {
+            if (lightbox && lightbox.classList.contains("active")) {
+                if (e.key === "Escape") {
+                    closeTestimonialLightbox();
+                } else if (e.key === "ArrowLeft" && activePhotosList.length > 1) {
+                    updateLightboxPhoto(activePhotoIndex - 1);
+                } else if (e.key === "ArrowRight" && activePhotosList.length > 1) {
+                    updateLightboxPhoto(activePhotoIndex + 1);
+                }
+            }
+        });
+
+        // Initialize carousel
+        renderDots();
+        renderCard(currentIndex);
+        startAutoplay();
+    }
 });
 
 // Global function to change tent details image from thumbnail
