@@ -96,14 +96,10 @@
     <?php $eventDate = new DateTime('2025-10-23');
     $now = new DateTime();
     $fullMoonDates = [
-        new DateTime('2025-11-06'),
-        new DateTime('2025-12-05'),
-        new DateTime('2026-01-04'),
-        new DateTime('2026-01-31'),
-        new DateTime('2026-02-02'),
-        new DateTime('2026-03-04'),
-        new DateTime('2026-08-03'),
-        new DateTime('2026-09-01'),
+        new DateTime('2026-11-22'),
+        new DateTime('2026-12-21'),
+        new DateTime('2027-01-20'),
+        new DateTime('2027-02-18')
     ];
 
     foreach ($fullMoonDates as $fullMoonDate) {
@@ -148,6 +144,9 @@
                                 <a class="nav-link text-white" href="#tents-showcase">Accommodation</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link text-white" href="#guest-testimonials">Testimonials</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link text-white" href="#footer">Contact</a>
                             </li>
                             <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
@@ -163,7 +162,7 @@
 
             <!-- Hero Date Board -->
             <div class="hero-date-board">
-                <img src="./Date Board.png" alt="Rann Utsav Dates" class="img-fluid">
+                <img src="./Date-Board.png" alt="Rann Utsav Dates" class="img-fluid">
             </div>
         </section>
 
@@ -274,62 +273,91 @@
                     <div class="gallery-carousel-track-wrapper">
                         <div class="gallery-carousel-track" id="gallery-carousel-track">
                             <!-- Image Cards -->
-                              <div class="gallery-carousel-card" data-index="9">
-                                <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery6.jpg?v=0.2" alt="Kutch Desert Gallery 6">
-                                </div>
-                            </div>
-                            <div class="gallery-carousel-card" data-index="10">
-                                <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery8.jpg?v=0.2" alt="Kutch Desert Gallery 8">
-                                </div>
-                            </div>
-                            <div class="gallery-carousel-card" data-index="12">
-                                <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery13.jpg?v=0.2" alt="Kutch Desert Gallery 13">
-                                </div>
-                            </div>
-                            <div class="gallery-carousel-card" data-index="13">
-                                <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery14.jpg?v=0.2" alt="Kutch Desert Gallery 14">
-                                </div>
-                            </div>
-                            <div class="gallery-carousel-card" data-index="14">
-                                <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery15.jpg?v=0.2" alt="Kutch Desert Gallery 15">
-                                </div>
-                            </div>
-                            <div class="gallery-carousel-card" data-index="15">
-                                <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery16.jpg?v=0.2" alt="Kutch Desert Gallery 16">
-                                </div>
-                            </div>
                             <div class="gallery-carousel-card" data-index="0">
                                 <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery1.jpg?v=0.2" alt="Kutch Desert Gallery 1">
+                                    <img src="./assets/gallery/gallery1.jpg?v=0.2" alt="Rann Utsav Gallery 1">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="1">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery3.jpg?v=0.2" alt="Rann Utsav Gallery 3">
                                 </div>
                             </div>
                             <div class="gallery-carousel-card" data-index="2">
                                 <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery3.jpg?v=0.2" alt="Kutch Desert Gallery 3">
+                                    <img src="./assets/gallery/gallery4.jpg?v=0.2" alt="Rann Utsav Gallery 4">
                                 </div>
                             </div>
                             <div class="gallery-carousel-card" data-index="3">
                                 <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery4.jpg?v=0.2" alt="Kutch Desert Gallery 4">
+                                    <img src="./assets/gallery/gallery6.jpg?v=0.2" alt="Rann Utsav Gallery 6">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="4">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery8.jpg?v=0.2" alt="Rann Utsav Gallery 8">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="5">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery13.jpg?v=0.2" alt="Rann Utsav Gallery 13">
                                 </div>
                             </div>
                             <div class="gallery-carousel-card" data-index="6">
                                 <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery10.jpg?v=0.2" alt="Kutch Desert Gallery 10">
+                                    <img src="./assets/gallery/gallery14.jpg?v=0.2" alt="Rann Utsav Gallery 14">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="7">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery15.jpg?v=0.2" alt="Rann Utsav Gallery 15">
                                 </div>
                             </div>
                             <div class="gallery-carousel-card" data-index="8">
                                 <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery12.jpg?v=0.2" alt="Kutch Desert Gallery 12">
+                                    <img src="./assets/gallery/gallery16.jpg?v=0.2" alt="Rann Utsav Gallery 16">
                                 </div>
                             </div>
-                           
+                            <div class="gallery-carousel-card" data-index="9">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery17.jpg?v=0.2" alt="Rann Utsav Gallery 17">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="10">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery18.jpg?v=0.2" alt="Rann Utsav Gallery 18">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="11">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery19.jpg?v=0.2" alt="Rann Utsav Gallery 19">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="12">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery20.jpg?v=0.2" alt="Rann Utsav Gallery 20">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="13">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery21.jpg?v=0.2" alt="Rann Utsav Gallery 21">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="14">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery22.jpg?v=0.2" alt="Rann Utsav Gallery 22">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="15">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery23.jpg?v=0.2" alt="Rann Utsav Gallery 23">
+                                </div>
+                            </div>
+                            <div class="gallery-carousel-card" data-index="16">
+                                <div class="gallery-img-wrapper">
+                                    <img src="./assets/gallery/gallery24.jpg?v=0.2" alt="Rann Utsav Gallery 24">
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -820,7 +848,7 @@
                                                 </div>
                                                 <div>
                                                     <h6 class="fw-bold text-dark mb-2" style="font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; color: #744FB9 !important;">Ideal For</h6>
-                                                    <p class="text-muted mb-0"><i class="bi bi-suit-heart-fill me-2" style="color: #EA0776;"></i> Families & Royal Luxury</p>
+                                                    <p class="text-muted mb-0"><i class="bi bi-suit-heart-fill me-2" style="color: #EA0776;"></i> Families &amp; Royal Luxury</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -880,7 +908,7 @@
                                                     <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Air Conditioning</li>
                                                     <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Attached Washroom</li>
                                                     <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Private Lounge</li>
-                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Breakfast & Dinner</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Breakfast &amp; Dinner</li>
                                                 </ul>
                                             </div>
                                             <div class="col-sm-6">
@@ -890,7 +918,7 @@
                                                 </div>
                                                 <div>
                                                     <h6 class="fw-bold text-dark mb-2" style="font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; color: #744FB9 !important;">Ideal For</h6>
-                                                    <p class="text-muted mb-0"><i class="bi bi-suit-heart-fill me-2" style="color: #EA0776;"></i> Couples & Families</p>
+                                                    <p class="text-muted mb-0"><i class="bi bi-suit-heart-fill me-2" style="color: #EA0776;"></i> Couples &amp; Families</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -960,7 +988,7 @@
                                                 </div>
                                                 <div>
                                                     <h6 class="fw-bold text-dark mb-2" style="font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; color: #744FB9 !important;">Ideal For</h6>
-                                                    <p class="text-muted mb-0"><i class="bi bi-suit-heart-fill me-2" style="color: #EA0776;"></i> Couples & Honeymooners</p>
+                                                    <p class="text-muted mb-0"><i class="bi bi-suit-heart-fill me-2" style="color: #EA0776;"></i> Couples &amp; Honeymooners</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1030,7 +1058,7 @@
                                                 </div>
                                                 <div>
                                                     <h6 class="fw-bold text-dark mb-2" style="font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; color: #744FB9 !important;">Ideal For</h6>
-                                                    <p class="text-muted mb-0"><i class="bi bi-suit-heart-fill me-2" style="color: #EA0776;"></i> Comfort & Value Seekers</p>
+                                                    <p class="text-muted mb-0"><i class="bi bi-suit-heart-fill me-2" style="color: #EA0776;"></i> Comfort &amp; Value Seekers</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1100,7 +1128,7 @@
                                                 </div>
                                                 <div>
                                                     <h6 class="fw-bold text-dark mb-2" style="font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; color: #744FB9 !important;">Ideal For</h6>
-                                                    <p class="text-muted mb-0"><i class="bi bi-suit-heart-fill me-2" style="color: #EA0776;"></i> Solo & Budget Explorers</p>
+                                                    <p class="text-muted mb-0"><i class="bi bi-suit-heart-fill me-2" style="color: #EA0776;"></i> Solo &amp; Budget Explorers</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1112,9 +1140,7 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                     <!-- Custom Navigation: ◀ 1 / 5 ▶ -->
                     <div class="d-flex justify-content-center align-items-center mt-5">
                         <button class="btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center tents-carousel-prev" type="button" data-bs-target="#tentsCarousel" data-bs-slide="prev" style="width: 48px; height: 48px; border-color: rgba(255, 255, 255, 0.61); color: #744FB9; transition: all 0.3s; background: transparent;">
@@ -1280,45 +1306,58 @@
 
                             <!-- Testimonial Card Container -->
                             <div class="testimonial-card-outer mx-auto" id="testimonial-card-outer">
-                                <div class="testimonial-card bg-white p-4 p-md-5 text-center rounded-4 shadow-lg position-relative" id="testimonial-card">
-                                    
-                                    <!-- 5 Gold Stars -->
-                                    <div class="testimonial-stars mb-3">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div>
+                                <div class="testimonial-card bg-white position-relative" id="testimonial-card">
+                                    <div class="row g-4 align-items-center">
+                                        <!-- Left Text Column -->
+                                        <div class="col-lg-6 col-md-12 text-start pe-lg-4">
+                                            <!-- 5 Gold Stars -->
+                                            <div class="testimonial-stars">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </div>
 
-                                    <!-- Review Title -->
-                                    <h3 class="testimonial-title fw-bold text-dark mb-3" id="testimonial-title">
-                                        <!-- Populated via JS -->
-                                    </h3>
+                                            <!-- Review Title -->
+                                            <h3 class="testimonial-title" id="testimonial-title">
+                                                <!-- Populated via JS -->
+                                            </h3>
 
-                                    <!-- Review Text -->
-                                    <p class="testimonial-text mb-3 mx-auto" id="testimonial-text">
-                                        <!-- Populated via JS -->
-                                    </p>
+                                            <!-- Review Text Excerpt & Body -->
+                                            <div class="testimonial-text" id="testimonial-text">
+                                                <!-- Populated via JS -->
+                                            </div>
 
-                                    <!-- Special Author & Booking Badge Section -->
-                                    <div class="testimonial-author-wrapper my-3 pt-3 border-top border-opacity-10 d-flex flex-column flex-sm-row align-items-center justify-content-center gap-2" id="testimonial-author-wrapper">
-                                        <span class="testimonial-author-name fw-bold text-dark fs-6" id="testimonial-author">
-                                            <!-- Author Name Populated via JS -->
-                                        </span>
-                                        <span class="testimonial-author-dot d-none d-sm-inline-block opacity-40" id="testimonial-author-dot">•</span>
-                                        <span class="testimonial-booking-badge px-3 py-1 rounded-pill fw-medium" id="testimonial-badge">
-                                            <!-- Booking Badge Populated via JS -->
-                                        </span>
-                                    </div>
+                                            <!-- Divider -->
+                                            <div class="testimonial-divider"></div>
 
-                                    <!-- Guest Photos Gallery -->
-                                    <div class="testimonial-photos-wrapper mt-4">
-                                        <div class="testimonial-photos-gallery d-flex flex-wrap justify-content-center gap-2 gap-sm-3" id="testimonial-photos">
-                                            <!-- Populated via JS -->
+                                            <!-- Author & Booking Badge Section -->
+                                            <div class="testimonial-author-wrapper" id="testimonial-author-wrapper">
+                                                <div class="testimonial-author-name" id="testimonial-author">
+                                                    <!-- Author Name Populated via JS -->
+                                                </div>
+                                                <div class="testimonial-booking-badge" id="testimonial-badge">
+                                                    <!-- Booking Badge Populated via JS -->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Right Media / Photos Column -->
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="testimonial-media-container">
+                                                <!-- Main Featured Photo Preview -->
+                                                <div class="testimonial-featured-wrapper" id="testimonial-featured-wrapper">
+                                                    <img src="" alt="Featured Guest Photo" class="testimonial-featured-img" id="testimonial-featured-img">
+                                                </div>
+
+                                                <!-- Thumbnails Grid -->
+                                                <div class="testimonial-photos-gallery" id="testimonial-photos">
+                                                    <!-- Populated via JS -->
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
 
@@ -1399,8 +1438,8 @@
                     <ul class="list-unstyled footer-links">
                         <li class="mb-2"><a href="#about" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;">About Rann Utsav</a></li>
                         <li class="mb-2"><a href="#activities" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;">Experiences</a></li>
-                        <li class="mb-2"><a href="#booking" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;">Itinerary</a></li>
                         <li class="mb-2"><a href="#tents-showcase" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;">Accommodation</a></li>
+                        <li class="mb-2"><a href="#guest-testimonials" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;">Testimonials</a></li>
                         <li class="mb-2"><a href="#footer" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;">Contact</a></li>
                     </ul>
                 </div>
@@ -1409,9 +1448,6 @@
                 <div class="col-lg-2 col-md-6">
                     <h5 class="text-white fw-bold mb-3" style="font-size: 16px; letter-spacing: 1px;">Helpful Links</h5>
                     <ul class="list-unstyled footer-links">
-                        <li class="mb-2"><a href="#booking" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;">Plan Your Trip</a></li>
-                        <li class="mb-2"><a href="#booking" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;">FAQs</a></li>
-                        <li class="mb-2"><a href="#booking" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;">Travel Guide</a></li>
                         <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;" data-bs-toggle="modal" data-bs-target="#termsModal">Terms & Conditions</a></li>
                         <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;" data-bs-toggle="modal" data-bs-target="#privacyPolicyModal">Privacy Policy</a></li>
                     </ul>
@@ -1422,7 +1458,7 @@
                     <h5 class="text-white fw-bold mb-3" style="font-size: 16px; letter-spacing: 1px;">Contact Us</h5>
                     <ul class="list-unstyled text-white-50 contact-info" style="font-size: 14px;">
                         <li class="mb-2 d-flex align-items-center"><i class="bi bi-telephone text-white me-2"></i> +91 72196 66822</li>
-                        <li class="mb-2 d-flex align-items-center"><i class="bi bi-envelope text-white me-2"></i> support@majesticescape.in</li>
+                        <li class="mb-2 d-flex align-items-center"><i class="bi bi-envelope text-white me-2"></i> info@majesticescape.in</li>
                         <li class="mb-2 d-flex align-items-start"><i class="bi bi-geo-alt text-white me-2 mt-1"></i> Dhordo, Kutch, Gujarat, India</li>
                     </ul>
                 </div>
@@ -1515,7 +1551,7 @@
 
                     <h6>11. Contact Us</h6>
                     <p>For any questions or concerns, please contact us at:<br>
-                        Email: <a href="mailto:support@majesticescape.in">support@majesticescape.in</a></p>
+                        Email: <a href="mailto:info@majesticescape.in">info@majesticescape.in</a></p>
                 </div>
                 <div class="modal-footer bt-none">
                 </div>
@@ -1583,7 +1619,7 @@
 
                     <h6>11. Contact Us</h6>
                     <p>For questions about these Terms of Service, please contact us at:<br>
-                        Email: <a href="mailto:support@majesticescape.in">support@majesticescape.in</a></p>
+                        Email: <a href="mailto:info@majesticescape.in">info@majesticescape.in</a></p>
                 </div>
                 <div class="modal-footer">
                 </div>

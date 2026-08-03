@@ -1006,35 +1006,87 @@ document.addEventListener('DOMContentLoaded', () => {
         function renderCard(index) {
             const data = testimonialsData[index];
             titleEl.textContent = data.title;
-            textEl.textContent = data.text;
+
+            // Format Review Text (Lead quote vs Body text)
+            textEl.innerHTML = "";
+            const rawText = data.text || "";
+            const parts = rawText.split("\n\n").filter(p => p.trim().length > 0);
+            if (parts.length > 0) {
+                const leadP = document.createElement("p");
+                leadP.className = "testimonial-quote-lead";
+                leadP.textContent = parts[0];
+                textEl.appendChild(leadP);
+
+                for (let i = 1; i < parts.length; i++) {
+                    const bodyP = document.createElement("p");
+                    bodyP.className = "testimonial-quote-body";
+                    bodyP.textContent = parts[i];
+                    textEl.appendChild(bodyP);
+                }
+            } else {
+                textEl.textContent = rawText;
+            }
 
             // Populate Special Author & Badge Section
             const authorEl = document.getElementById("testimonial-author");
             const badgeEl = document.getElementById("testimonial-badge");
-            const dotEl = document.getElementById("testimonial-author-dot");
             const wrapperEl = document.getElementById("testimonial-author-wrapper");
 
             if (authorEl) authorEl.textContent = data.author ? `— ${data.author}` : "";
             if (badgeEl) {
                 if (data.badge) {
-                    badgeEl.textContent = data.badge;
-                    badgeEl.style.display = "inline-block";
+                    const cleanBadge = data.badge.replace(/[🤍💛✨]/g, '').trim();
+                    badgeEl.innerHTML = `<span class="badge-dot">•</span> ${cleanBadge}`;
+                    badgeEl.style.display = "inline-flex";
                 } else {
                     badgeEl.style.display = "none";
                 }
             }
-            if (dotEl) {
-                dotEl.style.display = (data.author && data.badge) ? "inline-block" : "none";
-            }
             if (wrapperEl) {
-                wrapperEl.style.display = (data.author || data.badge) ? "flex" : "none";
+                wrapperEl.style.display = (data.author || data.badge) ? "block" : "none";
             }
 
-            // Render Photos (Max 4 visible, 4th has "+N Photos" overlay if total > 4)
+            // Featured Main Photo & Thumbnails
+            const featuredImg = document.getElementById("testimonial-featured-img");
+            const featuredWrapper = document.getElementById("testimonial-featured-wrapper");
             photosEl.innerHTML = "";
             const photosList = data.photos || [];
             const totalPhotos = photosList.length;
 
+            let selectedPhotoIndex = 0;
+
+            const updateFeaturedImage = (idx) => {
+                if (featuredImg && photosList[idx]) {
+                    featuredImg.src = photosList[idx];
+                    featuredImg.alt = `${data.title} Featured Photo ${idx + 1}`;
+                }
+                const thumbs = photosEl.querySelectorAll(".guest-thumb-wrapper");
+                thumbs.forEach((thumb, tIdx) => {
+                    if (tIdx === idx) {
+                        thumb.classList.add("active-thumb");
+                    } else {
+                        thumb.classList.remove("active-thumb");
+                    }
+                });
+            };
+
+            if (featuredImg) {
+                if (totalPhotos > 0) {
+                    featuredImg.src = photosList[0];
+                    if (featuredWrapper) featuredWrapper.style.display = "block";
+
+                    const newFeaturedImg = featuredImg.cloneNode(true);
+                    featuredImg.parentNode.replaceChild(newFeaturedImg, featuredImg);
+
+                    newFeaturedImg.addEventListener("click", () => {
+                        openTestimonialLightbox(photosList, selectedPhotoIndex);
+                    });
+                } else {
+                    if (featuredWrapper) featuredWrapper.style.display = "none";
+                }
+            }
+
+            // Render Thumbnails (Max 4 visible, 4th has "+N Photos" overlay if total > 4)
             if (totalPhotos > 0) {
                 const maxVisible = 4;
                 const showOverlay = totalPhotos > maxVisible;
@@ -1042,12 +1094,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 for (let i = 0; i < visibleCount; i++) {
                     const wrapper = document.createElement("div");
-                    wrapper.className = "guest-photo-wrapper";
+                    wrapper.className = `guest-thumb-wrapper ${i === 0 ? 'active-thumb' : ''}`;
 
                     const img = document.createElement("img");
                     img.src = photosList[i];
-                    img.alt = `${data.title} Photo ${i + 1}`;
-                    img.className = "guest-photo-item";
+                    img.alt = `${data.title} Thumbnail ${i + 1}`;
+                    img.className = "guest-thumb-img";
                     wrapper.appendChild(img);
 
                     // Check if 4th item needs +N overlay
@@ -1055,13 +1107,17 @@ document.addEventListener('DOMContentLoaded', () => {
                         const remainingCount = totalPhotos - 3;
                         const overlay = document.createElement("div");
                         overlay.className = "guest-photo-overlay";
-                        overlay.innerHTML = `+${remainingCount}<br><span style="font-size:0.7rem;font-weight:600;opacity:0.9;">Photos</span>`;
+                        overlay.innerHTML = `+${remainingCount}<br><span style="font-size:0.75rem;font-weight:600;">Photos</span>`;
                         wrapper.appendChild(overlay);
                     }
 
                     wrapper.addEventListener("click", (e) => {
                         e.stopPropagation();
-                        openTestimonialLightbox(photosList, i);
+                        selectedPhotoIndex = i;
+                        updateFeaturedImage(i);
+                        if (showOverlay && i === maxVisible - 1) {
+                            openTestimonialLightbox(photosList, i);
+                        }
                     });
 
                     photosEl.appendChild(wrapper);
