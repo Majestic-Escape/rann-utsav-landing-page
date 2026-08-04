@@ -1179,11 +1179,11 @@
                                 <div class="artist-frame">
                                     <div class="artist-pin"></div>
                                     <div class="artist-img-wrapper">
-                                        <img src="./assets/art.jpg" alt="Artisan Weaving">
+                                        <img src="./assets/Kutchi-Embroidery.jpg" alt="Kutchi Embroidery">
                                     </div>
                                     <div class="artist-details">
-                                        <h5 class="artist-title">Kutchi Weaving</h5>
-                                        <p class="artist-subtitle">Heritage Handloom</p>
+                                        <h5 class="artist-title">Kutchi Embroidery</h5>
+                                        <p class="artist-subtitle">Vibrant Needle &amp; Mirror Art</p>
                                     </div>
                                 </div>
                             </div>
@@ -1191,11 +1191,11 @@
                                 <div class="artist-frame">
                                     <div class="artist-pin"></div>
                                     <div class="artist-img-wrapper">
-                                        <img src="./assets/art2.jpg" alt="Terracotta Pottery">
+                                        <img src="./assets/Kumbar-kaam.jpg" alt="Kumbhar Clay Craft">
                                     </div>
                                     <div class="artist-details">
-                                        <h5 class="artist-title">Terracotta Pottery</h5>
-                                        <p class="artist-subtitle">Molded Clay Art</p>
+                                        <h5 class="artist-title">Kumbhar Clay Craft</h5>
+                                        <p class="artist-subtitle">Traditional Hand-Molded Pottery</p>
                                     </div>
                                 </div>
                             </div>
@@ -1203,11 +1203,11 @@
                                 <div class="artist-frame">
                                     <div class="artist-pin"></div>
                                     <div class="artist-img-wrapper">
-                                        <img src="./assets/art3.jpg" alt="Rogan Painting">
+                                        <img src="./assets/Lippan-Kaam.jpg" alt="Lippan Kaam">
                                     </div>
                                     <div class="artist-details">
-                                        <h5 class="artist-title">Rogan Painting</h5>
-                                        <p class="artist-subtitle">Castor Oil Paint</p>
+                                        <h5 class="artist-title">Lippan Kaam</h5>
+                                        <p class="artist-subtitle">Traditional Mud &amp; Mirror Art</p>
                                     </div>
                                 </div>
                             </div>
@@ -1215,11 +1215,11 @@
                                 <div class="artist-frame">
                                     <div class="artist-pin"></div>
                                     <div class="artist-img-wrapper">
-                                        <img src="./assets/art4.jpg" alt="Suf Embroidery">
+                                        <img src="./assets/Ajrak.jpg" alt="Ajrakh Block Printing">
                                     </div>
                                     <div class="artist-details">
-                                        <h5 class="artist-title">Suf Embroidery</h5>
-                                        <p class="artist-subtitle">Intricate Needlework</p>
+                                        <h5 class="artist-title">Ajrakh Printing</h5>
+                                        <p class="artist-subtitle">Natural Dye Block Prints</p>
                                     </div>
                                 </div>
                             </div>
@@ -1227,11 +1227,11 @@
                                 <div class="artist-frame">
                                     <div class="artist-pin"></div>
                                     <div class="artist-img-wrapper">
-                                        <img src="./assets/art5.jpg" alt="Ajrakh Printing">
+                                        <img src="./assets/Jat-Leather-Craft.jpg" alt="Jat Leather Craft">
                                     </div>
                                     <div class="artist-details">
-                                        <h5 class="artist-title">Ajrakh Printing</h5>
-                                        <p class="artist-subtitle">Natural Block Print</p>
+                                        <h5 class="artist-title">Jat Leather Craft</h5>
+                                        <p class="artist-subtitle">Heritage Hand-Stitched Leather</p>
                                     </div>
                                 </div>
                             </div>
@@ -1239,11 +1239,11 @@
                                 <div class="artist-frame">
                                     <div class="artist-pin"></div>
                                     <div class="artist-img-wrapper">
-                                        <img src="./assets/art6.jpg" alt="Leather Craft">
+                                        <img src="./assets/kutchi-Ghantadi.jpg" alt="Copper Bell Art">
                                     </div>
                                     <div class="artist-details">
-                                        <h5 class="artist-title">Leather Craft</h5>
-                                        <p class="artist-subtitle">Traditional Stitching</p>
+                                        <h5 class="artist-title">Kutchi Ghantadi</h5>
+                                        <p class="artist-subtitle">Chimed Metalwork &amp; Bells</p>
                                     </div>
                                 </div>
                             </div>
@@ -1251,11 +1251,11 @@
                                 <div class="artist-frame">
                                     <div class="artist-pin"></div>
                                     <div class="artist-img-wrapper">
-                                        <img src="./assets/art7.jpg" alt="Copper Bell Art">
+                                        <img src="./assets/Ghantadi-Toran.jpg" alt="Ghantadi Toran">
                                     </div>
                                     <div class="artist-details">
-                                        <h5 class="artist-title">Copper Bell Art</h5>
-                                        <p class="artist-subtitle">Chimed Metalwork</p>
+                                        <h5 class="artist-title">Ghantadi Toran</h5>
+                                        <p class="artist-subtitle">Decorative Bell Door Hangings</p>
                                     </div>
                                 </div>
                             </div>
@@ -1755,7 +1755,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhfs0hlPrtAjX1wXb2ay9Mlw23yl2D-Og&callback=initMap"
         async defer></script>
     <!-- Custom JS -->
-    <script src="./script.js"></script>
+    <script src="./script.js?v=1.1"></script>
 </body>
 
 </html>

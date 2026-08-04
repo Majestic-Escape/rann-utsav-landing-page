@@ -1056,9 +1056,10 @@ document.addEventListener('DOMContentLoaded', () => {
             let selectedPhotoIndex = 0;
 
             const updateFeaturedImage = (idx) => {
-                if (featuredImg && photosList[idx]) {
-                    featuredImg.src = photosList[idx];
-                    featuredImg.alt = `${data.title} Featured Photo ${idx + 1}`;
+                const currentFeaturedImg = document.getElementById("testimonial-featured-img");
+                if (currentFeaturedImg && photosList[idx]) {
+                    currentFeaturedImg.src = photosList[idx];
+                    currentFeaturedImg.alt = `${data.title} Featured Photo ${idx + 1}`;
                 }
                 const thumbs = photosEl.querySelectorAll(".guest-thumb-wrapper");
                 thumbs.forEach((thumb, tIdx) => {
