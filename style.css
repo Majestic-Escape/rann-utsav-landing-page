@@ -840,6 +840,8 @@ input::-webkit-input-placeholder {
         position: relative;
         z-index: 1050;
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        padding-bottom: 10px;
+
     }
 
     .navbar-collapse ul.navbar-nav li>a.nav-link {
@@ -2611,34 +2613,66 @@ input::-webkit-input-placeholder {
 
 /* Responsive */
 @media (max-width: 991px) {
-    .testimonial-arrow-prev { left: -15px; }
-    .testimonial-arrow-next { right: -15px; }
-    .testimonial-card { padding: 28px 24px !important; }
-    .testimonial-featured-wrapper { height: 220px; }
+    .testimonial-arrow-prev {
+        left: -15px;
+    }
+
+    .testimonial-arrow-next {
+        right: -15px;
+    }
+
+    .testimonial-card {
+        padding: 28px 24px !important;
+    }
+
+    .testimonial-featured-wrapper {
+        height: 220px;
+    }
 }
 
 @media (max-width: 767px) {
     .testimonial-arrow {
-        position: static;
-        transform: none;
-        width: 44px;
-        height: 44px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
         font-size: 1.05rem;
-        background: rgba(255,255,255,0.15);
-        border-color: rgba(255,255,255,0.3);
+        background: rgba(20, 20, 51, 0.8) !important;
+        border: 1px solid rgba(255, 255, 255, 0.25) !important;
+        z-index: 15;
     }
 
-    .testimonial-arrow:hover { transform: scale(1.05); }
+    .testimonial-arrow:hover {
+        transform: translateY(-50%) scale(1.05);
+    }
 
-    .testimonial-carousel-wrapper { flex-direction: column; gap: 16px; }
+    .testimonial-arrow-prev {
+        left: -10px;
+    }
+
+    .testimonial-arrow-next {
+        right: -10px;
+    }
+
+    .testimonial-carousel-wrapper {
+        position: relative;
+        flex-direction: row;
+        gap: 0;
+    }
 
     .testimonial-card {
         padding: 22px 16px !important;
         border-radius: 16px !important;
     }
 
-    .testimonial-title { font-size: 1.25rem !important; }
-    .testimonial-featured-wrapper { height: 200px; }
+    .testimonial-title {
+        font-size: 1.25rem !important;
+    }
+
+    .testimonial-featured-wrapper {
+        height: 200px;
+    }
 
     .testimonial-photos-gallery {
         grid-template-columns: repeat(4, 1fr) !important;
