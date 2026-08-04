@@ -1203,7 +1203,7 @@
                                 <div class="artist-frame">
                                     <div class="artist-pin"></div>
                                     <div class="artist-img-wrapper">
-                                        <img src="./assets/Lippan-Kaam.jpg" alt="Lippan Kaam">
+                                        <img src="./assets/lipaan-kaam.jpg" alt="Lippan Kaam">
                                     </div>
                                     <div class="artist-details">
                                         <h5 class="artist-title">Lippan Kaam</h5>
@@ -1440,7 +1440,6 @@
                         <li class="mb-2"><a href="#activities" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;">Experiences</a></li>
                         <li class="mb-2"><a href="#tents-showcase" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;">Accommodation</a></li>
                         <li class="mb-2"><a href="#guest-testimonials" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;">Testimonials</a></li>
-                        <li class="mb-2"><a href="#footer" class="text-white-50 text-decoration-none hover-white" style="font-size: 14px;">Contact</a></li>
                     </ul>
                 </div>
 
