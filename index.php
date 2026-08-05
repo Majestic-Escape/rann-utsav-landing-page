@@ -772,6 +772,7 @@
         </section>
 
         <!-- 6.5 Stay Under The Stars (Accommodation Showcase) -->
+        <!-- 6.5 Stay Under The Stars (Accommodation Showcase) -->
         <section id="tents-showcase" class="section" style="border-top: 1px solid rgba(116, 79, 185, 0.05); border-bottom: 1px solid rgba(116, 79, 185, 0.05);">
             <div class="container">
                 <!-- Section Header -->
@@ -798,20 +799,17 @@
                                 <div class="col-lg-6 order-lg-2 offset-xl-1">
                                     <div class="tent-gallery-card p-3 bg-white rounded-4 shadow-sm">
                                         <div class="tent-main-img-wrapper position-relative overflow-hidden rounded-3 mb-3" style="aspect-ratio: 16/10;">
-                                            <img id="darbari-main-img" src="./assets/tents/darbari-tent-exterior.JPG" alt="Darbari Maharaja Suite" class="w-100 h-100 object-fit-cover">
+                                            <img id="darbari-main-img" src="./assets/tents/darbari-tent-bed.JPG" alt="Darbari Maharaja Suite" class="w-100 h-100 object-fit-cover">
                                             <span class="position-absolute top-3 start-3 badge bg-danger fs-6 py-2 px-3 rounded-pill shadow-sm" style="background: linear-gradient(135deg, #EA0776 0%, #744FB9 100%) !important;">🔥 Best Seller</span>
                                         </div>
                                         <div class="row g-2 tent-thumbnails">
-                                            <div class="col-3">
-                                                <img src="./assets/tents/darbari-tent-exterior.JPG" class="img-fluid rounded cursor-pointer active-thumb" onclick="changeTentImage('darbari', './assets/tents/darbari-tent-exterior.JPG', this)" alt="Darbari Suite Exterior">
+                                            <div class="col-4">
+                                                <img src="./assets/tents/darbari-tent-bed.JPG" class="img-fluid rounded cursor-pointer active-thumb" onclick="changeTentImage('darbari', './assets/tents/darbari-tent-bed.JPG', this)" alt="Darbari Suite Interior">
                                             </div>
-                                            <div class="col-3">
-                                                <img src="./assets/tents/darbari-tent-bed.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('darbari', './assets/tents/darbari-tent-bed.JPG', this)" alt="Darbari Suite Interior">
-                                            </div>
-                                            <div class="col-3">
+                                            <div class="col-4">
                                                 <img src="./assets/tents/darbari-tent-sitting-area.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('darbari', './assets/tents/darbari-tent-sitting-area.JPG', this)" alt="Darbari Suite Lounge">
                                             </div>
-                                            <div class="col-3">
+                                            <div class="col-4">
                                                 <img src="./assets/tents/darbari-tent-wc.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('darbari', './assets/tents/darbari-tent-wc.JPG', this)" alt="Darbari Suite Washroom">
                                             </div>
                                         </div>
@@ -868,20 +866,17 @@
                                 <div class="col-lg-6 order-lg-2 offset-xl-1">
                                     <div class="tent-gallery-card p-3 bg-white rounded-4 shadow-sm">
                                         <div class="tent-main-img-wrapper position-relative overflow-hidden rounded-3 mb-3" style="aspect-ratio: 16/10;">
-                                            <img id="rajwadi-main-img" src="./assets/tents/rajwadi-tent.JPG" alt="Rajwadi Luxury Tent" class="w-100 h-100 object-fit-cover">
+                                            <img id="rajwadi-main-img" src="./assets/tents/rajwadi-tent-bed.JPG" alt="Rajwadi Luxury Tent" class="w-100 h-100 object-fit-cover">
                                             <span class="position-absolute top-3 start-3 badge bg-primary fs-6 py-2 px-3 rounded-pill shadow-sm" style="background: #744FB9 !important;">Most Popular</span>
                                         </div>
                                         <div class="row g-2 tent-thumbnails">
-                                            <div class="col-3">
-                                                <img src="./assets/tents/rajwadi-tent.JPG" class="img-fluid rounded cursor-pointer active-thumb" onclick="changeTentImage('rajwadi', './assets/tents/rajwadi-tent.JPG', this)" alt="Rajwadi Tent Exterior">
+                                            <div class="col-4">
+                                                <img src="./assets/tents/rajwadi-tent-bed.JPG" class="img-fluid rounded cursor-pointer active-thumb" onclick="changeTentImage('rajwadi', './assets/tents/rajwadi-tent-bed.JPG', this)" alt="Rajwadi Tent Bed">
                                             </div>
-                                            <div class="col-3">
-                                                <img src="./assets/tents/rajwadi-tent-bed.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('rajwadi', './assets/tents/rajwadi-tent-bed.JPG', this)" alt="Rajwadi Tent Bed">
-                                            </div>
-                                            <div class="col-3">
+                                            <div class="col-4">
                                                 <img src="./assets/tents/rajwadi-tent-sitting-area.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('rajwadi', './assets/tents/rajwadi-tent-sitting-area.JPG', this)" alt="Rajwadi Tent Lounge">
                                             </div>
-                                            <div class="col-3">
+                                            <div class="col-4">
                                                 <img src="./assets/tents/rajwadi-tent-wc.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('rajwadi', './assets/tents/rajwadi-tent-wc.JPG', this)" alt="Rajwadi Tent Washroom">
                                             </div>
                                         </div>
@@ -938,20 +933,17 @@
                                 <div class="col-lg-6 order-lg-2 offset-xl-1">
                                     <div class="tent-gallery-card p-3 bg-white rounded-4 shadow-sm">
                                         <div class="tent-main-img-wrapper position-relative overflow-hidden rounded-3 mb-3" style="aspect-ratio: 16/10;">
-                                            <img id="premium-main-img" src="./assets/tents/premium-tent-exterior.JPG" alt="Premium AC Tent" class="w-100 h-100 object-fit-cover">
+                                            <img id="premium-main-img" src="./assets/tents/premium-tent-bed.JPG" alt="Premium AC Tent" class="w-100 h-100 object-fit-cover">
                                             <span class="position-absolute top-3 start-3 badge bg-success fs-6 py-2 px-3 rounded-pill shadow-sm" style="background: #28a745 !important;">🔥 Best Value</span>
                                         </div>
                                         <div class="row g-2 tent-thumbnails">
-                                            <div class="col-3">
-                                                <img src="./assets/tents/premium-tent-exterior.JPG" class="img-fluid rounded cursor-pointer active-thumb" onclick="changeTentImage('premium', './assets/tents/premium-tent-exterior.JPG', this)" alt="Premium Tent Exterior">
+                                            <div class="col-4">
+                                                <img src="./assets/tents/premium-tent-bed.JPG" class="img-fluid rounded cursor-pointer active-thumb" onclick="changeTentImage('premium', './assets/tents/premium-tent-bed.JPG', this)" alt="Premium Tent Bed">
                                             </div>
-                                            <div class="col-3">
-                                                <img src="./assets/tents/premium-tent-bed.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('premium', './assets/tents/premium-tent-bed.JPG', this)" alt="Premium Tent Bed">
-                                            </div>
-                                            <div class="col-3">
+                                            <div class="col-4">
                                                 <img src="./assets/tents/premium-tent-sitting-area1.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('premium', './assets/tents/premium-tent-sitting-area1.JPG', this)" alt="Premium Tent Lounge">
                                             </div>
-                                            <div class="col-3">
+                                            <div class="col-4">
                                                 <img src="./assets/tents/premium-tent-wc.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('premium', './assets/tents/premium-tent-wc.JPG', this)" alt="Premium Tent Washroom">
                                             </div>
                                         </div>
@@ -1008,20 +1000,17 @@
                                 <div class="col-lg-6 order-lg-2 offset-xl-1">
                                     <div class="tent-gallery-card p-3 bg-white rounded-4 shadow-sm">
                                         <div class="tent-main-img-wrapper position-relative overflow-hidden rounded-3 mb-3" style="aspect-ratio: 16/10;">
-                                            <img id="deluxe-main-img" src="./assets/tents/delux-tent.JPG" alt="Deluxe AC Tent" class="w-100 h-100 object-fit-cover">
+                                            <img id="deluxe-main-img" src="./assets/tents/delux-tent-bed.JPG" alt="Deluxe AC Tent" class="w-100 h-100 object-fit-cover">
                                             <span class="position-absolute top-3 start-3 badge bg-info fs-6 py-2 px-3 rounded-pill text-white shadow-sm" style="background: #17a2b8 !important;">Classic Comfort</span>
                                         </div>
                                         <div class="row g-2 tent-thumbnails">
-                                            <div class="col-3">
-                                                <img src="./assets/tents/delux-tent.JPG" class="img-fluid rounded cursor-pointer active-thumb" onclick="changeTentImage('deluxe', './assets/tents/delux-tent.JPG', this)" alt="Deluxe Tent Exterior">
+                                            <div class="col-4">
+                                                <img src="./assets/tents/delux-tent-bed.JPG" class="img-fluid rounded cursor-pointer active-thumb" onclick="changeTentImage('deluxe', './assets/tents/delux-tent-bed.JPG', this)" alt="Deluxe Tent Bed">
                                             </div>
-                                            <div class="col-3">
-                                                <img src="./assets/tents/delux-tent-bed.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('deluxe', './assets/tents/delux-tent-bed.JPG', this)" alt="Deluxe Tent Bed">
-                                            </div>
-                                            <div class="col-3">
+                                            <div class="col-4">
                                                 <img src="./assets/tents/delux-tent-sitting-area.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('deluxe', './assets/tents/delux-tent-sitting-area.JPG', this)" alt="Deluxe Tent Lounge">
                                             </div>
-                                            <div class="col-3">
+                                            <div class="col-4">
                                                 <img src="./assets/tents/delux-tent-wc.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('deluxe', './assets/tents/delux-tent-wc.JPG', this)" alt="Deluxe Tent Washroom">
                                             </div>
                                         </div>
@@ -1078,20 +1067,17 @@
                                 <div class="col-lg-6 order-lg-2 offset-xl-1">
                                     <div class="tent-gallery-card p-3 bg-white rounded-4 shadow-sm">
                                         <div class="tent-main-img-wrapper position-relative overflow-hidden rounded-3 mb-3" style="aspect-ratio: 16/10;">
-                                            <img id="nonac-main-img" src="./assets/tents/non-ac-tent-exterior.JPG" alt="Non-AC Traditional Tent" class="w-100 h-100 object-fit-cover">
+                                            <img id="nonac-main-img" src="./assets/tents/non-ac-tent-bed.JPG" alt="Non-AC Traditional Tent" class="w-100 h-100 object-fit-cover">
                                             <span class="position-absolute top-3 start-3 badge bg-secondary fs-6 py-2 px-3 rounded-pill shadow-sm" style="background: #6c757d !important;">Traditional Stay</span>
                                         </div>
                                         <div class="row g-2 tent-thumbnails">
-                                            <div class="col-3">
-                                                <img src="./assets/tents/non-ac-tent-exterior.JPG" class="img-fluid rounded cursor-pointer active-thumb" onclick="changeTentImage('nonac', './assets/tents/non-ac-tent-exterior.JPG', this)" alt="Non-AC Tent Exterior">
+                                            <div class="col-4">
+                                                <img src="./assets/tents/non-ac-tent-bed.JPG" class="img-fluid rounded cursor-pointer active-thumb" onclick="changeTentImage('nonac', './assets/tents/non-ac-tent-bed.JPG', this)" alt="Non-AC Tent Bed">
                                             </div>
-                                            <div class="col-3">
-                                                <img src="./assets/tents/non-ac-tent-bed.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('nonac', './assets/tents/non-ac-tent-bed.JPG', this)" alt="Non-AC Tent Bed">
-                                            </div>
-                                            <div class="col-3">
+                                            <div class="col-4">
                                                 <img src="./assets/tents/non-ac-tent-sitting-area.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('nonac', './assets/tents/non-ac-tent-sitting-area.JPG', this)" alt="Non-AC Tent Lounge">
                                             </div>
-                                            <div class="col-3">
+                                            <div class="col-4">
                                                 <img src="./assets/tents/non-ac-tent-wc.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('nonac', './assets/tents/non-ac-tent-wc.JPG', this)" alt="Non-AC Tent Washroom">
                                             </div>
                                         </div>
@@ -1304,62 +1290,62 @@
                                 <i class="bi bi-chevron-left"></i>
                             </button>
 
-                            <!-- Testimonial Card Container -->
-                            <div class="testimonial-card-outer mx-auto" id="testimonial-card-outer">
-                                <div class="testimonial-card bg-white position-relative" id="testimonial-card">
-                                    <div class="row g-4 align-items-center">
-                                        <!-- Left Text Column -->
-                                        <div class="col-lg-6 col-md-12 text-start pe-lg-4">
-                                            <!-- 5 Gold Stars -->
-                                            <div class="testimonial-stars">
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                            </div>
-
-                                            <!-- Review Title -->
-                                            <h3 class="testimonial-title" id="testimonial-title">
-                                                <!-- Populated via JS -->
-                                            </h3>
-
-                                            <!-- Review Text Excerpt & Body -->
-                                            <div class="testimonial-text" id="testimonial-text">
-                                                <!-- Populated via JS -->
-                                            </div>
-
-                                            <!-- Divider -->
-                                            <div class="testimonial-divider"></div>
-
-                                            <!-- Author & Booking Badge Section -->
-                                            <div class="testimonial-author-wrapper" id="testimonial-author-wrapper">
-                                                <div class="testimonial-author-name" id="testimonial-author">
-                                                    <!-- Author Name Populated via JS -->
-                                                </div>
-                                                <div class="testimonial-booking-badge" id="testimonial-badge">
-                                                    <!-- Booking Badge Populated via JS -->
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Right Media / Photos Column -->
-                                        <div class="col-lg-6 col-md-12">
-                                            <div class="testimonial-media-container">
-                                                <!-- Main Featured Photo Preview -->
-                                                <div class="testimonial-featured-wrapper" id="testimonial-featured-wrapper">
-                                                    <img src="" alt="Featured Guest Photo" class="testimonial-featured-img" id="testimonial-featured-img">
-                                                </div>
-
-                                                <!-- Thumbnails Grid -->
-                                                <div class="testimonial-photos-gallery" id="testimonial-photos">
-                                                    <!-- Populated via JS -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                             <!-- Testimonial Card Container -->
+                             <div class="testimonial-card-outer mx-auto" id="testimonial-card-outer">
+                                 <div class="testimonial-card bg-white position-relative" id="testimonial-card">
+                                     <div class="row g-4 align-items-center">
+                                         <!-- Left Text Column -->
+                                         <div class="col-lg-6 col-md-12 text-start pe-lg-4">
+                                             <!-- 5 Gold Stars -->
+                                             <div class="testimonial-stars">
+                                                 <i class="bi bi-star-fill"></i>
+                                                 <i class="bi bi-star-fill"></i>
+                                                 <i class="bi bi-star-fill"></i>
+                                                 <i class="bi bi-star-fill"></i>
+                                                 <i class="bi bi-star-fill"></i>
+                                             </div>
+ 
+                                             <!-- Review Title -->
+                                             <h3 class="testimonial-title" id="testimonial-title">
+                                                 <!-- Populated via JS -->
+                                             </h3>
+ 
+                                             <!-- Review Text Excerpt & Body -->
+                                             <div class="testimonial-text" id="testimonial-text">
+                                                 <!-- Populated via JS -->
+                                             </div>
+ 
+                                             <!-- Divider -->
+                                             <div class="testimonial-divider"></div>
+ 
+                                             <!-- Author & Booking Badge Section -->
+                                             <div class="testimonial-author-wrapper" id="testimonial-author-wrapper">
+                                                 <div class="testimonial-author-name" id="testimonial-author">
+                                                     <!-- Author Name Populated via JS -->
+                                                 </div>
+                                                 <div class="testimonial-booking-badge" id="testimonial-badge">
+                                                     <!-- Booking Badge Populated via JS -->
+                                                 </div>
+                                             </div>
+                                         </div>
+ 
+                                         <!-- Right Media / Photos Column -->
+                                         <div class="col-lg-6 col-md-12">
+                                             <div class="testimonial-media-container">
+                                                 <!-- Main Featured Photo Preview -->
+                                                 <div class="testimonial-featured-wrapper" id="testimonial-featured-wrapper">
+                                                     <img src="" alt="Featured Guest Photo" class="testimonial-featured-img" id="testimonial-featured-img">
+                                                 </div>
+ 
+                                                 <!-- Thumbnails Grid -->
+                                                 <div class="testimonial-photos-gallery" id="testimonial-photos">
+                                                     <!-- Populated via JS -->
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
 
                             <!-- Next Arrow Button -->
                             <button class="testimonial-arrow testimonial-arrow-next" id="testimonial-next-btn" aria-label="Next Testimonial">

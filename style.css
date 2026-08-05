@@ -2167,6 +2167,7 @@ input::-webkit-input-placeholder {
     .booking-form-col {
         flex: 0 0 52% !important;
         max-width: 52% !important;
+
     }
 }
 
@@ -2180,7 +2181,12 @@ input::-webkit-input-placeholder {
 }
 
 .blue-purple-gradient-text {
-    background: linear-gradient(90deg, #1A5CF3 0%, #763DE8 20%, #E52E58 50%);
+    background: linear-gradient(90deg,
+            #2946D9 0%,
+            #5659D0 30%,
+            #6837B2 55%,
+            #A62C90 75%,
+            #C92577 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -2491,6 +2497,7 @@ input::-webkit-input-placeholder {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center 35%;
     display: block;
     cursor: zoom-in;
     transition: transform 0.3s ease;
@@ -2534,6 +2541,7 @@ input::-webkit-input-placeholder {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center 35%;
     display: block;
 }
 
@@ -2835,4 +2843,17 @@ input::-webkit-input-placeholder {
         width: 72px;
         height: 72px;
     }
+}
+
+/* Scroll Reveal Animation Styles */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    will-change: transform, opacity;
+}
+
+.scroll-reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
 }

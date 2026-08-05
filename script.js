@@ -859,6 +859,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initLightbox();
     initTentsCarousel();
     initGuestTestimonialsCarousel();
+    initScrollReveal();
 
     // 5. Guest Testimonials Carousel & Lightbox Logic
     function initGuestTestimonialsCarousel() {
@@ -878,7 +879,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 author: "Manvi & Family",
                 badge: "Booked via Majestic Escape 💛",
                 photos: [
-                    "./assets/testimonials/testimonial2-1.jpg",
+                    { src: "./assets/testimonials/testimonial2-1.jpg", style: { objectPosition: "bottom" } },
                     "./assets/testimonials/testimonial2-2.jpg",
                     "./assets/testimonials/testimonial2-3.jpg",
                     "./assets/testimonials/testimonial2-4.jpg",
@@ -984,6 +985,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (!card || !titleEl || !textEl || !photosEl) return;
 
+        // Helper to extract image source and optional style
+        function getPhotoData(photoItem) {
+            if (!photoItem) return { src: "", style: {} };
+            if (typeof photoItem === "string") {
+                return { src: photoItem, style: {} };
+            }
+            return {
+                src: photoItem.src || "",
+                style: photoItem.style || {}
+            };
+        }
+
         // Render Pagination Dots
         function renderDots() {
             if (!dotsContainer) return;
@@ -1058,8 +1071,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const updateFeaturedImage = (idx) => {
                 const currentFeaturedImg = document.getElementById("testimonial-featured-img");
                 if (currentFeaturedImg && photosList[idx]) {
-                    currentFeaturedImg.src = photosList[idx];
+                    const photoData = getPhotoData(photosList[idx]);
+                    currentFeaturedImg.src = photoData.src;
                     currentFeaturedImg.alt = `${data.title} Featured Photo ${idx + 1}`;
+                    currentFeaturedImg.style.objectPosition = photoData.style.objectPosition || "";
                 }
                 const thumbs = photosEl.querySelectorAll(".guest-thumb-wrapper");
                 thumbs.forEach((thumb, tIdx) => {
@@ -1073,7 +1088,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (featuredImg) {
                 if (totalPhotos > 0) {
-                    featuredImg.src = photosList[0];
+                    const photoData = getPhotoData(photosList[0]);
+                    featuredImg.src = photoData.src;
+                    featuredImg.style.objectPosition = photoData.style.objectPosition || "";
                     if (featuredWrapper) featuredWrapper.style.display = "block";
 
                     const newFeaturedImg = featuredImg.cloneNode(true);
@@ -1097,10 +1114,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     const wrapper = document.createElement("div");
                     wrapper.className = `guest-thumb-wrapper ${i === 0 ? 'active-thumb' : ''}`;
 
+                    const photoData = getPhotoData(photosList[i]);
                     const img = document.createElement("img");
-                    img.src = photosList[i];
+                    img.src = photoData.src;
                     img.alt = `${data.title} Thumbnail ${i + 1}`;
                     img.className = "guest-thumb-img";
+                    img.style.objectPosition = photoData.style.objectPosition || "";
                     wrapper.appendChild(img);
 
                     // Check if 4th item needs +N overlay
@@ -1149,55 +1168,43 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 currentIndex = newIndex;
                 renderCard(currentIndex);
-
                 card.classList.remove("animating-out");
                 card.classList.add("animating-in");
-
                 setTimeout(() => {
-                    card.classList.remove("animating-in");
                     isAnimating = false;
-                }, 380);
-            }, 300);
+                }, 400);
+            }, 350);
         }
 
-        function nextSlide() {
-            const nextIdx = (currentIndex + 1) % testimonialsData.length;
-            goToSlide(nextIdx, "next");
-        }
-
-        function prevSlide() {
-            const prevIdx = (currentIndex - 1 + testimonialsData.length) % testimonialsData.length;
-            goToSlide(prevIdx, "prev");
-        }
-
-        // Event Listeners for Navigation
-        if (prevBtn) prevBtn.addEventListener("click", () => { prevSlide(); resetAutoplay(); });
-        if (nextBtn) nextBtn.addEventListener("click", () => { nextSlide(); resetAutoplay(); });
-
-        // Autoplay logic (every 7 seconds)
+        // Autoplay Logic
         function startAutoplay() {
-            stopAutoplay();
-            autoplayInterval = setInterval(nextSlide, 7000);
-        }
-
-        function stopAutoplay() {
-            if (autoplayInterval) {
-                clearInterval(autoplayInterval);
-                autoplayInterval = null;
-            }
+            if (autoplayInterval) clearInterval(autoplayInterval);
+            autoplayInterval = setInterval(() => {
+                const nextIdx = (currentIndex + 1) % testimonialsData.length;
+                goToSlide(nextIdx, "next");
+            }, 8000);
         }
 
         function resetAutoplay() {
             startAutoplay();
         }
 
-        // Pause autoplay on hover over card
-        if (cardOuter) {
-            cardOuter.addEventListener("mouseenter", stopAutoplay);
-            cardOuter.addEventListener("mouseleave", startAutoplay);
+        if (prevBtn) {
+            prevBtn.addEventListener("click", () => {
+                const prevIdx = (currentIndex - 1 + testimonialsData.length) % testimonialsData.length;
+                goToSlide(prevIdx, "prev");
+                resetAutoplay();
+            });
+        }
+        if (nextBtn) {
+            nextBtn.addEventListener("click", () => {
+                const nextIdx = (currentIndex + 1) % testimonialsData.length;
+                goToSlide(nextIdx, "next");
+                resetAutoplay();
+            });
         }
 
-        // Mobile Touch Swipe Logic
+        // Mobile touch swipe logic
         let touchStartX = 0;
         let touchEndX = 0;
 
@@ -1215,10 +1222,10 @@ document.addEventListener('DOMContentLoaded', () => {
         function handleSwipe() {
             const swipeThreshold = 40;
             if (touchEndX < touchStartX - swipeThreshold) {
-                nextSlide();
+                goToSlide((currentIndex + 1) % testimonialsData.length, "next");
                 resetAutoplay();
             } else if (touchEndX > touchStartX + swipeThreshold) {
-                prevSlide();
+                goToSlide((currentIndex - 1 + testimonialsData.length) % testimonialsData.length, "prev");
                 resetAutoplay();
             }
         }
@@ -1234,7 +1241,8 @@ document.addEventListener('DOMContentLoaded', () => {
         function updateLightboxPhoto(index) {
             if (!activePhotosList || activePhotosList.length === 0) return;
             activePhotoIndex = (index + activePhotosList.length) % activePhotosList.length;
-            lightboxImg.src = activePhotosList[activePhotoIndex];
+            const photoData = getPhotoData(activePhotosList[activePhotoIndex]);
+            lightboxImg.src = photoData.src;
             if (lightboxCounter) {
                 lightboxCounter.textContent = `${activePhotoIndex + 1} / ${activePhotosList.length}`;
             }
@@ -1292,6 +1300,35 @@ document.addEventListener('DOMContentLoaded', () => {
         renderDots();
         renderCard(currentIndex);
         startAutoplay();
+    }
+
+    // 6. Subtle Scroll Reveal Animations for all sections
+    function initScrollReveal() {
+        const sections = document.querySelectorAll("section");
+        
+        const observerOptions = {
+            root: null,
+            rootMargin: "0px 0px -80px 0px",
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("revealed");
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(sec => {
+            if (sec.id === "banner") {
+                sec.classList.add("scroll-reveal", "revealed");
+            } else {
+                sec.classList.add("scroll-reveal");
+                observer.observe(sec);
+            }
+        });
     }
 });
 
