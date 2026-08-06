@@ -21,11 +21,12 @@ function initMap() {
 
     const map = new google.maps.Map(mapElement, {
         zoom: 9,
-        center: locations[0]
+        center: locations[0],
+        mapId: "DEMO_MAP_ID" // Required for AdvancedMarkerElement
     });
 
     locations.forEach(loc => {
-        new google.maps.Marker({
+        new google.maps.marker.AdvancedMarkerElement({
             position: { lat: loc.lat, lng: loc.lng },
             map,
             title: loc.title
