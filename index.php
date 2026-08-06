@@ -1737,7 +1737,7 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Google Maps API -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhfs0hlPrtAjX1wXb2ay9Mlw23yl2D-Og&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeDA5M303_4Z7bPCG9NGoy85JxUbFWsnU-Og&callback=initMap"
         async defer></script>
     <!-- Custom JS -->
     <script src="./script.js?v=1.1"></script>
