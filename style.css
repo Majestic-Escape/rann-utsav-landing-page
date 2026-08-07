@@ -742,7 +742,7 @@ input::-webkit-input-placeholder {
 
     #banner {
         background:
-            url('./assets/mobile-banner.jpeg') !important;
+            url('./assets/mobile-banner.jpg') !important;
         background-repeat: no-repeat !important;
         background-size: cover !important;
         background-position: top center !important;
@@ -1487,7 +1487,7 @@ input::-webkit-input-placeholder {
 @media (max-width: 768px) {
     #banner {
         background:
-            url('./assets/mobile-banner.jpeg') no-repeat center center / cover !important;
+            url('./assets/mobile-banner.jpg') no-repeat center center / cover !important;
     }
 }
 
@@ -2182,11 +2182,11 @@ input::-webkit-input-placeholder {
 
 .blue-purple-gradient-text {
     background: linear-gradient(90deg,
-            #2946D9 0%,
-            #5659D0 30%,
-            #6837B2 55%,
-            #A62C90 75%,
-            #C92577 100%);
+            #2246E0 0%,
+            #3540DD 30%,
+            #8A2FB5 60%,
+            #D6208A 80%,
+            #E71E75 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
