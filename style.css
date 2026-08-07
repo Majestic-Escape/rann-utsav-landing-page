@@ -915,7 +915,7 @@ input::-webkit-input-placeholder {
 @media (min-width: 768px) and (max-width: 1023px) {
     #banner {
         min-height: 75vh !important;
-        background: url('./assets/banner.jpg') no-repeat center center / contain !important;
+        background: url('./assets/tab-banner.jpg') no-repeat center center / contain !important;
     }
 }
 
@@ -1480,14 +1480,63 @@ input::-webkit-input-placeholder {
 #banner {
     min-height: 100vh;
     height: auto;
-    background:
-        url('./assets/banner.jpg') no-repeat center center / cover !important;
 }
 
-@media (max-width: 768px) {
+/* Mobile devices */
+@media (max-width: 767px) {
     #banner {
         background:
             url('./assets/mobile-banner.jpg') no-repeat center center / cover !important;
+    }
+
+    .hero-date-board {
+        position: absolute !important;
+        top: 53% !important;
+        left: 50% !important;
+        right: auto !important;
+        transform: translate(-50%, -50%) !important;
+        max-width: 220px !important;
+        width: 45% !important;
+        z-index: 5 !important;
+        text-align: center !important;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    #banner {
+        background:
+            url('./assets/tab-banner.jpg') no-repeat center center / cover !important;
+    }
+
+    .hero-date-board {
+        position: absolute !important;
+        top: 55% !important;
+        left: 50% !important;
+        right: auto !important;
+        transform: translate(-50%, -50%) !important;
+        max-width: 280px !important;
+        width: 35% !important;
+        z-index: 5 !important;
+        text-align: center !important;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    #banner {
+        background:
+            url('./assets/banner.jpg') no-repeat center center / cover !important;
+    }
+
+    .hero-date-board {
+        position: absolute !important;
+        right: 0.1% !important;
+        top: 55% !important;
+        left: auto !important;
+        transform: translateY(-50%) !important;
+        max-width: 320px !important;
+        z-index: 10 !important;
     }
 }
 
