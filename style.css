@@ -1491,7 +1491,7 @@ input::-webkit-input-placeholder {
 
     .hero-date-board {
         position: absolute !important;
-        top: 53% !important;
+        top: 85% !important;
         left: 50% !important;
         right: auto !important;
         transform: translate(-50%, -50%) !important;
