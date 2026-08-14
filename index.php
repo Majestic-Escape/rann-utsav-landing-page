@@ -162,7 +162,10 @@
 
             <!-- Hero Date Board -->
             <div class="hero-date-board">
-                <img src="./Date-Board.png" alt="Rann Utsav Dates" class="img-fluid">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="./assets/Board.png">
+                    <img src="./Date-Board.png" alt="Rann Utsav Dates" class="img-fluid">
+                </picture>
             </div>
         </section>
 

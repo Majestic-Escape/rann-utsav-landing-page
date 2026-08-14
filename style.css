@@ -300,13 +300,14 @@ footer a {
 @media (max-width: 768px) {
     .hero-date-board {
         position: absolute;
-        top: 53%;
+        top: 85%;
         left: 50%;
         transform: translate(-50%, -50%);
-        max-width: 220px;
-        width: 45%;
+        max-width: 340px;
+        width: 85%;
         z-index: 5;
         text-align: center;
+        margin: 0 auto;
     }
 }
 
@@ -1495,10 +1496,23 @@ input::-webkit-input-placeholder {
         left: 50% !important;
         right: auto !important;
         transform: translate(-50%, -50%) !important;
-        max-width: 220px !important;
-        width: 45% !important;
+        max-width: 340px !important;
+        width: 85% !important;
         z-index: 5 !important;
         text-align: center !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0 auto !important;
+    }
+
+    .hero-date-board picture,
+    .hero-date-board img {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        margin: 0 auto !important;
     }
 }
 
