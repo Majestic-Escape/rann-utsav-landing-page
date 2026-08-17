@@ -1036,7 +1036,7 @@
                                             <div class="col-sm-6">
                                                 <h6 class="fw-bold text-dark mb-2" style="font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; color: #744FB9 !important;">Amenities</h6>
                                                 <ul class="list-unstyled amenities-list mb-0">
-                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Twin Bed</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Two Single Bed</li>
                                                     <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Air Conditioning</li>
                                                     <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Attached Washroom</li>
                                                     <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Wi-Fi Support</li>
@@ -1103,7 +1103,7 @@
                                             <div class="col-sm-6">
                                                 <h6 class="fw-bold text-dark mb-2" style="font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; color: #744FB9 !important;">Amenities</h6>
                                                 <ul class="list-unstyled amenities-list mb-0">
-                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Twin Bed</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Two Single Bed</li>
                                                     <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Natural Ventilation</li>
                                                     <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Attached Washroom</li>
                                                     <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Cultural Ambience</li>
