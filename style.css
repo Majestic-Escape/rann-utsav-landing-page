@@ -300,7 +300,7 @@ footer a {
 @media (max-width: 768px) {
     .hero-date-board {
         position: absolute;
-        top: 85%;
+        top: 89%;
         left: 50%;
         transform: translate(-50%, -50%);
         max-width: 340px;
@@ -1492,7 +1492,7 @@ input::-webkit-input-placeholder {
 
     .hero-date-board {
         position: absolute !important;
-        top: 85% !important;
+        top: 89% !important;
         left: 50% !important;
         right: auto !important;
         transform: translate(-50%, -50%) !important;

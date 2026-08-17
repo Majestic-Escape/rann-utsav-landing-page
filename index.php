@@ -845,7 +845,7 @@
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <h6 class="fw-bold text-dark mb-2" style="font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; color: #744FB9 !important;">Capacity</h6>
-                                                    <p class="text-muted mb-0"><i class="bi bi-people-fill me-2" style="color: #744FB9;"></i> 2 Adults + 2 Kids</p>
+                                                    <p class="text-muted mb-0"><i class="bi bi-people-fill me-2" style="color: #744FB9;"></i> 4 Adults </p>
                                                 </div>
                                                 <div>
                                                     <h6 class="fw-bold text-dark mb-2" style="font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; color: #744FB9 !important;">Ideal For</h6>
@@ -912,11 +912,11 @@
                                             <div class="col-sm-6">
                                                 <div class="mb-3">
                                                     <h6 class="fw-bold text-dark mb-2" style="font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; color: #744FB9 !important;">Capacity</h6>
-                                                    <p class="text-muted mb-0"><i class="bi bi-people-fill me-2" style="color: #744FB9;"></i> 2 Adults + 1 Kid</p>
+                                                    <p class="text-muted mb-0"><i class="bi bi-people-fill me-2" style="color: #744FB9;"></i> 2 Adults</p>
                                                 </div>
                                                 <div>
                                                     <h6 class="fw-bold text-dark mb-2" style="font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; color: #744FB9 !important;">Ideal For</h6>
-                                                    <p class="text-muted mb-0"><i class="bi bi-suit-heart-fill me-2" style="color: #EA0776;"></i> Couples &amp; Families</p>
+                                                    <p class="text-muted mb-0"><i class="bi bi-suit-heart-fill me-2" style="color: #EA0776;"></i> Couples</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1036,7 +1036,7 @@
                                             <div class="col-sm-6">
                                                 <h6 class="fw-bold text-dark mb-2" style="font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; color: #744FB9 !important;">Amenities</h6>
                                                 <ul class="list-unstyled amenities-list mb-0">
-                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> King Size Bed</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Twin Bed</li>
                                                     <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Air Conditioning</li>
                                                     <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Attached Washroom</li>
                                                     <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Wi-Fi Support</li>
@@ -1103,7 +1103,7 @@
                                             <div class="col-sm-6">
                                                 <h6 class="fw-bold text-dark mb-2" style="font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; color: #744FB9 !important;">Amenities</h6>
                                                 <ul class="list-unstyled amenities-list mb-0">
-                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Double Bed</li>
+                                                    <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Twin Bed</li>
                                                     <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Natural Ventilation</li>
                                                     <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Attached Washroom</li>
                                                     <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2" style="font-size: 14px;"></i> Cultural Ambience</li>
