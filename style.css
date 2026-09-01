@@ -269,7 +269,7 @@ footer a {
 #banner {
     height: 100vh;
     background:
-        url('./assets/banner.jpg') no-repeat center center / cover;
+        url('./assets/banner.webp') no-repeat center center / cover;
 }
 
 /* Hero Date Board Floating Element */
@@ -338,7 +338,7 @@ footer a {
     position: relative;
     background-image:
         linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 30%, rgba(255, 255, 255, 0.85) 60%, rgba(255, 255, 255, 0.98) 100%),
-        url('./assets/about-bg.jpg') !important;
+        url('./assets/about-bg.webp') !important;
     background-repeat: no-repeat !important;
     background-position: center center !important;
     background-size: cover !important;
@@ -367,7 +367,7 @@ footer a {
     /* height: 450px; */
     /* background-color: #07243d; */
     background:
-        url('./timer-bg.png') top center / cover no-repeat;
+        url('./timer-bg.webp') top center / cover no-repeat;
     /* border-radius: 0 0 40px 40px; */
 }
 
@@ -418,7 +418,7 @@ footer a {
 }
 
 #booking {
-    background: url('./timer-bg.png') top center / cover no-repeat;
+    background: url('./timer-bg.webp') top center / cover no-repeat;
     /* box-shadow: 0 0 5px #35621f; */
     /* border-radius: 40px; */
     /* padding: 80px 40px; */
@@ -503,7 +503,7 @@ input::-webkit-input-placeholder {
 #festival {
     /* padding: 0 0 20px 0px; */
     /* border-radius: 0 0 40px 40px; */
-    background: url('./assets/festival-bg.jpg?v=0.2') center center / cover no-repeat;
+    background: url('./assets/festival-bg.webp?v=0.2') center center / cover no-repeat;
     background-attachment: fixed;
 }
 
@@ -542,83 +542,83 @@ input::-webkit-input-placeholder {
 }
 
 .activity#folk-dance-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/folk-dance.jpg?v=0.2') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/folk-dance.webp?v=0.2') center center / cover no-repeat;
 }
 
 #handicraft-exhibitions-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/handicraft-exhibitions.jpg?v=0.2') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/handicraft-exhibitions.webp?v=0.2') center center / cover no-repeat;
 }
 
 #dolls-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/dolls2.jpg?v=0.2') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/dolls2.webp?v=0.2') center center / cover no-repeat;
 }
 
 #kutchi-cuisine-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/kutchi-cuisine.jpg?v=0.2') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/kutchi-cuisine.webp?v=0.2') center center / cover no-repeat;
 }
 
 #desert-safari-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/desert-safari.jpg?v=0.2') center 58% / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/desert-safari.webp?v=0.2') center 58% / cover no-repeat;
 }
 
 #hot-air-balloon-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/hot-air-balloon.jpg?v=0.2') center 8% / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/hot-air-balloon.webp?v=0.2') center 8% / cover no-repeat;
 }
 
 #paragliding-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/paragliding.jpg?v=0.2') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/paragliding.webp?v=0.2') center center / cover no-repeat;
 }
 
 #paramotor-flight-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/paramotor1.jpg?v=0.2') center right / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/paramotor1.webp?v=0.2') center right / cover no-repeat;
 }
 
 #atv-rides-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/atv-rides.jpg?v=0.2') center 64% / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/atv-rides.webp?v=0.2') center 64% / cover no-repeat;
 }
 
 #village-visits-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/village-visits.jpg?v=0.2') center 70% / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/village-visits.webp?v=0.2') center 70% / cover no-repeat;
 }
 
 #local-market-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/market2.jpg?v=0.2') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/market2.webp?v=0.2') center center / cover no-repeat;
 }
 
 #craft-market-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/market3.jpg?v=0.2') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/market3.webp?v=0.2') center center / cover no-repeat;
 }
 
 #cultural-market-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/market4.jpg?v=0.2') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/market4.webp?v=0.2') center center / cover no-repeat;
 }
 
 #night-bazaar-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/night-bazaar.jpg?v=0.2') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/night-bazaar.webp?v=0.2') center center / cover no-repeat;
 }
 
 #full-moon-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/full-moon.jpg?v=0.2') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/full-moon.webp?v=0.2') center center / cover no-repeat;
 }
 
 #bhunga-stay-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/bhunga-stay.jpg?v=0.2') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/bhunga-stay.webp?v=0.2') center center / cover no-repeat;
 }
 
 #yoga-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/yoga.jpg?v=0.2') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/yoga.webp?v=0.2') center center / cover no-repeat;
 }
 
 #paintball-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/paintball.jpg?v=0.2') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/paintball.webp?v=0.2') center center / cover no-repeat;
 }
 
 #rodeo-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/rodio.jpg?v=0.2') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/rodio.webp?v=0.2') center center / cover no-repeat;
 }
 
 #kaha-card {
-    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/kaha.JPG?v=0.2') center center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 75%)), url('./assets/activities/kaha.webp?v=0.2') center center / cover no-repeat;
 }
 
 .activity-carousel {
@@ -743,7 +743,7 @@ input::-webkit-input-placeholder {
 
     #banner {
         background:
-            url('./assets/mobile-banner.jpg') !important;
+            url('./assets/mobile-banner.webp') !important;
         background-repeat: no-repeat !important;
         background-size: cover !important;
         background-position: top center !important;
@@ -781,7 +781,7 @@ input::-webkit-input-placeholder {
     #about {
         background-image:
             linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.5) 40%, rgba(255, 255, 255, 0.80) 100%),
-            url('./assets/about-bg.jpg') !important;
+            url('./assets/about-bg.webp') !important;
         background-repeat: no-repeat !important;
         background-position: 60% center !important;
         background-size: cover !important;
@@ -916,7 +916,7 @@ input::-webkit-input-placeholder {
 @media (min-width: 768px) and (max-width: 1023px) {
     #banner {
         min-height: 75vh !important;
-        background: url('./assets/tab-banner.jpg') no-repeat center center / contain !important;
+        background: url('./assets/tab-banner.webp') no-repeat center center / contain !important;
     }
 }
 
@@ -1295,7 +1295,7 @@ input::-webkit-input-placeholder {
 #countdown-section {
     background:
 
-        url('./timer-bg.png') top center / cover no-repeat !important;
+        url('./timer-bg.webp') top center / cover no-repeat !important;
 }
 
 .countdown-card {
@@ -1487,7 +1487,7 @@ input::-webkit-input-placeholder {
 @media (max-width: 767px) {
     #banner {
         background:
-            url('./assets/mobile-banner.jpg') no-repeat center center / cover !important;
+            url('./assets/mobile-banner.webp') no-repeat center center / cover !important;
     }
 
     .hero-date-board {
@@ -1520,7 +1520,7 @@ input::-webkit-input-placeholder {
 @media (min-width: 768px) and (max-width: 1023px) {
     #banner {
         background:
-            url('./assets/tab-banner.jpg') no-repeat center center / cover !important;
+            url('./assets/tab-banner.webp') no-repeat center center / cover !important;
     }
 
     .hero-date-board {
@@ -1540,7 +1540,7 @@ input::-webkit-input-placeholder {
 @media (min-width: 1024px) {
     #banner {
         background:
-            url('./assets/banner.jpg') no-repeat center center / cover !important;
+            url('./assets/banner.webp') no-repeat center center / cover !important;
     }
 
     .hero-date-board {
@@ -1679,7 +1679,7 @@ input::-webkit-input-placeholder {
 #countdown-section {
     background:
 
-        url('./timer-bg.png') top center / cover no-repeat !important;
+        url('./timer-bg.webp') top center / cover no-repeat !important;
 }
 
 .next-full-moon-highlight {
@@ -1784,7 +1784,7 @@ input::-webkit-input-placeholder {
 
 /* Combined Lead Form Section */
 #booking {
-    background: url(./timer-bg.png) top center / cover no-repeat;
+    background: url(./timer-bg.webp) top center / cover no-repeat;
     background-attachment: scroll !important;
 }
 
@@ -2145,7 +2145,7 @@ input::-webkit-input-placeholder {
    Tents Showcase Section Styling
    ========================================================================== */
 #tents-showcase {
-    background: url('./assets/understars.jpg') no-repeat center center / cover !important;
+    background: url('./assets/understars.webp') no-repeat center center / cover !important;
 }
 
 .tent-gallery-card,

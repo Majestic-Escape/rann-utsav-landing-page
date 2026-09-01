@@ -871,7 +871,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 author: "Siddhesh Kesarkar & Family",
                 badge: "Booked via Majestic Escape 🤍",
                 photos: [
-                    "./assets/testimonials/testimonial1-1.jpg"
+                    "./assets/testimonials/testimonial1-1.webp"
                 ]
             },
             {
@@ -880,13 +880,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 author: "Manvi & Family",
                 badge: "Booked via Majestic Escape 💛",
                 photos: [
-                    { src: "./assets/testimonials/testimonial2-1.jpg", style: { objectPosition: "bottom" } },
-                    "./assets/testimonials/testimonial2-2.jpg",
-                    "./assets/testimonials/testimonial2-3.jpg",
-                    "./assets/testimonials/testimonial2-4.jpg",
-                    "./assets/testimonials/testimonial2-5.jpg",
-                    "./assets/testimonials/testimonial2-6.jpg",
-                    "./assets/testimonials/testimonial2-7.jpg"
+                    { src: "./assets/testimonials/testimonial2-1.webp", style: { objectPosition: "bottom" } },
+                    "./assets/testimonials/testimonial2-2.webp",
+                    "./assets/testimonials/testimonial2-3.webp",
+                    "./assets/testimonials/testimonial2-4.webp",
+                    "./assets/testimonials/testimonial2-5.webp",
+                    "./assets/testimonials/testimonial2-6.webp",
+                    "./assets/testimonials/testimonial2-7.webp"
                 ]
             },
             {
@@ -895,11 +895,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 author: "Maitri Kalola & Family",
                 badge: "Booked via Majestic Escape 🤍",
                 photos: [
-                    "./assets/testimonials/testimonial3-1.jpg",
-                    "./assets/testimonials/testimonial3-2.jpg",
-                    "./assets/testimonials/testimonial3-3.jpg",
-                    "./assets/testimonials/testimonial3-4.jpg",
-                    "./assets/testimonials/testimonial3-5.jpg"
+                    "./assets/testimonials/testimonial3-1.webp",
+                    "./assets/testimonials/testimonial3-2.webp",
+                    "./assets/testimonials/testimonial3-3.webp",
+                    "./assets/testimonials/testimonial3-4.webp",
+                    "./assets/testimonials/testimonial3-5.webp"
                 ]
             },
             {
@@ -908,12 +908,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 author: "Ujala Sahu & Family",
                 badge: "Booked via Majestic Escape",
                 photos: [
-                    "./assets/testimonials/testimonial4-1.jpg",
-                    "./assets/testimonials/testimonial4-2.jpg",
-                    "./assets/testimonials/testimonial4-3.jpg",
-                    "./assets/testimonials/testimonial4-4.jpg",
-                    "./assets/testimonials/testimonial4-5.jpg",
-                    "./assets/testimonials/testimonial4-6.jpg"
+                    "./assets/testimonials/testimonial4-1.webp",
+                    "./assets/testimonials/testimonial4-2.webp",
+                    "./assets/testimonials/testimonial4-3.webp",
+                    "./assets/testimonials/testimonial4-4.webp",
+                    "./assets/testimonials/testimonial4-5.webp",
+                    "./assets/testimonials/testimonial4-6.webp"
                 ]
             },
             {
@@ -922,8 +922,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 author: "Jagpreet Kaur & Family",
                 badge: "Booked via Majestic Escape ✨",
                 photos: [
-                    "./assets/testimonials/testimonial5-1.jpg",
-                    "./assets/testimonials/testimonial5-2.jpg"
+                    "./assets/testimonials/testimonial5-1.webp",
+                    "./assets/testimonials/testimonial5-2.webp"
                 ]
             },
             {
@@ -932,8 +932,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 author: "Rahul Ranade & Family",
                 badge: "Booked via Majestic Escape 🤍",
                 photos: [
-                    "./assets/testimonials/testimonial6-1.jpg",
-                    "./assets/testimonials/testimonial6-2.jpg"
+                    "./assets/testimonials/testimonial6-1.webp",
+                    "./assets/testimonials/testimonial6-2.webp"
                 ]
             },
             {
@@ -942,15 +942,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 author: "Deepa & Family",
                 badge: "Booked via Majestic Escape 🤍",
                 photos: [
-                    "./assets/testimonials/testimonial7-1.jpg",
-                    "./assets/testimonials/testimonial7-2.jpg",
-                    "./assets/testimonials/testimonial7-3.jpg",
-                    "./assets/testimonials/testimonial7-4.jpg",
-                    "./assets/testimonials/testimonial7-5.jpg",
-                    "./assets/testimonials/testimonial7-6.jpg",
-                    "./assets/testimonials/testimonial7-7.jpg",
-                    "./assets/testimonials/testimonial7-8.jpg",
-                    "./assets/testimonials/testimonial7-9.jpg"
+                    "./assets/testimonials/testimonial7-1.webp",
+                    "./assets/testimonials/testimonial7-2.webp",
+                    "./assets/testimonials/testimonial7-3.webp",
+                    "./assets/testimonials/testimonial7-4.webp",
+                    "./assets/testimonials/testimonial7-5.webp",
+                    "./assets/testimonials/testimonial7-6.webp",
+                    "./assets/testimonials/testimonial7-7.webp",
+                    "./assets/testimonials/testimonial7-8.webp",
+                    "./assets/testimonials/testimonial7-9.webp"
                 ]
             },
             {
@@ -959,9 +959,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 author: "Vanshika Garg & Family",
                 badge: "Booked via Majestic Escape 🤍",
                 photos: [
-                    "./assets/testimonials/testimonial8-1.jpg",
-                    "./assets/testimonials/testimonial8-2.jpg",
-                    "./assets/testimonials/testimonial8-3.jpg"
+                    "./assets/testimonials/testimonial8-1.webp",
+                    "./assets/testimonials/testimonial8-2.webp",
+                    "./assets/testimonials/testimonial8-3.webp"
                 ]
             }
         ];

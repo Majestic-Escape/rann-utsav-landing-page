@@ -163,8 +163,8 @@
             <!-- Hero Date Board -->
             <div class="hero-date-board">
                 <picture>
-                    <source media="(max-width: 767px)" srcset="./assets/Board.png">
-                    <img src="./Date-Board.png" alt="Rann Utsav Dates" class="img-fluid">
+                    <source media="(max-width: 767px)" srcset="./assets/Board.webp">
+                    <img src="./Date-Board.webp" alt="Rann Utsav Dates" class="img-fluid">
                 </picture>
             </div>
         </section>
@@ -278,87 +278,87 @@
                             <!-- Image Cards -->
                             <div class="gallery-carousel-card" data-index="0">
                                 <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery1.jpg?v=0.2" alt="Rann Utsav Gallery 1">
+                                    <img src="./assets/gallery/gallery1.webp?v=0.2" alt="Rann Utsav Gallery 1">
                                 </div>
                             </div>
                             <div class="gallery-carousel-card" data-index="1">
                                 <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery3.jpg?v=0.2" alt="Rann Utsav Gallery 3">
+                                    <img src="./assets/gallery/gallery3.webp?v=0.2" alt="Rann Utsav Gallery 3">
                                 </div>
                             </div>
                             <div class="gallery-carousel-card" data-index="2">
                                 <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery4.jpg?v=0.2" alt="Rann Utsav Gallery 4">
+                                    <img src="./assets/gallery/gallery4.webp?v=0.2" alt="Rann Utsav Gallery 4">
                                 </div>
                             </div>
                             <div class="gallery-carousel-card" data-index="3">
                                 <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery6.jpg?v=0.2" alt="Rann Utsav Gallery 6">
+                                    <img src="./assets/gallery/gallery6.webp?v=0.2" alt="Rann Utsav Gallery 6">
                                 </div>
                             </div>
                             <div class="gallery-carousel-card" data-index="4">
                                 <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery8.jpg?v=0.2" alt="Rann Utsav Gallery 8">
+                                    <img src="./assets/gallery/gallery8.webp?v=0.2" alt="Rann Utsav Gallery 8">
                                 </div>
                             </div>
                             <div class="gallery-carousel-card" data-index="5">
                                 <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery13.jpg?v=0.2" alt="Rann Utsav Gallery 13">
+                                    <img src="./assets/gallery/gallery13.webp?v=0.2" alt="Rann Utsav Gallery 13">
                                 </div>
                             </div>
                             <div class="gallery-carousel-card" data-index="6">
                                 <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery14.jpg?v=0.2" alt="Rann Utsav Gallery 14">
+                                    <img src="./assets/gallery/gallery14.webp?v=0.2" alt="Rann Utsav Gallery 14">
                                 </div>
                             </div>
                             <div class="gallery-carousel-card" data-index="7">
                                 <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery15.jpg?v=0.2" alt="Rann Utsav Gallery 15">
+                                    <img src="./assets/gallery/gallery15.webp?v=0.2" alt="Rann Utsav Gallery 15">
                                 </div>
                             </div>
                             <div class="gallery-carousel-card" data-index="8">
                                 <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery16.jpg?v=0.2" alt="Rann Utsav Gallery 16">
+                                    <img src="./assets/gallery/gallery16.webp?v=0.2" alt="Rann Utsav Gallery 16">
                                 </div>
                             </div>
                             <div class="gallery-carousel-card" data-index="9">
                                 <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery17.jpg?v=0.2" alt="Rann Utsav Gallery 17">
+                                    <img src="./assets/gallery/gallery17.webp?v=0.2" alt="Rann Utsav Gallery 17">
                                 </div>
                             </div>
                             <div class="gallery-carousel-card" data-index="10">
                                 <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery18.jpg?v=0.2" alt="Rann Utsav Gallery 18">
+                                    <img src="./assets/gallery/gallery18.webp?v=0.2" alt="Rann Utsav Gallery 18">
                                 </div>
                             </div>
                             <div class="gallery-carousel-card" data-index="11">
                                 <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery19.jpg?v=0.2" alt="Rann Utsav Gallery 19">
+                                    <img src="./assets/gallery/gallery19.webp?v=0.2" alt="Rann Utsav Gallery 19">
                                 </div>
                             </div>
                             <div class="gallery-carousel-card" data-index="12">
                                 <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery20.jpg?v=0.2" alt="Rann Utsav Gallery 20">
+                                    <img src="./assets/gallery/gallery20.webp?v=0.2" alt="Rann Utsav Gallery 20">
                                 </div>
                             </div>
                             <div class="gallery-carousel-card" data-index="13">
                                 <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery21.jpg?v=0.2" alt="Rann Utsav Gallery 21">
+                                    <img src="./assets/gallery/gallery21.webp?v=0.2" alt="Rann Utsav Gallery 21">
                                 </div>
                             </div>
                             <div class="gallery-carousel-card" data-index="14">
                                 <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery22.jpg?v=0.2" alt="Rann Utsav Gallery 22">
+                                    <img src="./assets/gallery/gallery22.webp?v=0.2" alt="Rann Utsav Gallery 22">
                                 </div>
                             </div>
                             <div class="gallery-carousel-card" data-index="15">
                                 <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery23.jpg?v=0.2" alt="Rann Utsav Gallery 23">
+                                    <img src="./assets/gallery/gallery23.webp?v=0.2" alt="Rann Utsav Gallery 23">
                                 </div>
                             </div>
                             <div class="gallery-carousel-card" data-index="16">
                                 <div class="gallery-img-wrapper">
-                                    <img src="./assets/gallery/gallery24.jpg?v=0.2" alt="Rann Utsav Gallery 24">
+                                    <img src="./assets/gallery/gallery24.webp?v=0.2" alt="Rann Utsav Gallery 24">
                                 </div>
                             </div>
                         </div>
@@ -802,18 +802,18 @@
                                 <div class="col-lg-6 order-lg-2 offset-xl-1">
                                     <div class="tent-gallery-card p-3 bg-white rounded-4 shadow-sm">
                                         <div class="tent-main-img-wrapper position-relative overflow-hidden rounded-3 mb-3" style="aspect-ratio: 16/10;">
-                                            <img id="darbari-main-img" src="./assets/tents/darbari-tent-bed.JPG" alt="Darbari Maharaja Suite" class="w-100 h-100 object-fit-cover">
+                                            <img id="darbari-main-img" src="./assets/tents/darbari-tent-bed.webp" alt="Darbari Maharaja Suite" class="w-100 h-100 object-fit-cover">
                                             <span class="position-absolute top-3 start-3 badge bg-danger fs-6 py-2 px-3 rounded-pill shadow-sm" style="background: linear-gradient(135deg, #EA0776 0%, #744FB9 100%) !important;">🔥 Best Seller</span>
                                         </div>
                                         <div class="row g-2 tent-thumbnails">
                                             <div class="col-4">
-                                                <img src="./assets/tents/darbari-tent-bed.JPG" class="img-fluid rounded cursor-pointer active-thumb" onclick="changeTentImage('darbari', './assets/tents/darbari-tent-bed.JPG', this)" alt="Darbari Suite Interior">
+                                                <img src="./assets/tents/darbari-tent-bed.webp" class="img-fluid rounded cursor-pointer active-thumb" onclick="changeTentImage('darbari', './assets/tents/darbari-tent-bed.webp', this)" alt="Darbari Suite Interior">
                                             </div>
                                             <div class="col-4">
-                                                <img src="./assets/tents/darbari-tent-sitting-area.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('darbari', './assets/tents/darbari-tent-sitting-area.JPG', this)" alt="Darbari Suite Lounge">
+                                                <img src="./assets/tents/darbari-tent-sitting-area.webp" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('darbari', './assets/tents/darbari-tent-sitting-area.webp', this)" alt="Darbari Suite Lounge">
                                             </div>
                                             <div class="col-4">
-                                                <img src="./assets/tents/darbari-tent-wc.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('darbari', './assets/tents/darbari-tent-wc.JPG', this)" alt="Darbari Suite Washroom">
+                                                <img src="./assets/tents/darbari-tent-wc.webp" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('darbari', './assets/tents/darbari-tent-wc.webp', this)" alt="Darbari Suite Washroom">
                                             </div>
                                         </div>
                                     </div>
@@ -869,18 +869,18 @@
                                 <div class="col-lg-6 order-lg-2 offset-xl-1">
                                     <div class="tent-gallery-card p-3 bg-white rounded-4 shadow-sm">
                                         <div class="tent-main-img-wrapper position-relative overflow-hidden rounded-3 mb-3" style="aspect-ratio: 16/10;">
-                                            <img id="rajwadi-main-img" src="./assets/tents/rajwadi-tent-bed.JPG" alt="Rajwadi Luxury Tent" class="w-100 h-100 object-fit-cover">
+                                            <img id="rajwadi-main-img" src="./assets/tents/rajwadi-tent-bed.webp" alt="Rajwadi Luxury Tent" class="w-100 h-100 object-fit-cover">
                                             <span class="position-absolute top-3 start-3 badge bg-primary fs-6 py-2 px-3 rounded-pill shadow-sm" style="background: #744FB9 !important;">Most Popular</span>
                                         </div>
                                         <div class="row g-2 tent-thumbnails">
                                             <div class="col-4">
-                                                <img src="./assets/tents/rajwadi-tent-bed.JPG" class="img-fluid rounded cursor-pointer active-thumb" onclick="changeTentImage('rajwadi', './assets/tents/rajwadi-tent-bed.JPG', this)" alt="Rajwadi Tent Bed">
+                                                <img src="./assets/tents/rajwadi-tent-bed.webp" class="img-fluid rounded cursor-pointer active-thumb" onclick="changeTentImage('rajwadi', './assets/tents/rajwadi-tent-bed.webp', this)" alt="Rajwadi Tent Bed">
                                             </div>
                                             <div class="col-4">
-                                                <img src="./assets/tents/rajwadi-tent-sitting-area.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('rajwadi', './assets/tents/rajwadi-tent-sitting-area.JPG', this)" alt="Rajwadi Tent Lounge">
+                                                <img src="./assets/tents/rajwadi-tent-sitting-area.webp" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('rajwadi', './assets/tents/rajwadi-tent-sitting-area.webp', this)" alt="Rajwadi Tent Lounge">
                                             </div>
                                             <div class="col-4">
-                                                <img src="./assets/tents/rajwadi-tent-wc.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('rajwadi', './assets/tents/rajwadi-tent-wc.JPG', this)" alt="Rajwadi Tent Washroom">
+                                                <img src="./assets/tents/rajwadi-tent-wc.webp" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('rajwadi', './assets/tents/rajwadi-tent-wc.webp', this)" alt="Rajwadi Tent Washroom">
                                             </div>
                                         </div>
                                     </div>
@@ -936,18 +936,18 @@
                                 <div class="col-lg-6 order-lg-2 offset-xl-1">
                                     <div class="tent-gallery-card p-3 bg-white rounded-4 shadow-sm">
                                         <div class="tent-main-img-wrapper position-relative overflow-hidden rounded-3 mb-3" style="aspect-ratio: 16/10;">
-                                            <img id="premium-main-img" src="./assets/tents/premium-tent-bed.JPG" alt="Premium AC Tent" class="w-100 h-100 object-fit-cover">
+                                            <img id="premium-main-img" src="./assets/tents/premium-tent-bed.webp" alt="Premium AC Tent" class="w-100 h-100 object-fit-cover">
                                             <span class="position-absolute top-3 start-3 badge bg-success fs-6 py-2 px-3 rounded-pill shadow-sm" style="background: #28a745 !important;">🔥 Best Value</span>
                                         </div>
                                         <div class="row g-2 tent-thumbnails">
                                             <div class="col-4">
-                                                <img src="./assets/tents/premium-tent-bed.JPG" class="img-fluid rounded cursor-pointer active-thumb" onclick="changeTentImage('premium', './assets/tents/premium-tent-bed.JPG', this)" alt="Premium Tent Bed">
+                                                <img src="./assets/tents/premium-tent-bed.webp" class="img-fluid rounded cursor-pointer active-thumb" onclick="changeTentImage('premium', './assets/tents/premium-tent-bed.webp', this)" alt="Premium Tent Bed">
                                             </div>
                                             <div class="col-4">
-                                                <img src="./assets/tents/premium-tent-sitting-area1.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('premium', './assets/tents/premium-tent-sitting-area1.JPG', this)" alt="Premium Tent Lounge">
+                                                <img src="./assets/tents/premium-tent-sitting-area1.webp" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('premium', './assets/tents/premium-tent-sitting-area1.webp', this)" alt="Premium Tent Lounge">
                                             </div>
                                             <div class="col-4">
-                                                <img src="./assets/tents/premium-tent-wc.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('premium', './assets/tents/premium-tent-wc.JPG', this)" alt="Premium Tent Washroom">
+                                                <img src="./assets/tents/premium-tent-wc.webp" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('premium', './assets/tents/premium-tent-wc.webp', this)" alt="Premium Tent Washroom">
                                             </div>
                                         </div>
                                     </div>
@@ -1003,18 +1003,18 @@
                                 <div class="col-lg-6 order-lg-2 offset-xl-1">
                                     <div class="tent-gallery-card p-3 bg-white rounded-4 shadow-sm">
                                         <div class="tent-main-img-wrapper position-relative overflow-hidden rounded-3 mb-3" style="aspect-ratio: 16/10;">
-                                            <img id="deluxe-main-img" src="./assets/tents/delux-tent-bed.JPG" alt="Deluxe AC Tent" class="w-100 h-100 object-fit-cover">
+                                            <img id="deluxe-main-img" src="./assets/tents/delux-tent-bed.webp" alt="Deluxe AC Tent" class="w-100 h-100 object-fit-cover">
                                             <span class="position-absolute top-3 start-3 badge bg-info fs-6 py-2 px-3 rounded-pill text-white shadow-sm" style="background: #17a2b8 !important;">Classic Comfort</span>
                                         </div>
                                         <div class="row g-2 tent-thumbnails">
                                             <div class="col-4">
-                                                <img src="./assets/tents/delux-tent-bed.JPG" class="img-fluid rounded cursor-pointer active-thumb" onclick="changeTentImage('deluxe', './assets/tents/delux-tent-bed.JPG', this)" alt="Deluxe Tent Bed">
+                                                <img src="./assets/tents/delux-tent-bed.webp" class="img-fluid rounded cursor-pointer active-thumb" onclick="changeTentImage('deluxe', './assets/tents/delux-tent-bed.webp', this)" alt="Deluxe Tent Bed">
                                             </div>
                                             <div class="col-4">
-                                                <img src="./assets/tents/delux-tent-sitting-area.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('deluxe', './assets/tents/delux-tent-sitting-area.JPG', this)" alt="Deluxe Tent Lounge">
+                                                <img src="./assets/tents/delux-tent-sitting-area.webp" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('deluxe', './assets/tents/delux-tent-sitting-area.webp', this)" alt="Deluxe Tent Lounge">
                                             </div>
                                             <div class="col-4">
-                                                <img src="./assets/tents/delux-tent-wc.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('deluxe', './assets/tents/delux-tent-wc.JPG', this)" alt="Deluxe Tent Washroom">
+                                                <img src="./assets/tents/delux-tent-wc.webp" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('deluxe', './assets/tents/delux-tent-wc.webp', this)" alt="Deluxe Tent Washroom">
                                             </div>
                                         </div>
                                     </div>
@@ -1070,18 +1070,18 @@
                                 <div class="col-lg-6 order-lg-2 offset-xl-1">
                                     <div class="tent-gallery-card p-3 bg-white rounded-4 shadow-sm">
                                         <div class="tent-main-img-wrapper position-relative overflow-hidden rounded-3 mb-3" style="aspect-ratio: 16/10;">
-                                            <img id="nonac-main-img" src="./assets/tents/non-ac-tent-bed.JPG" alt="Non-AC Traditional Tent" class="w-100 h-100 object-fit-cover">
+                                            <img id="nonac-main-img" src="./assets/tents/non-ac-tent-bed.webp" alt="Non-AC Traditional Tent" class="w-100 h-100 object-fit-cover">
                                             <span class="position-absolute top-3 start-3 badge bg-secondary fs-6 py-2 px-3 rounded-pill shadow-sm" style="background: #6c757d !important;">Traditional Stay</span>
                                         </div>
                                         <div class="row g-2 tent-thumbnails">
                                             <div class="col-4">
-                                                <img src="./assets/tents/non-ac-tent-bed.JPG" class="img-fluid rounded cursor-pointer active-thumb" onclick="changeTentImage('nonac', './assets/tents/non-ac-tent-bed.JPG', this)" alt="Non-AC Tent Bed">
+                                                <img src="./assets/tents/non-ac-tent-bed.webp" class="img-fluid rounded cursor-pointer active-thumb" onclick="changeTentImage('nonac', './assets/tents/non-ac-tent-bed.webp', this)" alt="Non-AC Tent Bed">
                                             </div>
                                             <div class="col-4">
-                                                <img src="./assets/tents/non-ac-tent-sitting-area.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('nonac', './assets/tents/non-ac-tent-sitting-area.JPG', this)" alt="Non-AC Tent Lounge">
+                                                <img src="./assets/tents/non-ac-tent-sitting-area.webp" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('nonac', './assets/tents/non-ac-tent-sitting-area.webp', this)" alt="Non-AC Tent Lounge">
                                             </div>
                                             <div class="col-4">
-                                                <img src="./assets/tents/non-ac-tent-wc.JPG" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('nonac', './assets/tents/non-ac-tent-wc.JPG', this)" alt="Non-AC Tent Washroom">
+                                                <img src="./assets/tents/non-ac-tent-wc.webp" class="img-fluid rounded cursor-pointer" onclick="changeTentImage('nonac', './assets/tents/non-ac-tent-wc.webp', this)" alt="Non-AC Tent Washroom">
                                             </div>
                                         </div>
                                     </div>
@@ -1168,7 +1168,7 @@
                                 <div class="artist-frame">
                                     <div class="artist-pin"></div>
                                     <div class="artist-img-wrapper">
-                                        <img src="./assets/Kutchi-Embroidery.jpg" alt="Kutchi Embroidery">
+                                        <img src="./assets/Kutchi-Embroidery.webp" alt="Kutchi Embroidery">
                                     </div>
                                     <div class="artist-details">
                                         <h5 class="artist-title">Kutchi Embroidery</h5>
@@ -1180,7 +1180,7 @@
                                 <div class="artist-frame">
                                     <div class="artist-pin"></div>
                                     <div class="artist-img-wrapper">
-                                        <img src="./assets/Kumbar-kaam.jpg" alt="Kumbhar Clay Craft">
+                                        <img src="./assets/Kumbar-kaam.webp" alt="Kumbhar Clay Craft">
                                     </div>
                                     <div class="artist-details">
                                         <h5 class="artist-title">Kumbhar Clay Craft</h5>
@@ -1192,7 +1192,7 @@
                                 <div class="artist-frame">
                                     <div class="artist-pin"></div>
                                     <div class="artist-img-wrapper">
-                                        <img src="./assets/lipaan-kaam.jpg" alt="Lippan Kaam">
+                                        <img src="./assets/lipaan-kaam.webp" alt="Lippan Kaam">
                                     </div>
                                     <div class="artist-details">
                                         <h5 class="artist-title">Lippan Kaam</h5>
@@ -1204,7 +1204,7 @@
                                 <div class="artist-frame">
                                     <div class="artist-pin"></div>
                                     <div class="artist-img-wrapper">
-                                        <img src="./assets/Ajrak.jpg" alt="Ajrakh Block Printing">
+                                        <img src="./assets/Ajrak.webp" alt="Ajrakh Block Printing">
                                     </div>
                                     <div class="artist-details">
                                         <h5 class="artist-title">Ajrakh Printing</h5>
@@ -1216,7 +1216,7 @@
                                 <div class="artist-frame">
                                     <div class="artist-pin"></div>
                                     <div class="artist-img-wrapper">
-                                        <img src="./assets/Jat-Leather-Craft.jpg" alt="Jat Leather Craft">
+                                        <img src="./assets/Jat-Leather-Craft.webp" alt="Jat Leather Craft">
                                     </div>
                                     <div class="artist-details">
                                         <h5 class="artist-title">Jat Leather Craft</h5>
@@ -1228,7 +1228,7 @@
                                 <div class="artist-frame">
                                     <div class="artist-pin"></div>
                                     <div class="artist-img-wrapper">
-                                        <img src="./assets/kutchi-Ghantadi.jpg" alt="Copper Bell Art">
+                                        <img src="./assets/kutchi-Ghantadi.webp" alt="Copper Bell Art">
                                     </div>
                                     <div class="artist-details">
                                         <h5 class="artist-title">Kutchi Ghantadi</h5>
@@ -1240,7 +1240,7 @@
                                 <div class="artist-frame">
                                     <div class="artist-pin"></div>
                                     <div class="artist-img-wrapper">
-                                        <img src="./assets/Ghantadi-Toran.jpg" alt="Ghantadi Toran">
+                                        <img src="./assets/Ghantadi-Toran.webp" alt="Ghantadi Toran">
                                     </div>
                                     <div class="artist-details">
                                         <h5 class="artist-title">Ghantadi Toran</h5>
